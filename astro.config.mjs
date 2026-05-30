@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-  site: 'https://DEIN-USERNAME.github.io',
+  site: 'https://polinakargina2202-del.github.io',
   base: '/kdm-trainer',
   integrations: [
     starlight({
@@ -11,7 +11,7 @@ export default defineConfig({
       description: 'AP Teil 2 · Kaufmann/-frau für Digitalisierungsmanagement · KLA Bremerhaven',
       defaultLocale: 'de',
       locales: { root: { label: 'Deutsch', lang: 'de' } },
-      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/DEIN-USERNAME/kdm-trainer' }],
+      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/polinakargina2202-del/kdm-trainer' }],
       customCss: ['./src/styles/custom.css'],
       sidebar: [
         {

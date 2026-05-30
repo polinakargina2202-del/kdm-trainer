@@ -1,33 +1,85 @@
-:root {
-  --sl-color-accent-low: #dbeeff;
-  --sl-color-accent: #1a56a0;
-  --sl-color-accent-high: #0d3b73;
-  --sl-color-white: #ffffff;
-  --sl-color-gray-1: #f8f9fa;
-  --sl-color-gray-6: #1a1a2e;
-}
-[data-theme='dark'] {
-  --sl-color-accent-low: #0d2d52;
-  --sl-color-accent: #4a90d9;
-  --sl-color-accent-high: #82b8f0;
+/* Prüfungsrelevanz-Badges */
+.badge-hoch {
+  display: inline-block;
+  background: #fee2e2;
+  color: #991b1b;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
 }
 
-/* Prüfungsrelevanz-Badges */
-.badge-hoch { display: inline-block; background: #fee2e2; color: #991b1b; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-left: 6px; vertical-align: middle; }
-.badge-mittel { display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-left: 6px; vertical-align: middle; }
-.badge-niedrig { display: inline-block; background: #dcfce7; color: #166534; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-left: 6px; vertical-align: middle; }
+.badge-mittel {
+  display: inline-block;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.badge-niedrig {
+  display: inline-block;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
 
 /* Merksatz-Box */
-.merksatz { border-left: 3px solid var(--sl-color-accent); background: var(--sl-color-gray-1); padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 16px 0; font-style: italic; }
-[data-theme='dark'] .merksatz { background: var(--sl-color-gray-6); }
+.merksatz {
+  border-left: 3px solid var(--sl-color-accent);
+  padding: 12px 16px;
+  border-radius: 0 6px 6px 0;
+  margin: 16px 0;
+  font-style: italic;
+  background: var(--sl-color-gray-7);
+}
 
 /* Prüfungstipp */
-.pruefungstipp { border: 1.5px solid #f59e0b; background: #fffbeb; padding: 12px 16px; border-radius: 6px; margin: 16px 0; }
-[data-theme='dark'] .pruefungstipp { background: #2a1f00; border-color: #b45309; }
-.pruefungstipp::before { content: '📝 Prüfungstipp: '; font-weight: 600; color: #92400e; }
-[data-theme='dark'] .pruefungstipp::before { color: #f59e0b; }
+.pruefungstipp {
+  border: 1.5px solid #f59e0b;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 16px 0;
+}
+
+.pruefungstipp::before {
+  content: '📝 Prüfungstipp: ';
+  font-weight: 600;
+  color: #92400e;
+}
+
+[data-theme='dark'] .pruefungstipp::before {
+  color: #f59e0b;
+}
 
 /* Frequenz-Anzeige */
-.frequenz { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; color: #6b7280; margin-bottom: 8px; }
-.freq-dot { width: 8px; height: 8px; border-radius: 50%; background: #e5e7eb; }
-.freq-dot.aktiv { background: #1a56a0; }
+.frequenz {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.freq-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e5e7eb;
+}
+
+.freq-dot.aktiv {
+  background: #1a56a0;
+}
