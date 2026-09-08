@@ -235,3 +235,7 @@ RESTAURANT (restaurant_id PK, name, adresse, oeffnungszeiten)
 | Referentielle Integrität | Begriff erklären + Beispiel |
 | ER-Modell | Tabelle/Spalten ergänzen, FK einzeichnen |
 | Anomalien | 3 Arten nennen und erklären |
+
+---
+<div class="kdm-practice" data-topic="p12/datenbanken-sql"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

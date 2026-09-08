@@ -95,3 +95,7 @@ Der **Digitale Reifegrad** beschreibt, wie weit ein Unternehmen bei der Digitali
 | RPA | „Was ist RPA? Nennen Sie 2 Vorteile und 2 Nachteile." |
 | Geeignete Prozesse | „Nennen Sie 2 Merkmale von Prozessen, die für RPA geeignet sind." |
 | KI-Risiken | „Nennen Sie 2 Risiken beim Einsatz von KI für Rechercheaufgaben." |
+
+---
+<div class="kdm-practice" data-topic="p12/app-entwicklung"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

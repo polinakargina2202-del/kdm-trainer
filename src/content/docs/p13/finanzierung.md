@@ -165,3 +165,8 @@ Welche Darlehensart eignet sich für die Liquiditätsplanung?
 | Vergleich | „Welche Darlehensart ist am kostengünstigsten? Begründen Sie." |
 | Leasing | „Erläutern Sie den Begriff Leasing. Nennen Sie je 1 Vor- und Nachteil." |
 | Bilanzauswirkung | „Wie verändert sich die Bilanz bei Aufnahme eines Bankdarlehens?" |
+
+---
+<div class="kdm-calculators" data-calculators="loan"></div>
+<div class="kdm-practice" data-topic="p13/finanzierung"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

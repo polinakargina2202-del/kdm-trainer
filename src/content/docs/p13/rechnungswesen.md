@@ -106,3 +106,8 @@ Effektiver Jahreszins = (Skonto% / (100% - Skonto%)) × (360 / (Zahlungsziel - S
 | Bilanzveränderung | „Wie verändert sich die Bilanz bei Aufnahme eines Darlehens?" |
 | Abschreibung berechnen | „Berechnen Sie die jährliche Abschreibung (linear) und den Abschreibungssatz." |
 | Skonto-Rechnung | „Ermitteln Sie, ob die Nutzung des Skontos vorteilhaft ist." |
+
+---
+<div class="kdm-calculators" data-calculators="depreciation,skonto"></div>
+<div class="kdm-practice" data-topic="p13/rechnungswesen"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

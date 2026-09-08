@@ -114,3 +114,8 @@ Einzige Anlaufstelle für alle IT-bezogenen Anfragen (= Service Desk / Helpdesk)
 | SLA-Berechnung | „Wie viele Minuten Ausfall sind bei 99,99% Up-Time erlaubt?" |
 | Incident/Major | „Erläutern Sie den Unterschied zwischen Incident und Major Incident." |
 | SPOC | „Was versteht man unter SPOC?" |
+
+---
+<div class="kdm-calculators" data-calculators="uptime"></div>
+<div class="kdm-practice" data-topic="p12/bpmn-itsm"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

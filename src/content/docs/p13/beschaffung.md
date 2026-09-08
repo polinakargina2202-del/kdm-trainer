@@ -157,3 +157,8 @@ Skonto-Zins = (2 / 98) × (360 / 20) = 0,0204 × 18 = 36,7% p.a.
 | Mängelarten | „Unterscheiden Sie offensichtlichen und versteckten Mangel. Wie ist vorzugehen?" |
 | Gewährleistung/Garantie | „Erläutern Sie den Unterschied zwischen Gewährleistung und Garantie." |
 | Bezugspreis | Tabelle mit Rabatten/Skonto/Fracht ausfüllen und günstigsten Anbieter ermitteln |
+
+---
+<div class="kdm-calculators" data-calculators="bezugspreis,skonto"></div>
+<div class="kdm-practice" data-topic="p13/beschaffung"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

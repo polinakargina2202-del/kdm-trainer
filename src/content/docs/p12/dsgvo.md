@@ -99,3 +99,7 @@ Bei einer Datenpanne:
 | Pflichten nennen | „Nennen Sie 3 Pflichten, die vor der Speicherung personenbezogener Daten zu beachten sind." |
 | Daten prüfen | „Prüfen Sie folgende Eingabemaske auf DSGVO-Konformität" |
 | TOMs nennen | „Nennen Sie 3 technische/organisatorische Maßnahmen zum Datenschutz" |
+
+---
+<div class="kdm-practice" data-topic="p12/dsgvo"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

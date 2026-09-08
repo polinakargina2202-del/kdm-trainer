@@ -113,3 +113,8 @@ Folgende Personengruppen genießen **besonderen** Schutz:
 | Zeugnis | „stets zu unserer vollsten Zufriedenheit" = Note 1 |
 | Mutterschutz | 8 Wochen nach Geburt = absolutes Verbot |
 | Besonderer Schutz | BR-Mitglieder, Schwerbehinderte, Schwangere, Azubis nach Probezeit |
+
+---
+<div class="kdm-calculators" data-calculators="notice"></div>
+<div class="kdm-practice" data-topic="wiso/arbeitsrecht"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

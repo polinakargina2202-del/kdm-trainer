@@ -73,3 +73,7 @@ sidebar:
 | Servicemodell beschreiben | „Beschreiben Sie IaaS." |
 | Vor-/Nachteile | „Nennen Sie je 2 Vor- und Nachteile der Private Cloud gegenüber On-Premises." |
 | Datenschutzrisiken | „Nennen Sie 3 Datenschutzrisiken bei extern gehosteten Lösungen." |
+
+---
+<div class="kdm-practice" data-topic="p12/cloud-servicemodelle"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

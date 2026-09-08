@@ -80,3 +80,7 @@ Einzelvertragliche Regelungen sind **nur zulässig**, wenn sie für den Arbeitne
 | Reihenfolge | TV kündigen → Verhandlungen → Scheitern → Schlichtung → Urabstimmung → Streik |
 | Allgemeinverbindlich | Gilt dann für alle Branchenarbeitnehmer |
 | Betriebsvereinbarung | AG + BR, nur ein Betrieb |
+
+---
+<div class="kdm-practice" data-topic="wiso/tarifvertrag"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>
