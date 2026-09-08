@@ -7,112 +7,435 @@ sidebar:
     variant: note
 ---
 
-## 1. Schutzziele der IT-Sicherheit (CIA)
+## Worum geht es bei IT-Sicherheit?
 
-| Schutzziel | Bedeutung | Verletzungsbeispiel |
+IT-Sicherheit soll Systeme, Daten und Geschäftsprozesse vor Schäden schützen. Dabei geht es nicht nur um Hackerangriffe. Auch Fehlbedienung, technische Defekte oder falsche Berechtigungen können Sicherheitsprobleme verursachen.
+
+Für Prüfungsaufgaben ist wichtig, dass du nicht nur Maßnahmen aufzählst, sondern verstehst, **welches Risiko durch welche Maßnahme reduziert wird**.
+
+Beispiel:
+
+- Verschlüsselung schützt vor unbefugtem Mitlesen.
+- Backups helfen bei Datenverlust.
+- 2FA reduziert das Risiko gestohlener Passwörter.
+- Schulungen reduzieren menschliche Fehler und Phishing-Erfolge.
+
+---
+
+## 1. Die Schutzziele der IT-Sicherheit
+
+Die drei klassischen Schutzziele werden oft als **CIA-Triade** bezeichnet.
+
+### Vertraulichkeit — Confidentiality
+
+Daten dürfen nur von berechtigten Personen eingesehen werden.
+
+Beispiel:
+
+Ein Mitarbeiter kann auf Gehaltsdaten zugreifen, obwohl er dafür keine Berechtigung besitzt.
+
+Mögliche Schutzmaßnahmen:
+
+- Berechtigungskonzepte
+- Verschlüsselung
+- Authentifizierung
+- Need-to-know-Prinzip
+
+### Integrität — Integrity
+
+Daten und Systeme dürfen nicht unbemerkt oder unberechtigt verändert werden.
+
+Beispiel:
+
+Ein Angreifer ändert Kontodaten in einer Überweisung.
+
+Mögliche Schutzmaßnahmen:
+
+- digitale Signaturen
+- Hashwerte
+- Zugriffsschutz
+- Protokollierung
+
+### Verfügbarkeit — Availability
+
+Systeme und Daten müssen dann nutzbar sein, wenn sie benötigt werden.
+
+Beispiel:
+
+Ein DDoS-Angriff legt einen Onlineshop lahm.
+
+Mögliche Schutzmaßnahmen:
+
+- Redundanz
+- Backups
+- Notfallkonzepte
+- Lastverteilung
+- Schutz vor DDoS
+
+### Authentizität
+
+Authentizität bedeutet, dass die Echtheit einer Person, Nachricht oder Quelle überprüfbar ist.
+
+Beispiel:
+
+Eine E-Mail wirkt so, als käme sie vom Geschäftsführer, wurde aber von einem Angreifer gefälscht.
+
+| Schutzziel | Leitfrage |
+|---|---|
+| **Vertraulichkeit** | Wer darf die Information sehen? |
+| **Integrität** | Ist die Information unverändert und korrekt? |
+| **Verfügbarkeit** | Ist das System erreichbar, wenn es gebraucht wird? |
+| **Authentizität** | Ist die Identität bzw. Herkunft echt? |
+
+### Prüfungslogik
+
+Wenn du ein Beispiel einem Schutzziel zuordnen sollst, frage dich, **was genau verletzt wurde**: Zugriff, Veränderung, Ausfall oder Echtheit.
+
+---
+
+## 2. Authentifizierung und Zwei-Faktor-Authentifizierung
+
+Authentifizierung prüft, ob eine Person wirklich diejenige ist, für die sie sich ausgibt.
+
+Dafür gibt es drei klassische Faktorgruppen.
+
+### Wissen
+
+Etwas, das man weiß.
+
+Beispiele:
+
+- Passwort
+- PIN
+
+### Besitz
+
+Etwas, das man besitzt.
+
+Beispiele:
+
+- Smartphone
+- Smartcard
+- Hardware-Token
+
+### Biometrie
+
+Etwas, das man ist.
+
+Beispiele:
+
+- Fingerabdruck
+- Gesicht
+- Iris
+
+### Wann ist es echte 2FA?
+
+Zwei-Faktor-Authentifizierung bedeutet, dass **zwei unterschiedliche Faktorarten** kombiniert werden.
+
+Beispiel:
+
+- Passwort = Wissen
+- OTP auf Smartphone = Besitz
+
+Das ist echte 2FA.
+
+Zwei verschiedene Passwörter wären dagegen keine echte Zwei-Faktor-Authentifizierung, weil beide zum Faktor „Wissen“ gehören.
+
+> **Merksatz:** Zwei Faktoren = zwei verschiedene Kategorien.
+
+### Warum hilft 2FA?
+
+Wenn ein Passwort durch Phishing gestohlen wird, fehlt dem Angreifer noch der zweite Faktor. Dadurch wird ein einzelnes kompromittiertes Passwort weniger gefährlich.
+
+---
+
+## 3. Symmetrische und asymmetrische Verschlüsselung
+
+### Symmetrische Verschlüsselung
+
+Bei symmetrischer Verschlüsselung wird derselbe Schlüssel zum Ver- und Entschlüsseln verwendet.
+
+```text
+Sender -- gemeinsamer Schlüssel --> verschlüsselte Daten
+Empfänger -- derselbe Schlüssel --> Klartext
+```
+
+Vorteil:
+
+- schnell und effizient
+
+Problem:
+
+- der gemeinsame Schlüssel muss sicher ausgetauscht werden
+
+### Asymmetrische Verschlüsselung
+
+Hier gibt es ein Schlüsselpaar:
+
+- **Public Key** — darf öffentlich sein
+- **Private Key** — bleibt geheim
+
+Wenn eine Nachricht mit dem Public Key des Empfängers verschlüsselt wird, kann sie mit dem zugehörigen Private Key entschlüsselt werden.
+
+### Schritt für Schritt
+
+1. Empfänger erzeugt Public und Private Key.
+2. Public Key wird verteilt.
+3. Sender verschlüsselt die Nachricht mit dem Public Key.
+4. Die verschlüsselte Nachricht wird übertragen.
+5. Empfänger entschlüsselt sie mit seinem Private Key.
+
+### Warum nutzt man hybride Verschlüsselung?
+
+Asymmetrische Verfahren sind vergleichsweise rechenintensiv. Deshalb werden in der Praxis oft beide Verfahren kombiniert:
+
+1. asymmetrisch: sicheren Sitzungsschlüssel austauschen,
+2. symmetrisch: große Datenmengen schnell verschlüsseln.
+
+Das nennt man **hybride Verschlüsselung**.
+
+---
+
+## 4. Hashing und Verschlüsselung unterscheiden
+
+Diese Begriffe werden häufig verwechselt.
+
+### Verschlüsselung
+
+Ziel: Daten geheim halten.
+
+Verschlüsselte Daten sollen mit dem passenden Schlüssel wieder entschlüsselt werden können.
+
+### Hashing
+
+Ein Hashwert ist eine Art digitaler Fingerabdruck einer Datenmenge.
+
+Eigenschaften:
+
+- gleiche Eingabe → gleicher Hashwert
+- kleine Änderung → anderer Hashwert
+- Hashing ist grundsätzlich nicht als „Rückwärtsentschlüsselung“ gedacht
+
+Anwendung:
+
+- Integritätsprüfung
+- Passwortspeicherung mit geeigneten Passwort-Hashverfahren
+
+### Beispiel
+
+Eine heruntergeladene Datei hat einen veröffentlichten Hashwert. Nach dem Download wird der Hash erneut berechnet. Stimmen beide Werte überein, spricht das dafür, dass die Datei nicht verändert wurde.
+
+---
+
+## 5. Phishing und Social Engineering
+
+### Social Engineering
+
+Social Engineering nutzt menschliche Schwächen statt ausschließlich technische Schwachstellen.
+
+Der Angreifer versucht zum Beispiel, Vertrauen, Angst oder Zeitdruck auszunutzen.
+
+### Phishing
+
+Phishing ist eine Form von Social Engineering. Dabei sollen Nutzer über gefälschte Nachrichten oder Webseiten zur Preisgabe sensibler Informationen gebracht werden.
+
+Typische Merkmale:
+
+- künstlicher Zeitdruck
+- ungewöhnliche Absenderadresse
+- Link zu einer fremden Domain
+- unerwartete Anhänge
+- Aufforderung zur Eingabe von Zugangsdaten
+- ungewöhnliche Sprache oder Gestaltung
+
+### Beispiel
+
+Eine E-Mail behauptet:
+
+> „Ihr Konto wird in 30 Minuten gesperrt. Melden Sie sich sofort über diesen Link an.“
+
+Der Link führt zu einer gefälschten Login-Seite.
+
+### Schutzmaßnahmen
+
+- Absender und Domain prüfen
+- Links vor dem Öffnen kontrollieren
+- 2FA verwenden
+- Mitarbeiterschulungen
+- technische E-Mail-Filter
+- verdächtige Nachrichten melden
+
+---
+
+## 6. Ransomware
+
+**Ransomware** ist Schadsoftware, die häufig Daten verschlüsselt oder Systeme blockiert und anschließend Lösegeld fordert.
+
+### Typischer Ablauf
+
+1. Angreifer gelangt ins System, z. B. über Phishing oder ungepatchte Software.
+2. Schadsoftware breitet sich aus.
+3. Dateien oder Systeme werden verschlüsselt.
+4. Betrieb wird gestört.
+5. Lösegeldforderung erscheint.
+
+### Schutzmaßnahmen
+
+- regelmäßige Patches
+- restriktive Berechtigungen
+- Endpoint-Schutz
+- Netzwerksegmentierung
+- Awareness-Schulungen
+- getestete Backups
+- Offline- oder anderweitig geschützte Sicherungen
+
+> **Prüfungstipp:** „Backup vorhanden“ reicht nicht immer als Antwort. Ein Backup, das dieselbe Ransomware ebenfalls verschlüsselt, hilft wenig. Die Sicherung muss so gestaltet sein, dass sie im Ernstfall verfügbar bleibt.
+
+---
+
+## 7. Incident Response
+
+Ein **Incident Response Plan** beschreibt, wie ein Unternehmen auf Sicherheitsvorfälle reagiert.
+
+Typische Phasen:
+
+### 1. Erkennen
+
+- Vorfall feststellen
+- Umfang bewerten
+- Verantwortliche informieren
+
+### 2. Eindämmen
+
+- betroffene Systeme isolieren
+- weitere Ausbreitung verhindern
+
+### 3. Beseitigen
+
+- Schadsoftware entfernen
+- Sicherheitslücke schließen
+- kompromittierte Zugänge sperren
+
+### 4. Wiederherstellen
+
+- Systeme aus sauberen Backups wiederherstellen
+- Funktionen prüfen
+- überwachen, ob der Angriff erneut auftritt
+
+### 5. Nachbereitung
+
+- Ursache analysieren
+- Lessons Learned dokumentieren
+- Maßnahmen verbessern
+
+Ein IRP enthält außerdem typischerweise:
+
+- Rollen und Verantwortlichkeiten
+- Kontaktlisten
+- Eskalationswege
+- Kommunikationsplan
+- Dokumentationsvorgaben
+
+---
+
+## 8. ISMS — Informationssicherheits-Managementsystem
+
+Ein **ISMS** ist kein einzelnes Sicherheitsprodukt, sondern ein systematisches Managementsystem für Informationssicherheit.
+
+Es hilft einem Unternehmen dabei:
+
+- Risiken zu erkennen,
+- Schutzmaßnahmen auszuwählen,
+- Verantwortlichkeiten festzulegen,
+- Wirksamkeit zu überprüfen,
+- Verbesserungen kontinuierlich umzusetzen.
+
+### Typischer Ablauf
+
+1. Geltungsbereich festlegen.
+2. Werte und Risiken analysieren.
+3. Schutzmaßnahmen auswählen.
+4. Maßnahmen umsetzen.
+5. Wirksamkeit prüfen.
+6. Verbesserungen einleiten.
+
+ISO/IEC 27001 ist eine bekannte internationale Norm für Informationssicherheits-Managementsysteme.
+
+### ISB und DSB unterscheiden
+
+**ISB — Informationssicherheitsbeauftragter:** Fokus auf Informationssicherheit insgesamt.
+
+**DSB — Datenschutzbeauftragter:** Fokus auf den Schutz personenbezogener Daten und Datenschutzrecht.
+
+Beide Themen überschneiden sich, sind aber nicht identisch.
+
+---
+
+## 9. Berechtigungen und Least Privilege
+
+Ein wichtiges Sicherheitsprinzip ist **Least Privilege**.
+
+Das bedeutet:
+
+> Jeder Nutzer erhält nur die Rechte, die er für seine Aufgabe tatsächlich benötigt.
+
+Beispiel:
+
+Ein Praktikant braucht Leserechte auf bestimmte Dokumente, aber keine Administratorrechte auf dem Server.
+
+Vorteile:
+
+- geringerer Schaden bei kompromittierten Konten
+- weniger Fehlbedienung
+- bessere Trennung von Verantwortlichkeiten
+
+---
+
+## 10. Glasfaser-Anschlussarten
+
+Die Abkürzungen unterscheiden sich danach, wie weit die Glasfaser bis zum Nutzer reicht.
+
+| Typ | Glasfaser bis... | Reststrecke |
 |---|---|---|
-| **Vertraulichkeit** (Confidentiality) | Daten nur für Berechtigte zugänglich | Unbefugter liest Übertragung mit |
-| **Integrität** (Integrity) | Daten dürfen nicht unbemerkt verändert werden | Kundendaten werden gefälscht |
-| **Verfügbarkeit** (Availability) | Systeme und Daten sind zugänglich wenn nötig | DDoS-Angriff legt Server lahm |
-| **Authentizität** | Echtheit und Herkunft sind nachweisbar | Gefälschter Absender in E-Mail |
+| **FTTC** | Verteilerkasten | meist Kupfer bis zum Gebäude |
+| **FTTB** | Gebäude | interne Gebäudeverkabelung kann noch Kupfer sein |
+| **FTTH** | Wohnung/Hausanschluss | Glasfaser bis zum Nutzeranschluss |
+| **FTTP** | Grundstück/Gebäude | Sammelbegriff für Glasfaser bis zum Standort |
+
+### Logik
+
+Je näher die Glasfaser am Endgerät endet, desto kleiner wird die kupferbasierte Reststrecke.
 
 ---
 
-## 2. Zwei-Faktor-Authentifizierung (2FA)
+## 11. Sicherheitsmaßnahmen einem Risiko zuordnen
 
-**Drei Faktoren:**
+Prüfungsaufgaben sind oft szenariobasiert.
 
-| Faktor | Beschreibung | Beispiele |
-|---|---|---|
-| **Wissen** | Etwas, das man weiß | Passwort, PIN, Sicherheitsfrage |
-| **Besitz** | Etwas, das man hat | Smartphone (OTP-App), Hardware-Token, Smartcard |
-| **Biometrie** | Etwas, das man ist | Fingerabdruck, Gesichtserkennung, Iris-Scan |
+Beispiel:
 
-**Warum 2FA?**
-Passwörter können gestohlen werden (Phishing, Datenpanne). Mit 2FA ist der Account auch bei bekanntem Passwort geschützt.
+> Mitarbeiter verwenden nur Passwörter. Mehrere Konten wurden nach Phishing übernommen.
 
----
+Mögliche Maßnahmen:
 
-## 3. Asymmetrische Verschlüsselung (5 Schritte)
+- 2FA einführen → reduziert Risiko bei gestohlenen Passwörtern
+- Awareness-Schulung → reduziert Phishing-Erfolg
+- E-Mail-Filter → blockiert einen Teil verdächtiger Nachrichten
 
-1. Empfänger erzeugt **Public Key + Private Key** (Schlüsselpaar)
-2. Empfänger übermittelt **Public Key** an Versender (öffentlich bekannt)
-3. Versender verschlüsselt Nachricht mit dem **Public Key**
-4. Versender sendet verschlüsselte Nachricht
-5. Empfänger entschlüsselt mit dem **Private Key** (nur er kennt ihn)
-
-> **Prinzip:** Was mit Public Key verschlüsselt wird, kann nur mit Private Key entschlüsselt werden.
-
-**Nachteil:** Rechenintensiv und langsam → in der Praxis oft **hybride Verschlüsselung** (asymmetrisch für Schlüsselaustausch, symmetrisch für Datenverschlüsselung).
+Eine gute Antwort nennt also **Maßnahme + Wirkung**.
 
 ---
 
-## 4. Angriffsmethoden
+## Kurz zusammengefasst
 
-### Ransomware:
-Schadsoftware, die Daten verschlüsselt und Lösegeld fordert.
-- Verbreitung: E-Mail-Anhänge, kompromittierte Webseiten, USB-Sticks
-- Schutz: Backups (offline!), Patches, Endpoint-Schutz, Nutzer schulen
-
-### Phishing:
-Täuschung zum Erhalt von Zugangsdaten durch gefälschte E-Mails/Webseiten.
-
-**Erkennungsmerkmale:**
-- Dringlichkeitsgefühl ("Ihr Konto wird gesperrt!")
-- Unbekannte/verdächtige Absenderadresse
-- Link führt auf fremde Domain
-- Grammatikfehler, ungewöhnliche Formatierung
-- Aufforderung, Passwort/Daten einzugeben
-
-**Schutz:** Absender prüfen, Links hovern (Ziel-URL prüfen), 2FA, Awareness-Schulungen
-
-### Social Engineering:
-Manipulation von Menschen, um an vertrauliche Informationen zu gelangen.
-- Methoden: Phishing, Pretexting (falsche Identität), Tailgating (physischer Zugang)
-
----
-
-## 5. Incident Response Plan
-
-Inhalte eines IRP:
-- Verantwortlichkeiten + Eskalationspfade
-- Kontaktliste (intern + extern: BSI, IT-Dienstleister, Strafverfolgung)
-- **Sofortmaßnahmen** zur Eindämmung (Systeme isolieren)
-- Kommunikationsplan (intern/extern)
-- Wiederherstellungsverfahren (Backups, Recovery)
-- Dokumentationspflichten (für spätere Analyse)
-- Post-Incident-Review (was lief schief?)
-
----
-
-## 6. ISMS — Informationssicherheits-Managementsystem
-
-**ISO 27001:** Internationale Norm für ISMS.
-
-**Aufbauschritte (S22):**
-1. Scope definieren (was soll geschützt werden?)
-2. Risikoanalyse durchführen
-3. Sicherheitsmaßnahmen (Controls) auswählen
-4. Maßnahmen implementieren
-5. Überwachen, messen, verbessern (PDCA-Zyklus)
-
-**ISB vs. DSB:**
-
-| | ISB (Informationssicherheitsbeauftragter) | DSB (Datenschutzbeauftragter) |
-|---|---|---|
-| **Ziel** | IT-Sicherheit des Unternehmens | Schutz personenbezogener Daten |
-| **Rechtsgrundlage** | ISO 27001, IT-Grundschutz (BSI) | DSGVO |
-
----
-
-## 7. Glasfaser-Anschlussarten (W24)
-
-| Typ | Glasfaser bis... | Letzte Meile |
-|---|---|---|
-| **FTTB** (Fiber to the Building) | Gebäude | Kupfer im Gebäude |
-| **FTTC** (Fiber to the Cabinet) | Verteilerkasten | Kupfer bis Haus (VDSL) |
-| **FTTH** (Fiber to the Home) | Direkt in die Wohnung | Vollständig Glasfaser |
-| **FTTP** (Fiber to the Premises) | Gebäude/Grundstück | Vollständig Glasfaser |
+- Die wichtigsten Schutzziele sind **Vertraulichkeit, Integrität und Verfügbarkeit**.
+- 2FA kombiniert **zwei verschiedene Faktorarten**.
+- Symmetrische Verschlüsselung ist schnell, asymmetrische erleichtert sicheren Schlüsselaustausch.
+- Hashing dient besonders der Integritätsprüfung und ist nicht dasselbe wie Verschlüsselung.
+- Phishing nutzt Täuschung, Ransomware verschlüsselt oder blockiert Daten/Systeme.
+- Ein Incident Response Plan strukturiert die Reaktion auf Sicherheitsvorfälle.
+- Ein ISMS organisiert Informationssicherheit systematisch.
+- Least Privilege reduziert unnötige Berechtigungen.
 
 ---
 
@@ -120,11 +443,14 @@ Inhalte eines IRP:
 
 | Aufgabentyp | Beispielformulierung |
 |---|---|
-| Schutzziele | „Nennen Sie 3 Schutzziele der IT-Sicherheit und je ein Verletzungsbeispiel." |
-| 2FA | „Erläutern Sie 2FA. Nennen Sie 3 Faktoren und eine Umsetzungsmöglichkeit." |
-| Verschlüsselung | „Beschreiben Sie asymmetrische Verschlüsselung in 5 Schritten." |
-| Ransomware | „Was ist Ransomware? Nennen Sie 2 Schutzmaßnahmen." |
-| IRP | „Welche Inhalte sollte ein Incident Response Plan enthalten?" |
+| Schutzziele | „Nennen Sie 3 Schutzziele und je ein Beispiel für eine Verletzung.“ |
+| 2FA | „Erläutern Sie 2FA und nennen Sie geeignete Faktorarten.“ |
+| Verschlüsselung | „Beschreiben Sie asymmetrische Verschlüsselung in mehreren Schritten.“ |
+| Hashing | „Erläutern Sie den Unterschied zwischen Hashing und Verschlüsselung.“ |
+| Phishing | „Nennen Sie Merkmale einer Phishing-Mail und geeignete Schutzmaßnahmen.“ |
+| Ransomware | „Beschreiben Sie Ransomware und nennen Sie Schutzmaßnahmen.“ |
+| Incident Response | „Nennen Sie wesentliche Schritte nach einem Sicherheitsvorfall.“ |
+| ISMS | „Erläutern Sie den Zweck eines ISMS.“ |
 
 ---
 <div class="kdm-practice" data-topic="p12/it-sicherheit"></div>
