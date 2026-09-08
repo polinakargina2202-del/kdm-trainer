@@ -47,3 +47,14 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+
+## Interaktive Erweiterungen
+
+Diese Version enthält zusätzlich:
+
+- Wissenschecks am Ende aller 24 Fachthemen (Single-/Multiple-Choice, Zuordnung, Reihenfolge und Rechenaufgaben)
+- interaktive Rechentrainer mit live aktualisiertem Rechenweg und Umstellungsvarianten
+- eine Prüfungssimulation für §12, §13 und §14/WiSo, einzeln oder als Gesamtprüfung
+- lokale Lernstands- und Schwachstellenanalyse im Browser (`localStorage`)
+
+Die Logik liegt in `public/trainer/`, die Einbindung erfolgt am Ende der jeweiligen Markdown-Themenseiten.

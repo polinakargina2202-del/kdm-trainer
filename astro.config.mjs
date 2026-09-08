@@ -19,6 +19,10 @@ export default defineConfig({
           slug: 'index',
         },
         {
+          label: '🧪 Prüfungssimulation',
+          slug: 'pruefungssimulation',
+        },
+        {
           label: '§12 Digitales Geschäftsmodell',
           collapsed: false,
           items: [
