@@ -109,3 +109,7 @@ Voraussetzungen zum Ausbilder:
 | Weiterbeschäftigung | → unbefristetes Arbeitsverhältnis (§ 24 BBiG) |
 | Ausbilder-Voraussetzung | Fachliche + persönliche Eignung |
 | Berichtsheft-Zweck | Dokumentation der Ausbildungsinhalte |
+
+---
+<div class="kdm-practice" data-topic="wiso/bbig"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

@@ -118,3 +118,7 @@ Ein Debugger ist ein Werkzeug, das Entwicklern hilft, Fehler im Code zur Laufzei
 | Unittests | „Nennen Sie 2 wesentliche Merkmale von Unittests." |
 | Schreibtischtest | „Führen Sie einen Schreibtischtest für den folgenden Pseudocode durch." |
 | Debugger | „Erläutern Sie den Zweck eines Debuggers. Nennen Sie 3 Funktionen." |
+
+---
+<div class="kdm-practice" data-topic="p12/softwaretesting"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

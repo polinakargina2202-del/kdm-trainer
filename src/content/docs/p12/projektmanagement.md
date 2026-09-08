@@ -189,3 +189,7 @@ Kriterien für die Auswahl eines Auftragnehmers:
 | Risikoanalyse | „Ergänzen Sie die Tabelle um je eine Ursache, ein Risiko und eine Gegenmaßnahme." |
 | Lastenheft | „Nennen Sie 4 mögliche Inhalte eines Lastenhefts." |
 | Scrum | „Erläutern Sie die Aufgabe des Product Owners." |
+
+---
+<div class="kdm-practice" data-topic="p12/projektmanagement"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

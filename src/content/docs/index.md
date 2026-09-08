@@ -15,6 +15,10 @@ hero:
     - text: §14 WiSo
       link: /kdm-trainer/wiso/
       icon: right-arrow
+    - text: 🧪 Prüfungssimulation
+      link: /kdm-trainer/pruefungssimulation/
+      icon: right-arrow
+      variant: primary
 ---
 
 ## Prüfungsstruktur AP Teil 2

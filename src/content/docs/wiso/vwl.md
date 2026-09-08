@@ -106,3 +106,7 @@ Negative BIP-Wachstumsraten + steigende Arbeitslosigkeit → **Abschwung / Rezes
 | Sektor zuordnen | IT-Beratung → Tertiär |
 | Marktform | 2 Anbieter → Oligopol |
 | Soziale MW | Wettbewerb schützen + sozialer Ausgleich |
+
+---
+<div class="kdm-practice" data-topic="wiso/vwl"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

@@ -125,3 +125,7 @@ Inhalte eines IRP:
 | Verschlüsselung | „Beschreiben Sie asymmetrische Verschlüsselung in 5 Schritten." |
 | Ransomware | „Was ist Ransomware? Nennen Sie 2 Schutzmaßnahmen." |
 | IRP | „Welche Inhalte sollte ein Incident Response Plan enthalten?" |
+
+---
+<div class="kdm-practice" data-topic="p12/it-sicherheit"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

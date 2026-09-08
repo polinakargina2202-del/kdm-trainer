@@ -176,3 +176,7 @@ Ein SLA (Service Level Agreement) regelt als Bestandteil eines Werkvertrags:
 | Rahmenvertrag | „Nennen Sie 2 Vorteile eines Rahmenvertrags." |
 | Subunternehmer | „Nennen Sie 4 Auswahlkriterien für einen Subunternehmer." |
 | Qualitätskontrolle | „Wie kann die Qualität eines Subunternehmers kontrolliert werden?" |
+
+---
+<div class="kdm-practice" data-topic="p13/vertragsrecht"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

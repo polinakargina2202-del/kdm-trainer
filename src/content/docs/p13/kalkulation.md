@@ -154,3 +154,8 @@ Materialeinzelkosten
 | Kostenarten | „Was sind Einzelkosten? Nennen Sie ein Beispiel." |
 | BAB | „Vervollständigen Sie den Betriebsabrechnungsbogen." |
 | GKZ berechnen | „Berechnen Sie den Materialgemeinkosten-Zuschlagssatz." |
+
+---
+<div class="kdm-calculators" data-calculators="breakeven,gkz,nwa,marketshare"></div>
+<div class="kdm-practice" data-topic="p13/kalkulation"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

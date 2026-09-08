@@ -84,3 +84,8 @@ AN-Beitrag = Bruttogehalt × (Beitragssatz / 2)
 | KV-Beitrag berechnen | Brutto × (Beitragssatz/2) |
 | Generationenvertrag | Aktive finanzieren Rentner (Umlageverfahren) |
 | BBG | Über dieser Grenze kein weiterer Beitrag |
+
+---
+<div class="kdm-calculators" data-calculators="social"></div>
+<div class="kdm-practice" data-topic="wiso/sozialversicherung"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

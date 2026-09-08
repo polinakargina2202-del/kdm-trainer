@@ -85,3 +85,7 @@ sidebar:
 | Welches Merkmal nicht? | Art des Abschlusses |
 | Folge bei Verstoß | Schadensersatzanspruch |
 | Charta der Vielfalt | Betrifft NICHT: Ausbildungsstand |
+
+---
+<div class="kdm-practice" data-topic="wiso/agg"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

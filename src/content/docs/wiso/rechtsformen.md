@@ -98,3 +98,8 @@ EKR = (Gewinn / Eigenkapital) × 100%
 | Wer führt HR? | Amtsgericht |
 | OHG Haftung | Alle Gesellschafter unbeschränkt |
 | Wirtschaftlichkeit | Auftrag mit höchstem Ertrag/Aufwand-Verhältnis |
+
+---
+<div class="kdm-calculators" data-calculators="profitshare,ratio"></div>
+<div class="kdm-practice" data-topic="wiso/rechtsformen"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

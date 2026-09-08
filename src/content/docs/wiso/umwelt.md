@@ -120,3 +120,7 @@ sidebar:
 | Emissionen | Auch Schall und Strahlung (nicht nur Abgase!) |
 | Rettungszeichen Farbe | Grün |
 | Brandfall Priorität | Alarm → Evakuierung → Löschen |
+
+---
+<div class="kdm-practice" data-topic="wiso/umwelt"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

@@ -82,3 +82,8 @@ Verbund mehrerer Festplatten zur Steigerung von **Verfügbarkeit** und/oder **Pe
 | RAID berechnen | „Wie viele TB sind bei RAID 10 mit 4 × 4 TB nutzbar?" |
 | Backup vergleichen | „Erläutern Sie den Unterschied zwischen Vollbackup, differenziellem und inkrementellen Backup." |
 | Datenverlust-Szenario | „Nennen Sie 2 Szenarien, in denen trotz RAID Datenverlust möglich ist." |
+
+---
+<div class="kdm-calculators" data-calculators="raid"></div>
+<div class="kdm-practice" data-topic="p12/raid-backup"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

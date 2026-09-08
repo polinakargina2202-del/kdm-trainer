@@ -83,3 +83,7 @@ Im Organigramm erkennt man:
 | Mehrliniensystem | Vorteil: kurze Wege · Nachteil: uneinheitliche Führung |
 | Zielkonflikt | Personalkosten sparen ↔ Arbeitsplätze sichern |
 | Ökologisches Ziel | CO₂-Reduktion, Photovoltaik, Recycling |
+
+---
+<div class="kdm-practice" data-topic="wiso/organisation"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>

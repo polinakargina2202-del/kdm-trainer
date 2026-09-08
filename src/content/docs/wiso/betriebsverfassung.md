@@ -112,3 +112,8 @@ sidebar:
 | Betriebsvereinbarung | Zwischen Geschäftsführung und Betriebsrat |
 | JAV-Rechtsgrundlage | BetrVG |
 | Betriebsversammlung | Alle AN, gilt als Arbeitszeit |
+
+---
+<div class="kdm-calculators" data-calculators="brsize"></div>
+<div class="kdm-practice" data-topic="wiso/betriebsverfassung"></div>
+<script type="module" src="/kdm-trainer/trainer/trainer.js"></script>
