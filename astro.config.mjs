@@ -13,6 +13,15 @@ export default defineConfig({
       locales: { root: { label: 'Deutsch', lang: 'de' } },
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/polinakargina2202-del/kdm-trainer' }],
       customCss: ['./src/styles/custom.css'],
+      head: [
+        {
+          tag: 'script',
+          attrs: {
+            src: '/kdm-trainer/visuals/visuals.js',
+            defer: true,
+          },
+        },
+      ],
       sidebar: [
         {
           label: '🏠 Start',
