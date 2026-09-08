@@ -7,179 +7,597 @@ sidebar:
     variant: danger
 ---
 
-> **Prüfungsrelevanz:** In JEDER Session vorhanden. SQL-Abfragen müssen fehlerlos geschrieben werden können.
+> **Prüfungsrelevanz:** In jeder analysierten Session vorhanden. Besonders wichtig sind das Verständnis von Tabellenbeziehungen, Schlüsselbegriffen und SQL-Abfragen.
 
-## 1. Stammdaten vs. Bewegungsdaten
+## Worum geht es bei Datenbanken?
+
+Eine Datenbank speichert Informationen so, dass sie strukturiert abgelegt, gesucht, verändert und miteinander verknüpft werden können.
+
+Statt alle Informationen in einer einzigen großen Tabelle zu speichern, werden Daten häufig auf mehrere logisch zusammengehörige Tabellen verteilt. Dadurch lassen sich Redundanzen reduzieren und Beziehungen sauber abbilden.
+
+Beispiel: In einem Reservierungssystem könnten Kunden, Restaurants, Tische und Buchungen getrennt gespeichert werden. Eine Buchung verweist dann über Schlüssel auf den passenden Kunden und Tisch.
+
+---
+
+## 1. Stammdaten und Bewegungsdaten
+
+### Stammdaten
+
+**Stammdaten** beschreiben grundlegende Eigenschaften eines Objekts und ändern sich vergleichsweise selten.
+
+Beispiele:
+
+- Kunden-ID
+- Name
+- E-Mail-Adresse
+- Artikelnummer
+- Fahrzeugmodell
+
+### Bewegungsdaten
+
+**Bewegungsdaten** entstehen durch laufende Geschäftsprozesse.
+
+Beispiele:
+
+- Bestellung
+- Buchung
+- Zahlung
+- Fahrt
+- Lagerbewegung
+
+### Beispiel
+
+Ein Kunde mit Kunden-ID 4711 ist ein Stammdatensatz. Wenn dieser Kunde heute eine Reservierung für 18:00 Uhr anlegt, ist diese Reservierung ein Bewegungsdatensatz.
 
 | | Stammdaten | Bewegungsdaten |
 |---|---|---|
-| **Definition** | Grundlegende Daten, die sich selten ändern | Entstehen durch den laufenden Geschäftsprozess |
-| **Gültigkeit** | Langfristig | Zeitlich begrenzt |
-| **Beispiele (Reservierungssystem)** | Kunden-ID, Name, E-Mail, Restaurantname, Tischanzahl | Buchungsdatum, Reservierungszeit, Anzahl Personen, Essensbestellung |
-| **Beispiele (Fuhrpark)** | Fahrzeug-ID, Kennzeichen, Modell, Baujahr | Fahrtdatum, Kilometerstand, Fahrer, Tankfüllung |
+| **Charakter** | Grunddaten | Prozessdaten |
+| **Änderung** | Eher selten | Entstehen laufend |
+| **Beispiel** | Kunde, Artikel, Fahrzeug | Bestellung, Buchung, Fahrt |
+
+### Prüfungslogik
+
+Nenne bei Aufgaben möglichst Beispiele direkt aus dem beschriebenen Szenario. Das zeigt, dass du nicht nur die Definition kennst, sondern anwenden kannst.
 
 ---
 
-## 2. Relationale Datenbank
+## 2. Relationale Datenbanken
 
-Eine **relationale Datenbank** speichert Daten in Tabellen (Relationen), die durch Schlüsselbeziehungen miteinander verbunden sind.
+Eine **relationale Datenbank** speichert Daten in Tabellen. Tabellen können über Schlüssel miteinander verbunden werden.
 
-**Grundbegriffe:**
+### Grundbegriffe
 
-| Begriff | Erklärung |
-|---|---|
-| **Tabelle (Relation)** | Speichert Datensätze einer Entität |
-| **Primärschlüssel (PK)** | Eindeutiger Bezeichner jedes Datensatzes |
-| **Fremdschlüssel (FK)** | Verweist auf PK einer anderen Tabelle (Beziehung) |
-| **Kardinalität** | Beschreibt die Art der Beziehung (1:1, 1:n, m:n) |
+**Tabelle/Relation:** Sammlung gleichartiger Datensätze.
 
-**Kardinalitäten:**
+**Datensatz/Zeile:** Ein konkretes Objekt, zum Beispiel ein Kunde.
 
-- **1:1** — Ein Mitarbeiter hat genau einen Ausweis
-- **1:n** — Ein Kunde hat mehrere Bestellungen
-- **m:n** — Ein Student belegt mehrere Kurse, ein Kurs hat mehrere Studenten
+**Attribut/Spalte:** Eine Eigenschaft, zum Beispiel Name oder E-Mail.
 
----
+**Primärschlüssel (Primary Key, PK):** Identifiziert einen Datensatz eindeutig.
 
-## 3. Datenbanktypen
+**Fremdschlüssel (Foreign Key, FK):** Verweist auf den Primärschlüssel einer anderen Tabelle.
 
-| Typ | Beschreibung | Geeignet für |
-|---|---|---|
-| **Relationale DB** (SQL) | Tabellen mit festen Schemata | Strukturierte Daten, Transaktionen |
-| **NoSQL (Dokument)** | JSON-ähnliche Dokumente | Flexible Strukturen, Web-Apps |
-| **NoSQL (Key-Value)** | Einfache Schlüssel-Wert-Paare | Caching, Sessions |
-| **Graph-DB** | Knoten und Kanten | Soziale Netzwerke, Empfehlungen |
-| **Spaltenorientiert** | Optimiert für lesende Abfragen | Analytics, Data Warehouse |
+### Beispiel
 
-**Big Data — 3V:**
+```text
+KUNDE
+kunden_id | name
+----------|------
+1         | Anna
+2         | Max
 
-| V | Bedeutung | Beispiel |
-|---|---|---|
-| **Volume** | Sehr große Datenmenge | Petabytes an Sensordaten |
-| **Variety** | Verschiedene Datentypen | Bilder, Videos, Texte, Sensordaten |
-| **Velocity** | Hohe Entstehungsgeschwindigkeit | Echtzeit-Transaktionen |
-
-> Für Big Data → NoSQL ist besser geeignet (horizontale Skalierung, flexible Strukturen)
-
----
-
-## 4. Normalisierung
-
-### Anomalie-Typen (W21, S22):
-
-| Anomalie | Problem |
-|---|---|
-| **Einfügeanomalie** | Datensatz kann nicht eingefügt werden, ohne redundante Daten zu erfassen |
-| **Änderungsanomalie** | Änderung muss an mehreren Stellen erfolgen → Inkonsistenz |
-| **Löschanomalie** | Löschen eines Datensatzes vernichtet ungewollt andere Informationen |
-
-### Normalformen:
-
-| NF | Bedingung | Beispiel-Problem |
-|---|---|---|
-| **1NF** | Keine Wiederholungsgruppen, atomare Werte | Mehrere Telefonnummern in einem Feld |
-| **2NF** | 1NF + volle funktionale Abhängigkeit vom gesamten PK | Attribut hängt nur von Teil-PK ab |
-| **3NF** | 2NF + keine transitiven Abhängigkeiten | PLZ bestimmt Ort, aber PK ist Kunden-ID |
-
-> **Transitive Abhängigkeit:** A → B → C, dabei A = PK. B hängt von A ab, C hängt von B ab — C sollte in eigene Tabelle.
-
----
-
-## 5. Datenmigration
-
-Methoden zur Übertragung von Daten in ein neues System:
-
-| Methode | Beschreibung | Vorteil | Nachteil |
-|---|---|---|---|
-| **Datenbankdump** | Export als SQL/CSV, Import ins neue System | Einfach, schnell | Downtime nötig |
-| **ETL-Prozess** | Extract → Transform → Load | Komplexe Transformationen möglich | Aufwändig zu entwickeln |
-| **Replikation** | Beide Systeme laufen parallel, synchronisiert | Kein Datenverlust, kein Downtime | Hoher Aufwand |
-
----
-
-## 6. SQL — Grundbefehle
-
-### SELECT mit Bedingung:
-
-```sql
--- Alle aktiven Kunden anzeigen
-SELECT * FROM kunde WHERE aktiv = 1;
-
--- Anzahl aktiver Kunden
-SELECT COUNT(*) AS anzahl FROM kunde WHERE aktiv = 1;
-
--- Fahrzeuge nach Baujahr filtern
-SELECT kennzeichen, modell FROM fahrzeug WHERE baujahr < 2020;
+BUCHUNG
+buchung_id | kunden_id | datum
+-----------|-----------|------------
+101        | 1         | 2026-09-10
+102        | 1         | 2026-09-11
 ```
 
-### SELECT mit JOIN:
+In `KUNDE` ist `kunden_id` der Primärschlüssel. In `BUCHUNG` ist `kunden_id` ein Fremdschlüssel.
+
+So weiß die Datenbank, dass beide Buchungen zum Kunden Anna gehören.
+
+---
+
+## 3. Kardinalitäten
+
+Kardinalitäten beschreiben, wie viele Datensätze zweier Tabellen miteinander verbunden sein können.
+
+### 1:1
+
+Ein Datensatz steht genau einem Datensatz gegenüber.
+
+Beispiel: Ein Mitarbeiter hat genau einen persönlichen Dienstausweis.
+
+### 1:n
+
+Ein Datensatz kann mit vielen anderen verbunden sein.
+
+Beispiel: Ein Kunde kann viele Buchungen haben. Jede Buchung gehört aber genau einem Kunden.
+
+### m:n
+
+Viele Datensätze können mit vielen anderen verbunden sein.
+
+Beispiel: Viele Studenten besuchen viele Kurse.
+
+Eine m:n-Beziehung wird in relationalen Datenbanken typischerweise durch eine **Zwischentabelle** aufgelöst.
+
+Beispiel:
+
+```text
+STUDENT            STUDENT_KURS             KURS
+student_id   ←     student_id               kurs_id
+                   kurs_id          →        kurs_id
+```
+
+> **Merksatz:** Bei m:n brauchst du in der Regel eine zusätzliche Zuordnungstabelle.
+
+---
+
+## 4. Primär- und Fremdschlüssel richtig verstehen
+
+### Primärschlüssel
+
+Ein Primärschlüssel muss einen Datensatz eindeutig identifizieren.
+
+Geeignet ist zum Beispiel eine künstlich vergebene Kunden-ID. Ein Nachname ist ungeeignet, weil mehrere Personen gleich heißen können.
+
+### Fremdschlüssel
+
+Ein Fremdschlüssel stellt die Verbindung zwischen Tabellen her.
+
+Beispiel:
+
+```text
+kunde.kunden_id = 15
+buchung.kunden_id = 15
+```
+
+Die Buchung gehört dadurch zum Kunden mit ID 15.
+
+### Referentielle Integrität
+
+**Referentielle Integrität** bedeutet, dass ein Fremdschlüssel nur auf einen tatsächlich vorhandenen Datensatz verweisen darf.
+
+Wenn Kunde 99 nicht existiert, darf eine Buchung nicht einfach `kunden_id = 99` enthalten.
+
+Je nach Datenbank können beim Löschen Regeln definiert werden, zum Beispiel:
+
+- Löschen verhindern, solange abhängige Datensätze existieren
+- abhängige Datensätze mitlöschen (`CASCADE`)
+- Fremdschlüssel auf `NULL` setzen, wenn erlaubt
+
+---
+
+## 5. ER-Modell lesen
+
+Ein **Entity-Relationship-Modell** stellt Entitäten und ihre Beziehungen grafisch dar.
+
+Eine Entität ist zum Beispiel:
+
+- Kunde
+- Buchung
+- Tisch
+- Restaurant
+
+Beispiel:
+
+```text
+KUNDE
+- kunden_id (PK)
+- name
+- email
+
+      1
+      |
+      | hat
+      |
+      n
+
+BUCHUNG
+- buchung_id (PK)
+- datum
+- kunden_id (FK)
+- tisch_id (FK)
+```
+
+In Prüfungsaufgaben musst du oft:
+
+- Primärschlüssel erkennen,
+- Fremdschlüssel ergänzen,
+- Kardinalitäten eintragen,
+- fehlende Tabellen ergänzen.
+
+### Prüfungslogik
+
+Frage dich immer:
+
+1. Welche Objekte gibt es?
+2. Welcher Datensatz muss eindeutig identifizierbar sein?
+3. Welche Tabellen stehen miteinander in Beziehung?
+4. Wo muss der Fremdschlüssel liegen?
+
+Bei 1:n liegt der Fremdschlüssel normalerweise auf der **n-Seite**.
+
+---
+
+## 6. Warum normalisiert man Datenbanken?
+
+Wenn dieselben Informationen mehrfach gespeichert werden, entstehen Redundanzen und Fehlerquellen.
+
+Beispiel einer schlechten Tabelle:
+
+```text
+bestellung_id | kunde | kundeadresse | artikel | artikelpreis
+1             | Anna  | Hafenstr. 1  | Maus    | 25
+2             | Anna  | Hafenstr. 1  | Tastatur| 70
+```
+
+Die Adresse von Anna steht mehrfach in der Tabelle. Zieht Anna um, müsste die Adresse an mehreren Stellen geändert werden.
+
+Normalisierung versucht, solche Wiederholungen systematisch zu reduzieren.
+
+---
+
+## 7. Anomalien
+
+### Änderungsanomalie
+
+Eine Information ist mehrfach gespeichert und wird nicht überall geändert.
+
+Folge: widersprüchliche Daten.
+
+### Einfügeanomalie
+
+Ein Datensatz kann nicht sinnvoll gespeichert werden, ohne unnötige oder noch nicht vorhandene Informationen mitzuspeichern.
+
+### Löschanomalie
+
+Beim Löschen eines Datensatzes gehen unbeabsichtigt andere Informationen verloren.
+
+> **Merksatz:** Redundanz führt zu Pflegeproblemen. Normalisierung reduziert diese Probleme.
+
+---
+
+## 8. Normalformen einfach erklärt
+
+### 1. Normalform (1NF)
+
+Jedes Feld enthält einen **atomaren Einzelwert**.
+
+Nicht gut:
+
+```text
+telefon = "0471-111, 0170-222"
+```
+
+Besser: Telefonnummern getrennt modellieren.
+
+### 2. Normalform (2NF)
+
+Die Tabelle ist in 1NF und jedes Nichtschlüsselattribut hängt vom **gesamten Primärschlüssel** ab.
+
+Das ist besonders bei zusammengesetzten Primärschlüsseln wichtig.
+
+### 3. Normalform (3NF)
+
+Die Tabelle ist in 2NF und Nichtschlüsselattribute hängen nicht voneinander ab.
+
+Beispiel:
+
+```text
+kunden_id → plz → ort
+```
+
+Der Ort hängt eigentlich von der PLZ ab, nicht direkt von der Kunden-ID. PLZ und Ort könnten deshalb sinnvoll separat modelliert werden.
+
+### Prüfungslogik
+
+Du musst Normalisierung nicht nur auswendig lernen. Suche nach:
+
+- mehrfach gespeicherten Informationen,
+- Attributen, die eigentlich zu einem anderen Objekt gehören,
+- Abhängigkeiten zwischen Nichtschlüsselattributen.
+
+---
+
+## 9. Datenbanktypen
+
+Nicht jede Datenbank ist relational.
+
+| Typ | Grundidee | Geeignet für |
+|---|---|---|
+| **Relationale DB** | Tabellen mit festen Beziehungen | Strukturierte Geschäftsdaten, Transaktionen |
+| **Dokumentdatenbank** | Dokumente, oft JSON-ähnlich | Flexible Datenstrukturen |
+| **Key-Value** | Schlüssel → Wert | Caching, Sessions |
+| **Graphdatenbank** | Knoten und Beziehungen | Netzwerke, Empfehlungen |
+| **Spaltenorientiert** | Spaltenoptimierte Speicherung | Analysen großer Datenmengen |
+
+### Big Data und die 3V
+
+- **Volume** = große Datenmenge
+- **Variety** = unterschiedliche Datenarten
+- **Velocity** = hohe Entstehungs- oder Verarbeitungsgeschwindigkeit
+
+Ob SQL oder NoSQL besser geeignet ist, hängt vom Anwendungsfall ab. NoSQL-Systeme können bei sehr flexiblen Strukturen oder starker horizontaler Skalierung Vorteile haben; relationale Systeme bleiben für strukturierte Daten und konsistente Transaktionen sehr wichtig.
+
+---
+
+## 10. Datenmigration
+
+Bei einem Systemwechsel müssen bestehende Daten in das neue System übertragen werden.
+
+### Dump/Export-Import
+
+Daten werden exportiert und anschließend in das neue System importiert.
+
+Vorteil: relativ einfach.
+
+Nachteil: je nach Verfahren kann eine Unterbrechung nötig sein.
+
+### ETL
+
+**Extract → Transform → Load**
+
+1. Daten aus dem Altsystem extrahieren.
+2. Daten bereinigen oder umwandeln.
+3. Daten in das Zielsystem laden.
+
+ETL ist besonders sinnvoll, wenn Datenformate oder Strukturen zwischen Alt- und Neusystem unterschiedlich sind.
+
+### Replikation
+
+Daten werden zwischen Systemen laufend synchronisiert.
+
+Vorteil: Übergang kann mit geringer Unterbrechung erfolgen.
+
+Nachteil: technisch komplexer.
+
+---
+
+# SQL verstehen
+
+SQL ist eine Sprache, mit der relationale Datenbanken abgefragt und verändert werden.
+
+Wichtig ist, nicht nur Befehle auswendig zu lernen, sondern den Aufbau einer Abfrage zu verstehen.
+
+---
+
+## 11. SELECT — Daten lesen
+
+Grundform:
 
 ```sql
--- Alle Buchungen mit Kundenname
-SELECT k.vorname, k.nachname, b.datum, b.uhrzeit
+SELECT spalten
+FROM tabelle
+WHERE bedingung;
+```
+
+Beispiel:
+
+```sql
+SELECT vorname, nachname
+FROM kunde
+WHERE aktiv = 1;
+```
+
+Bedeutung:
+
+1. `FROM kunde` → aus welcher Tabelle?
+2. `WHERE aktiv = 1` → welche Datensätze?
+3. `SELECT vorname, nachname` → welche Spalten sollen angezeigt werden?
+
+### Alle Spalten
+
+```sql
+SELECT *
+FROM kunde;
+```
+
+`*` bedeutet: alle Spalten.
+
+---
+
+## 12. WHERE — Datensätze filtern
+
+Beispiele:
+
+```sql
+SELECT *
+FROM fahrzeug
+WHERE baujahr < 2020;
+```
+
+```sql
+SELECT *
+FROM kunde
+WHERE ort = 'Bremerhaven';
+```
+
+Typische Operatoren:
+
+- `=` gleich
+- `<>` oder `!=` ungleich
+- `<`, `>`, `<=`, `>=`
+- `AND`
+- `OR`
+- `LIKE`
+- `IN`
+- `BETWEEN`
+
+Beispiel:
+
+```sql
+SELECT *
+FROM kunde
+WHERE ort = 'Bremerhaven'
+  AND aktiv = 1;
+```
+
+---
+
+## 13. COUNT, SUM und andere Aggregatfunktionen
+
+Mit Aggregatfunktionen werden mehrere Datensätze zusammengefasst.
+
+```sql
+SELECT COUNT(*) AS anzahl
+FROM kunde
+WHERE aktiv = 1;
+```
+
+Weitere Funktionen:
+
+- `SUM()`
+- `AVG()`
+- `MIN()`
+- `MAX()`
+
+Beispiel:
+
+```sql
+SELECT AVG(preis) AS durchschnittspreis
+FROM artikel;
+```
+
+---
+
+## 14. JOIN — Tabellen verbinden
+
+Ein JOIN verbindet Datensätze aus mehreren Tabellen.
+
+Beispiel:
+
+```sql
+SELECT k.nachname, b.datum
 FROM buchung b
-INNER JOIN kunde k ON b.kunde_id = k.kunden_id;
-
--- Fahrzeuge mit Fahrzeugart, absteigend nach Anzahl
-SELECT fa.bezeichnung, COUNT(*) AS anzahl
-FROM fahrzeug f
-INNER JOIN fz_art fa ON f.fz_art_id = fa.art_id
-GROUP BY fa.bezeichnung
-ORDER BY anzahl DESC;
+INNER JOIN kunde k
+  ON b.kunden_id = k.kunden_id;
 ```
 
-### SELECT mit GROUP BY:
+### Schritt für Schritt
+
+- `buchung b` → Tabelle Buchung erhält Alias `b`
+- `kunde k` → Tabelle Kunde erhält Alias `k`
+- `ON b.kunden_id = k.kunden_id` → definiert die Beziehung
+- `SELECT k.nachname, b.datum` → zeigt Felder aus beiden Tabellen
+
+### INNER JOIN
+
+Zeigt nur Datensätze, bei denen auf beiden Seiten ein passender Eintrag existiert.
+
+### LEFT JOIN
+
+Zeigt alle Datensätze der linken Tabelle, auch wenn rechts kein passender Datensatz existiert.
+
+Beispiel: Alle Kunden anzeigen, auch solche ohne Buchung.
 
 ```sql
--- Bestellungen pro Kunde
-SELECT k.nachname, COUNT(b.id) AS anzahl_buchungen
+SELECT k.nachname, COUNT(b.buchung_id) AS anzahl
 FROM kunde k
-LEFT JOIN buchung b ON k.kunden_id = b.kunde_id
+LEFT JOIN buchung b
+  ON k.kunden_id = b.kunden_id
+GROUP BY k.kunden_id, k.nachname;
+```
+
+---
+
+## 15. GROUP BY
+
+`GROUP BY` fasst Datensätze nach einem Merkmal zusammen.
+
+Beispiel: Anzahl Buchungen je Kunde.
+
+```sql
+SELECT k.nachname, COUNT(b.buchung_id) AS anzahl_buchungen
+FROM kunde k
+LEFT JOIN buchung b
+  ON k.kunden_id = b.kunden_id
 GROUP BY k.kunden_id, k.nachname
 ORDER BY anzahl_buchungen DESC;
 ```
 
-### INSERT INTO:
+### Logik
+
+Ohne `GROUP BY` würde `COUNT()` nur eine Gesamtsumme liefern. Mit `GROUP BY` entsteht eine Summe **pro Gruppe**.
+
+---
+
+## 16. INSERT — neue Daten speichern
 
 ```sql
--- Einzelnen Datensatz einfügen
 INSERT INTO kunde (vorname, nachname, email, aktiv)
 VALUES ('Anna', 'Müller', 'anna@example.com', 1);
+```
 
--- Daten aus alter Tabelle kopieren (neues Attribut = NULL)
+Die Reihenfolge der Werte muss zur Reihenfolge der angegebenen Spalten passen.
+
+### Daten aus einer anderen Tabelle übernehmen
+
+```sql
 INSERT INTO kunde (
-  kunden_id, vorname, nachname, email_adresse,
-  telefonnummer, aktiv, kundenpraeferenz
+  kunden_id,
+  vorname,
+  nachname,
+  email_adresse,
+  kundenpraeferenz
 )
 SELECT
-  id, vorname, nachname, email,
-  telefonnummer, aktiv, NULL
+  id,
+  vorname,
+  nachname,
+  email,
+  NULL
 FROM kunde_alt;
 ```
 
-### UPDATE:
+Hier werden Daten aus `kunde_alt` übernommen. Für das neue Feld `kundenpraeferenz` wird zunächst `NULL` eingetragen.
+
+---
+
+## 17. UPDATE — vorhandene Daten ändern
 
 ```sql
--- Einzelnen Datensatz aktualisieren
 UPDATE fahrzeug
 SET baujahr = 2023
 WHERE id = 4711;
+```
 
--- Alle Datensätze einer Bedingung ändern
+> **Achtung:** Ohne `WHERE` werden alle Datensätze der Tabelle geändert.
+
+Beispiel:
+
+```sql
 UPDATE kunde
 SET aktiv = 0
 WHERE letzte_buchung < '2020-01-01';
 ```
 
-### Weitere nützliche Befehle:
+---
+
+## 18. DELETE — Datensätze löschen
 
 ```sql
--- Tabelle löschen und neu erstellen
-DELETE FROM tabelle WHERE bedingung;
+DELETE FROM kunde
+WHERE kunden_id = 4711;
+```
 
--- Neue Tabelle erstellen
+Auch hier gilt:
+
+> **Ohne `WHERE` werden alle Datensätze gelöscht.**
+
+Die Tabellenstruktur bleibt dabei bestehen.
+
+---
+
+## 19. CREATE TABLE
+
+Mit `CREATE TABLE` wird eine neue Tabelle angelegt.
+
+```sql
 CREATE TABLE tischreservierung (
-  id INT PRIMARY KEY AUTO_INCREMENT,
+  id INT PRIMARY KEY,
   datum DATE NOT NULL,
   uhrzeit TIME,
   tisch_id INT,
@@ -189,38 +607,63 @@ CREATE TABLE tischreservierung (
 );
 ```
 
----
+### Was bedeutet das?
 
-## 7. Referentielle Integrität
-
-> Ein Fremdschlüssel darf **nur einen Wert enthalten**, der als Primärschlüssel in der referenzierten Tabelle existiert.
-
-**Beispiel:**
-- Tabelle `buchung` hat Feld `kunde_id` (FK → Tabelle `kunde`)
-- Eine Buchung für Kunde-ID 99 darf **nicht existieren**, wenn Kunde 99 nicht in `kunde` vorhanden ist
-- Beim Löschen eines Kunden → alle Buchungen dieses Kunden müssen zuerst gelöscht werden (oder Cascade Delete)
+- `id INT PRIMARY KEY` → eindeutige ID
+- `datum DATE NOT NULL` → Datum ist Pflichtfeld
+- `tisch_id` und `kunde_id` → Fremdschlüssel
+- `REFERENCES` → Ziel der Beziehung
 
 ---
 
-## 8. ER-Diagramm lesen und ergänzen
+## 20. Wie gehe ich bei einer SQL-Prüfungsaufgabe vor?
 
-In der Prüfung: Tabellen ergänzen, Kardinalitäten einzeichnen, PK/FK markieren.
+1. **Ausgabe lesen:** Welche Spalten werden verlangt?
+2. **Tabellen bestimmen:** Wo liegen diese Daten?
+3. **Beziehungen prüfen:** Brauche ich einen JOIN?
+4. **Filter markieren:** Gibt es Bedingungen für `WHERE`?
+5. **Aggregation prüfen:** Wird gezählt, summiert oder gruppiert?
+6. **Sortierung prüfen:** Wird eine Reihenfolge verlangt?
 
-**Beispiel — Reservierungssystem:**
+### Beispiel
 
+Aufgabe:
+
+> Geben Sie für alle aktiven Kunden den Nachnamen und die Anzahl ihrer Buchungen aus. Sortieren Sie absteigend nach Anzahl.
+
+Gedankengang:
+
+- Nachname liegt in `kunde`
+- Buchungen liegen in `buchung`
+- Tabellen verbinden → JOIN
+- nur aktive Kunden → WHERE
+- Anzahl → COUNT
+- pro Kunde → GROUP BY
+- absteigend → ORDER BY ... DESC
+
+```sql
+SELECT k.nachname, COUNT(b.buchung_id) AS anzahl
+FROM kunde k
+LEFT JOIN buchung b
+  ON k.kunden_id = b.kunden_id
+WHERE k.aktiv = 1
+GROUP BY k.kunden_id, k.nachname
+ORDER BY anzahl DESC;
 ```
-KUNDE (kunden_id PK, vorname, nachname, email)
-   |
-   | 1:n (ein Kunde hat mehrere Buchungen)
-   |
-BUCHUNG (buchung_id PK, datum, uhrzeit, kunden_id FK, tisch_id FK)
-   |
-   | n:1 (eine Buchung für einen Tisch)
-   |
-TISCH (tisch_id PK, tischnummer, kapazitaet, restaurant_id FK)
-   |
-RESTAURANT (restaurant_id PK, name, adresse, oeffnungszeiten)
-```
+
+---
+
+## Kurz zusammengefasst
+
+- Relationale Datenbanken speichern Daten in **Tabellen**.
+- **PK** identifiziert einen Datensatz, **FK** verbindet Tabellen.
+- Bei **1:n** liegt der Fremdschlüssel normalerweise auf der n-Seite.
+- **m:n** wird meist mit einer Zwischentabelle aufgelöst.
+- Normalisierung reduziert Redundanzen und Anomalien.
+- `SELECT` liest, `INSERT` fügt ein, `UPDATE` ändert, `DELETE` löscht Datensätze.
+- `JOIN` verbindet Tabellen.
+- `GROUP BY` wird benötigt, wenn Aggregatwerte je Gruppe berechnet werden.
+- Bei SQL-Aufgaben zuerst die gewünschte Ausgabe und die benötigten Tabellen analysieren.
 
 ---
 
@@ -228,13 +671,15 @@ RESTAURANT (restaurant_id PK, name, adresse, oeffnungszeiten)
 
 | Aufgabentyp | Was wird verlangt |
 |---|---|
-| Stamm-/Bewegungsdaten | Je 2 Beispiele aus dem Prüfungsszenario |
-| Datenmigration | 1 Methode erläutern |
-| SQL SELECT | Abfrage schreiben (meist mit WHERE + COUNT oder JOIN) |
-| SQL INSERT | Daten aus alter Tabelle kopieren, neues Feld = NULL |
-| Referentielle Integrität | Begriff erklären + Beispiel |
-| ER-Modell | Tabelle/Spalten ergänzen, FK einzeichnen |
-| Anomalien | 3 Arten nennen und erklären |
+| Stamm-/Bewegungsdaten | Beispiele aus dem Szenario zuordnen |
+| ER-Modell | PK/FK und Kardinalitäten ergänzen |
+| Normalisierung | Anomalien erkennen und Tabellenstruktur verbessern |
+| Datenmigration | Methode erläutern oder auswählen |
+| SQL SELECT | Daten mit WHERE filtern |
+| SQL JOIN | Informationen aus mehreren Tabellen verbinden |
+| SQL GROUP BY | Werte je Gruppe zählen/summieren |
+| SQL INSERT/UPDATE | Datensätze korrekt übernehmen oder verändern |
+| Referentielle Integrität | Begriff erklären und an FK-Beziehung zeigen |
 
 ---
 <div class="kdm-practice" data-topic="p12/datenbanken-sql"></div>
