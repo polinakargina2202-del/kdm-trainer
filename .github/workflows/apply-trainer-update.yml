@@ -1,0 +1,38 @@
+name: Apply trainer content update
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.update/trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  apply-update:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reconstruct and apply update
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .update/chunk_* | base64 --decode | gzip --decompress > /tmp/kdm-update.patch
+          git apply --3way -p2 /tmp/kdm-update.patch
+          rm -rf .update
+
+      - name: Commit updated trainer
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Expand exam topics and simulation coverage"
+          git push origin main
