@@ -24,7 +24,16 @@ jobs:
         run: |
           set -euo pipefail
           cat .update/chunk_* | base64 --decode | gzip --decompress > /tmp/kdm-update.patch
-          git apply --3way -p2 /tmp/kdm-update.patch
+          git apply --3way -p2 /tmp/kdm-update.patch || true
+          if git ls-files -u -- src/content/docs/p12/dsgvo.md | grep -q .; then
+            git checkout --ours -- src/content/docs/p12/dsgvo.md
+            git add src/content/docs/p12/dsgvo.md
+          fi
+          if git ls-files -u | grep -q .; then
+            echo "Unresolved conflicts remain"
+            git status --short
+            exit 1
+          fi
           rm -rf .update
 
       - name: Commit updated trainer
