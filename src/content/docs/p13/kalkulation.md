@@ -9,31 +9,43 @@ sidebar:
 
 ## 1. Break-even-Analyse
 
-Der **Break-even-Punkt** ist der Punkt, an dem Erlöse = Kosten (weder Gewinn noch Verlust).
+Der **Break-even-Punkt** ist der Punkt, an dem Erlöse und Gesamtkosten gleich hoch sind. Bis dahin entsteht ein Verlust, danach ein Gewinn.
 
-**Formel:**
-```
-Break-even-Menge = Fixkosten / (Verkaufspreis - variable Kosten je Einheit)
-```
+Wenn je Einheit laufende variable Kosten entstehen, wird zuerst der **Deckungsbeitrag je Einheit** berechnet:
 
-**Einfachere Formel (reine Fixkosten):**
-```
-Mindestabsatz = Fixkosten / Preis je Einheit
+```text
+Deckungsbeitrag je Einheit = Verkaufspreis − variable Kosten je Einheit
+Break-even-Menge = Fixkosten / Deckungsbeitrag je Einheit
 ```
 
-**Beispiel (W25/26):**
-- Entwicklungskosten: 50.000 €
-- Lizenzpreis: 10 € pro Lizenz
-- Break-even: 50.000 ÷ 10 = **5.000 Lizenzen**
+Da man in der Praxis keine angebrochene Lizenz oder Stückzahl verkaufen kann, wird bei einer Mindestmenge auf die **nächste ganze Einheit aufgerundet**.
 
-**Mit Gewinnzuschlag (9%):**
-- Fixkosten sollen 91% der Gesamterlöse sein
-- Benötigte Erlöse: 50.000 ÷ 0,91 = 54.945 €
-- Lizenzen: 54.945 ÷ 10 = **5.495 Lizenzen**
+### Beispiel nach dem Muster Winter 2025/26
 
-**Prüfungsbeispiel — Monate bis Break-even:**
-- 60 Mitarbeiter beim Großkunden × 5 Lizenzen = 12 Lizenzen/Monat
-- Bei 5.000 Lizenzen Ziel: 5.000 ÷ 12 = **≈ 417 Monate** (Achtung: Nur diesen Kunden berücksichtigen!)
+Gegeben:
+- einmalige Entwicklungskosten: 50.000 €
+- Verkaufspreis: 99 € je Lizenz und Monat
+- laufende Betreuungskosten: 20 € je Lizenz und Monat
+- eine Lizenz gilt für 5 Nutzer
+
+```text
+Deckungsbeitrag je Lizenzmonat = 99 € − 20 € = 79 €
+Break-even = 50.000 € / 79 € = 632,91
+```
+
+→ Nach **633 verkauften Lizenzmonaten** sind die Fixkosten gedeckt; ab der nächsten zusätzlichen Einheit entsteht insgesamt Gewinn.
+
+Wenn ein Großkunde 60 Nutzer lizenzieren möchte:
+
+```text
+benötigte Lizenzen = 60 / 5 = 12
+monatlicher Gesamt-DB = 12 × 79 € = 948 €
+50.000 € / 948 € = 52,74 Monate
+```
+
+→ Unter diesen Annahmen wird die Gewinnzone **im 53. Monat** erreicht.
+
+> **IHK-Falle:** Nicht einfach `Fixkosten / Verkaufspreis` rechnen, wenn zusätzlich variable Kosten je Einheit genannt sind. Dann ist der **Deckungsbeitrag** der richtige Nenner.
 
 ---
 
@@ -67,8 +79,8 @@ Bewertet Alternativen anhand **qualitativer Kriterien** durch gewichtete Punktve
 
 | Modell | Beschreibung | Vorteile Kunde | Vorteile Anbieter |
 |---|---|---|---|
-| **Abo-Lizenz (SaaS)** | Monatliche/jährliche Gebühr | Niedrige Anfangskosten, immer aktuelle Version | Planbarer Umsatz, enge Kundenbindung |
-| **Einmallizenz (perpetual)** | Einmalzahlung, Software gehört Käufer | Keine laufenden Kosten | Hoher Einmalerlös |
+| **Abo-Lizenz (SaaS)** | Monatliche/jährliche Gebühr | Niedrige Anfangskosten; Updates häufig im Abo enthalten | Planbarer Umsatz, laufende Kundenbindung |
+| **Einmallizenz (perpetual)** | Einmalzahlung, dauerhaftes Nutzungsrecht gemäß Lizenzbedingungen | Keine laufende Lizenzgebühr für die erworbene Version | Hoher Einmalerlös |
 | **Volumen-/Staffellizenz** | Preis sinkt mit Menge | Günstig bei großen Mengen | Kundenbindung durch Menge |
 | **Freemium** | Basis kostenlos, Premium kostenpflichtig | Einstieg ohne Kosten | Große Nutzerbasis, Conversion-Potenzial |
 
@@ -78,58 +90,46 @@ Bewertet Alternativen anhand **qualitativer Kriterien** durch gewichtete Punktve
 
 In der Prüfung: Passende Anforderungen zum Szenario nennen.
 
-**Betriebssystemanforderungen:** Kompatibilität, Mindestversion, Updates verfügbar
-**Hardwareanforderungen:** Prozessorleistung, RAM, Speicherplatz, Grafikkarte
+**Betriebssystemanforderungen:** Kompatibilität, Mindestversion, Updates verfügbar  
+**Hardwareanforderungen:** Prozessorleistung, RAM, Speicherplatz, Grafikkarte  
 **Sicherheitsanforderungen:** Verschlüsselung, Firewall, Zugriffsschutz, regelmäßige Updates
 
 ---
 
 ## 5. Kosten- und Leistungsrechnung (KLR)
 
-### Kostenarten:
-
 | Kostenart | Definition | Beispiele |
 |---|---|---|
-| **Einzelkosten** | Direkt einem Kostenträger (Produkt/Auftrag) zurechenbar | Rohmaterial, Akkordlöhne |
-| **Gemeinkosten** | Nicht direkt zurechenbar, werden über Schlüssel verteilt | Miete, Verwaltung, Gehälter |
-| **Fixe Kosten** | Unabhängig von der Produktionsmenge | Miete, Abschreibungen |
-| **Variable Kosten** | Steigen mit der Produktionsmenge | Materialkosten, Energiekosten |
+| **Einzelkosten** | Direkt einem Kostenträger zurechenbar | Rohmaterial, direkt zuordenbare Hardware |
+| **Gemeinkosten** | Nicht direkt zurechenbar, werden über Schlüssel verteilt | Miete, Verwaltung |
+| **Fixe Kosten** | im betrachteten Beschäftigungsbereich mengenunabhängig | Miete, feste Grundgebühren |
+| **Variable Kosten** | verändern sich mit Beschäftigung/Menge | Material, nutzungsabhängige Gebühren |
 
----
-
-### Betriebsabrechnungsbogen (BAB):
+### Betriebsabrechnungsbogen (BAB)
 
 **Zweck:** Gemeinkosten auf Kostenstellen verteilen, um Gemeinkostenzuschlagssätze zu ermitteln.
 
-**Kostenstellen (Beispiel):**
-- Materialstelle (Einkauf, Lager)
-- Fertigungsstelle (Produktion)
-- Vertriebsstelle (Verkauf)
-- Verwaltungsstelle (Buchhaltung, Management)
-
-**Gemeinkostenzuschlagssatz (GKZ):**
+```text
+GKZ = Gemeinkosten der Kostenstelle / Bezugsgröße × 100 %
 ```
-GKZ = Gemeinkosten der Kostenstelle / Bezugsgröße × 100%
 
 Beispiele:
-- Materialgemeinkosten: GKZ = MaGK / Materialeinzelkosten × 100%
-- Fertigungsgemeinkosten: GKZ = FtGK / Fertigungslöhne × 100%
-- Verwaltungs-/Vertriebsgemeinkosten: GKZ = VwGK / Herstellkosten × 100%
-```
+- Materialgemeinkosten: `MaGK / Materialeinzelkosten × 100 %`
+- Fertigungsgemeinkosten: `FtGK / Fertigungslöhne × 100 %`
+- Verwaltungs-/Vertriebsgemeinkosten: häufig auf Herstellkosten bezogen, wenn die Aufgabe dies vorgibt.
 
-**Kalkulationsschema:**
-```
+**Vereinfachtes Kalkulationsschema:**
+```text
 Materialeinzelkosten
-+ Materialgemeinkosten (MEK × MaGKZ%)
++ Materialgemeinkosten
 = Materialkosten
-+ Fertigungslöhne
-+ Fertigungsgemeinkosten (FL × FtGKZ%)
++ Fertigungseinzelkosten
++ Fertigungsgemeinkosten
 = Herstellkosten
-+ Verwaltungsgemeinkosten (HK × VwGKZ%)
-+ Vertriebsgemeinkosten (HK × VtGKZ%)
++ Verwaltungs- und Vertriebsgemeinkosten
 = Selbstkosten
-+ Gewinnzuschlag
-= Angebotspreis (netto)
++ Gewinn
+= Angebotspreis (netto, vereinfachtes Schema)
 ```
 
 ---
@@ -138,74 +138,61 @@ Materialeinzelkosten
 
 | Begriff | Definition | Formel |
 |---|---|---|
-| **Marktvolumen** | Tatsächlich realisierter Umsatz aller Anbieter | Σ aller Umsätze |
-| **Marktpotenzial** | Maximale mögliche Nachfrage | Theoretisches Maximum |
-| **Marktanteil** | Anteil des eigenen Unternehmens am Markt | (eigener Umsatz / Marktvolumen) × 100% |
+| **Marktvolumen** | tatsächlich realisierte Nachfrage / Umsatz im Markt | Summe der realisierten Werte |
+| **Marktpotenzial** | maximal mögliche Nachfrage unter angenommenen Bedingungen | theoretisches Maximum |
+| **Marktanteil** | Anteil des eigenen Unternehmens am Markt | eigener Umsatz/Absatz ÷ Marktvolumen × 100 % |
 
 ---
 
 ## 7. Aufwand/Ertrag vs. Kosten/Leistung
 
-Diese Begriffe gehören nicht automatisch zusammen:
-
 | Finanzbuchhaltung | KLR | Erklärung |
 |---|---|---|
-| **Aufwand** | **Kosten** | Aufwand ist gesamter Werteverzehr; Kosten sind der betriebszweckbezogene Werteverzehr |
-| **Ertrag** | **Leistung** | Ertrag ist gesamter Wertezuwachs; Leistung ist betriebszweckbezogener Wertezuwachs |
+| **Aufwand** | **Kosten** | Aufwand = gesamter Werteverzehr; Kosten = betriebszweckbezogener Werteverzehr |
+| **Ertrag** | **Leistung** | Ertrag = gesamter Wertezuwachs; Leistung = betriebszweckbezogener Wertezuwachs |
 
 Beispiele:
-- Spende an Verein: Aufwand, aber typischerweise **keine Kosten** des Betriebszwecks (neutraler Aufwand).
-- kalkulatorischer Unternehmerlohn: **Kosten**, aber kein Aufwand in der Fibu (Zusatzkosten).
+- Spende: Aufwand, typischerweise aber keine Kosten des Betriebszwecks.
+- kalkulatorischer Unternehmerlohn: Kosten, aber kein Aufwand der Finanzbuchhaltung.
 
-## 8. Kostenstelle und Kostenträger
+## 8. Kostenart, Kostenstelle und Kostenträger
 
-- **Kostenart:** Welche Kosten sind entstanden? z. B. Miete, Personal, Energie.
-- **Kostenstelle:** Wo sind sie entstanden? z. B. IT, Verwaltung, Vertrieb.
-- **Kostenträger:** Wofür sind sie entstanden? z. B. Produkt, Projekt, Kundenauftrag.
+- **Kostenart:** Welche Kosten sind entstanden?
+- **Kostenstelle:** Wo sind sie entstanden?
+- **Kostenträger:** Wofür sind sie entstanden?
 
-Der **BAB** verteilt Gemeinkosten auf Kostenstellen. Anschließend können Zuschlagssätze für Kostenträger kalkuliert werden.
+## 9. Vorwärts-, Differenz- und Nachkalkulation
 
-## 9. Vorwärts-, Rückwärts-/Differenz- und Nachkalkulation
-
-Bei der **Vorwärtskalkulation** wird vom Einkaufspreis zum Verkaufspreis gerechnet:
 ```text
 Listeneinkaufspreis
-- Liefererrabatt
+− Liefererrabatt
 = Zieleinkaufspreis
-- Liefererskonto
+− Liefererskonto
 = Bareinkaufspreis
 + Bezugskosten
 = Bezugspreis / Einstandspreis
-+ Handlungskosten
-= Selbstkosten
-+ Gewinn
-= Verkaufspreis (vereinfacht)
 ```
 
-**Rückwärts-/Differenzkalkulation:** Ein Markt-/Verkaufspreis ist vorgegeben; daraus wird z. B. der maximal tragbare Einstandspreis oder der verbleibende Gewinn ermittelt.
-
-**Nachkalkulation:** geplante Werte werden mit tatsächlichen Kosten/Erlösen verglichen. Abweichungen werden analysiert.
+**Vorwärtskalkulation:** vom Einkauf in Richtung Verkaufspreis.  
+**Rückwärts-/Differenzkalkulation:** ein Markt-/Verkaufspreis ist vorgegeben; daraus wird der wirtschaftliche Spielraum ermittelt.  
+**Nachkalkulation:** Planwerte werden mit tatsächlichen Werten verglichen und Abweichungen analysiert.
 
 ## 10. Handelsspanne und Kalkulationszuschlag
 
-Nicht verwechseln:
 ```text
 Handelsspanne = (Nettoverkaufspreis − Einstandspreis) / Nettoverkaufspreis × 100 %
-
 Kalkulationszuschlag = (Nettoverkaufspreis − Einstandspreis) / Einstandspreis × 100 %
 ```
 
-**Beispiel:** Einstand 80 €, Verkauf 100 € → Handelsspanne 20 %, Kalkulationszuschlag 25 %.
+Beispiel: Einstand 80 €, Verkauf 100 € → Handelsspanne 20 %, Kalkulationszuschlag 25 %.
 
 ## 11. Prozesskostenrechnung
-
-Bei prozessorientierten Dienstleistungen kann eine Kostenstelle zu grob sein. Dann werden Kosten einem **Prozess** und einem **Kostentreiber** zugeordnet.
 
 ```text
 Prozesskostensatz = Prozesskosten / Prozessmenge
 ```
 
-Beispiel: 24.000 € Kosten für 800 Ticketbearbeitungen → **30 € je Ticket**.
+Beispiel: 24.000 € für 800 Ticketbearbeitungen → **30 € je Ticket**.
 
 ## 12. Deckungsbeitrag, Betriebsergebnis und Preisuntergrenze
 
@@ -215,23 +202,22 @@ Gesamt-DB = Erlöse − variable Gesamtkosten
 Betriebsergebnis = Gesamt-DB − Fixkosten
 ```
 
-- **kurzfristige Preisuntergrenze:** grundsätzlich variable Stückkosten (wenn freie Kapazität besteht und keine weiteren relevanten Kosten entstehen).
-- **langfristige Preisuntergrenze:** muss auch Fixkosten decken → Vollkosten.
+- **kurzfristige Preisuntergrenze:** unter vereinfachten Bedingungen die relevanten variablen Stückkosten.
+- **langfristige Preisuntergrenze:** muss auch die fixen Kosten decken.
 
-**Beispiel:** Preis 30 €, variable Kosten 18 €, Fixkosten 60.000 €, Absatz 8.000:
-`DB = 12 € × 8.000 = 96.000 €`; Betriebsergebnis = **36.000 €**.
+Beispiel: Preis 30 €, variable Kosten 18 €, Fixkosten 60.000 €, Absatz 8.000 → Gesamt-DB 96.000 €, Betriebsergebnis **36.000 €**.
 
 ## 13. Grenzkosten und Preisdifferenzierung
 
-**Grenzkosten** sind die zusätzlichen Kosten einer weiteren Einheit. Bei digitalen Produkten können sie sehr niedrig sein, obwohl die Entwicklung hohe Fixkosten verursacht.
+**Grenzkosten** sind die zusätzlichen Kosten einer weiteren Einheit. Bei digitalen Produkten können sie niedrig sein, obwohl die Entwicklung hohe Fixkosten verursacht.
 
-Das ermöglicht **Preisdifferenzierung**, z. B.:
-- unterschiedliche Pakete (Basic/Pro),
+Mögliche **Preisdifferenzierung**:
+- Basic/Pro-Pakete,
 - Mengenstaffeln,
 - zeit-/nutzungsabhängige Preise,
 - unterschiedliche Kundengruppen.
 
-Die Differenzierung sollte nachvollziehbar, rechtlich zulässig und am **Kundennutzen** ausgerichtet sein.
+Die Differenzierung muss wirtschaftlich nachvollziehbar und rechtlich zulässig sein und sollte den Kundennutzen berücksichtigen.
 
 ---
 
@@ -239,12 +225,12 @@ Die Differenzierung sollte nachvollziehbar, rechtlich zulässig und am **Kundenn
 
 | Aufgabentyp | Beispielformulierung |
 |---|---|
-| Break-even | „Ab wie vielen Lizenzen werden die Entwicklungskosten gedeckt?" |
-| Nutzwertanalyse | „Ergänzen Sie die Nutzwertanalyse und ermitteln Sie den besten Anbieter." |
-| Lizenzmodell | „Nennen Sie 2 Vorteile des Abo-Lizenzmodells für den Kunden." |
-| Kostenarten | „Was sind Einzelkosten? Nennen Sie ein Beispiel." |
-| BAB | „Vervollständigen Sie den Betriebsabrechnungsbogen." |
-| GKZ berechnen | „Berechnen Sie den Materialgemeinkosten-Zuschlagssatz." |
+| Break-even | „Ab welcher Absatzmenge werden die Fixkosten gedeckt?“ |
+| Nutzwertanalyse | „Ergänzen Sie die Nutzwertanalyse und ermitteln Sie den besten Anbieter.“ |
+| Lizenzmodell | „Nennen Sie zwei Vorteile eines Abo-Lizenzmodells.“ |
+| KLR | „Ordnen Sie Kostenart, Kostenstelle und Kostenträger zu.“ |
+| BAB | „Vervollständigen Sie den BAB / berechnen Sie einen Zuschlagssatz.“ |
+| DB | „Berechnen Sie Deckungsbeitrag und Betriebsergebnis.“ |
 
 ---
 <div class="kdm-calculators" data-calculators="breakeven,gkz,nwa,marketshare"></div>

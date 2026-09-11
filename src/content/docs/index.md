@@ -1,9 +1,9 @@
 ---
 title: KDM Prüfungstrainer
-description: AP Teil 2 Lernhilfe für Kaufleute für Digitalisierungsmanagement
+description: AP Teil 2 Lernsystem für Kaufleute für Digitalisierungsmanagement
 template: splash
 hero:
-  tagline: AP Teil 2 · Kaufmann/-frau für Digitalisierungsmanagement · KLA Bremerhaven
+  tagline: AP Teil 2 · Kaufmann/-frau für Digitalisierungsmanagement · Lernen, anwenden, prüfen
   actions:
     - text: §12 Digitales Geschäftsmodell
       link: /kdm-trainer/p12/
@@ -15,8 +15,8 @@ hero:
     - text: §14 WiSo
       link: /kdm-trainer/wiso/
       icon: right-arrow
-    - text: 🧪 Prüfungssimulation
-      link: /kdm-trainer/pruefungssimulation/
+    - text: ⏱️ Probeprüfung starten
+      link: /kdm-trainer/probepruefungen/
       icon: right-arrow
       variant: primary
 ---
@@ -24,21 +24,33 @@ hero:
 ## Prüfungsstruktur AP Teil 2
 
 | Prüfungsbereich | § | Gewichtung | Zeit | Format |
-|---|---|---|---|---|
-| Digitale Entwicklung (Projektarbeit) | §11 | 50 % | — | Dokumentation + Fachgespräch |
-| Entwicklung digitales Geschäftsmodell | §12 | 10 % | 90 Min | Offene Aufgaben |
-| Kaufmännische Unterstützungsprozesse | §13 | 10 % | 90 Min | Offene Aufgaben |
-| Wirtschafts- und Sozialkunde | §14 | 10 % | 60 Min | Multiple Choice (30 Aufgaben) |
+|---|---|---:|---:|---|
+| Digitale Entwicklung von Prozessen (Projektarbeit) | §11 | 50 % | — | Dokumentation + Präsentation/Fachgespräch |
+| Entwicklung eines digitalen Geschäftsmodells | §12 | 10 % | 90 Min | überwiegend offene, situationsbezogene Aufgaben |
+| Kaufmännische Unterstützungsprozesse | §13 | 10 % | 90 Min | überwiegend offene, situationsbezogene Aufgaben |
+| Wirtschafts- und Sozialkunde | §14 | 10 % | 60 Min | 30 gebundene/kurze Aufgaben |
 
-## Datenbasis: 7 analysierte Prüfungssessions
+## So nutzt du den Trainer als Haupt-Lernquelle
 
-Dieser Trainer basiert auf der vollständigen Analyse von Aufgaben + Lösungen:
-**W21/22 · S22 · S23 · W24/25 · S25 · W25/26 (Satz 1 + Satz 2)**
+1. **Lernseite verstehen** – nicht nur Begriffe markieren.
+2. **Wissenscheck** auf der jeweiligen Seite lösen.
+3. Im **IHK-Antworttraining** selbst formulieren: nennen, beschreiben, erläutern, begründen.
+4. Unter **Wiederholung & Schwächen** Fehler und schwache Themen gezielt erneut bearbeiten.
+5. Mit **Festen Probeprüfungen** 90-Minuten-Fälle unter Zeitdruck lösen.
+6. Vor der Prüfung **Formelsammlung** und **Glossar & IHK-Fallen** wiederholen.
 
-## Garantiert prüfungsrelevant — in jeder Session
+## Datenbasis und Abdeckung
 
-**§12:** Projektmanagement · Datenbanken & SQL · DSGVO
+Die Lerninhalte wurden aus dem Ausbildungs-/Rahmenlehrplan und dem für KDM relevanten Prüfungsumfang abgeleitet und mit vorhandenen AP2-Prüfungen bis Winter 2025/26 abgeglichen. Alte Prüfungen dienen dabei als **Muster für Aufgabenformen und Schwerpunkte**, nicht als Grenze des möglichen Prüfungsstoffs.
 
-**§13:** Vertragsrecht (Werkvertrag) · Finanzierung & Tilgung
+Besonders häufig wiederkehrende Bereiche sind unter anderem Projekt- und Prozessmanagement, Daten/SQL, Datenschutz/IT-Sicherheit, Vertrags- und Beschaffungsprozesse, Finanzierung/KLR sowie die klassischen WiSo-Rechts- und Wirtschaftsthemen.
 
-**§14:** BBiG & Probezeit · Kündigungsarten & Arbeitszeugnis · Betriebsrat · Tarifvertrag · GmbH · Leitungssysteme · AGG · Umweltschutz
+> **Wichtig:** Kein seriöses Lernsystem kann garantieren, dass jede zukünftige IHK-Formulierung identisch vorkommt. Ziel dieses Trainers ist deshalb, die offiziellen Kompetenzen so zu erklären und zu üben, dass du auch **neue Szenarien** lösen kannst.
+
+## Trainingsmodi
+
+- **Zufalls-Prüfung:** automatisch auswertbare Mischung aus dem gesamten Fragenpool.
+- **IHK-Antworttraining:** offene Antworten mit Musterlösung und Punkte-Raster.
+- **Feste Probeprüfungen:** zusammenhängende 90-Minuten-Fälle mit 100 Punkten.
+- **Wiederholung & Schwächen:** Fehler, ungesehene Fragen und schwächere Themen.
+- **Formelsammlung / Glossar:** schnelle Wiederholung kurz vor der Prüfung.

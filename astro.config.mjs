@@ -14,40 +14,28 @@ export default defineConfig({
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/polinakargina2202-del/kdm-trainer' }],
       customCss: ['./src/styles/custom.css'],
       head: [
-        {
-          tag: 'script',
-          attrs: {
-            src: '/kdm-trainer/visuals/visuals.js',
-            defer: true,
-          },
-        },
-        {
-          tag: 'script',
-          attrs: {
-            src: '/kdm-trainer/visuals/visuals-extra.js',
-            defer: true,
-          },
-        },
+        { tag: 'link', attrs: { rel: 'stylesheet', href: '/kdm-trainer/trainer/advanced.css' } },
+        { tag: 'script', attrs: { src: '/kdm-trainer/visuals/visuals.js', defer: true } },
+        { tag: 'script', attrs: { src: '/kdm-trainer/visuals/visuals-extra.js', defer: true } },
       ],
       sidebar: [
-        {
-          label: '🏠 Start',
-          slug: 'index',
-        },
-        {
-          label: '🧪 Prüfungssimulation',
-          slug: 'pruefungssimulation',
-        },
+        { label: '🏠 Start', slug: 'index' },
+        { label: '🧪 Zufalls-Prüfung', slug: 'pruefungssimulation' },
+        { label: '📝 IHK-Antworttraining', slug: 'antworttraining' },
+        { label: '⏱️ Feste Probeprüfungen', slug: 'probepruefungen' },
+        { label: '🔁 Wiederholung & Schwächen', slug: 'wiederholung' },
+        { label: '📐 Formelsammlung', slug: 'formelsammlung' },
+        { label: '📚 Glossar & IHK-Fallen', slug: 'glossar-fallen' },
         {
           label: '§12 Digitales Geschäftsmodell',
           collapsed: false,
           items: [
             { label: 'Übersicht', slug: 'p12' },
             { label: 'Projektmanagement', slug: 'p12/projektmanagement' },
-            { label: 'Datenbanken & SQL', slug: 'p12/datenbanken-sql' },
+            { label: 'Datenbanken & Datenanalyse', slug: 'p12/datenbanken-sql' },
             { label: 'Cloud & Servicemodelle', slug: 'p12/cloud-servicemodelle' },
             { label: 'RAID & Datensicherung', slug: 'p12/raid-backup' },
-            { label: 'BPMN, EPK & ITSM', slug: 'p12/bpmn-itsm' },
+            { label: 'Prozesse, BPMN, EPK & ITSM', slug: 'p12/bpmn-itsm' },
             { label: 'IT-Sicherheit & Netzwerk', slug: 'p12/it-sicherheit' },
             { label: 'Softwaretesting & Debugging', slug: 'p12/softwaretesting' },
             { label: 'Datenschutz & DSGVO', slug: 'p12/dsgvo' },

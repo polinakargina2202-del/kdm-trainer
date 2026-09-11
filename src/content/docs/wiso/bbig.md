@@ -1,114 +1,65 @@
 ---
 title: BBiG & Ausbildungsrecht
-description: Probezeit, Kündigung, Pflichten, Ausbildungsordnung, Europass
+description: Probezeit, Kündigung, Pflichten, Ausbildungsordnung, Jugendarbeitsschutz und Fortbildung
 sidebar:
   badge:
     text: 9/9 Prüfungen
     variant: danger
 ---
 
-> **Prüfungsrelevanz:** In JEDER analysierten WiSo-Session vorhanden!
+> **Prüfungsrelevanz:** Ausbildungsrecht gehört zu den häufigsten WiSo-Themen.
 
 ## 1. Probezeit (§ 20 BBiG)
 
-- **Mindestdauer:** 1 Monat
-- **Maximaldauer:** 4 Monate
-- Während der Probezeit: **fristlos, ohne Angabe von Gründen** kündbar (von beiden Seiten)
-
----
+Die Probezeit muss mindestens **einen Monat** und höchstens **vier Monate** betragen. Während der Probezeit kann das Berufsausbildungsverhältnis jederzeit ohne Einhalten einer Kündigungsfrist gekündigt werden; die gesetzlichen Formvorschriften sind zu beachten.
 
 ## 2. Kündigung nach der Probezeit (§ 22 BBiG)
 
-Nach der Probezeit kann das Ausbildungsverhältnis nur noch in bestimmten Fällen beendet werden:
+- aus wichtigem Grund: ohne Kündigungsfrist,
+- durch Auszubildende mit vier Wochen Frist, wenn die Berufsausbildung aufgegeben oder eine Ausbildung für eine andere Berufstätigkeit begonnen werden soll,
+- eine normale ordentliche Kündigung des Ausbildungsbetriebs wie bei einem üblichen Arbeitsverhältnis ist nach der Probezeit nicht vorgesehen.
 
-| Situation | Wer | Frist | Grund |
-|---|---|---|---|
-| **Wichtiger Grund** | Beide | Fristlos | z.B. Diebstahl, schwere Pflichtverletzung |
-| **Berufswechsel** | Nur Auszubildender | 4 Wochen | Aufgabe der Berufsausbildung oder Wechsel |
-| **Normale Kündigung** | Nicht möglich | — | Kein ordentliches Kündigungsrecht nach Probezeit! |
+## 3. Weiterbeschäftigung (§ 24 BBiG)
 
----
+Wird ein Auszubildender nach Beendigung des Berufsausbildungsverhältnisses weiterbeschäftigt, ohne dass ausdrücklich etwas vereinbart wurde, gilt grundsätzlich ein Arbeitsverhältnis auf unbestimmte Zeit als begründet.
 
-## 3. Weiterbeschäftigung nach Abschlussprüfung (§ 24 BBiG)
+## 4. Pflichten
 
-> Wenn ein Auszubildender nach bestandener Prüfung **ohne ausdrückliche Vereinbarung** weiter beschäftigt wird → entsteht ein **unbefristetes Arbeitsverhältnis**!
+**Ausbildender:** Ausbildung ordnungsgemäß durchführen, Ausbildungsmittel bereitstellen, für Berufsschule/Prüfungen freistellen, Vergütung zahlen, Fürsorgepflichten beachten und bei Beendigung ein Zeugnis ausstellen. Angaben über Verhalten und Leistung werden auf Verlangen aufgenommen.
 
----
+**Auszubildende:** Lernpflicht, Weisungen im Rahmen der Ausbildung befolgen, Ausbildungsnachweis führen, Betriebsmittel pfleglich behandeln, Betriebs-/Geschäftsgeheimnisse wahren.
 
-## 4. Pflichten des Ausbildenden (§ 14 BBiG)
+## 5. Ausbildungsordnung und Ausbildungsnachweis
 
-- Ausbildungsinhalte vermitteln (laut Ausbildungsrahmenplan)
-- Berufsschulbesuch ermöglichen (Freistellung)
-- Ausbildungsmittel kostenlos bereitstellen
-- Vergütung zahlen
-- Bei Beendigung des Ausbildungsverhältnisses ein Ausbildungszeugnis ausstellen; Angaben zu Verhalten und Leistung kommen auf Verlangen hinzu
+Die Ausbildungsordnung legt u. a. Berufsbild, Ausbildungsdauer, Fertigkeiten/Kenntnisse/Fähigkeiten und Prüfungsanforderungen fest. Der Ausbildungsnachweis dokumentiert den Verlauf/Inhalte der Ausbildung.
 
-## 5. Pflichten des Auszubildenden (§ 13 BBiG)
+## 6. Ausbildereignung
 
-- Lernpflicht (Ausbildung ernsthaft betreiben)
-- **Verschwiegenheitspflicht** — Betriebs- und Geschäftsgeheimnisse wahren
-- Berichtsheft (Ausbildungsnachweis) führen
-- Anweisungen des Ausbilders befolgen
-- Betriebseigentum schonen
+Ausbildende/Ausbilder müssen nach den einschlägigen Regeln persönlich und fachlich geeignet sein. In Prüfungsfragen konkrete Voraussetzungen anhand des vorgegebenen Falls bzw. Gesetzestexts prüfen; nicht aus einzelnen Kriterien wie Gewerkschaftsmitgliedschaft oder Schulabschluss ableiten.
 
----
+## 7. IHK — typische Aufgaben
 
-## 6. Berichtsheft (Ausbildungsnachweis)
+IHKs registrieren/überwachen Berufsausbildungsverhältnisse im Rahmen ihrer Zuständigkeit, beraten Ausbildungsbetriebe und führen Prüfungen durch. Das Handelsregister wird dagegen beim Amtsgericht geführt.
 
-**Zweck:** Dokumentation der vermittelten Ausbildungsinhalte.
-(NICHT: Kontrolle durch Gewerkschaft, NICHT: Grundlage für Benotung)
+## 8. Jugendarbeitsschutz
 
----
+Für Auszubildende unter 18 gilt zusätzlich das **JArbSchG**. Grundsätzlich:
+- maximal 8 Stunden täglich,
+- maximal 40 Stunden wöchentlich,
+- besondere Pausen-, Ruhe-, Nacht-/Wochenend- und Freistellungsregelungen.
 
-## 7. Ausbildungsordnung (§ 5 BBiG)
+Bei Prüfungsaufgaben Alter und eventuell abgedruckten Gesetzestext genau beachten.
 
-**Inhalt:** Bestimmungen über **Kenntnisse, Fertigkeiten und Fähigkeiten**, die während der Ausbildung zu vermitteln sind.
+## 9. Ausbildung, Fortbildung, Umschulung
 
-**Nicht in der Ausbildungsordnung:** Vergütungshöhe, Urlaubsdauer, überbetriebliche Ausbildungsdauer
-
----
-
-## 8. Ausbilder-Eignung (AEVO)
-
-Voraussetzungen zum Ausbilder:
-- **Fachliche Eignung** (abgeschlossene Berufsausbildung, Berufserfahrung)
-- **Persönliche Eignung** (keine Verurteilung, charakterlich geeignet)
-- Nachweis durch Ausbildereignungsprüfung (AEVO)
-
-> NICHT erforderlich: Mitgliedschaft in Gewerkschaft, IHK-Prüfungsausschuss, bestimmte Schulabschlüsse
-
----
-
-## 9. IHK — Aufgaben
-
-| IHK macht... | IHK macht NICHT... |
-|---|---|
-| Prüfungen abnehmen | Handelsregister führen (= Amtsgericht) |
-| Ausbildung registrieren | Gewerkschaftsinteressen vertreten |
-| Beratung für Ausbildungsbetriebe | Bilanzen prüfen |
-| Schlichtung bei Ausbildungsstreitigkeiten | Gewerbesteuer festlegen |
-| Interessenvertretung der Wirtschaft | — |
-
----
+- **Berufsausbildung:** erstmaliger Erwerb beruflicher Handlungsfähigkeit in einem Ausbildungsberuf.
+- **Fortbildung:** baut auf beruflicher Qualifikation auf und erweitert/vertieft sie.
+- **Umschulung:** soll zu einer anderen beruflichen Tätigkeit befähigen.
+- allgemeine Weiterbildung ist nicht automatisch Fortbildung im engeren BBiG-Sinn.
 
 ## 10. Europass
 
-**Zweck:** Qualifikationen und Kompetenzen **europaweit verständlich und transparent** darstellen — für Bewerbungen in EU-Ländern.
-
-(NICHT: Reisepass, NICHT: kostenlose Bahnfahrten, NICHT: Unternehmensrecht)
-
----
-
-## Prüfungsaufgaben-Muster
-
-| Aufgabentyp | Antwort |
-|---|---|
-| Probezeit-Dauer | Mind. 1 Monat, max. 4 Monate |
-| Kündigung in Probezeit | Fristlos, ohne Grund, von beiden Seiten |
-| Kündigung nach Probezeit | Nur aus wichtigem Grund (fristlos) oder Berufswechsel (4 Wochen) |
-| Weiterbeschäftigung | → unbefristetes Arbeitsverhältnis (§ 24 BBiG) |
-| Ausbilder-Voraussetzung | Fachliche + persönliche Eignung |
-| Berichtsheft-Zweck | Dokumentation der Ausbildungsinhalte |
+Instrumente des Europass sollen Qualifikationen und Kompetenzen europaweit verständlicher/transparenter darstellen.
 
 ---
 <div class="kdm-practice" data-topic="wiso/bbig"></div>

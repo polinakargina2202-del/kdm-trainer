@@ -1,417 +1,345 @@
 ---
-title: BPMN, EPK & ITSM
-description: Prozessmodellierung, SLA, Incident Management, Service Request
+title: Prozesse, BPMN, EPK & ITSM
+description: Geschäftsprozessanalyse, Ist/Soll, Digitalisierungsgrad, Prozesskennzahlen, BPMN/EPK und IT-Service-Management
 sidebar:
   badge:
     text: 4/7 Prüfungen
     variant: note
 ---
 
-## Worum geht es bei Prozessmodellierung und ITSM?
+> **Prüfungsrelevanz:** Für KDM reicht es nicht, BPMN-Symbole zu kennen. Du musst einen realen Geschäftsprozess analysieren, Optimierungspotenzial erkennen, einen Soll-Zustand entwickeln und den Nutzen der Digitalisierung begründen können.
 
-Unternehmen versuchen, Arbeitsabläufe möglichst klar und nachvollziehbar zu gestalten. Dafür werden Prozesse oft grafisch modelliert. Zwei bekannte Darstellungsformen sind **EPK** und **BPMN**.
+# Geschäftsprozesse analysieren und digital weiterentwickeln
 
-Im Bereich **IT Service Management (ITSM)** geht es dagegen darum, IT-Dienstleistungen strukturiert zu betreiben: Störungen bearbeiten, Anfragen einordnen, Änderungen steuern und Servicequalität messbar machen.
+## 1. Geschäftsprozess und Prozesslandschaft
 
-Diese beiden Themen treffen sich häufig dort, wo IT-Prozesse beschrieben und verbessert werden sollen.
+Ein **Geschäftsprozess** besteht aus zusammenhängenden Aktivitäten, die ein bestimmtes Ergebnis für einen internen oder externen Kunden erzeugen.
+
+Eine **Prozesslandschaft** zeigt die großen Zusammenhänge eines Unternehmens:
+
+- **Führungs-/Managementprozesse:** Strategie, Controlling, Unternehmenssteuerung.
+- **Kernprozesse:** erzeugen den zentralen Kundennutzen, z. B. Beratung, Verkauf, Leistungserstellung.
+- **Unterstützungsprozesse:** ermöglichen Kernprozesse, z. B. IT, Personal, Einkauf, Rechnungswesen.
+
+> **IHK-Falle:** Prozesslandschaft = Überblicksebene. BPMN eines einzelnen Ablaufs = Detailebene.
 
 ---
 
-## 1. Was ist ein Geschäftsprozess?
+## 2. Erwartungen der Prozessbeteiligten ermitteln
 
-Ein **Geschäftsprozess** besteht aus mehreren zusammenhängenden Aktivitäten, die ein bestimmtes Ergebnis erzeugen.
+Vor einer Optimierung werden die Anforderungen von **internen** und **externen** Beteiligten erfasst.
+
+Beispiele:
+- Kunde: kurze Wartezeit, einfache Bedienung, transparente Information.
+- Service-Mitarbeiter: klare Zuständigkeiten und wenig Doppelerfassung.
+- IT: sichere Schnittstellen und wartbare Lösung.
+- Datenschutz: zulässige und sparsame Datenverarbeitung.
+- Management: Wirtschaftlichkeit und messbarer Nutzen.
+
+Mögliche Methoden: Interview, Workshop, Beobachtung, Dokumentenanalyse, Auswertung von Tickets/Beschwerden und Kennzahlen.
+
+---
+
+## 3. Ist-Prozess aufnehmen
+
+Beim **Ist-Zustand** wird nicht beschrieben, wie der Prozess „eigentlich sein sollte“, sondern wie er **wirklich abläuft**.
+
+Erfasse:
+1. Start und Ende.
+2. Rollen/Abteilungen.
+3. Schritte und Entscheidungen.
+4. verwendete Daten/Dokumente.
+5. Systeme und Schnittstellen.
+6. Bearbeitungs- und Wartezeiten.
+7. Fehler, Rückfragen, Schleifen und Medienbrüche.
+8. Kosten und vorhandene Kennzahlen.
+
+**Medienbruch:** Informationen wechseln z. B. von Papier zu Excel und werden manuell neu erfasst. Das erhöht Aufwand und Fehlerrisiko.
+
+---
+
+## 4. Schwachstellen und Verschwendung erkennen
+
+Typische Optimierungshinweise:
+- doppelte Datenerfassung,
+- unnötige Freigaben,
+- lange Warte-/Liegezeiten,
+- manuelle Übertragung zwischen Systemen,
+- unklare Zuständigkeit,
+- viele Rückfragen,
+- hohe Fehler-/Nacharbeitsquote,
+- fehlende Schnittstelle,
+- wiederkehrende regelbasierte Routinetätigkeit.
+
+### Wertschöpfung
+
+**Wertschöpfende Schritte** erzeugen aus Sicht des Kunden einen Nutzen.  
+**Nicht wertschöpfende Schritte** verursachen Aufwand, ohne den Kundennutzen zu erhöhen.
+
+Nicht jeder nicht wertschöpfende Schritt kann entfernt werden: gesetzliche oder sicherheitsrelevante Kontrollen können notwendig sein.
+
+---
+
+## 5. Digitalisierungsgrad beurteilen
+
+Digitalisierung kann verschiedene Stufen haben:
+
+```text
+analog → digital erfasst → systemgestützt → integriert → automatisiert → datenbasiert optimiert
+```
+
+Mögliche Kriterien:
+- Anteil digitaler Prozessschritte,
+- Medienbrüche,
+- automatisierter Datenaustausch,
+- Automatisierungsgrad,
+- digitale Kundenschnittstelle,
+- Datenqualität und Auswertbarkeit.
+
+> **Prüfungslogik:** „Digital“ ist nicht automatisch „besser“. Auch Kosten, Sicherheit, Datenschutz, Nutzbarkeit und Organisation müssen passen.
+
+---
+
+## 6. Prozesskennzahlen berechnen
+
+```text
+Durchlaufzeit = Bearbeitungszeit + Warte-/Liege-/Transportzeit
+Fehlerquote = fehlerhafte Vorgänge / alle Vorgänge × 100 %
+Automatisierungsgrad = automatisierte betrachtete Schritte / alle betrachteten Schritte × 100 %
+Kosten je Vorgang = gesamte Prozesskosten / Anzahl Vorgänge
+```
+
+Beispiel: 45 von 60 betrachteten Schritten laufen automatisiert:
+
+`45 / 60 × 100 = 75 % Automatisierungsgrad`.
+
+Kennzahlen sind besonders wichtig für den **Ist-Soll-Vergleich**.
+
+---
+
+## 7. Optimierungsziele definieren
+
+Gute Ziele sind messbar.
+
+Beispiele:
+- Durchlaufzeit von 3 Tagen auf 1 Tag reduzieren.
+- Fehlerquote unter 2 % senken.
+- Prozesskosten je Vorgang um 20 % reduzieren.
+- 70 % der Standardfälle automatisieren.
+
+Ein Ziel wie „Prozess verbessern“ ist für die spätere Erfolgskontrolle zu ungenau.
+
+---
+
+## 8. Soll-Prozess entwickeln
+
+Beim **Soll-Zustand** wird festgelegt, wie der Prozess zukünftig ablaufen soll.
+
+Mögliche Maßnahmen:
+- Schritte streichen oder zusammenfassen,
+- Reihenfolge ändern,
+- Verantwortlichkeit klarer zuordnen,
+- API/Schnittstelle statt manueller Übertragung,
+- Self-Service für Standardfälle,
+- RPA für stabile regelbasierte Routinen,
+- Daten zentral bereitstellen,
+- automatische Plausibilitätsprüfungen.
+
+**Referenzprozesse** und Beispiele aus anderen Unternehmen können Ideen liefern, müssen aber an die eigene Situation angepasst werden.
+
+---
+
+## 9. Ist und Soll wirtschaftlich vergleichen
+
+Die Prüfung kann verlangen, **Digitalisierungsgrad, Kosten und Wertschöpfung** des Ist- und Soll-Zustandes zu vergleichen.
 
 Beispiel:
 
-1. Kunde meldet eine Störung.
-2. Service Desk nimmt die Meldung auf.
-3. Ticket wird kategorisiert.
-4. Störung wird bearbeitet.
-5. Lösung wird dokumentiert.
-6. Ticket wird geschlossen.
+| Kriterium | Ist | Soll |
+|---|---:|---:|
+| Durchlaufzeit | 25 Min. | 10 Min. |
+| Fehlerquote | 8 % | 2 % |
+| Kosten/Vorgang | 12 € | 7 € |
+| manuelle Übertragungen | 3 | 0 |
 
-Eine Prozessdarstellung hilft dabei zu erkennen:
-
-- welche Schritte durchgeführt werden,
-- wer für welchen Schritt verantwortlich ist,
-- wo Entscheidungen getroffen werden,
-- wo Wartezeiten oder unnötige Schleifen entstehen.
+Zusätzlich prüfen:
+- einmalige Investitionskosten,
+- laufende Kosten,
+- monetärer Kundennutzen,
+- nicht monetärer Nutzen,
+- Risiken und Abhängigkeiten,
+- technische/organisatorische Machbarkeit.
 
 ---
 
-## 2. EPK — Ereignisgesteuerte Prozesskette
+## 10. Datenhoheit, Datenschutz und technische Umsetzung
 
-Eine **EPK** stellt einen Prozess als Abfolge von **Ereignissen** und **Funktionen** dar.
+Bei einer digitalen Prozesslösung muss geklärt werden:
+- welche Daten benötigt werden,
+- wer verantwortlich ist,
+- wer darauf zugreifen darf,
+- welche Schutz-/Nutzungsrechte gelten,
+- welche Schnittstellen benötigt werden,
+- wie Authentifizierung, Logging, Backup und Berechtigungen umgesetzt werden,
+- wie ein Anbieterwechsel/Exit möglich bleibt.
 
-### Ereignis
+Die technische Lösung folgt also aus den fachlichen Anforderungen – nicht umgekehrt.
 
-Ein Ereignis beschreibt einen Zustand oder Auslöser.
+---
 
-Beispiele:
+## 11. Erfolg nach der Umsetzung kontrollieren
 
-- „Bestellung ist eingegangen“
-- „Rechnung ist geprüft“
-- „Störung ist behoben“
+Nach Einführung:
+1. Kennzahlen erneut messen.
+2. Soll-Ist-Abweichung berechnen.
+3. Ursachen für Abweichungen analysieren.
+4. Rückmeldungen der Nutzer einholen.
+5. weitere Verbesserungen ableiten.
 
-### Funktion
+Digitalisierung ist damit kein einmaliger Zustand, sondern ein kontinuierlicher Verbesserungsprozess.
 
-Eine Funktion beschreibt eine Tätigkeit.
+---
 
-Beispiele:
+# EPK und BPMN
 
-- „Bestellung prüfen“
-- „Rechnung freigeben“
-- „Ticket bearbeiten“
+## 12. EPK — Ereignisgesteuerte Prozesskette
 
-Typisch für EPK ist der Wechsel:
-
-> **Ereignis → Funktion → Ereignis → Funktion**
-
-### Verknüpfungsoperatoren
-
-Mit Konnektoren werden Verzweigungen dargestellt:
-
-- **UND**: alle Pfade werden ausgeführt
-- **XOR**: genau ein Pfad wird gewählt
-- **OR**: ein oder mehrere Pfade können gewählt werden
-
-### Einfaches Beispiel
+Eine EPK arbeitet klassisch mit **Ereignissen** und **Funktionen**.
 
 ```text
-Bestellung eingegangen
+Bestellung eingegangen   ← Ereignis
         ↓
-Bestellung prüfen
+Bestellung prüfen         ← Funktion
         ↓
-      XOR
-     /   \
-korrekt  fehlerhaft
-  ↓         ↓
-freigeben  Rückfrage senden
+       XOR
+      /   \
+ korrekt  fehlerhaft
 ```
+
+Konnektoren:
+- **UND:** alle Pfade.
+- **XOR:** genau ein Pfad.
+- **OR:** ein oder mehrere Pfade.
 
 ---
 
-## 3. BPMN — Business Process Model and Notation
+## 13. BPMN — Business Process Model and Notation
 
-**BPMN** ist ebenfalls eine Sprache zur Modellierung von Geschäftsprozessen, bietet aber mehr Möglichkeiten zur Darstellung von Verantwortlichkeiten und komplexen Abläufen.
+Wichtige Elemente:
+- **Start-/End-Event**,
+- **Task/Aktivität**,
+- **Sequence Flow**,
+- **Gateway**,
+- **Pool/Lane** für Verantwortlichkeiten.
 
-### Wichtige BPMN-Elemente
+### Gateways
 
-**Event:** Ein Ereignis, zum Beispiel Start oder Ende eines Prozesses.
+| Gateway | Bedeutung |
+|---|---|
+| **XOR** | genau ein Pfad |
+| **Parallel / AND** | alle Pfade |
+| **Inklusiv / OR** | ein oder mehrere Pfade |
 
-**Task/Aktivität:** Eine Aufgabe, die durchgeführt wird.
-
-**Gateway:** Eine Verzweigung oder Zusammenführung.
-
-**Sequence Flow:** Pfeil, der den Ablauf zeigt.
-
-**Pool/Lane:** Zeigt, wer verantwortlich ist.
-
-### Swimlanes verstehen
-
-Swimlanes sind besonders nützlich, wenn mehrere Abteilungen beteiligt sind.
-
-Beispiel:
+### Swimlanes
 
 ```text
-Kunde       | Störung melden
-------------|-----------------
-ServiceDesk | Ticket aufnehmen → kategorisieren
-------------|-----------------
-IT-Abteilung| Fehler analysieren → beheben
+Kunde        | Anfrage senden
+-------------|----------------------------
+Service Desk | Anfrage prüfen → Ticket
+-------------|----------------------------
+Fachbereich  | bearbeiten → Ergebnis liefern
 ```
 
-Dadurch sieht man nicht nur **was** passiert, sondern auch **wer** etwas tut.
-
-### BPMN-Gateways
-
-| Gateway | Bedeutung | Beispiel |
-|---|---|---|
-| **Exklusiv (XOR)** | Genau ein Pfad | Rechnung korrekt: ja oder nein |
-| **Parallel (AND)** | Alle Pfade gleichzeitig | Bestellung buchen und Lager informieren |
-| **Inklusiv (OR)** | Ein oder mehrere Pfade | Kunde bekommt E-Mail und ggf. SMS |
-
-> **Merksatz:** XOR = genau einer. AND = alle. OR = mindestens einer möglich.
+Damit wird sichtbar, **wer** welchen Schritt ausführt und wo Übergaben entstehen.
 
 ---
 
-## 4. EPK und BPMN vergleichen
+## 14. EPK und BPMN unterscheiden
 
 | Kriterium | EPK | BPMN |
 |---|---|---|
-| **Grundidee** | Wechsel von Ereignissen und Funktionen | Flexible Prozessnotation |
-| **Verantwortlichkeiten** | Organisationseinheiten ergänzend | Pools und Lanes direkt im Diagramm |
-| **Verzweigungen** | UND, ODER, XOR | Gateways |
-| **Komplexe Abläufe** | Eher einfacher | Sehr gut darstellbar |
-| **Typischer Fokus** | Geschäftsprozesse | Geschäfts- und IT-Prozesse |
-
-### Prüfungslogik
-
-Wenn du Unterschiede nennen sollst, verwende klare Vergleichskriterien. Zum Beispiel:
-
-> BPMN stellt Verantwortlichkeiten direkt über Pools und Lanes dar, während bei der EPK Organisationseinheiten typischerweise Funktionen zugeordnet werden.
+| Grundidee | Ereignis ↔ Funktion | flexible Prozessnotation |
+| Verantwortlichkeit | Organisationseinheiten ergänzend | Pools/Lanes direkt |
+| Verzweigungen | UND/OR/XOR | Gateways |
+| komplexe Abläufe | eher einfacher | sehr detailliert modellierbar |
 
 ---
 
-## 5. ITSM — IT Service Management
+# IT Service Management
 
-**IT Service Management** beschreibt die strukturierte Planung, Bereitstellung und Verbesserung von IT-Services.
+## 15. Incident, Problem, Service Request und Change
 
-Ein IT-Service ist zum Beispiel:
+| Begriff | Bedeutung | Beispiel |
+|---|---|---|
+| **Incident** | ungeplante Störung | Outlook startet nicht |
+| **Major Incident** | besonders kritische Störung | zentraler Dienst für viele Nutzer ausgefallen |
+| **Problem** | zugrunde liegende Ursache wiederkehrender Incidents | Druckserver fällt jede Woche aus |
+| **Service Request** | standardisierte Anfrage | Passwort-Reset |
+| **Change** | geplante Änderung | neue Firewall-Regel |
 
-- E-Mail
-- Arbeitsplatz-PC
-- Onlinebanking
-- Druckservice
-- VPN-Zugang
-
-ITSM soll dafür sorgen, dass solche Services zuverlässig betrieben werden und Nutzer bei Problemen einen klaren Prozess haben.
-
----
-
-## 6. Incident, Major Incident, Service Request und Change
-
-Diese Begriffe werden in Prüfungen gerne verwechselt.
-
-### Incident
-
-Ein **Incident** ist eine ungeplante Störung oder Beeinträchtigung eines IT-Services.
-
-Beispiel:
-
-> Ein Mitarbeiter kann sich nicht mehr am E-Mail-System anmelden.
-
-Ziel des Incident Managements ist vor allem:
-
-> **Den normalen Betrieb möglichst schnell wiederherstellen.**
-
-Die Ursache muss dabei nicht sofort vollständig bekannt sein.
-
-### Major Incident
-
-Ein **Major Incident** ist eine besonders schwerwiegende Störung mit hoher Auswirkung und hoher Dringlichkeit.
-
-Beispiel:
-
-> Das zentrale Onlinebanking ist für alle Kunden ausgefallen.
-
-Hier gelten häufig beschleunigte Eskalations- und Kommunikationswege.
-
-### Service Request
-
-Ein **Service Request** ist keine Störung, sondern eine standardisierte Anfrage.
-
-Beispiele:
-
-- Passwort zurücksetzen
-- neue Software installieren
-- Berechtigung beantragen
-- neuen Arbeitsplatz bereitstellen
-
-### Change Request
-
-Ein **Change** ist eine geplante Änderung an einem IT-System oder Service.
-
-Beispiele:
-
-- Firewall-Regel ändern
-- neue Softwareversion einführen
-- Serverkonfiguration anpassen
-
-| Begriff | Kernfrage |
-|---|---|
-| **Incident** | Etwas funktioniert nicht. |
-| **Major Incident** | Etwas Wichtiges funktioniert massiv nicht. |
-| **Service Request** | Ich brauche eine Standardleistung. |
-| **Change** | Etwas am System soll geplant verändert werden. |
+**Incident Management:** Betrieb schnell wiederherstellen.  
+**Problem Management:** Ursache untersuchen und nachhaltig reduzieren.
 
 ---
 
-## 7. Problem Management
+## 16. Priorität, Support-Level und SPOC
 
-Incident Management behebt zunächst die akute Störung. **Problem Management** beschäftigt sich stärker mit der zugrunde liegenden Ursache.
+Priorität ergibt sich häufig aus **Impact (Auswirkung)** und **Urgency (Dringlichkeit)**.
 
-Beispiel:
+- **1st Level:** Annahme, Klassifikation, Standardlösung.
+- **2nd Level:** vertiefte Fach-/Systemanalyse.
+- **3rd Level:** Spezialisten, Entwicklung oder Hersteller.
 
-Jeden Montag fällt derselbe Druckserver aus.
-
-- Incident Management: Server neu starten, damit wieder gedruckt werden kann.
-- Problem Management: Herausfinden, warum der Server regelmäßig ausfällt, und die Ursache dauerhaft beseitigen.
-
-Eine **Known Error Database** kann bekannte Ursachen und Workarounds dokumentieren.
-
-> **Merksatz:** Incident = schnell wieder arbeitsfähig. Problem = Ursache finden und dauerhaft reduzieren.
+**SPOC (Single Point of Contact):** zentrale Anlaufstelle, häufig der Service Desk.
 
 ---
 
-## 8. SLA — Service Level Agreement
+## 17. SLA und Verfügbarkeit
 
-Ein **Service Level Agreement** legt messbare Anforderungen an eine IT-Dienstleistung fest.
+Ein **Service Level Agreement** definiert messbare Servicequalität, z. B.:
+- Verfügbarkeit,
+- Reaktionszeit,
+- Wiederherstellungszeit,
+- Supportzeiten,
+- Eskalation,
+- Reporting.
 
-Typische Inhalte:
+**Reaktionszeit** = wann die Bearbeitung beginnt.  
+**Wiederherstellungszeit** = wann der Service wieder funktionieren soll.
 
-- Verfügbarkeit
-- Reaktionszeit
-- Wiederherstellungszeit
-- Supportzeiten
-- Eskalationswege
-- Reporting
-- mögliche Konsequenzen bei Nichterfüllung
+### Up-Time
 
-### Unterschied Reaktionszeit und Wiederherstellungszeit
-
-**Reaktionszeit:** Wie schnell beginnt der Dienstleister mit der Bearbeitung?
-
-**Wiederherstellungszeit:** Wie schnell soll der Service wieder funktionieren?
-
-Das ist nicht dasselbe.
-
-### Beispiel
-
-SLA:
-
-- Reaktionszeit bei Priorität 1: 15 Minuten
-- Wiederherstellungsziel: 2 Stunden
-
-Das bedeutet nicht, dass die Störung nach 15 Minuten behoben sein muss. Nach spätestens 15 Minuten muss die Bearbeitung begonnen haben.
-
----
-
-## 9. Verfügbarkeit und Ausfallzeit berechnen
-
-Eine Verfügbarkeit von **99,9 %** bedeutet, dass das System zu 0,1 % der betrachteten Zeit ausfallen darf.
-
-### Rechenweg
-
-1. Gesamtzeit bestimmen.
-2. Nichtverfügbarkeit berechnen.
-3. In passende Einheit umrechnen.
-
-Beispiel für ein Jahr:
+Bei 99,99 % Verfügbarkeit pro Jahr:
 
 ```text
 365 × 24 = 8.760 Stunden
-
-99,99 % verfügbar
-→ 0,01 % nicht verfügbar
-→ 0,0001 als Dezimalzahl
-
+Nichtverfügbarkeit = 0,01 % = 0,0001
 8.760 × 0,0001 = 0,876 Stunden
 0,876 × 60 = 52,56 Minuten
 ```
 
-Also sind bei 99,99 % Verfügbarkeit ungefähr **52,6 Minuten Ausfall pro Jahr** zulässig.
-
-| Verfügbarkeit | Ungefähr zulässige Ausfallzeit/Jahr |
-|---|---:|
-| 99 % | 87,6 Stunden |
-| 99,9 % | 8,76 Stunden |
-| 99,99 % | 52,6 Minuten |
-| 99,999 % | 5,26 Minuten |
-
-### Prüfungslogik
-
-Achte auf die Bezugsdauer. Die gleiche Prozentzahl führt pro Monat, Jahr oder Woche zu unterschiedlichen absoluten Ausfallzeiten.
-
----
-
-## 10. SPOC — Single Point of Contact
-
-Ein **Single Point of Contact** ist eine zentrale Anlaufstelle für Nutzer, häufig der Service Desk.
-
-Statt dass Mitarbeiter direkt verschiedene IT-Spezialisten anrufen, geht die Anfrage zunächst an eine zentrale Stelle.
-
-Vorteile:
-
-- klare Zuständigkeit
-- einheitliche Erfassung von Tickets
-- bessere Nachverfolgbarkeit
-- Priorisierung möglich
-- Wissen kann zentral dokumentiert werden
+→ ca. **52,6 Minuten** zulässige Ausfallzeit pro Jahr.
 
 ---
 
 ## Kurz zusammengefasst
 
-- **EPK** arbeitet klassisch mit Ereignissen und Funktionen.
-- **BPMN** kann Prozesse, Verantwortlichkeiten und Verzweigungen sehr detailliert darstellen.
-- **Incident** = ungeplante Störung.
-- **Service Request** = standardisierte Anfrage.
-- **Change** = geplante Änderung.
-- **Problem Management** sucht die Ursache wiederkehrender Störungen.
-- Ein **SLA** macht Servicequalität messbar.
-- Bei Verfügbarkeitsrechnungen immer zuerst die **Nichtverfügbarkeit** bestimmen.
-
----
-
-## 6. Ist-/Soll-Prozess und Prozesslandschaft
-
-Bei einer Prozessanalyse wird zuerst der **Ist-Zustand** aufgenommen. Danach werden Schwachstellen und Optimierungsmöglichkeiten ermittelt und ein **Soll-Prozess** entworfen.
-
-Typische Punkte bei der Ist-Aufnahme:
-- Beteiligte Rollen/Abteilungen
-- Prozessschritte und Reihenfolge
-- Medienbrüche (z. B. Papier → manuelle Excel-Eingabe)
-- Schnittstellen zwischen Systemen
-- Wartezeiten, Rückfragen und Fehlerquellen
-- verwendete Daten und Verantwortlichkeiten
-
-Eine **Prozesslandschaft** zeigt nicht jedes Detail, sondern die großen Zusammenhänge von Führungs-, Kern- und Unterstützungsprozessen.
-
-## 7. Prozesskennzahlen
-
-Kennzahlen machen Verbesserungen messbar.
+**KDM-Prozesslogik:**
 
 ```text
-Durchlaufzeit = Bearbeitungszeit + Wartezeit + Transport-/Liegezeit
-Fehlerquote   = fehlerhafte Fälle / alle Fälle × 100 %
-Automatisierungsgrad = automatisierte Schritte / betrachtete Schritte × 100 %
-Kosten je Vorgang = gesamte Prozesskosten / Anzahl Vorgänge
+Prozesslandschaft
+→ Erwartungen ermitteln
+→ Ist-Prozess aufnehmen
+→ Schwachstellen/Daten analysieren
+→ Kennzahlen + Digitalisierungsgrad bestimmen
+→ Soll-Ziele definieren
+→ Soll-Prozess modellieren
+→ Wirtschaftlichkeit/Machbarkeit prüfen
+→ technische Umsetzung planen
+→ Erfolg messen und weiter verbessern
 ```
 
-**Beispiel:** 45 von 60 Schritten laufen automatisch.
-`45 / 60 × 100 = 75 % Automatisierungsgrad`.
-
-> Eine Verkürzung der reinen Bearbeitungszeit bringt wenig, wenn die meiste Zeit in Warteschlangen verloren geht. Deshalb immer den **gesamten Prozess** betrachten.
-
-## 8. Wertschöpfung und Digitalisierungsgrad beurteilen
-
-**Wertschöpfende Schritte** erzeugen aus Kundensicht einen Nutzen, z. B. die eigentliche Beratung oder Leistungserstellung. **Nicht wertschöpfende Schritte** wie doppelte Erfassung, unnötige Freigaben oder Suchen verursachen Aufwand ohne zusätzlichen Kundennutzen.
-
-Digitalisierung kann bedeuten:
-- analoge Daten digital erfassen,
-- Medienbrüche beseitigen,
-- Systeme über Schnittstellen verbinden,
-- manuelle Routinetätigkeiten automatisieren,
-- Daten für Entscheidungen nutzbar machen.
-
-**Prüfungslogik:** „Digital“ ist nicht automatisch „besser“. Eine Lösung muss auch wirtschaftlich, sicher, nutzbar und organisatorisch umsetzbar sein.
-
-## 9. Optimierung bewerten und Zielerreichung prüfen
-
-Vor einer Änderung sollten **messbare Ziele** definiert werden, z. B.:
-- Durchlaufzeit von 3 Tagen auf 1 Tag senken,
-- Fehlerquote unter 2 %,
-- 70 % der Standardfälle automatisieren,
-- Prozesskosten pro Fall um 20 % reduzieren.
-
-Nach der Umsetzung erfolgt ein **Soll-Ist-Vergleich**. Erst dann lässt sich beurteilen, ob die Maßnahme erfolgreich war.
-
-## 10. Support-Level und Priorisierung
-
-Ein Ticket wird nicht nur nach „wichtig/unwichtig“ behandelt. Häufig werden **Auswirkung (Impact)** und **Dringlichkeit (Urgency)** kombiniert.
-
-| Beispiel | Typische Priorität |
-|---|---|
-| Einzelner Nutzer, kleiner Workaround vorhanden | niedrig/mittel |
-| Ganze Abteilung kann Kernprozess nicht ausführen | hoch |
-| Kritischer Dienst für viele Nutzer vollständig ausgefallen | sehr hoch / Major Incident |
-
-**1st Level:** Annahme, Klassifikation, Standardlösungen.  
-**2nd Level:** vertiefte Fach-/Systemanalyse.  
-**3rd Level:** Hersteller/Entwicklung bzw. Spezialisten.
-
-Die genaue Einteilung kann im Unternehmen anders heißen; entscheidend ist die **systematische Eskalation nach Kompetenz und SLA**.
+Genau diese Kette solltest du auf neue Prüfungssituationen übertragen können.
 
 ---
 
@@ -419,12 +347,13 @@ Die genaue Einteilung kann im Unternehmen anders heißen; entscheidend ist die *
 
 | Aufgabentyp | Beispielformulierung |
 |---|---|
-| EPK vs. BPMN | „Nennen und erläutern Sie 2 Unterschiede zwischen EPK und BPMN.“ |
-| Diagramm ergänzen | Fehlende Symbole, Gateways oder Verantwortlichkeiten eintragen |
-| SLA-Berechnung | „Wie viele Minuten Ausfall sind bei 99,99 % Up-Time pro Jahr erlaubt?“ |
-| Incident/Major | „Erläutern Sie den Unterschied zwischen Incident und Major Incident.“ |
-| Service Request | „Ordnen Sie die Beispiele Incident, Service Request oder Change zu.“ |
-| SPOC | „Erläutern Sie den Zweck eines SPOC.“ |
+| Prozessanalyse | „Analysieren Sie den Ist-Prozess und nennen Sie drei Optimierungspotenziale.“ |
+| Soll-Prozess | „Beschreiben Sie zwei Maßnahmen zur digitalen Weiterentwicklung.“ |
+| Kennzahlen | „Ermitteln Sie Durchlaufzeit/Fehlerquote/Automatisierungsgrad.“ |
+| Wirtschaftlichkeit | „Beurteilen Sie die Lösung anhand von Kosten und Kundennutzen.“ |
+| BPMN | „Ergänzen Sie Gateways und Verantwortlichkeiten.“ |
+| ITSM | „Ordnen Sie Incident, Service Request und Change zu.“ |
+| SLA | „Berechnen Sie die zulässige Ausfallzeit.“ |
 
 ---
 <div class="kdm-calculators" data-calculators="uptime"></div>

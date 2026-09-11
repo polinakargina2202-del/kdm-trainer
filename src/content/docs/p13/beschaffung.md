@@ -9,205 +9,125 @@ sidebar:
 
 ## 1. Beschaffungsprozess
 
-```
+```text
 Bedarfsermittlung → Lieferantenauswahl → Angebotseinholung →
 Angebotsvergleich → Bestellung → Lieferavis → Wareneingang →
 Rechnungsprüfung → Zahlung
 ```
 
----
-
 ## 2. Lieferavis
 
-**Definition:** Vorabankündigung einer Warenlieferung vom Lieferanten/Spediteur an den Empfänger.
+**Lieferavis:** Vorabankündigung einer Warenlieferung. Es hilft, Personal, Lagerplatz und Prüfmittel vorzubereiten. Typische Angaben: Liefertermin, Lieferant/Spediteur, Artikel/Menge, Bestell-/Lieferscheinnummer und Packstücke.
 
-**Zweck:** Vorbereitung des Wareneingangs (Personal, Lagerplatz, Prüfmittel bereitstellen).
+## 3. Warenannahmeprotokoll und Wareneingang
 
-**Inhalt eines Lieferavis:**
-- Liefertermin (Datum, Uhrzeit)
-- Lieferant und Spediteur
-- Inhalt der Lieferung (Artikel, Menge)
-- Referenznummern (Bestellnummer, Lieferscheinnummer)
-- Anzahl Pakete/Paletten
+Typische Inhalte:
+- Datum/Uhrzeit,
+- Anlieferer,
+- Lieferschein-/Bestellnummer,
+- Art und Menge,
+- Zustand/Beschädigungen,
+- Unterschrift.
 
----
+Prüfen: **Identität, Menge, Qualität/Zustand** und Übereinstimmung mit Bestellung/Lieferschein.
 
-## 3. Warenannahmeprotokoll
+## 4. Mängelarten
 
-**Zweck:** Dokumentation der Warenlieferung bei Annahme.
-
-**Typische Merkmale (Inhalt):**
-- Datum und Uhrzeit der Warenannahme
-- Name des Anlieferers / Spediteur
-- Lieferschein- oder Bestellnummer
-- Anzahl der Pakete/Paletten
-- Art und Umfang der gelieferten Waren
-- **Zustand der Ware** (Beschädigungen, offensichtliche Mängel)
-- Unterschrift des Annehmenden
-
----
-
-## 4. Wareneingangskontrolle
-
-**Identitätsprüfung:** Stimmt geliefertes Produkt mit bestelltem überein?
-**Mengenkontrolle:** Stimmt die Menge mit Lieferschein/Bestellung überein?
-**Qualitätsprüfung:** Sind Waren unbeschädigt und funktionstüchtig?
-
----
-
-## 5. Mängelarten
-
-| Mängelart | Beschreibung | Vorgehen |
+| Mängelart | Beschreibung | Typisches Vorgehen im Handelskauf |
 |---|---|---|
-| **Offensichtlicher Mangel** | Bei der Warenannahme sofort erkennbar (z.B. beschädigte Verpackung, falsche Menge) | Sofort dokumentieren, unter Vorbehalt annehmen oder zurückweisen, Mängelrüge **unverzüglich** |
-| **Versteckter Mangel** | Erst nach Annahme sichtbar (z.B. Gerät flackert nach 30 Min Betrieb, innere Beschädigungen) | Nach Entdeckung **unverzüglich** melden, Gewährleistungsansprüche geltend machen |
+| **offensichtlicher Mangel** | bei ordnungsgemäßer Untersuchung erkennbar | dokumentieren und unverzüglich rügen |
+| **verdeckter/versteckter Mangel** | wird erst später erkennbar | nach Entdeckung unverzüglich anzeigen |
 
-### Vorgehen bei Mängeln (Checkliste):
-1. Mangel fotografisch **dokumentieren**
-2. Lieferanten **sofort informieren** (Mängelrüge)
-3. Mangelhafte Ware **sichern** (nicht weiterverarbeiten)
-4. Gewährleistungsansprüche prüfen
-5. Ersatzlieferung oder Reparatur vereinbaren
+Im **beiderseitigen Handelskauf** ist § 377 HGB wichtig: Ware nach Ablieferung unverzüglich untersuchen und erkennbare Mängel unverzüglich rügen; verdeckte Mängel nach Entdeckung unverzüglich anzeigen.
 
----
+## 5. Gewährleistung/Mängelrechte und Garantie
 
-## 6. Gewährleistung vs. Garantie
-
-| | Gewährleistung | Garantie |
+| | gesetzliche Mängelrechte | Garantie |
 |---|---|---|
-| **Grundlage** | Gesetzlich vorgeschrieben (§ 437 BGB) | Freiwillige Leistung des Herstellers/Händlers |
-| **Kann ausgeschlossen werden?** | Beim Verbraucherkauf: Nein | Ja (oder gar nicht anbieten) |
-| **Dauer** | 2 Jahre ab Übergabe (Kaufvertrag) | Laut Garantiebedingungen (oft 1–3 Jahre) |
-| **Voraussetzung** | Mangel war **bei Übergabe** bereits vorhanden | Laut Garantiebedingungen |
-| **Beweislast** | Beim Verbrauchsgüterkauf: zeigt sich der Mangel innerhalb von 1 Jahr, wird grundsätzlich vermutet, dass er schon bei Gefahrübergang vorlag (§ 477 BGB) | Laut Garantiebedingungen |
-| **Ansprüche** | Nacherfüllung, Minderung, Rücktritt, Schadensersatz | Laut Garantiebedingungen |
+| Grundlage | Gesetz, z. B. Kaufrecht | freiwilliges zusätzliches Versprechen |
+| Voraussetzung | Sachmangel nach den gesetzlichen Voraussetzungen | Garantiebedingungen |
+| typische Rechte | zunächst Nacherfüllung; unter Voraussetzungen Rücktritt, Minderung, Schadenersatz | nach Garantiebedingungen |
+| Frist | gesetzliche Fristen, bei Kauf beweglicher Sachen grundsätzlich zwei Jahre; Sonderregeln/vertragliche Spielräume beachten | nach Garantieversprechen |
 
-> **Merksatz:** Gewährleistung = **Pflicht** (Gesetz) · Garantie = **freiwillig** (Versprechen)
+Beim Verbrauchsgüterkauf gilt für einen innerhalb eines Jahres seit Gefahrübergang auftretenden mangelhaften Zustand grundsätzlich die Vermutung des § 477 BGB, soweit die gesetzlichen Voraussetzungen erfüllt sind.
 
----
+> **Merksatz:** Gesetzliche Mängelrechte sind nicht dasselbe wie eine freiwillige Garantie.
 
-## 7. Angebotsvergleich
+## 6. Angebotsvergleich / Bezugspreis
 
-### Bezugspreisberechnung:
-
-| Schritt | Rechnung |
-|---|---|
-| Listeneinkaufspreis (LEP) | Ausgangsposition |
-| − Rabatt (%) | LEP × Rabatt% |
-| = Zieleinkaufspreis (ZEP) | |
-| − Skonto (%) | ZEP × Skonto% |
-| = Bareinkaufspreis (BEP) | |
-| + Bezugskosten (Fracht, Verpackung) | Absoluter Betrag |
-| = **Bezugspreis** | **Vergleichsbasis** |
-
-### Beispielrechnung:
-
-| | Anbieter A | Anbieter B |
-|---|---|---|
-| Listenpreis | 1.000 € | 950 € |
-| − 10% Rabatt | − 100 € | − 0 € |
-| = Zieleinkaufspreis | 900 € | 950 € |
-| − 2% Skonto | − 18 € | − 19 € |
-| = Bareinkaufspreis | 882 € | 931 € |
-| + Fracht | + 20 € | + 0 € |
-| = **Bezugspreis** | **902 €** | **931 €** |
-
-> Anbieter A ist günstiger, obwohl Listenpreis höher!
-
-### Qualitative Kriterien:
-- Lieferzuverlässigkeit und -pünktlichkeit
-- Qualitätszertifizierungen
-- Zahlungsbedingungen
-- Reklamationsverhalten
-- Kundendienst / Support
-
----
-
-## 8. Skonto vs. Rabatt
-
-| | Skonto | Rabatt |
-|---|---|---|
-| **Definition** | Preisnachlass bei **Zahlung innerhalb einer Frist** | Sofortige Preisminderung, unabhängig vom Zahlungszeitpunkt |
-| **Zeitpunkt** | Nach der Lieferung (Zahlungsziel) | Bei Auftragserteilung / Rechnungsstellung |
-| **Beispiel** | „2% Skonto bei Zahlung innerhalb 10 Tagen" | „10% Mengenrabatt ab 100 Einheiten" |
-
-### Skonto-Vorteilhaftigkeitsrechnung:
-
-**Frage:** Lohnt sich Skonto nutzen, wenn man dafür einen Kontokorrentkredit aufnehmen muss?
-
-**Formel (vereinfacht):**
-```
-Jährlicher Skonto-Zinssatz = (Skonto% / (100 - Skonto%)) × (360 / (Zahlungsziel - Skontofrist))
+```text
+Listeneinkaufspreis
+− Rabatt
+= Zieleinkaufspreis
+− Skonto
+= Bareinkaufspreis
++ Bezugskosten
+= Bezugspreis
 ```
 
-**Beispiel:** 2% Skonto bei 10 Tagen, Zahlungsziel 30 Tagen, Kontokorrent 8% p.a.
+Qualitative Kriterien: Lieferzuverlässigkeit, Qualität/Zertifizierungen, Zahlungsbedingungen, Reklamationsverhalten, Support, Nachhaltigkeit, Integrationsfähigkeit.
+
+## 7. Skonto vs. Rabatt
+
+**Rabatt:** Preisnachlass unabhängig vom späteren Zahlungszeitpunkt.  
+**Skonto:** Nachlass bei Zahlung innerhalb einer bestimmten Frist.
+
+Vereinfachter Jahresvergleich:
+
+```text
+Skontoverzichtskosten ≈ Skonto% / (100 − Skonto%) × 360 / (Zahlungsziel − Skontofrist)
 ```
-Skonto-Zins = (2 / 98) × (360 / 20) = 0,0204 × 18 = 36,7% p.a.
-```
-→ 36,7% >> 8% Kontokorrent → **Skonto lohnt sich immer!**
 
----
+Beispiel 2 % Skonto, 10 Tage Skontofrist, 30 Tage Ziel:
+`(2/98) × (360/20) ≈ 36,7 % p.a.`
 
-## 9. Besitz und Eigentum
+Bei 8 % Kosten einer kurzfristigen Finanzierung wäre die Skontonutzung **in diesem Beispiel** wirtschaftlich vorteilhaft.
 
-- **Besitz:** tatsächliche Sachherrschaft – wer die Sache gerade hat.
-- **Eigentum:** rechtliche Herrschaft – wem die Sache rechtlich gehört.
+> **Wichtig:** Skonto lohnt sich nicht „immer“. Kosten des Skontoverzichts, alternative Finanzierung und Liquidität vergleichen.
 
-Beispiel: Beim gemieteten Notebook ist der Mieter **Besitzer**, der Vermieter bleibt grundsätzlich **Eigentümer**.
+## 8. Besitz und Eigentum
 
-## 10. IT-Bedarf und Integrationsfähigkeit prüfen
+- **Besitz:** tatsächliche Sachherrschaft.
+- **Eigentum:** rechtliche Herrschaft.
 
-Vor einer Beschaffung sollten nicht nur Preis und Leistung geprüft werden:
+Beim gemieteten Notebook ist der Mieter Besitzer; der Vermieter bleibt grundsätzlich Eigentümer.
+
+## 9. IT-Bedarf und Integrationsfähigkeit
+
+Vor einer IT-Beschaffung prüfen:
 - Kompatibilität zu vorhandener Hard-/Software,
 - Schnittstellen/APIs und Datenformate,
 - Skalierbarkeit,
 - Datenschutz/IT-Sicherheit,
-- Lizenz- und Supportmodell,
+- Lizenz-/Supportmodell,
 - Wartbarkeit/Updates,
 - Lieferfähigkeit und Anbieterabhängigkeit,
 - TCO und Nachhaltigkeit.
 
-**Interoperabilität** bedeutet, dass Systeme miteinander zusammenarbeiten und Daten/Funktionen austauschen können.
+**Interoperabilität:** Systeme können sinnvoll zusammenarbeiten und Daten/Funktionen austauschen.
 
-## 11. Vertragsstörungen im Beschaffungsprozess
+## 10. Vertragsstörungen im Beschaffungsprozess
 
-### Nicht rechtzeitige Lieferung / Lieferverzug
-Typische Prüfungsschritte:
-1. Ist die Leistung fällig?
-2. Ist ggf. eine Mahnung erforderlich oder ausnahmsweise entbehrlich (z. B. kalendermäßig bestimmter Termin)?
-3. Welche Folgen entstehen?
+### Lieferverzug
+1. Ist Leistung fällig?
+2. Ist Mahnung erforderlich oder ausnahmsweise entbehrlich?
+3. Welche Rechtsfolgen passen zum Fall?
 
-Mögliche Rechte je nach Fall: Erfüllung verlangen, Schadenersatz wegen Verzögerung, nach erfolgloser angemessener Fristsetzung ggf. Rücktritt und/oder Schadenersatz statt Leistung.
+Je nach Voraussetzungen kommen Erfüllung, Verzögerungsschaden und nach Fristsetzung ggf. Rücktritt/Schadenersatz statt Leistung in Betracht.
 
-### Schlechtleistung / Sachmangel
-Grundsätzlich steht zunächst **Nacherfüllung** im Vordergrund (Nachbesserung oder Ersatzlieferung). Unter den gesetzlichen Voraussetzungen kommen danach u. a. **Minderung, Rücktritt und Schadenersatz** in Betracht.
+### Sachmangel
+Grundsätzlich steht die **Nacherfüllung** im Vordergrund. Unter gesetzlichen Voraussetzungen folgen ggf. Minderung, Rücktritt und Schadenersatz.
 
-> Im **beiderseitigen Handelskauf** (Kaufleute) ist § 377 HGB besonders wichtig: Ware nach Ablieferung unverzüglich untersuchen und erkennbare Mängel unverzüglich rügen; verdeckte Mängel nach Entdeckung unverzüglich anzeigen.
+## 11. IT-Dienstleistungen kontrollieren
 
-## 12. Beschaffung von Dienstleistungen kontrollieren
-
-Bei IT-Dienstleistungen gibt es keinen klassischen Wareneingang. Stattdessen können kontrolliert werden:
-- vereinbarter Leistungsumfang,
+Bei Dienstleistungen statt klassischem Wareneingang prüfen:
+- Leistungsumfang,
 - Termine/Meilensteine,
 - SLA-Kennzahlen,
 - Stunden-/Leistungsnachweise,
-- Test- und Abnahmeergebnisse,
+- Test-/Abnahmeergebnisse,
 - Dokumentation,
 - offene Mängel/Abweichungen.
-
-Die Kontrolle sollte so dokumentiert sein, dass Rechnung, Abnahme und spätere Reklamationen nachvollziehbar sind.
-
----
-
-## Prüfungsaufgaben-Muster
-
-| Aufgabentyp | Beispielformulierung |
-|---|---|
-| Lieferavis | „Was versteht man unter einem Lieferavis?" |
-| Warenannahmeprotokoll | „Nennen Sie 4 Merkmale eines Warenannahmeprotokolls." |
-| Mängelarten | „Unterscheiden Sie offensichtlichen und versteckten Mangel. Wie ist vorzugehen?" |
-| Gewährleistung/Garantie | „Erläutern Sie den Unterschied zwischen Gewährleistung und Garantie." |
-| Bezugspreis | Tabelle mit Rabatten/Skonto/Fracht ausfüllen und günstigsten Anbieter ermitteln |
 
 ---
 <div class="kdm-calculators" data-calculators="bezugspreis,skonto"></div>

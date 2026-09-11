@@ -7,202 +7,95 @@ sidebar:
     variant: danger
 ---
 
-> **Prüfungsrelevanz:** In 6 von 7 Sessions. Tilgungsplan-Berechnung kommt fast immer.
+> **Prüfungsrelevanz:** Finanzierung und Darlehensvergleich kommen häufig vor. Entscheidend ist nicht nur Rechnen, sondern die Auswirkung auf Liquidität und Gesamtkosten.
 
-## 1. Außen- vs. Innenfinanzierung
+## 1. Außen- und Innenfinanzierung
 
 | | Außenfinanzierung | Innenfinanzierung |
 |---|---|---|
-| **Herkunft** | Mittel fließen von **außen** ins Unternehmen | Mittel werden **intern** erwirtschaftet |
-| **Eigenkapital** | Beteiligungsfinanzierung (neuer Gesellschafter, Aktienemission) | Gewinnthesaurierung (Einbehaltung von Gewinnen) |
-| **Fremdkapital** | Bankkredit, Anleihe, Lieferantenkredit | — |
-| **Sonstige** | Leasing, Factoring, Fördermittel | Abschreibungen (Kapitalfreisetzung), Rückstellungen |
+| Herkunft | Mittel von außen | Mittel aus dem Unternehmen |
+| Beispiele | Bankdarlehen, Beteiligung, Lieferantenkredit | Gewinnthesaurierung, Finanzierung aus Abschreibungsgegenwerten/Rückstellungen |
 
-### Konkrete Zuordnung (W25/26):
+## 2. Darlehensarten
 
-**Außenfinanzierung:**
-- Bankdarlehen aufnehmen
-- Neuer Gesellschafter bringt Kapital ein
-- Anleihe ausgeben
-- Crowdfunding
+### Ratendarlehen
+Gleichbleibende Tilgung, sinkende Restschuld und sinkende Zinsen; die Gesamtzahlung je Periode sinkt.
 
-**Innenfinanzierung:**
-- Gewinn wird nicht ausgeschüttet (Selbstfinanzierung)
-- Abschreibungen fließen zurück
-- Auflösung von Rückstellungen
-- Erlöse aus anderen Projekten
+```text
+Tilgung je Periode = Darlehensbetrag / Anzahl Perioden
+Zinsen = Restschuld zu Periodenbeginn × Zinssatz
+Rate = Tilgung + Zinsen
+```
 
----
+### Fälligkeitsdarlehen
+Während der Laufzeit wird die Schuld grundsätzlich nicht getilgt; Zinsen fallen auf die volle Restschuld an, Tilgung am Ende. Vorteil: geringe laufende Tilgungsbelastung; Nachteil: große Schlusszahlung muss geplant werden.
 
-## 2. Tilgungsdarlehen — Drei Arten
+### Annuitätendarlehen
+Annuität grundsätzlich konstant; Zinsanteil sinkt mit der Restschuld, Tilgungsanteil steigt.
 
-### Ratendarlehen (Abzahlungsdarlehen):
-
-**Prinzip:** Gleichbleibende Tilgung + sinkende Zinsen → **sinkende Gesamtbelastung**
-
-| Jahr | Schuld Beginn | Zinsen (5%) | Tilgung | Gesamtbelastung | Schuld Ende |
-|------|--------------|-------------|---------|-----------------|-------------|
-| 1 | 10.000 € | 500 € | 2.500 € | **3.000 €** | 7.500 € |
-| 2 | 7.500 € | 375 € | 2.500 € | **2.875 €** | 5.000 € |
-| 3 | 5.000 € | 250 € | 2.500 € | **2.750 €** | 2.500 € |
-| 4 | 2.500 € | 125 € | 2.500 € | **2.625 €** | 0 € |
-| **Σ** | | **1.250 €** | **10.000 €** | **11.250 €** | |
-
-**Merkmal:** Höchste Belastung am Anfang, sinkt jedes Jahr. Günstigste Gesamtkosten.
-
----
-
-### Fälligkeitsdarlehen:
-
-**Prinzip:** Keine Tilgung während Laufzeit, nur Zinsen zahlen. Rückzahlung der vollen Summe am Ende.
-
-| Jahr | Schuld Beginn | Zinsen (5%) | Tilgung | Gesamtbelastung | Schuld Ende |
-|------|--------------|-------------|---------|-----------------|-------------|
-| 1 | 10.000 € | 500 € | 0 € | **500 €** | 10.000 € |
-| 2 | 10.000 € | 500 € | 0 € | **500 €** | 10.000 € |
-| 3 | 10.000 € | 500 € | 0 € | **500 €** | 10.000 € |
-| 4 | 10.000 € | 500 € | **10.000 €** | **10.500 €** | 0 € |
-| **Σ** | | **2.000 €** | **10.000 €** | **12.000 €** | |
-
-**Merkmal:** Gleichbleibend niedrige Raten (nur Zinsen), aber teuerste Variante (höchste Gesamtzinsen). Liquiditätsvorteil während Laufzeit.
-
----
-
-### Annuitätendarlehen:
-
-**Prinzip:** Gleichbleibende Rate (Annuität) = steigender Tilgungsanteil + sinkende Zinsen.
-
-| Jahr | Schuld Beginn | Zinsen (5%) | Tilgung | Annuität (fix) | Schuld Ende |
-|------|--------------|-------------|---------|----------------|-------------|
-| 1 | 10.000 € | 500 € | 2.338 € | **2.838 €** | 7.662 € |
-| 2 | 7.662 € | 383 € | 2.455 € | **2.838 €** | 5.207 € |
-| 3 | 5.207 € | 260 € | 2.578 € | **2.838 €** | 2.629 € |
-| 4 | 2.629 € | 131 € | 2.629 € | **2.760 €** | 0 € |
-| **Σ** | | **≈1.274 €** | **10.000 €** | **≈11.274 €** | |
-
-**Merkmal:** Planungssicherheit durch gleichbleibende Raten. Gut für Budgetplanung.
-
----
-
-## 3. Vergleich der Darlehensarten
-
-| | Ratendarlehen | Fälligkeitsdarlehen | Annuitätendarlehen |
+| Merkmal | Ratendarlehen | Fälligkeitsdarlehen | Annuitätendarlehen |
 |---|---|---|---|
-| **Tilgung** | Gleichmäßig | Am Ende komplett | Wachsend |
-| **Zinsen** | Sinkend | Gleichbleibend | Sinkend |
-| **Rate** | Sinkend | Niedrig (nur Zinsen), dann hohe Schlusszahlung | Gleichbleibend |
-| **Gesamtkosten** | Niedrigste | Höchste | Mittel |
-| **Liquidität** | Mittel | Günstig während Laufzeit | Gleichmäßig |
-| **Planbarkeit** | Eingeschränkt | Gut (Raten gleichbleibend) | Sehr gut |
+| Tilgung | gleichbleibend | am Ende | steigend |
+| Zinsen | sinkend | bei konstantem Zinssatz gleichbleibend | sinkend |
+| Rate | sinkend | Zinsen, dann hohe Schlusszahlung | grundsätzlich konstant |
+| Liquiditätsplanung | hohe Belastung am Anfang | Schlusszahlung besonders beachten | gut planbare regelmäßige Rate |
 
-> **Prüfungstipp:** Welche Variante ist am kostengünstigsten? → **Ratendarlehen** (niedrigste Gesamtzinsen)
+> Bei **gleichem Kreditbetrag, Zinssatz und vergleichbarer Laufzeit** hat ein Ratendarlehen typischerweise niedrigere Gesamtzinsen, weil die Restschuld schneller sinkt. In der Prüfung trotzdem immer die konkret gegebenen Zahlungspläne vergleichen.
 
----
+## 3. Leasing
 
-## 4. Leasing
+Leasing ist die entgeltliche Nutzungsüberlassung eines Wirtschaftsguts für eine vereinbarte Zeit. Zivilrechtlicher Eigentümer bleibt grundsätzlich der Leasinggeber. **Bilanzierung und steuerliche Behandlung hängen von Vertragsgestaltung und wirtschaftlicher Zurechnung ab**; deshalb sind pauschale Aussagen wie „Leasing steht nie in der Bilanz des Leasingnehmers“ zu vermeiden.
 
-**Definition:** Nutzungsrecht an einem Gegenstand gegen regelmäßige Leasingraten. Eigentümer bleibt der **Leasinggeber**. Das Objekt wird **nicht bilanziert** (kein Aktivposten beim Leasingnehmer).
+Mögliche Vorteile:
+- keine hohe einmalige Anschaffungsauszahlung,
+- planbare Raten,
+- Technologiewechsel nach Vertragsende kann leichter planbar sein,
+- Wartung/Service kann je nach Vertrag enthalten sein.
 
-| | Kauf (Kredit) | Leasing |
-|---|---|---|
-| **Eigentum** | Ja, sofort | Nein (Leasinggeber behält Eigentum) |
-| **Bilanz** | Aktivierung nötig | Kein Aktivieren (außerbilanzielle Finanzierung) |
-| **Liquidität** | Einmalige Belastung oder Kreditaufnahme | Regelmäßige Raten |
-| **Steuerlich** | Abschreibung absetzbar | Leasingrate als Betriebsausgabe absetzbar |
-| **Flexibilität** | Gerät gehört einem | Neue Technologie nach Laufzeit möglich |
-| **Gesamtkosten** | Oft günstiger langfristig | Teurer langfristig |
+Mögliche Nachteile:
+- regelmäßig kein Eigentumserwerb während der Laufzeit,
+- Vertragsbindung,
+- kann über die Gesamtlaufzeit teurer als ein Kauf sein,
+- Rückgabe-/Restwert-/Mehrkilometerregelungen je nach Vertrag.
 
-**Vorteile Leasing:**
-- Keine hohe Anfangsinvestition
-- kann je nach Vertragsgestaltung die Liquidität schonen und die Bilanzstruktur anders beeinflussen als ein kreditfinanzierter Kauf
-- Immer neueste Technologie
-- Wartung oft inklusive
+## 4. Liquiditätsplanung
 
-**Nachteile Leasing:**
-- Kein Eigentumserwerb
-- Bindung an Laufzeit (keine vorzeitige Kündigung ohne Kosten)
-- Langfristig teurer als Kauf
-- Bei Vertragsende: Gerät zurückgeben oder Restlaufzahlungen
+Liquidität bedeutet Zahlungsfähigkeit. Bei Finanzierung nicht nur Gesamtkosten betrachten, sondern **wann** Zahlungen fällig werden.
 
-### Bilanzauswirkung Leasing (S23):
-- Kauf auf Kredit: **Maschine aktivieren** (Aktiv ↑), **Verbindlichkeit** (Passiv ↑) → Bilanzverlängerung
-- Leasing: **nicht pauschal außerbilanziell**. Die Bilanzierung hängt von Vertragsgestaltung und wirtschaftlicher Zurechnung ab. Im typischen Operating-Leasingfall bleibt das Leasingobjekt beim Leasinggeber.
+- Ratendarlehen: hohe Belastung zu Beginn, später sinkend.
+- Fälligkeitsdarlehen: Schlusszahlung frühzeitig ansparen/einplanen.
+- Annuität: regelmäßige Rate erleichtert Planbarkeit.
 
----
+## 5. Bilanzbewegungen
 
-## 5. Liquiditätsplanung
+**Darlehensaufnahme:** Bank ↑ und Verbindlichkeit ↑ → Aktiv-Passiv-Mehrung.  
+**Tilgung:** Bank ↓ und Verbindlichkeit ↓ → Aktiv-Passiv-Minderung.
 
-Welche Darlehensart eignet sich für die Liquiditätsplanung?
+## 6. Weitere Finanzierungsformen
 
-| Darlehensart | Liquiditätsplanung |
-|---|---|
-| **Ratendarlehen** | Sinkende Raten → schwieriger zu planen, Anfang am teuersten |
-| **Fälligkeitsdarlehen** | Gleichbleibend niedrige Raten gut planbar, hohe Schlusszahlung einplanen |
-| **Annuitätendarlehen** | Gleichbleibende Raten → **einfachste Liquiditätsplanung** |
-
----
-
-## 6. Außen- vs. Innenfinanzierung: Bilanzbewegung (S23)
-
-**Darlehensaufnahme:**
-- Bankkonto steigt (Aktiv ↑)
-- Verbindlichkeit gegenüber Bank steigt (Passiv ↑)
-- → **Aktiv-Passiv-Mehrung** (Bilanzverlängerung)
-
-**Tilgung:**
-- Bankkonto sinkt (Aktiv ↓)
-- Verbindlichkeit sinkt (Passiv ↓)
-- → **Aktiv-Passiv-Minderung** (Bilanzverkürzung)
-
----
-
-## 7. Weitere Finanzierungsformen
-
-| Form | Idee | Vorteil | Risiko/Nachteil |
+| Form | Idee | möglicher Vorteil | möglicher Nachteil |
 |---|---|---|---|
-| **Lieferantenkredit** | Zahlungsziel statt sofortiger Zahlung | schnell, unkompliziert | entgangener Skonto kann sehr teuer sein |
-| **Factoring** | Forderungen werden an Factor verkauft | schnelle Liquidität, ggf. Ausfallrisiko übertragen | Gebühren; Kundenkontakt teilweise betroffen |
-| **Crowdfunding** | viele Personen finanzieren ein Vorhaben | Markttest + Finanzierung | Kampagnenaufwand, Erfolg unsicher |
-| **Beteiligungsfinanzierung** | Investor stellt Eigenkapital bereit | keine feste Tilgung | Mitspracherechte/Anteile |
-| **Fördermittel/Zuschüsse** | öffentliche Förderung | günstiger/kein vollständiger Rückzahlungsbedarf | Bedingungen, Antrag, Zweckbindung |
+| Lieferantenkredit | später zahlen | schnell verfügbar | Skontoverzicht kann teuer sein |
+| Factoring | Forderungen verkaufen | schnellere Liquidität | Gebühren/Abhängigkeit |
+| Crowdfunding | viele finanzieren Vorhaben | Finanzierung + Markttest | Erfolg unsicher/Aufwand |
+| Beteiligungsfinanzierung | Eigenkapital von Investor | keine feste Tilgung | Mitspracherechte/Anteile |
+| Fördermittel | öffentliche Unterstützung | günstigere Finanzierung | Bedingungen/Zweckbindung |
 
-## 8. Effektive Finanzierungskosten beurteilen
+## 7. Finanzierungskosten beurteilen
 
-Nicht nur den Nominalzins vergleichen. Relevant können sein:
+Nicht nur Nominalzins vergleichen:
 - Zinszahlungen,
 - Gebühren,
 - Laufzeit,
 - Tilgungsstruktur,
 - Sicherheiten,
-- Restwert/Schlussrate,
+- Schlussrate/Restwert,
 - entgangener Skonto,
-- Flexibilität bei Sondertilgung/Kündigung.
+- Sondertilgung/Kündigungsflexibilität.
 
-**Skonto als Finanzierungssignal:** Wer 2 % Skonto für nur wenige zusätzliche Tage Zahlungsziel aufgibt, akzeptiert rechnerisch oft sehr hohe effektive Kosten. Deshalb immer vergleichen, wenn Zahlen gegeben sind.
+## 8. Bonität und Sicherheiten
 
-## 9. Bonität und Sicherheiten
-
-Ein Kreditgeber prüft, ob Zins und Tilgung voraussichtlich geleistet werden können. Mögliche Faktoren:
-- Einkommen/Cashflow,
-- Verschuldung,
-- Eigenkapitalquote,
-- bisheriges Zahlungsverhalten,
-- Sicherheiten,
-- Geschäftsmodell und Zukunftsaussichten.
-
-Höheres Risiko kann zu höheren Zinsen, zusätzlichen Sicherheiten oder Ablehnung führen.
-
----
-
-## Prüfungsaufgaben-Muster
-
-| Aufgabentyp | Beispielformulierung |
-|---|---|
-| Zuordnung | „Ordnen Sie die folgenden Finanzierungsarten Außen- oder Innenfinanzierung zu." |
-| Tilgungsplan | „Vervollständigen Sie den Tilgungsplan für ein Ratendarlehen." |
-| Vergleich | „Welche Darlehensart ist am kostengünstigsten? Begründen Sie." |
-| Leasing | „Erläutern Sie den Begriff Leasing. Nennen Sie je 1 Vor- und Nachteil." |
-| Bilanzauswirkung | „Wie verändert sich die Bilanz bei Aufnahme eines Bankdarlehens?" |
+Mögliche Kriterien: Cashflow/Einkommen, Verschuldung, Eigenkapitalquote, bisheriges Zahlungsverhalten, Sicherheiten, Geschäftsmodell/Zukunftsaussichten. Höheres Risiko kann zu höheren Zinsen, zusätzlichen Sicherheiten oder Ablehnung führen.
 
 ---
 <div class="kdm-calculators" data-calculators="loan"></div>
