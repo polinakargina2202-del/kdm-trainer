@@ -21,6 +21,13 @@ export default defineConfig({
             defer: true,
           },
         },
+        {
+          tag: 'script',
+          attrs: {
+            src: '/kdm-trainer/visuals/visuals-extra.js',
+            defer: true,
+          },
+        },
       ],
       sidebar: [
         {
