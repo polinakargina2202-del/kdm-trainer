@@ -335,6 +335,46 @@ So entsteht eine **begründete Entscheidung** statt einer bloßen Aufzählung vo
 
 ---
 
+## 6. Skalierbarkeit und Elastizität
+
+**Skalierbarkeit:** Ressourcen können an höheren Bedarf angepasst werden.  
+**Elastizität:** Ressourcen werden dynamisch hoch- und heruntergefahren, häufig automatisiert.
+
+Beispiel: Ein Webshop benötigt im Weihnachtsgeschäft kurzfristig viermal so viel Leistung. Cloud-Ressourcen automatisch hochfahren und danach wieder reduzieren = **Elastizität**.
+
+## 7. Shared Responsibility
+
+In der Cloud teilen sich Anbieter und Kunde Sicherheitsaufgaben. Der genaue Anteil hängt vom Servicemodell ab:
+- Bei **IaaS** verwaltet der Kunde typischerweise Betriebssystem, Anwendungen, Identitäten und Daten stärker selbst.
+- Bei **SaaS** übernimmt der Anbieter deutlich mehr technische Plattformaufgaben; der Kunde bleibt trotzdem u. a. für Nutzerkonten, Berechtigungen, Daten und sichere Konfiguration verantwortlich.
+
+> „Cloud-Anbieter kümmert sich um alles“ ist in Prüfungsaufgaben fast immer eine zu pauschale Aussage.
+
+## 8. Vendor Lock-in und Exit-Strategie
+
+**Vendor Lock-in:** Ein Wechsel wird schwierig/teuer, weil proprietäre APIs, Datenformate, Funktionen oder Vertragsbedingungen stark an einen Anbieter binden.
+
+Gegenmaßnahmen:
+- offene Standards/portierbare Formate,
+- dokumentierte Schnittstellen,
+- Datenexport und Rückgabe vertraglich regeln,
+- Exit-Kosten und Löschung berücksichtigen,
+- Abhängigkeit kritischer Funktionen bewerten.
+
+## 9. SLA und Cloud-Kosten
+
+Neben dem Preis pro Monat sind **Total Cost of Ownership** und SLA entscheidend:
+- Nutzungs-/Lizenzkosten
+- Datenübertragung/Storage
+- Migration und Schulung
+- Support
+- Exit-/Wechselkosten
+- zugesicherte Verfügbarkeit, Reaktions-/Wiederherstellungszeiten
+
+Ein scheinbar günstiger Cloud-Dienst kann über mehrere Jahre teurer werden, wenn laufende und variable Kosten nicht mitgerechnet werden.
+
+---
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Beispielformulierung |

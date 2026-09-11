@@ -114,7 +114,7 @@ sidebar:
 
 **Vorteile Leasing:**
 - Keine hohe Anfangsinvestition
-- Kennzahlen bleiben gut (Eigenkapitalquote)
+- kann je nach Vertragsgestaltung die Liquidität schonen und die Bilanzstruktur anders beeinflussen als ein kreditfinanzierter Kauf
 - Immer neueste Technologie
 - Wartung oft inklusive
 
@@ -126,7 +126,7 @@ sidebar:
 
 ### Bilanzauswirkung Leasing (S23):
 - Kauf auf Kredit: **Maschine aktivieren** (Aktiv ↑), **Verbindlichkeit** (Passiv ↑) → Bilanzverlängerung
-- Leasing: Keine Bilanzveränderung → außerbilanziell
+- Leasing: **nicht pauschal außerbilanziell**. Die Bilanzierung hängt von Vertragsgestaltung und wirtschaftlicher Zurechnung ab. Im typischen Operating-Leasingfall bleibt das Leasingobjekt beim Leasinggeber.
 
 ---
 
@@ -153,6 +153,44 @@ Welche Darlehensart eignet sich für die Liquiditätsplanung?
 - Bankkonto sinkt (Aktiv ↓)
 - Verbindlichkeit sinkt (Passiv ↓)
 - → **Aktiv-Passiv-Minderung** (Bilanzverkürzung)
+
+---
+
+## 7. Weitere Finanzierungsformen
+
+| Form | Idee | Vorteil | Risiko/Nachteil |
+|---|---|---|---|
+| **Lieferantenkredit** | Zahlungsziel statt sofortiger Zahlung | schnell, unkompliziert | entgangener Skonto kann sehr teuer sein |
+| **Factoring** | Forderungen werden an Factor verkauft | schnelle Liquidität, ggf. Ausfallrisiko übertragen | Gebühren; Kundenkontakt teilweise betroffen |
+| **Crowdfunding** | viele Personen finanzieren ein Vorhaben | Markttest + Finanzierung | Kampagnenaufwand, Erfolg unsicher |
+| **Beteiligungsfinanzierung** | Investor stellt Eigenkapital bereit | keine feste Tilgung | Mitspracherechte/Anteile |
+| **Fördermittel/Zuschüsse** | öffentliche Förderung | günstiger/kein vollständiger Rückzahlungsbedarf | Bedingungen, Antrag, Zweckbindung |
+
+## 8. Effektive Finanzierungskosten beurteilen
+
+Nicht nur den Nominalzins vergleichen. Relevant können sein:
+- Zinszahlungen,
+- Gebühren,
+- Laufzeit,
+- Tilgungsstruktur,
+- Sicherheiten,
+- Restwert/Schlussrate,
+- entgangener Skonto,
+- Flexibilität bei Sondertilgung/Kündigung.
+
+**Skonto als Finanzierungssignal:** Wer 2 % Skonto für nur wenige zusätzliche Tage Zahlungsziel aufgibt, akzeptiert rechnerisch oft sehr hohe effektive Kosten. Deshalb immer vergleichen, wenn Zahlen gegeben sind.
+
+## 9. Bonität und Sicherheiten
+
+Ein Kreditgeber prüft, ob Zins und Tilgung voraussichtlich geleistet werden können. Mögliche Faktoren:
+- Einkommen/Cashflow,
+- Verschuldung,
+- Eigenkapitalquote,
+- bisheriges Zahlungsverhalten,
+- Sicherheiten,
+- Geschäftsmodell und Zukunftsaussichten.
+
+Höheres Risiko kann zu höheren Zinsen, zusätzlichen Sicherheiten oder Ablehnung führen.
 
 ---
 

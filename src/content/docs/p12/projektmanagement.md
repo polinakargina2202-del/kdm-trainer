@@ -349,6 +349,36 @@ Wenn du die ganze Seite schon gelernt hast und nur schnell wiederholen möchtest
 
 ---
 
+## 10. Projektziele und Abnahmekriterien
+
+Gute Ziele sind möglichst **SMART**: spezifisch, messbar, attraktiv/akzeptiert, realistisch und terminiert.
+
+Beispiel statt „Support verbessern“:
+> „Bis zum 30.11. wird ein Self-Service-Portal eingeführt, über das mindestens 60 % der Standardanfragen ohne manuelle Erfassung angelegt werden können.“
+
+**Abnahmekriterien** machen später prüfbar, ob das Ergebnis geliefert wurde.
+
+## 11. Meilenstein, Arbeitspaket und kritischer Pfad
+
+- **Arbeitspaket:** abgrenzbare Aufgabe mit Ergebnis, Verantwortlichem und Aufwand.
+- **Meilenstein:** wichtiger Zeitpunkt/Ereignis ohne eigene Dauer, z. B. „Testfreigabe erteilt“.
+- **kritischer Pfad:** längste Folge voneinander abhängiger Vorgänge ohne Zeitpuffer; Verzögerungen dort verschieben den Projektendtermin.
+
+## 12. Change Request
+
+Ein Änderungswunsch während des Projekts sollte nicht ungeprüft umgesetzt werden.
+
+Typischer Ablauf:
+1. Änderung beschreiben und begründen,
+2. Auswirkungen auf Zeit, Kosten, Qualität, Risiken und Ressourcen prüfen,
+3. Entscheidung durch zuständige Rolle/Auftraggeber,
+4. Planung/Dokumentation anpassen,
+5. Beteiligte informieren.
+
+So wird **Scope Creep** vermieden – also eine unkontrollierte Ausweitung des Projektumfangs.
+
+---
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Beispielformulierung | Worauf achten? |

@@ -439,6 +439,61 @@ Eine gute Antwort nennt also **Maßnahme + Wirkung**.
 
 ---
 
+## 8. Bedrohung, Schwachstelle und Risiko
+
+Diese drei Begriffe werden oft verwechselt:
+- **Bedrohung:** möglicher schädigender Auslöser, z. B. Ransomware oder Feuer.
+- **Schwachstelle:** ausnutzbare Schwäche, z. B. ungepatchtes System oder schwaches Passwort.
+- **Risiko:** Kombination aus Eintrittswahrscheinlichkeit und möglicher Schadenshöhe.
+
+Eine einfache Risikobewertung nutzt z. B.:
+```text
+Risikowert = Eintrittswahrscheinlichkeit × Schadensausmaß
+```
+Danach können Risiken **vermeiden, vermindert, übertragen oder akzeptiert** werden.
+
+## 9. Rollen- und Berechtigungskonzepte
+
+Wichtige Prinzipien:
+- **Least Privilege:** nur die Rechte, die für die Aufgabe notwendig sind.
+- **Need-to-know:** Zugriff nur, wenn die Information für die Tätigkeit benötigt wird.
+- **Deny by Default:** ohne ausdrückliche Freigabe kein Zugriff.
+- **RBAC (Role-Based Access Control):** Rechte werden Rollen statt einzelnen Personen zugeordnet.
+- **Rezertifizierung:** Berechtigungen regelmäßig überprüfen.
+- **Joiner–Mover–Leaver:** Rechte bei Eintritt, Rollenwechsel und Austritt systematisch anpassen/entziehen.
+
+## 10. Verschlüsselung, Hash und digitale Signatur
+
+| Verfahren | Zweck | Merksatz |
+|---|---|---|
+| **symmetrische Verschlüsselung** | Vertraulichkeit, sehr schnell | gleicher geheimer Schlüssel zum Ver- und Entschlüsseln |
+| **asymmetrische Verschlüsselung** | Vertraulichkeit/Schlüsselaustausch | Public Key + Private Key |
+| **hybride Verschlüsselung** | kombiniert Geschwindigkeit + sicheren Schlüsselaustausch | z. B. TLS-Prinzip |
+| **Hashfunktion** | Integrität/Prüfwert | Einwegfunktion; kein „Entschlüsseln“ |
+| **digitale Signatur** | Integrität + Authentizität | Signatur mit privatem Schlüssel, Prüfung mit öffentlichem Schlüssel |
+
+> Eine digitale Signatur verschlüsselt nicht automatisch den Inhalt. Sie bestätigt vor allem Herkunft und Unverändertheit.
+
+## 11. Netzwerksicherheit
+
+Typische Maßnahmen:
+- **Firewall:** filtert Netzwerkverkehr nach Regeln.
+- **Netzsegmentierung/VLAN:** begrenzt Kommunikationswege und Schadensausbreitung.
+- **IDS:** erkennt verdächtige Aktivitäten und alarmiert.
+- **IPS:** kann erkannte Angriffe zusätzlich automatisiert blockieren.
+- **Patchmanagement:** schließt bekannte Schwachstellen.
+- **Hardening:** unnötige Dienste/Ports deaktivieren, sichere Konfigurationen verwenden.
+
+## 12. RPO, RTO und Wiederanlauf
+
+Bei Notfallplanung sind zwei Ziele wichtig:
+- **RPO (Recovery Point Objective):** Wie viel Datenverlust in Zeit ist maximal akzeptabel? RPO 4 h → Sicherungs-/Replikationskonzept muss höchstens etwa 4 h Datenverlust zulassen.
+- **RTO (Recovery Time Objective):** Wie lange darf der Dienst maximal ausfallen, bis er wieder verfügbar sein muss?
+
+Ein Backup ist nur dann belastbar, wenn **Wiederherstellung regelmäßig getestet** wird. Notfallpläne sollten Verantwortlichkeiten, Kommunikationswege, Ersatzsysteme und Wiederanlaufreihenfolge enthalten.
+
+---
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Beispielformulierung |

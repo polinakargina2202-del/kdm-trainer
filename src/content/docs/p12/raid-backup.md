@@ -504,6 +504,26 @@ Genau diese Umkehrlogik ist wichtig, weil Prüfungen nicht immer nur nach der fe
 
 ---
 
+## 5. RPO und RTO bei Backups
+
+- **RPO:** maximal tolerierbarer Datenverlust in Zeit. Beispiel: RPO 2 h → Sicherungen/Replikation müssen so geplant sein, dass im Störfall höchstens ungefähr 2 Stunden Daten fehlen.
+- **RTO:** maximal tolerierbare Wiederherstellungsdauer. Beispiel: RTO 4 h → Dienst muss spätestens nach 4 Stunden wieder nutzbar sein.
+
+RPO beeinflusst vor allem die **Sicherungsfrequenz**, RTO die **Wiederherstellungsstrategie und Ressourcen**.
+
+## 6. Restore-Test, Offline- und Immutable-Backup
+
+Ein Backup gilt erst als verlässlich, wenn die Wiederherstellung getestet wurde.
+
+Zusätzlicher Schutz gegen Ransomware:
+- **Offline/Air-Gap-Kopie:** nicht dauerhaft vom Produktivsystem erreichbar.
+- **Immutable Backup:** Sicherung kann während einer definierten Aufbewahrungszeit nicht verändert/gelöscht werden.
+- **Versionierung:** ältere Zustände bleiben verfügbar.
+
+> RAID schützt die Verfügbarkeit bei Plattenausfall. Ein Backup schützt gegen Datenverlust. Diese Ziele dürfen in der Prüfung nicht gleichgesetzt werden.
+
+---
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Beispielformulierung |

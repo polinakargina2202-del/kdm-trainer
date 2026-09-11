@@ -1,6 +1,6 @@
 ---
 title: Kalkulation & Kostenrechnung
-description: Break-even, Nutzwertanalyse, Lizenzmodelle, KLR, BAB, Kostenarten
+description: Break-even, Nutzwertanalyse, KLR, BAB, Deckungsbeitrag, Prozesskosten und Preiskalkulation
 sidebar:
   badge:
     text: 4/7 Prüfungen
@@ -141,6 +141,97 @@ Materialeinzelkosten
 | **Marktvolumen** | Tatsächlich realisierter Umsatz aller Anbieter | Σ aller Umsätze |
 | **Marktpotenzial** | Maximale mögliche Nachfrage | Theoretisches Maximum |
 | **Marktanteil** | Anteil des eigenen Unternehmens am Markt | (eigener Umsatz / Marktvolumen) × 100% |
+
+---
+
+## 7. Aufwand/Ertrag vs. Kosten/Leistung
+
+Diese Begriffe gehören nicht automatisch zusammen:
+
+| Finanzbuchhaltung | KLR | Erklärung |
+|---|---|---|
+| **Aufwand** | **Kosten** | Aufwand ist gesamter Werteverzehr; Kosten sind der betriebszweckbezogene Werteverzehr |
+| **Ertrag** | **Leistung** | Ertrag ist gesamter Wertezuwachs; Leistung ist betriebszweckbezogener Wertezuwachs |
+
+Beispiele:
+- Spende an Verein: Aufwand, aber typischerweise **keine Kosten** des Betriebszwecks (neutraler Aufwand).
+- kalkulatorischer Unternehmerlohn: **Kosten**, aber kein Aufwand in der Fibu (Zusatzkosten).
+
+## 8. Kostenstelle und Kostenträger
+
+- **Kostenart:** Welche Kosten sind entstanden? z. B. Miete, Personal, Energie.
+- **Kostenstelle:** Wo sind sie entstanden? z. B. IT, Verwaltung, Vertrieb.
+- **Kostenträger:** Wofür sind sie entstanden? z. B. Produkt, Projekt, Kundenauftrag.
+
+Der **BAB** verteilt Gemeinkosten auf Kostenstellen. Anschließend können Zuschlagssätze für Kostenträger kalkuliert werden.
+
+## 9. Vorwärts-, Rückwärts-/Differenz- und Nachkalkulation
+
+Bei der **Vorwärtskalkulation** wird vom Einkaufspreis zum Verkaufspreis gerechnet:
+```text
+Listeneinkaufspreis
+- Liefererrabatt
+= Zieleinkaufspreis
+- Liefererskonto
+= Bareinkaufspreis
++ Bezugskosten
+= Bezugspreis / Einstandspreis
++ Handlungskosten
+= Selbstkosten
++ Gewinn
+= Verkaufspreis (vereinfacht)
+```
+
+**Rückwärts-/Differenzkalkulation:** Ein Markt-/Verkaufspreis ist vorgegeben; daraus wird z. B. der maximal tragbare Einstandspreis oder der verbleibende Gewinn ermittelt.
+
+**Nachkalkulation:** geplante Werte werden mit tatsächlichen Kosten/Erlösen verglichen. Abweichungen werden analysiert.
+
+## 10. Handelsspanne und Kalkulationszuschlag
+
+Nicht verwechseln:
+```text
+Handelsspanne = (Nettoverkaufspreis − Einstandspreis) / Nettoverkaufspreis × 100 %
+
+Kalkulationszuschlag = (Nettoverkaufspreis − Einstandspreis) / Einstandspreis × 100 %
+```
+
+**Beispiel:** Einstand 80 €, Verkauf 100 € → Handelsspanne 20 %, Kalkulationszuschlag 25 %.
+
+## 11. Prozesskostenrechnung
+
+Bei prozessorientierten Dienstleistungen kann eine Kostenstelle zu grob sein. Dann werden Kosten einem **Prozess** und einem **Kostentreiber** zugeordnet.
+
+```text
+Prozesskostensatz = Prozesskosten / Prozessmenge
+```
+
+Beispiel: 24.000 € Kosten für 800 Ticketbearbeitungen → **30 € je Ticket**.
+
+## 12. Deckungsbeitrag, Betriebsergebnis und Preisuntergrenze
+
+```text
+Deckungsbeitrag je Stück = Verkaufspreis − variable Kosten je Stück
+Gesamt-DB = Erlöse − variable Gesamtkosten
+Betriebsergebnis = Gesamt-DB − Fixkosten
+```
+
+- **kurzfristige Preisuntergrenze:** grundsätzlich variable Stückkosten (wenn freie Kapazität besteht und keine weiteren relevanten Kosten entstehen).
+- **langfristige Preisuntergrenze:** muss auch Fixkosten decken → Vollkosten.
+
+**Beispiel:** Preis 30 €, variable Kosten 18 €, Fixkosten 60.000 €, Absatz 8.000:
+`DB = 12 € × 8.000 = 96.000 €`; Betriebsergebnis = **36.000 €**.
+
+## 13. Grenzkosten und Preisdifferenzierung
+
+**Grenzkosten** sind die zusätzlichen Kosten einer weiteren Einheit. Bei digitalen Produkten können sie sehr niedrig sein, obwohl die Entwicklung hohe Fixkosten verursacht.
+
+Das ermöglicht **Preisdifferenzierung**, z. B.:
+- unterschiedliche Pakete (Basic/Pro),
+- Mengenstaffeln,
+- zeit-/nutzungsabhängige Preise,
+- unterschiedliche Kundengruppen.
+
+Die Differenzierung sollte nachvollziehbar, rechtlich zulässig und am **Kundennutzen** ausgerichtet sein.
 
 ---
 

@@ -97,6 +97,43 @@ Effektiver Jahreszins = (Skonto% / (100% - Skonto%)) × (360 / (Zahlungsziel - S
 
 ---
 
+## 5. GuV verstehen
+
+Die **Gewinn- und Verlustrechnung (GuV)** stellt Erträge und Aufwendungen einer Periode gegenüber.
+
+```text
+Gewinn  = Erträge − Aufwendungen   (wenn Erträge > Aufwendungen)
+Verlust = Aufwendungen − Erträge   (wenn Aufwendungen > Erträge)
+```
+
+Abschreibungen sind **Aufwand** und mindern damit den Gewinn, führen aber im Zeitpunkt der Abschreibung nicht noch einmal zu einer Auszahlung.
+
+## 6. Kennzahlen zur Steuerung
+
+Typische Kennzahlen müssen nicht nur berechnet, sondern **interpretiert** werden:
+
+```text
+Eigenkapitalquote = Eigenkapital / Gesamtkapital × 100 %
+Eigenkapitalrentabilität = Gewinn / Eigenkapital × 100 %
+Umsatzrentabilität = Gewinn / Umsatz × 100 %
+Liquidität 1. Grades = liquide Mittel / kurzfristige Verbindlichkeiten × 100 %
+```
+
+Ein einzelner Wert ist selten ausreichend. Aussagekräftiger sind **Zeitvergleich**, Plan-Ist-Vergleich oder Branchenvergleich.
+
+## 7. Soll-Ist-Vergleich und Handlungsvorschläge
+
+Beispiel: Geplante Projektkosten 40.000 €, tatsächlich 48.000 €.
+
+```text
+absolute Abweichung = Ist − Soll = +8.000 €
+relative Abweichung = 8.000 / 40.000 × 100 = +20 %
+```
+
+Danach wird nach Ursachen gesucht, z. B. mehr Arbeitsstunden, Preissteigerung, Nacharbeit. Erst aus der Ursache folgt eine sinnvolle Maßnahme, z. B. bessere Aufwandsschätzung, Lieferantenwechsel oder Qualitätsmaßnahme.
+
+---
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Beispielformulierung |

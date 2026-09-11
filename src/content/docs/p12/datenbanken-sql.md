@@ -667,6 +667,71 @@ ORDER BY anzahl DESC;
 
 ---
 
+## 9. Datenqualität prüfen
+
+Gute Analysen funktionieren nur mit guten Daten. Drei zentrale Kriterien aus dem Rahmenlehrplan:
+
+| Kriterium | Bedeutung | Beispiel für Problem |
+|---|---|---|
+| **Validität** | Daten bilden den geforderten Sachverhalt korrekt ab | Feld „Alter“ enthält Geburtsjahr statt Alter |
+| **Reliabilität** | Erhebung ist zuverlässig und liefert bei gleicher Methode vergleichbare Ergebnisse | Sensor liefert bei gleicher Situation stark schwankende Werte |
+| **Vollständigkeit** | notwendige Werte/Datensätze fehlen nicht | bei 20 % der Kunden fehlt die PLZ |
+
+Weitere häufige Qualitätsprobleme: Dubletten, falsche Datentypen, ungültige Wertebereiche, veraltete Datensätze, uneinheitliche Schreibweisen.
+
+## 10. Datenstrukturen und Dateiformate
+
+| Format/Struktur | Typische Eigenschaft | Geeignet für |
+|---|---|---|
+| **CSV** | einfache tabellarische Textdatei | Export/Import von Tabellen |
+| **JSON** | hierarchisch, Schlüssel-Wert-Struktur | Web-APIs, Datenaustausch |
+| **XML** | hierarchisch mit Tags, gut validierbar | standardisierter Datenaustausch |
+| **relationale Tabelle** | Zeilen/Spalten, Beziehungen über Schlüssel | strukturierte Geschäftsdaten |
+| **unstrukturierte Daten** | kein festes Tabellenschema | Bilder, Audio, Freitext, PDFs |
+
+**Prüfungsfrage:** Nicht nur „Welches Format gibt es?“, sondern z. B. „Welches Format eignet sich für einen API-Datenaustausch und warum?“
+
+## 11. Datenaufbereitung / Data Cleansing
+
+Vor der Analyse werden Daten häufig bereinigt:
+1. Daten aus Quellen übernehmen (**Extract**)
+2. Formate vereinheitlichen, Fehler/Dubletten behandeln, Werte transformieren (**Transform**)
+3. Daten in Zielsystem laden (**Load**)
+
+Das ist der **ETL-Prozess**. Typische Maßnahmen sind:
+- Dubletten erkennen und zusammenführen,
+- Datums-/Zahlenformate vereinheitlichen,
+- fehlende Werte kennzeichnen oder fachlich begründet behandeln,
+- Wertebereiche validieren,
+- personenbezogene Daten ggf. pseudonymisieren/anonymisieren.
+
+> Daten dürfen nicht „schön gerechnet“ werden. Jede Bereinigung sollte nachvollziehbar und dokumentiert sein.
+
+## 12. Datenquellen und Schnittstellen
+
+**Interne Quellen:** ERP, CRM, Ticketsystem, Datenbank, Logfiles, Rechnungswesen.  
+**Externe Quellen:** Open Data, Marktdaten, Lieferanten-/Partnerdaten, Studien, APIs.
+
+Vor der Übernahme prüfen:
+- technische Kompatibilität (Format, Datentypen, Zeichensatz),
+- Aktualität und Qualität,
+- Zugriffsrechte und Datenschutz,
+- Aktualisierungsintervall,
+- eindeutige Schlüssel für die Zusammenführung.
+
+Eine **API (Application Programming Interface)** stellt definierte Funktionen/Daten für andere Systeme bereit. Vorteil gegenüber manuellen Exporten: automatisierter, reproduzierbarer Datenaustausch. Risiken: Authentifizierung, Berechtigungen, Versionsänderungen und Verfügbarkeit.
+
+## 13. Daten sinnvoll visualisieren
+
+- **Balken-/Säulendiagramm:** Kategorien vergleichen
+- **Liniendiagramm:** Entwicklung über die Zeit
+- **Kreisdiagramm:** einfache Anteile eines Ganzen; bei vielen Kategorien unübersichtlich
+- **Streudiagramm:** Zusammenhang/Korrelation zwischen zwei numerischen Größen untersuchen
+
+Achte auf klare Achsen, Einheiten, sinnvolle Skalierung und Quellen. Eine abgeschnittene Y-Achse kann Unterschiede optisch übertreiben.
+
+---
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Was wird verlangt |

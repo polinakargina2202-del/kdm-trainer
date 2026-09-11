@@ -79,7 +79,7 @@ Rechnungsprüfung → Zahlung
 | **Kann ausgeschlossen werden?** | Beim Verbraucherkauf: Nein | Ja (oder gar nicht anbieten) |
 | **Dauer** | 2 Jahre ab Übergabe (Kaufvertrag) | Laut Garantiebedingungen (oft 1–3 Jahre) |
 | **Voraussetzung** | Mangel war **bei Übergabe** bereits vorhanden | Laut Garantiebedingungen |
-| **Beweislast** | 6 Monate: Mangel wird vermutet (Käufer geschützt). Danach: Käufer muss beweisen | Laut Garantiebedingungen |
+| **Beweislast** | Beim Verbrauchsgüterkauf: zeigt sich der Mangel innerhalb von 1 Jahr, wird grundsätzlich vermutet, dass er schon bei Gefahrübergang vorlag (§ 477 BGB) | Laut Garantiebedingungen |
 | **Ansprüche** | Nacherfüllung, Minderung, Rücktritt, Schadensersatz | Laut Garantiebedingungen |
 
 > **Merksatz:** Gewährleistung = **Pflicht** (Gesetz) · Garantie = **freiwillig** (Versprechen)
@@ -145,6 +145,57 @@ Jährlicher Skonto-Zinssatz = (Skonto% / (100 - Skonto%)) × (360 / (Zahlungszie
 Skonto-Zins = (2 / 98) × (360 / 20) = 0,0204 × 18 = 36,7% p.a.
 ```
 → 36,7% >> 8% Kontokorrent → **Skonto lohnt sich immer!**
+
+---
+
+## 9. Besitz und Eigentum
+
+- **Besitz:** tatsächliche Sachherrschaft – wer die Sache gerade hat.
+- **Eigentum:** rechtliche Herrschaft – wem die Sache rechtlich gehört.
+
+Beispiel: Beim gemieteten Notebook ist der Mieter **Besitzer**, der Vermieter bleibt grundsätzlich **Eigentümer**.
+
+## 10. IT-Bedarf und Integrationsfähigkeit prüfen
+
+Vor einer Beschaffung sollten nicht nur Preis und Leistung geprüft werden:
+- Kompatibilität zu vorhandener Hard-/Software,
+- Schnittstellen/APIs und Datenformate,
+- Skalierbarkeit,
+- Datenschutz/IT-Sicherheit,
+- Lizenz- und Supportmodell,
+- Wartbarkeit/Updates,
+- Lieferfähigkeit und Anbieterabhängigkeit,
+- TCO und Nachhaltigkeit.
+
+**Interoperabilität** bedeutet, dass Systeme miteinander zusammenarbeiten und Daten/Funktionen austauschen können.
+
+## 11. Vertragsstörungen im Beschaffungsprozess
+
+### Nicht rechtzeitige Lieferung / Lieferverzug
+Typische Prüfungsschritte:
+1. Ist die Leistung fällig?
+2. Ist ggf. eine Mahnung erforderlich oder ausnahmsweise entbehrlich (z. B. kalendermäßig bestimmter Termin)?
+3. Welche Folgen entstehen?
+
+Mögliche Rechte je nach Fall: Erfüllung verlangen, Schadenersatz wegen Verzögerung, nach erfolgloser angemessener Fristsetzung ggf. Rücktritt und/oder Schadenersatz statt Leistung.
+
+### Schlechtleistung / Sachmangel
+Grundsätzlich steht zunächst **Nacherfüllung** im Vordergrund (Nachbesserung oder Ersatzlieferung). Unter den gesetzlichen Voraussetzungen kommen danach u. a. **Minderung, Rücktritt und Schadenersatz** in Betracht.
+
+> Im **beiderseitigen Handelskauf** (Kaufleute) ist § 377 HGB besonders wichtig: Ware nach Ablieferung unverzüglich untersuchen und erkennbare Mängel unverzüglich rügen; verdeckte Mängel nach Entdeckung unverzüglich anzeigen.
+
+## 12. Beschaffung von Dienstleistungen kontrollieren
+
+Bei IT-Dienstleistungen gibt es keinen klassischen Wareneingang. Stattdessen können kontrolliert werden:
+- vereinbarter Leistungsumfang,
+- Termine/Meilensteine,
+- SLA-Kennzahlen,
+- Stunden-/Leistungsnachweise,
+- Test- und Abnahmeergebnisse,
+- Dokumentation,
+- offene Mängel/Abweichungen.
+
+Die Kontrolle sollte so dokumentiert sein, dass Rechnung, Abnahme und spätere Reklamationen nachvollziehbar sind.
 
 ---
 

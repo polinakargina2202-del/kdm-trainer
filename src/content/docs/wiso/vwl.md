@@ -97,6 +97,42 @@ Negative BIP-Wachstumsraten + steigende Arbeitslosigkeit → **Abschwung / Rezes
 
 ---
 
+## 7. Angebot, Nachfrage und Gleichgewichtspreis
+
+Grundmodell bei sonst gleichen Bedingungen:
+- Preis steigt → nachgefragte Menge sinkt meist.
+- Preis steigt → angebotene Menge steigt meist.
+- Schnittpunkt von Angebots- und Nachfragekurve = **Marktgleichgewicht**.
+
+**Nachfrage steigt** (Kurve nach rechts), z. B. durch höhere Einkommen bei normalen Gütern → Gleichgewichtspreis und -menge steigen typischerweise.  
+**Angebot sinkt**, z. B. durch höhere Produktionskosten → Preis steigt typischerweise, gehandelte Menge sinkt.
+
+## 8. Inflation und Deflation
+
+**Inflation:** anhaltender Anstieg des allgemeinen Preisniveaus → Kaufkraft des Geldes sinkt.  
+**Deflation:** anhaltender Rückgang des allgemeinen Preisniveaus; kann Konsum/Investitionen aufschieben und wirtschaftliche Probleme verstärken.
+
+Folgen hoher Inflation können sein: Kaufkraftverlust, Planungsunsicherheit, Umverteilung zwischen Gläubigern/Schuldnern und steigende Zinsforderungen.
+
+## 9. Geldpolitik der EZB
+
+Zentrales Ziel des Eurosystems ist Preisstabilität. Vereinfacht:
+- **restriktive Geldpolitik / höhere Zinsen:** Kredite werden tendenziell teurer, Nachfrage wird gedämpft → Inflationsdruck kann sinken.
+- **expansive Geldpolitik / niedrigere Zinsen:** Finanzierung wird tendenziell günstiger, Nachfrage/Investitionen können steigen.
+
+> In der Prüfung nie behaupten, eine Zinserhöhung senke Inflation „sofort und sicher“. Geldpolitik wirkt mit Verzögerung und über mehrere Kanäle.
+
+## 10. Arbeitslosigkeit – typische Formen
+
+- **friktionell:** kurzfristig zwischen zwei Beschäftigungen.
+- **saisonal:** jahreszeitabhängig, z. B. bestimmte Bau-/Tourismusbereiche.
+- **konjunkturell:** durch gesamtwirtschaftlichen Abschwung.
+- **strukturell:** Qualifikationen/Standorte passen längerfristig nicht zur Nachfrage.
+
+Die passende Maßnahme hängt von der Ursache ab: Weiterbildung hilft eher bei strukturellen Problemen als bei rein saisonaler Arbeitslosigkeit.
+
+---
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Antwort |

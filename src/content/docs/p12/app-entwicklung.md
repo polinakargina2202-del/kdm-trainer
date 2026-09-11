@@ -1,6 +1,6 @@
 ---
-title: App-Entwicklung, UI/UX & RPA
-description: Native Apps, UI/UX-Design, RPA, KI, Digitaler Reifegrad
+title: Apps, digitale Geschäftsmodelle & Kundennutzen
+description: Apps, UI/UX, RPA, digitale Geschäftsmodelle, Kundennutzen, Marktanalyse und Lizenzen
 sidebar:
   badge:
     text: 3/7 Prüfungen
@@ -272,6 +272,95 @@ Die Bewertung zeigt:
 - **RPA** automatisiert regelbasierte Routineprozesse.
 - KI-Ergebnisse müssen wegen Risiken wie Halluzinationen, Bias und Datenschutz geprüft werden.
 - Der **digitale Reifegrad** zeigt, wie weit Digitalisierung in einem Unternehmen umgesetzt ist.
+
+---
+
+## 6. Digitale Geschäftsmodelle und Erlöslogik
+
+Ein **digitales Produkt** ist noch nicht automatisch ein digitales Geschäftsmodell. Ein Geschäftsmodell erklärt, **welchen Kundennutzen** ein Unternehmen schafft, **für wen**, **wie die Leistung erbracht wird** und **womit Geld verdient wird**.
+
+| Modell | Grundidee | Typisches Beispiel | Prüfungs-Hinweis |
+|---|---|---|---|
+| **Subscription / Abo** | Regelmäßige Gebühr | SaaS, Streaming | planbare Erlöse, laufende Kundenbindung |
+| **Freemium** | Basis kostenlos, Premium kostenpflichtig | Cloud-App | große Nutzerbasis, Conversion entscheidend |
+| **Pay-per-Use** | Zahlung je Nutzung | API-Aufrufe, Cloud-Rechenleistung | Kosten folgen dem Verbrauch |
+| **Transaktions-/Plattformmodell** | Vermittler erhält Gebühr/Provision | Marktplatz, Buchungsplattform | verbindet mehrere Nutzergruppen; Netzwerkeffekte möglich |
+| **Werbefinanziert** | Nutzung günstig/kostenlos, Finanzierung durch Werbung | Onlineportal | Reichweite und Daten sind wichtig |
+| **Datenbasiert** | Datenanalyse erzeugt Zusatznutzen oder neue Leistung | Predictive Maintenance | Datenschutz, Datenqualität und Datenhoheit beachten |
+
+> **Prüfungstipp:** Nicht nur den Namen nennen. Begründe, **warum das Modell zum Szenario passt**: z. B. schwankende Nutzung → Pay-per-Use; regelmäßige Leistung/Updates → Subscription.
+
+## 7. Kundennutzen kalkulieren
+
+Der Kundennutzen kann **monetär** und **nicht monetär** sein.
+
+**Monetär:** eingesparte Arbeitszeit, weniger Fehlerkosten, geringere Lizenz-/Betriebskosten, zusätzlicher Deckungsbeitrag.
+
+**Nicht monetär:** schnellere Bearbeitung, bessere Datenqualität, höhere Kundenzufriedenheit, Transparenz, geringeres Risiko. Diese Vorteile werden beschrieben; sie dürfen nicht einfach ohne Grundlage in Euro umgerechnet werden.
+
+**Typische Rechnung:**
+```text
+jährlicher Netto-Nutzen
+= jährliche Einsparungen + zusätzlicher wirtschaftlicher Nutzen
+  − zusätzliche laufende Kosten
+
+Amortisationsdauer
+= einmalige Investition / jährlicher Netto-Nutzen
+```
+
+**Beispiel:** Eine Lösung kostet einmalig 18.000 €. Sie spart jährlich 300 Arbeitsstunden à 40 € und zusätzlich 2.000 € Fehlerkosten. Laufende Mehrkosten: 2.000 €/Jahr.
+
+```text
+Einsparung Arbeitszeit = 300 × 40 € = 12.000 €
+Netto-Nutzen/Jahr       = 12.000 + 2.000 − 2.000 = 12.000 €
+Amortisation            = 18.000 / 12.000 = 1,5 Jahre
+```
+
+> **Achtung:** Umsatz ist nicht automatisch Nutzen/Gewinn. Wenn die Aufgabe zusätzliche Verkäufe nennt, prüfe, ob Umsatz, Deckungsbeitrag oder Gewinn gefragt ist.
+
+## 8. Business Model Canvas (BMC)
+
+Mit dem **Business Model Canvas** lässt sich ein Geschäftsmodell strukturiert darstellen. Die neun Bausteine sind:
+
+1. Kundensegmente
+2. Wertangebote (**Value Proposition**)
+3. Kanäle
+4. Kundenbeziehungen
+5. Einnahmequellen
+6. Schlüsselressourcen
+7. Schlüsselaktivitäten
+8. Schlüsselpartner
+9. Kostenstruktur
+
+**Prüfungslogik:** Eine neue App allein ist kein vollständiges Geschäftsmodell. Du solltest zusätzlich erklären können, **welche Zielgruppe welchen Nutzen erhält, über welchen Kanal die Leistung angeboten wird und wie Erlöse entstehen**.
+
+## 9. Informationsbeschaffung, Marktanalyse und Marktpotenzial
+
+**Primärforschung:** Daten werden neu erhoben, z. B. Befragung, Interview, Beobachtung, Testmarkt. Vorteil: passgenau; Nachteil: Zeit/Kosten.
+
+**Sekundärforschung:** Bereits vorhandene Daten werden genutzt, z. B. interne Verkaufszahlen, Statistiken, Studien, Branchenberichte. Vorteil: schnell/günstig; Nachteil: möglicherweise veraltet oder nicht exakt passend.
+
+Wichtige Begriffe:
+- **Marktpotenzial:** maximal mögliche Nachfrage unter bestimmten Bedingungen.
+- **Marktvolumen:** tatsächlich realisierte Nachfrage/Umsatz im Markt.
+- **Marktanteil:** eigener Absatz/Umsatz im Verhältnis zum Marktvolumen.
+
+Kundendaten dürfen für Vertriebsmaßnahmen **nicht grenzenlos** verwendet werden. Zweck, Rechtsgrundlage und Datenschutz müssen zum geplanten Einsatz passen.
+
+## 10. Lizenzmodelle bedarfsgerecht auswählen
+
+Neben dem Erlösmodell kann die **Lizenzierung** entscheidend sein:
+
+| Lizenz | Geeignet wenn … | Typisches Risiko |
+|---|---|---|
+| **Named User** | klar definierte Personen arbeiten mit der Software | teuer bei vielen seltenen Nutzern |
+| **Device-Lizenz** | feste Geräte/Terminals genutzt werden | unflexibel bei mobilen Nutzern |
+| **Concurrent User** | viele Nutzer, aber nur wenige gleichzeitig | Kapazität muss passend dimensioniert sein |
+| **Subscription** | Updates/Support laufend benötigt werden | dauerhafte laufende Kosten |
+| **Perpetual** | langfristige Nutzung derselben Version geplant ist | Updates/Wartung oft extra |
+| **Open Source** | Quellcode/Flexibilität wichtig sind | Lizenzbedingungen und Supportaufwand prüfen |
+
+**Prüfungsfrage:** „Wählen Sie ein geeignetes Lizenzmodell und begründen Sie Ihre Entscheidung.“ → immer **Bedarf + Vorteil + ggf. Nachteil** verbinden.
 
 ---
 

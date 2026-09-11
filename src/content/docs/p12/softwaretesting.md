@@ -494,6 +494,38 @@ So lässt sich jede Testart mit einem konkreten Zweck verbinden.
 
 ---
 
+## 7. Teststufen
+
+| Teststufe | Was wird geprüft? |
+|---|---|
+| **Unit-/Komponententest** | einzelne Funktion/Klasse/Modul |
+| **Integrationstest** | Zusammenspiel mehrerer Komponenten/Schnittstellen |
+| **Systemtest** | Gesamtsystem gegen technische/fachliche Anforderungen |
+| **Abnahmetest / UAT** | Erfüllung der Anforderungen aus Kundensicht |
+
+Je früher ein Fehler entdeckt wird, desto günstiger ist er meist zu beheben.
+
+## 8. Guter Testfall und Akzeptanzkriterium
+
+Ein reproduzierbarer Testfall enthält mindestens:
+- eindeutige Testfall-ID/Ziel,
+- Vorbedingungen,
+- Testdaten,
+- Schritte,
+- erwartetes Ergebnis,
+- tatsächliches Ergebnis und Status.
+
+**Akzeptanzkriterium:** messbare Bedingung, wann eine Anforderung als erfüllt gilt. Beispiel: „Nach drei falschen Loginversuchen wird das Konto für 15 Minuten gesperrt.“
+
+## 9. Fehler-Schweregrad vs. Priorität
+
+**Severity/Schweregrad:** Wie stark ist die technische/fachliche Auswirkung?  
+**Priority/Priorität:** Wie schnell soll der Fehler bearbeitet werden?
+
+Ein Rechtschreibfehler auf der Startseite kann technisch „gering“, aber kurz vor einer wichtigen Präsentation dennoch „hoch priorisiert“ sein.
+
+---
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Beispielformulierung |

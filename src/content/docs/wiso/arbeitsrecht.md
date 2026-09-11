@@ -22,24 +22,28 @@ sidebar:
 
 ## 2. Gesetzliche Kündigungsfristen (§ 622 BGB)
 
-| Betriebszugehörigkeit | Kündigungsfrist (AN oder AG) | Fristende |
-|---|---|---|
-| Bis 6 Monate | 2 Wochen (jederzeit) | — |
-| Ab 6 Monate | 4 Wochen zum 15. oder Monatsende | — |
-| Ab 2 Jahre | 1 Monat zum Monatsende | — |
-| Ab 5 Jahre | 2 Monate zum Monatsende | — |
-| Ab 8 Jahre | 3 Monate zum Monatsende | — |
-| Ab 10 Jahre | 4 Monate zum Monatsende | — |
-| Ab 12 Jahre | 5 Monate zum Monatsende | — |
-| Ab 15 Jahre | 6 Monate zum Monatsende | — |
-| Ab 20 Jahre | 7 Monate zum Monatsende | — |
+**Wenn der Arbeitnehmer selbst kündigt:** grundsätzlich **4 Wochen zum 15. oder zum Monatsende** (§ 622 Abs. 1 BGB), sofern Arbeits-/Tarifvertrag nichts Wirksames anderes regelt.
 
-### Beispielberechnung (W25, S25):
+**Wenn der Arbeitgeber kündigt:** Die Frist verlängert sich mit der Betriebszugehörigkeit:
 
-**Carl Kosta, beschäftigt seit 01.01.2012, kündigt am 11.12.2025:**
-- Beschäftigungsdauer: 13 Jahre → Frist: **6 Monate zum Monatsende**
-- Kündigung am 11.12.2025 → Fristbeginn: 01.01.2026
-- **Ende: 30.06.2026**
+| Betriebszugehörigkeit | Frist des Arbeitgebers |
+|---|---|
+| unter 2 Jahre | 4 Wochen zum 15. oder Monatsende |
+| ab 2 Jahre | 1 Monat zum Monatsende |
+| ab 5 Jahre | 2 Monate zum Monatsende |
+| ab 8 Jahre | 3 Monate zum Monatsende |
+| ab 10 Jahre | 4 Monate zum Monatsende |
+| ab 12 Jahre | 5 Monate zum Monatsende |
+| ab 15 Jahre | 6 Monate zum Monatsende |
+| ab 20 Jahre | 7 Monate zum Monatsende |
+
+**Probezeit:** Wenn eine Probezeit vereinbart ist, längstens für sechs Monate, gilt grundsätzlich eine Kündigungsfrist von **2 Wochen**.
+
+> **Achtung Prüfungsfalle:** Die verlängerten gesetzlichen Fristen aus § 622 Abs. 2 gelten für die **Kündigung durch den Arbeitgeber**, nicht automatisch für eine Eigenkündigung des Arbeitnehmers. Tarif- oder Arbeitsvertrag können abweichende Regelungen enthalten.
+
+### Beispiel:
+
+Ein Arbeitnehmer ist seit 13 Jahren beschäftigt und der **Arbeitgeber** kündigt wirksam im Dezember. Gesetzliche Frist: **5 Monate zum Monatsende** (Stufe „ab 12 Jahre“). Das konkrete Enddatum hängt vom Zugang der Kündigung ab.
 
 ---
 
@@ -87,7 +91,7 @@ Folgende Personengruppen genießen **besonderen** Schutz:
 
 - Bis zu **36 Monate** pro Kind (bis zum 8. Lebensjahr)
 - Kann auf beide Elternteile aufgeteilt werden
-- Anspruch für Arbeitnehmer und Beamte
+- Anspruch nach BEEG für Arbeitnehmer; für Beamte gelten besondere beamtenrechtliche Regelungen
 - **Elterngeld:** 65–67% des Nettogehalts (mind. 300 €, max. 1.800 €)
 
 ---
@@ -97,10 +101,27 @@ Folgende Personengruppen genießen **besonderen** Schutz:
 | Gesetz | Inhalt |
 |---|---|
 | **Elternzeitgesetz (BEEG)** | Besonderer Kündigungsschutz bis 36 Monate |
-| **Bundesurlaubsgesetz (BUrlG)** | Mindestanspruch 24 Werktage bezahlten Urlaub |
+| **Bundesurlaubsgesetz (BUrlG)** | Mindestanspruch 24 Werktage bei einer 6-Tage-Woche; entspricht 20 Arbeitstagen bei einer 5-Tage-Woche |
 | **Entgeltfortzahlungsgesetz** | Lohnzahlung auch bei Krankheit und gesetzlichen Feiertagen |
 | **Arbeitszeitgesetz (ArbZG)** | Max. 8 Stunden täglich (im Ausnahmefall 10 Std.) |
-| **Schwerbehindertengesetz** | Besonderer Kündigungsschutz für Schwerbehinderte |
+| **SGB IX** | Besonderer Kündigungsschutz für schwerbehinderte Menschen |
+
+---
+
+## 8. Arbeitszeit, Pausen und Ruhezeit
+
+Nach dem Arbeitszeitgesetz gilt als Grundregel:
+- werktäglich grundsätzlich max. **8 Stunden**,
+- Verlängerung auf bis zu **10 Stunden** möglich, wenn innerhalb des gesetzlichen Ausgleichszeitraums durchschnittlich wieder 8 Stunden erreicht werden,
+- bei mehr als 6 bis 9 Stunden: mindestens **30 Minuten Pause**,
+- bei mehr als 9 Stunden: mindestens **45 Minuten Pause**,
+- grundsätzlich mindestens **11 Stunden Ruhezeit** zwischen zwei Arbeitseinsätzen.
+
+## 9. Arbeitsvertrag – typische Inhalte
+
+Typische Punkte: Tätigkeit, Arbeitsort, Beginn, Arbeitszeit, Vergütung, Urlaub, Probezeit, Kündigung, ggf. Tarifvertrag/Betriebsvereinbarung, Nebenpflichten und Datenschutz/Geheimhaltung.
+
+**Prüfungstipp:** Nicht jede Vertragsklausel darf den Arbeitnehmer schlechter stellen als zwingendes Gesetz oder anwendbarer Tarifvertrag.
 
 ---
 

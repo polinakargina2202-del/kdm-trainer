@@ -344,6 +344,77 @@ Vorteile:
 
 ---
 
+## 6. Ist-/Soll-Prozess und Prozesslandschaft
+
+Bei einer Prozessanalyse wird zuerst der **Ist-Zustand** aufgenommen. Danach werden Schwachstellen und Optimierungsmöglichkeiten ermittelt und ein **Soll-Prozess** entworfen.
+
+Typische Punkte bei der Ist-Aufnahme:
+- Beteiligte Rollen/Abteilungen
+- Prozessschritte und Reihenfolge
+- Medienbrüche (z. B. Papier → manuelle Excel-Eingabe)
+- Schnittstellen zwischen Systemen
+- Wartezeiten, Rückfragen und Fehlerquellen
+- verwendete Daten und Verantwortlichkeiten
+
+Eine **Prozesslandschaft** zeigt nicht jedes Detail, sondern die großen Zusammenhänge von Führungs-, Kern- und Unterstützungsprozessen.
+
+## 7. Prozesskennzahlen
+
+Kennzahlen machen Verbesserungen messbar.
+
+```text
+Durchlaufzeit = Bearbeitungszeit + Wartezeit + Transport-/Liegezeit
+Fehlerquote   = fehlerhafte Fälle / alle Fälle × 100 %
+Automatisierungsgrad = automatisierte Schritte / betrachtete Schritte × 100 %
+Kosten je Vorgang = gesamte Prozesskosten / Anzahl Vorgänge
+```
+
+**Beispiel:** 45 von 60 Schritten laufen automatisch.
+`45 / 60 × 100 = 75 % Automatisierungsgrad`.
+
+> Eine Verkürzung der reinen Bearbeitungszeit bringt wenig, wenn die meiste Zeit in Warteschlangen verloren geht. Deshalb immer den **gesamten Prozess** betrachten.
+
+## 8. Wertschöpfung und Digitalisierungsgrad beurteilen
+
+**Wertschöpfende Schritte** erzeugen aus Kundensicht einen Nutzen, z. B. die eigentliche Beratung oder Leistungserstellung. **Nicht wertschöpfende Schritte** wie doppelte Erfassung, unnötige Freigaben oder Suchen verursachen Aufwand ohne zusätzlichen Kundennutzen.
+
+Digitalisierung kann bedeuten:
+- analoge Daten digital erfassen,
+- Medienbrüche beseitigen,
+- Systeme über Schnittstellen verbinden,
+- manuelle Routinetätigkeiten automatisieren,
+- Daten für Entscheidungen nutzbar machen.
+
+**Prüfungslogik:** „Digital“ ist nicht automatisch „besser“. Eine Lösung muss auch wirtschaftlich, sicher, nutzbar und organisatorisch umsetzbar sein.
+
+## 9. Optimierung bewerten und Zielerreichung prüfen
+
+Vor einer Änderung sollten **messbare Ziele** definiert werden, z. B.:
+- Durchlaufzeit von 3 Tagen auf 1 Tag senken,
+- Fehlerquote unter 2 %,
+- 70 % der Standardfälle automatisieren,
+- Prozesskosten pro Fall um 20 % reduzieren.
+
+Nach der Umsetzung erfolgt ein **Soll-Ist-Vergleich**. Erst dann lässt sich beurteilen, ob die Maßnahme erfolgreich war.
+
+## 10. Support-Level und Priorisierung
+
+Ein Ticket wird nicht nur nach „wichtig/unwichtig“ behandelt. Häufig werden **Auswirkung (Impact)** und **Dringlichkeit (Urgency)** kombiniert.
+
+| Beispiel | Typische Priorität |
+|---|---|
+| Einzelner Nutzer, kleiner Workaround vorhanden | niedrig/mittel |
+| Ganze Abteilung kann Kernprozess nicht ausführen | hoch |
+| Kritischer Dienst für viele Nutzer vollständig ausgefallen | sehr hoch / Major Incident |
+
+**1st Level:** Annahme, Klassifikation, Standardlösungen.  
+**2nd Level:** vertiefte Fach-/Systemanalyse.  
+**3rd Level:** Hersteller/Entwicklung bzw. Spezialisten.
+
+Die genaue Einteilung kann im Unternehmen anders heißen; entscheidend ist die **systematische Eskalation nach Kompetenz und SLA**.
+
+---
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Beispielformulierung |

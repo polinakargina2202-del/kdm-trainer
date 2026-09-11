@@ -74,6 +74,26 @@ AN-Beitrag = Bruttogehalt × (Beitragssatz / 2)
 
 ---
 
+## 6. Brutto zu Netto – Entgeltabrechnung verstehen
+
+Vom **Bruttoentgelt** werden je nach Fall insbesondere abgezogen:
+- Arbeitnehmeranteile zur Sozialversicherung,
+- Lohnsteuer,
+- ggf. Solidaritätszuschlag,
+- ggf. Kirchensteuer.
+
+Danach ergibt sich das **Nettoentgelt**; weitere individuelle Abzüge/Erstattungen können zum Auszahlungsbetrag führen.
+
+> **Wichtig:** Beitragssätze, Beitragsbemessungsgrenzen und Grenzwerte ändern sich. In Rechenaufgaben immer die **im Aufgabentext vorgegebenen Werte** verwenden.
+
+## 7. Versicherungspflicht und Beitragsbemessungsgrenze
+
+Die **Beitragsbemessungsgrenze (BBG)** ist kein maximales Gehalt. Einkommen oberhalb der BBG wird für den jeweiligen Versicherungszweig **nicht mehr zusätzlich verbeitragt**.
+
+Beispiel mit vorgegebenem Prüfungswert: BBG 5.000 €, Monatsbrutto 5.600 € → Beitrag wird nur aus **5.000 €** berechnet.
+
+---
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Antwort |

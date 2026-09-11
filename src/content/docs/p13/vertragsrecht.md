@@ -103,7 +103,7 @@ Wesentliche Regelungen:
 
 ## 6. Qualitätskontrolle bei Subunternehmern
 
-M�glichkeiten zur Prüfung der Leistung:
+Möglichkeiten zur Prüfung der Leistung:
 - **Direkte Vor-Ort-Kontrolle** — anhand der Leistungsbeschreibung prüfen, fotografisch dokumentieren
 - **Videotelefonie** — Live-Kontrolle per Video
 - **Fernwartung** — Remote-Zugriff auf Systeme
@@ -163,6 +163,46 @@ Ein SLA (Service Level Agreement) regelt als Bestandteil eines Werkvertrags:
 - Escrow-Vereinbarung (Quellcode bei neutralem Dritten)
 - Dokumentationspflichten vereinbaren
 - Exit-Strategie definieren
+
+---
+
+## 11. Allgemeine Geschäftsbedingungen (AGB)
+
+AGB sind für viele Verträge **vorformulierte Vertragsbedingungen**. Wichtig für Prüfungen:
+- Sie müssen wirksam in den Vertrag einbezogen werden.
+- Überraschende/unzulässige Klauseln können unwirksam sein.
+- **Individualabreden haben Vorrang** vor AGB.
+- Bei B2B und B2C gelten teilweise unterschiedliche Schutzmaßstäbe.
+
+Bei digitalen Verträgen müssen außerdem Datenschutz, Preis-/Leistungsbeschreibung, Laufzeit/Kündigung und Lizenz-/Nutzungsrechte klar geregelt werden.
+
+## 12. Vertragsschluss und digitale Vertragsgestaltung
+
+Ein Vertrag entsteht grundsätzlich durch zwei übereinstimmende Willenserklärungen: **Angebot und Annahme**.
+
+Nicht jede Webseite ist bereits ein bindendes Angebot: Häufig ist eine Produktdarstellung nur eine **invitatio ad offerendum** – der Kunde gibt mit der Bestellung das Angebot ab; der Anbieter nimmt es anschließend an.
+
+Bei elektronischen Prozessen sind Nachweisbarkeit, Berechtigungen und ggf. Formvorschriften wichtig. Eine elektronische Signatur ersetzt **nicht automatisch jede gesetzlich geforderte Schriftform**.
+
+## 13. Vertretungsmacht im Unternehmen
+
+- **Prokura:** sehr weitreichende handelsrechtliche Vollmacht; Eintragung ins Handelsregister wird bekannt gemacht.
+- **Handlungsvollmacht:** enger; umfasst gewöhnliche Geschäfte des jeweiligen Handelsgewerbes bzw. Aufgabenbereichs.
+- **Einzelvollmacht:** für einen konkret bestimmten Vorgang.
+
+**Prüfungslogik:** Bei Bestellung/Vertragsverhandlung kann gefragt werden, ob eine Person das Unternehmen überhaupt wirksam vertreten darf.
+
+## 14. Leistungserbringung dokumentieren
+
+Geeignete Nachweise bei IT-Verträgen:
+- Abnahmeprotokoll,
+- Leistungs-/Stundennachweis,
+- Testprotokoll,
+- Übergabe-/Installationsprotokoll,
+- SLA-Report,
+- Dokumentation offener Mängel und Nacharbeiten.
+
+Dokumentation hilft bei Rechnung, Gewährleistung, Streitfällen und beim Soll-Ist-Vergleich von Zeit/Kosten.
 
 ---
 

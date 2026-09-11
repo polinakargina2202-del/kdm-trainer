@@ -24,7 +24,14 @@ description: Prüfungsbereich §12 — alle Themen im Überblick
 | BPMN / EPK / ITSM | 4/7 | S25 |
 | IT-Sicherheit & Netzwerk | 4/7 | S25 |
 | App-Entwicklung / UI-UX / RPA | 3/7 | S25 |
+| Digitale Geschäftsmodelle / Kundennutzen | **offizieller Prüfungsinhalt** | unabhängig von Altprüfungs-Häufigkeit |
 | Digitaler Reifegrad | 1/7 | S25 |
+
+## Erweiterte Abdeckung
+
+Die Lernseiten decken nicht nur bereits häufig gesehene Altprüfungs-Muster ab. Zusätzlich sind Aspekte aus Ausbildungsrahmenplan und Rahmenlehrplan direkt in die passenden Themen eingebaut, z. B. **Kundennutzen, digitale Geschäftsmodelle, Prozesskennzahlen, Datenqualität, Schnittstellen, Berechtigungskonzepte und RPO/RTO**. Im Wissenscheck werden diese mit dem Basiswissen gemischt.
+
+---
 
 ## Typische Aufgabenstruktur
 

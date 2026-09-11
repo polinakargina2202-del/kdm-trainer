@@ -41,7 +41,7 @@ Nach der Probezeit kann das Ausbildungsverhältnis nur noch in bestimmten Fälle
 - Berufsschulbesuch ermöglichen (Freistellung)
 - Ausbildungsmittel kostenlos bereitstellen
 - Vergütung zahlen
-- Zeugnis ausstellen auf Verlangen
+- Bei Beendigung des Ausbildungsverhältnisses ein Ausbildungszeugnis ausstellen; Angaben zu Verhalten und Leistung kommen auf Verlangen hinzu
 
 ## 5. Pflichten des Auszubildenden (§ 13 BBiG)
 
