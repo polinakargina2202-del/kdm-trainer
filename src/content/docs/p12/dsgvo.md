@@ -359,6 +359,43 @@ Berechtigungen, Speicherdauer und Schutzmaßnahmen müssen festgelegt sein.
 
 ---
 
+## 12. Weitere prüfungsrelevante Aspekte
+
+### Privacy by Design und Privacy by Default
+
+**Privacy by Design** bedeutet, dass Datenschutz bereits bei der Planung und Entwicklung eines Systems berücksichtigt wird und nicht erst nachträglich ergänzt wird.
+
+**Privacy by Default** bedeutet, dass die Voreinstellungen eines Systems standardmäßig möglichst datenschutzfreundlich sind. Ohne zusätzliche Entscheidung des Nutzers sollen also nur die für den jeweiligen Zweck notwendigen Daten verarbeitet und freigegeben werden.
+
+**Beispiel:** Eine neue App erfasst bei der Registrierung nur die zwingend benötigten Profildaten. Optionale Datenfelder sind leer und zusätzliche Freigaben nicht vorausgewählt.
+
+> **Merksatz:** Privacy by Design = Datenschutz von Anfang an mitdenken. Privacy by Default = datenschutzfreundliche Grundeinstellungen.
+
+### Datenschutz-Folgenabschätzung (DSFA)
+
+Wenn eine geplante Verarbeitung voraussichtlich ein **hohes Risiko für die Rechte und Freiheiten natürlicher Personen** verursacht, muss geprüft werden, ob vor Beginn der Verarbeitung eine Datenschutz-Folgenabschätzung erforderlich ist. Dabei werden die geplante Verarbeitung und ihre Risiken bewertet und geeignete Schutzmaßnahmen festgelegt.
+
+Typische Hinweise in einer Prüfungsaufgabe können sein:
+
+- neue oder besonders eingriffsintensive Technologien,
+- umfangreiche Verarbeitung besonders sensibler Daten,
+- systematische Überwachung oder Profilbildung mit hohem Risiko.
+
+### Datenhoheit und Schutzrechte
+
+Bei digitalen Geschäftsmodellen reicht die Frage „Dürfen wir personenbezogene Daten verarbeiten?“ allein nicht immer aus. Zusätzlich kann wichtig sein, **wer über Daten verfügen, sie weitergeben oder wirtschaftlich nutzen darf** und welche vertraglichen oder gesetzlichen Schutzrechte betroffen sind.
+
+Mögliche Aspekte sind zum Beispiel:
+
+- vertraglich vereinbarte Nutzungsrechte,
+- Urheberrechte an Inhalten oder Software,
+- Schutz von Geschäftsgeheimnissen,
+- Regelungen zur Datenportabilität und Herausgabe beim Anbieterwechsel.
+
+**Prüfungslogik:** Datenschutz, Datenhoheit und Schutzrechte können gleichzeitig relevant sein, beantworten aber unterschiedliche Fragen.
+
+---
+
 ## Kurz zusammengefasst
 
 - Personenbezogene Daten beziehen sich auf eine identifizierte oder identifizierbare natürliche Person.
@@ -369,6 +406,8 @@ Berechtigungen, Speicherdauer und Schutzmaßnahmen müssen festgelegt sein.
 - **TOMs** schützen personenbezogene Daten technisch und organisatorisch.
 - Pseudonymisierte Daten bleiben personenbezogen, wenn die Zuordnung wieder möglich ist.
 - Datenschutzverletzungen können Melde- und Benachrichtigungspflichten auslösen.
+- **Privacy by Design/Default** berücksichtigt Datenschutz bereits bei Gestaltung und Voreinstellungen.
+- Bei hohem Risiko kann eine **DSFA** erforderlich sein.
 
 ---
 
@@ -382,6 +421,8 @@ Berechtigungen, Speicherdauer und Schutzmaßnahmen müssen festgelegt sein.
 | Rechtsgrundlage | „Nennen Sie eine mögliche Rechtsgrundlage für die Verarbeitung.“ |
 | Betroffenenrechte | „Nennen Sie 3 Rechte betroffener Personen.“ |
 | TOMs | „Nennen Sie je 2 technische und organisatorische Maßnahmen.“ |
+| Privacy by Default | „Nennen Sie eine datenschutzfreundliche Voreinstellung für die Anwendung.“ |
+| DSFA | „Begründen Sie, warum für die geplante Datenverarbeitung eine DSFA zu prüfen ist.“ |
 | Datenpanne | „Beschreiben Sie das Vorgehen nach Bekanntwerden einer Datenschutzverletzung.“ |
 
 ---
