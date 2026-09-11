@@ -1,4 +1,4 @@
-name: Apply trainer content update
+name: Finalize trainer content update
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 jobs:
-  apply-update:
+  finalize-update:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
@@ -19,29 +19,57 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Reconstruct and apply update
+      - name: Add remaining DSGVO exam aspects
         shell: bash
         run: |
           set -euo pipefail
-          cat .update/chunk_* | base64 --decode | gzip --decompress > /tmp/kdm-update.patch
-          git apply --3way -p2 /tmp/kdm-update.patch || true
-          if git ls-files -u -- src/content/docs/p12/dsgvo.md | grep -q .; then
-            git checkout --ours -- src/content/docs/p12/dsgvo.md
-            git add src/content/docs/p12/dsgvo.md
-          fi
-          if git ls-files -u | grep -q .; then
-            echo "Unresolved conflicts remain"
-            git status --short
-            exit 1
-          fi
-          rm -rf .update
+          python3 - <<'PY'
+          from pathlib import Path
 
-      - name: Commit updated trainer
+          path = Path('src/content/docs/p12/dsgvo.md')
+          text = path.read_text(encoding='utf-8')
+          marker = '\n---\n\n## Kurz zusammengefasst\n'
+          section = '''
+---
+
+## 12. Weitere prüfungsrelevante Aspekte
+
+### Privacy by Design und Privacy by Default
+
+**Privacy by Design** bedeutet, dass Datenschutz bereits bei der Planung und Entwicklung eines Systems berücksichtigt wird und nicht erst nachträglich ergänzt wird.
+
+**Privacy by Default** bedeutet, dass die Voreinstellungen eines Systems standardmäßig möglichst datenschutzfreundlich sind. Es sollen also ohne zusätzliche Entscheidung des Nutzers nur die für den jeweiligen Zweck notwendigen Daten verarbeitet werden.
+
+**Beispiel:** Eine neue App erfasst bei der Registrierung nur die zwingend benötigten Profildaten. Optionale Datenfelder sind nicht vorausgewählt.
+
+### Datenschutz-Folgenabschätzung (DSFA)
+
+Wenn eine geplante Verarbeitung voraussichtlich ein **hohes Risiko für die Rechte und Freiheiten natürlicher Personen** mit sich bringt, muss vor Beginn der Verarbeitung geprüft werden, ob eine Datenschutz-Folgenabschätzung erforderlich ist. Dabei werden insbesondere Risiken beschrieben, bewertet und geeignete Schutzmaßnahmen festgelegt.
+
+**Prüfungslogik:** Bei neuen Technologien, umfangreichen sensiblen Daten oder besonders eingriffsintensiven Verarbeitungen solltest du an eine DSFA denken.
+
+### Datenhoheit und Schutzrechte
+
+Bei digitalen Geschäftsmodellen reicht es nicht aus, nur zu fragen, ob Daten technisch genutzt werden können. Es muss auch geklärt werden, **wer über die Daten verfügen darf**, welche vertraglichen Regelungen gelten und ob weitere Schutzrechte betroffen sind, zum Beispiel Urheber- und Nutzungsrechte oder Geschäftsgeheimnisse.
+
+**Prüfungslogik:** Datenschutz beantwortet vor allem die Frage nach dem zulässigen Umgang mit personenbezogenen Daten. Datenhoheit und Schutzrechte können zusätzlich bestimmen, wer Daten verwenden, weitergeben oder wirtschaftlich verwerten darf.
+'''
+          if '## 12. Weitere prüfungsrelevante Aspekte' not in text:
+              if marker not in text:
+                  raise SystemExit('Insertion marker not found in DSGVO page')
+              text = text.replace(marker, '\n' + section + marker, 1)
+              path.write_text(text, encoding='utf-8')
+          PY
+
+          rm -rf .update
+          rm -f .github/workflows/apply-trainer-update.yml
+
+      - name: Commit final trainer update
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Expand exam topics and simulation coverage"
+          git commit -m "Finalize expanded exam trainer content"
           git push origin main
