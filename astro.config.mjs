@@ -17,6 +17,7 @@ export default defineConfig({
         { tag: 'link', attrs: { rel: 'stylesheet', href: '/kdm-trainer/trainer/advanced.css' } },
         { tag: 'script', attrs: { src: '/kdm-trainer/visuals/visuals.js', defer: true } },
         { tag: 'script', attrs: { src: '/kdm-trainer/visuals/visuals-extra.js', defer: true } },
+        { tag: 'script', attrs: { src: '/kdm-trainer/resources/resources.js', defer: true } },
       ],
       sidebar: [
         { label: '🏠 Start', slug: 'index' },
@@ -26,6 +27,7 @@ export default defineConfig({
         { label: '🔁 Wiederholung & Schwächen', slug: 'wiederholung' },
         { label: '📐 Formelsammlung', slug: 'formelsammlung' },
         { label: '📚 Glossar & IHK-Fallen', slug: 'glossar-fallen' },
+        { label: '🔎 Weiterlesen & Quellen', slug: 'weiterlesen' },
         {
           label: '§12 Digitales Geschäftsmodell',
           collapsed: false,
