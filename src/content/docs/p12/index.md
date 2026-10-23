@@ -27,6 +27,10 @@ description: Prüfungsbereich §12 — alle Themen im Überblick
 | Digitale Geschäftsmodelle / Kundennutzen | **offizieller Prüfungsinhalt** | unabhängig von Altprüfungs-Häufigkeit |
 | Digitaler Reifegrad | 1/7 | S25 |
 
+**Neue Vertiefung:** [Künstliche Intelligenz, RPA und sicherer Einsatz](/kdm-trainer/p12/ki-automatisierung/) – mit eigenem Wissenscheck. Siehe auch die [Themenabdeckung mit Lücken](/kdm-trainer/pruefungsabdeckung/).
+
+> Die historischen Häufigkeitsangaben sind Lernorientierung, **keine Garantie** und bedürfen bei abweichender Themenzählung einer erneuten Prüfung.
+
 ## Erweiterte Abdeckung
 
 Die Lernseiten decken nicht nur bereits häufig gesehene Altprüfungs-Muster ab. Zusätzlich sind Aspekte aus Ausbildungsrahmenplan und Rahmenlehrplan direkt in die passenden Themen eingebaut, z. B. **Kundennutzen, digitale Geschäftsmodelle, Prozesskennzahlen, Datenqualität, Schnittstellen, Berechtigungskonzepte und RPO/RTO**. Im Wissenscheck werden diese mit dem Basiswissen gemischt.
