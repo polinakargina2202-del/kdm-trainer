@@ -26,6 +26,8 @@ export default defineConfig({
         { label: '⏱️ Feste Probeprüfungen', slug: 'probepruefungen' },
         { label: '🔁 Wiederholung & Schwächen', slug: 'wiederholung' },
         { label: '📐 Formelsammlung', slug: 'formelsammlung' },
+        { label: '🗣️ Prüfungsformulierungen', slug: 'formulierungsbaukasten' },
+        { label: '✅ Themenabdeckung & Lücken', slug: 'pruefungsabdeckung' },
         { label: '📚 Glossar & IHK-Fallen', slug: 'glossar-fallen' },
         { label: '🔎 Weiterlesen & Quellen', slug: 'weiterlesen' },
         {
@@ -42,6 +44,7 @@ export default defineConfig({
             { label: 'Softwaretesting & Debugging', slug: 'p12/softwaretesting' },
             { label: 'Datenschutz & DSGVO', slug: 'p12/dsgvo' },
             { label: 'App-Entwicklung & UI/UX', slug: 'p12/app-entwicklung' },
+            { label: 'KI, RPA & sicherer Einsatz', slug: 'p12/ki-automatisierung' },
           ],
         },
         {
