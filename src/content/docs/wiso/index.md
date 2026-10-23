@@ -10,23 +10,21 @@ description: WiSo Multiple Choice — alle Themen im Überblick
 - **Hilfsmittel:** Taschenrechner (nicht programmierbar)
 - **Besonderheit:** WiSo ist **für alle IT-Berufe gleich** (1201–1205) — sehr viele Prüfungsjahrgänge verfügbar!
 
-## Themen nach Häufigkeit (9 Sessions analysiert)
+## Themenkompass – nach Prüfungskatalog, keine sicheren Vorhersagen
 
-| Thema | Häufigkeit | Sicher dabei |
-|---|---|---|
-| BBiG & Ausbildungsvertrag | 9/9 | ✓✓✓ |
-| Kündigungsrecht & Arbeitszeugnis | 9/9 | ✓✓✓ |
-| Betriebsrat (Rechte, Wahl) | 9/9 | ✓✓✓ |
-| Tarifvertrag & Arbeitskampf | 9/9 | ✓✓✓ |
-| GmbH & Leitungssysteme | 9/9 | ✓✓✓ |
-| AGG — Gleichbehandlung | 9/9 | ✓✓✓ |
-| Umweltschutz & Arbeitsschutz | 9/9 | ✓✓✓ |
-| JAV — Jugendvertretung | 8/9 | ✓✓✓ |
-| JArbSchG — Jugendarbeitsschutz | 8/9 | ✓✓✓ |
-| Sozialversicherung & Rente | 8/9 | ✓✓✓ |
-| VWL: Konjunktur & Sektoren | 7/9 | ✓✓ |
-| Mutterschutz & Elternzeit | 7/9 | ✓✓ |
-| Rechtsformen (KG, OHG, AG, eG) | 6/9 | ✓✓ |
+Die frühere Übersicht mit angeblich **9/9 sicher vorkommenden Themen** war anhand der hier verfügbaren WiSo-Originalklausuren nicht vollständig unabhängig überprüfbar. Insbesondere liegen für diesen Vergleich zuverlässig **Winter 2025/26 und Sommer 2026** vor; frühere Prozent-/Sicherheitsangaben werden deshalb **nicht** als überprüfte Prognose verwendet.
+
+| Themenfeld | Lernmaterial |
+|---|---|
+| Berufsausbildung, BBiG, Kündigung, Urlaub | [BBiG](/kdm-trainer/wiso/bbig/) · [Arbeitsrecht](/kdm-trainer/wiso/arbeitsrecht/) |
+| Betriebsrat, JAV, Tarifrecht | [Betriebsverfassung](/kdm-trainer/wiso/betriebsverfassung/) · [Tarifrecht](/kdm-trainer/wiso/tarifvertrag/) |
+| Sozialversicherung, Brutto/Netto, Abgaben | [Sozialversicherung](/kdm-trainer/wiso/sozialversicherung/) |
+| Rechtsformen, Organe, Haftung | [Rechtsformen](/kdm-trainer/wiso/rechtsformen/) |
+| Konjunktur, Markt, Inflation | [VWL](/kdm-trainer/wiso/vwl/) |
+| AGG, Arbeitsschutz, Umwelt | [AGG](/kdm-trainer/wiso/agg/) · [Umwelt/Arbeitsschutz](/kdm-trainer/wiso/umwelt/) |
+| Weiterbildung, Umschulung, Lernmethoden und digitale Zusammenarbeit | [Ergänzungsbedarf dokumentiert](/kdm-trainer/pruefungsabdeckung/) |
+
+**Merke:** Keine dieser Themenzeilen bedeutet „kommt sicher dran“. Alle prüfungsrelevanten Inhalte werden für die Wiederholung vorbereitet, Schwerpunkte orientieren sich zusätzlich an realen Prüfungssituationen.
 
 ## Wichtige Berechnungen
 
