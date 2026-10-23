@@ -30,9 +30,9 @@ hero:
 | Kaufmännische Unterstützungsprozesse | §13 | 10 % | 90 Min | überwiegend offene, situationsbezogene Aufgaben |
 | Wirtschafts- und Sozialkunde | §14 | 10 % | 60 Min | 30 gebundene/kurze Aufgaben |
 
-## So nutzt du den Trainer als Haupt-Lernquelle
+## So nutzt du den Trainer zur Wiederholung nach der Theorie
 
-1. **Lernseite verstehen** – nicht nur Begriffe markieren.
+1. **Theorie zuerst lernen** – beispielsweise im Chat mit Erklärungen und kleinen Verständnisfragen; danach die passende Trainerseite zur Wiederholung öffnen.
 2. **Wissenscheck** auf der jeweiligen Seite lösen.
 3. Im **IHK-Antworttraining** selbst formulieren: nennen, beschreiben, erläutern, begründen.
 4. Unter **Wiederholung & Schwächen** Fehler und schwache Themen gezielt erneut bearbeiten.
