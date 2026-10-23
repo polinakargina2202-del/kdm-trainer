@@ -26,7 +26,7 @@ export default defineConfig({
         { label: '⏱️ Feste Probeprüfungen', slug: 'probepruefungen' },
         { label: '🔁 Wiederholung & Schwächen', slug: 'wiederholung' },
         { label: '📐 Formelsammlung', slug: 'formelsammlung' },
-        { label: '🗣️ Prüfungsformulierungen', slug: 'formulierungsbaukasten' },
+        { label: '🗣️ Konkrete Antwortbausteine', slug: 'formulierungsbaukasten' },
         { label: '✅ Themenabdeckung & Lücken', slug: 'pruefungsabdeckung' },
         { label: '📚 Glossar & IHK-Fallen', slug: 'glossar-fallen' },
         { label: '🔎 Weiterlesen & Quellen', slug: 'weiterlesen' },
