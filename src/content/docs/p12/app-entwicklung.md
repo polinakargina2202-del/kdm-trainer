@@ -203,6 +203,8 @@ Wenn gefragt wird, ob ein Prozess für RPA geeignet ist, begründe mit seinen Ei
 
 ## 4. KI im Unternehmenskontext
 
+**Vertiefung mit eigenen Wissenschecks:** [KI, RPA und sicherer Einsatz](/kdm-trainer/p12/ki-automatisierung/).
+
 Künstliche Intelligenz kann Unternehmen zum Beispiel bei Recherche, Textanalyse, Klassifikation oder Prognosen unterstützen. Sie sollte aber nicht unkritisch eingesetzt werden.
 
 ### Typische Risiken
