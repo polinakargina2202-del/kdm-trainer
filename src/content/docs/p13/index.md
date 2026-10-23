@@ -21,6 +21,10 @@ description: Prüfungsbereich §13 — alle Themen im Überblick
 | Make-or-Buy | 3/7 | S25 |
 | Handels-/Gesellschaftsrecht | 2/7 | S25 |
 
+**Auch in kaufmännischen Fällen relevant:** [KI-Risiken bei Recherche und Entscheidungen](/kdm-trainer/p12/ki-automatisierung/). Eine [vollständige Prüfung der Themenabdeckung](/kdm-trainer/pruefungsabdeckung/) zeigt weitere Ergänzungsbedarfe.
+
+> Die historischen Häufigkeitsangaben sind Lernorientierung und **keine Garantie** für künftige Aufgaben.
+
 ## Erweiterte Abdeckung
 
 Zusätzlich zu den bekannten Aufgabenmustern sind mögliche weitere Prüfungsaspekte direkt integriert, z. B. **Deckungsbeitrag, Preisuntergrenze, Prozesskosten, Handelsspanne, Vertragsstörungen, IT-Dienstleistungsbeschaffung, AGB, Vertretungsmacht, Kennzahlen und Soll-Ist-Vergleich**. Sie erscheinen ebenfalls in Wissenscheck und Prüfungssimulation.
