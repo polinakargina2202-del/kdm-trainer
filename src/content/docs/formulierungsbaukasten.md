@@ -17,30 +17,30 @@ Diese Sammlung ist eine **eigene Lernhilfe aus typischen Prüfungs- und Praxissi
 
 | Risiko / Gefahr | Mögliche Auswirkung | Passende Maßnahme |
 |---|---|---|
-| **Serverausfall** (відмова сервера) | Betriebsunterbrechung, eingeschränkte Verfügbarkeit | **Redundante Systeme einsetzen**, Monitoring und Notfallplan |
-| **Datenverlust** (втрата даних) | Informationen können nicht wiederhergestellt werden | **Regelmäßige Backups und Restore-Tests durchführen** |
-| **Unbefugter Zugriff** (несанкціонований доступ) | Vertrauliche Daten werden offengelegt | **MFA und rollenbasierte Zugriffsrechte einführen** |
-| **Cyberangriff / Ransomware** (кібератака) | Datenverschlüsselung, Betriebsausfall | **Patchmanagement, Endpoint-Schutz und getrennte Backups** |
-| **Datenschutzverstoß** (порушення захисту даних) | Rechtsfolgen und Vertrauensverlust | **Rechtsgrundlage, Datenminimierung und TOM prüfen** |
-| **Technische Kompatibilitätsprobleme** (проблеми сумісності) | Schnittstellen funktionieren nicht | **Kompatibilitätsprüfung und Integrationstests durchführen** |
-| **Fehlerhafte Datenübertragung** (помилки передачі даних) | Falsche oder unvollständige Daten | **Datenvalidierung, Protokollierung und Abgleich durchführen** |
-| **Unzureichende Datenqualität** (низька якість даних) | Unzuverlässige Analysen und Entscheidungen | **Plausibilitätsprüfungen und Datenbereinigung durchführen** |
-| **Hohe Implementierungskosten** (високі витрати впровадження) | Budgetüberschreitung | **Kostenplanung und laufende Budgetkontrolle durchführen** |
-| **Steigende Betriebskosten** (зростання експлуатаційних витрат) | Schlechtere Wirtschaftlichkeit | **TCO und laufende Kosten regelmäßig vergleichen** |
-| **Terminverzögerungen** (затримки термінів) | Spätere Inbetriebnahme | **Realistische Zeitplanung, Meilensteine und Puffer vorsehen** |
-| **Personalausfall** (відсутність працівників) | Aufgaben bleiben liegen | **Vertretungsregelung und Wissensdokumentation einführen** |
-| **Unklare Anforderungen** (нечіткі вимоги) | Falsche Lösung, Nacharbeiten | **Anforderungen abstimmen und schriftlich dokumentieren** |
-| **Geringe Mitarbeiterakzeptanz** (низьке прийняття персоналом) | Lösung wird kaum genutzt | **Mitarbeitende frühzeitig einbinden und schulen** |
-| **Bedienungsfehler** (помилки користувачів) | Fehlerhafte Eingaben oder Störungen | **Schulungen, klare Anleitungen und Plausibilitätsprüfungen** |
-| **Mangelnde Benutzerfreundlichkeit** (низька зручність) | Lange Bearbeitungszeiten und Beschwerden | **Usability-Tests mit der Zielgruppe durchführen** |
-| **Abhängigkeit vom Anbieter / Vendor Lock-in** (залежність від постачальника) | Schwieriger Systemwechsel | **Offene Standards, Datenexport und Exit-Strategie vereinbaren** |
-| **Lieferverzögerungen** (затримка поставок) | Projekttermine geraten in Gefahr | **Liefertermine vertraglich regeln und Alternativen prüfen** |
-| **Unzureichender Support** (недостатня підтримка) | Lange Störungs- und Ausfallzeiten | **Supportzeiten, Reaktionszeiten und Eskalation im SLA regeln** |
-| **Fehlende Skalierbarkeit** (нездатність масштабуватись) | System wird bei steigender Nutzung überlastet | **Lasttests und skalierbare Architektur vorsehen** |
-| **Fehlerhafte KI-Ergebnisse / Halluzinationen** (помилкові результати ШІ) | Fehlentscheidungen | **Quellenprüfung und fachliche Freigabe einführen** |
-| **Bias / Verzerrungen durch KI** (упередженість ШІ) | Benachteiligende oder einseitige Ergebnisse | **Ergebnisse mit geeigneten Testgruppen prüfen** |
-| **Unzureichende Testabdeckung** (недостатнє тестування) | Fehler bleiben vor Produktivstart unentdeckt | **Normal-, Grenz- und Fehlerfälle testen** |
-| **Fehlende Dokumentation** (брак документації) | Abhängigkeit von Einzelpersonen, langer Support | **System- und Prozessdokumentation pflegen** |
+| **Serverausfall** (отказ сервера) | Betriebsunterbrechung, eingeschränkte Verfügbarkeit | **Redundante Systeme einsetzen**, Monitoring und Notfallplan |
+| **Datenverlust** (потеря данных) | Informationen können nicht wiederhergestellt werden | **Regelmäßige Backups und Restore-Tests durchführen** |
+| **Unbefugter Zugriff** (несанкционированный доступ) | Vertrauliche Daten werden offengelegt | **MFA und rollenbasierte Zugriffsrechte einführen** |
+| **Cyberangriff / Ransomware** (кибератака) | Datenverschlüsselung, Betriebsausfall | **Patchmanagement, Endpoint-Schutz und getrennte Backups** |
+| **Datenschutzverstoß** (нарушение защиты данных) | Rechtsfolgen und Vertrauensverlust | **Rechtsgrundlage, Datenminimierung und TOM prüfen** |
+| **Technische Kompatibilitätsprobleme** (проблемы совместимости) | Schnittstellen funktionieren nicht | **Kompatibilitätsprüfung und Integrationstests durchführen** |
+| **Fehlerhafte Datenübertragung** (ошибки передачи данных) | Falsche oder unvollständige Daten | **Datenvalidierung, Protokollierung und Abgleich durchführen** |
+| **Unzureichende Datenqualität** (низкое качество данных) | Unzuverlässige Analysen und Entscheidungen | **Plausibilitätsprüfungen und Datenbereinigung durchführen** |
+| **Hohe Implementierungskosten** (высокие затраты на внедрение) | Budgetüberschreitung | **Kostenplanung und laufende Budgetkontrolle durchführen** |
+| **Steigende Betriebskosten** (рост эксплуатационных затрат) | Schlechtere Wirtschaftlichkeit | **TCO und laufende Kosten regelmäßig vergleichen** |
+| **Terminverzögerungen** (задержка сроков) | Spätere Inbetriebnahme | **Realistische Zeitplanung, Meilensteine und Puffer vorsehen** |
+| **Personalausfall** (отсутствие сотрудников) | Aufgaben bleiben liegen | **Vertretungsregelung und Wissensdokumentation einführen** |
+| **Unklare Anforderungen** (нечёткие требования) | Falsche Lösung, Nacharbeiten | **Anforderungen abstimmen und schriftlich dokumentieren** |
+| **Geringe Mitarbeiterakzeptanz** (низкое принятие сотрудниками) | Lösung wird kaum genutzt | **Mitarbeitende frühzeitig einbinden und schulen** |
+| **Bedienungsfehler** (ошибки пользователей) | Fehlerhafte Eingaben oder Störungen | **Schulungen, klare Anleitungen und Plausibilitätsprüfungen** |
+| **Mangelnde Benutzerfreundlichkeit** (низкое удобство использования) | Lange Bearbeitungszeiten und Beschwerden | **Usability-Tests mit der Zielgruppe durchführen** |
+| **Abhängigkeit vom Anbieter / Vendor Lock-in** (зависимость от поставщика) | Schwieriger Systemwechsel | **Offene Standards, Datenexport und Exit-Strategie vereinbaren** |
+| **Lieferverzögerungen** (задержка поставок) | Projekttermine geraten in Gefahr | **Liefertermine vertraglich regeln und Alternativen prüfen** |
+| **Unzureichender Support** (недостаточная поддержка) | Lange Störungs- und Ausfallzeiten | **Supportzeiten, Reaktionszeiten und Eskalation im SLA regeln** |
+| **Fehlende Skalierbarkeit** (недостаточная масштабируемость) | System wird bei steigender Nutzung überlastet | **Lasttests und skalierbare Architektur vorsehen** |
+| **Fehlerhafte KI-Ergebnisse / Halluzinationen** (ошибочные результаты ИИ) | Fehlentscheidungen | **Quellenprüfung und fachliche Freigabe einführen** |
+| **Bias / Verzerrungen durch KI** (предвзятость ИИ) | Benachteiligende oder einseitige Ergebnisse | **Ergebnisse mit geeigneten Testgruppen prüfen** |
+| **Unzureichende Testabdeckung** (недостаточное тестирование) | Fehler bleiben vor Produktivstart unentdeckt | **Normal-, Grenz- und Fehlerfälle testen** |
+| **Fehlende Dokumentation** (отсутствие документации) | Abhängigkeit von Einzelpersonen, langer Support | **System- und Prozessdokumentation pflegen** |
 
 ### Die ersten zehn Risiken zum Auswendiglernen
 
@@ -151,26 +151,26 @@ Diese Sammlung ist eine **eigene Lernhilfe aus typischen Prüfungs- und Praxissi
 
 | Vorteil (auswendig lernen) | Bedeutung |
 |---|---|
-| **Zeitersparnis** | економія часу |
-| **Kostenreduzierung** | зниження витрат |
-| **Reduzierung manueller Fehler** | зменшення ручних помилок |
-| **Steigerung der Prozesseffizienz** | підвищення ефективності процесу |
-| **Höhere Datenqualität** | вища якість даних |
-| **Verbesserte Nachvollziehbarkeit** | краща простежуваність |
-| **Höhere Transparenz** | більша прозорість |
-| **Entlastung der Mitarbeitenden** | зменшення навантаження персоналу |
-| **Verbesserte Kundenzufriedenheit** | підвищення задоволеності клієнтів |
-| **Verkürzung der Durchlaufzeiten** | скорочення часу виконання |
-| **Schnellere Informationsverfügbarkeit** | швидший доступ до інформації |
-| **Bessere Skalierbarkeit** | краще масштабування |
-| **Höhere Flexibilität** | більша гнучкість |
-| **Bessere standortübergreifende Zusammenarbeit** | краща співпраця між локаціями |
-| **Höhere Ausfallsicherheit** | краща відмовостійкість |
-| **Verbesserte Planbarkeit** | краще планування |
-| **Reduzierung von Medienbrüchen** | усунення ручних переходів між системами |
-| **Einheitliche Datenbasis** | єдине джерело даних |
-| **Verbesserte Servicequalität** | краща якість обслуговування |
-| **Wettbewerbsvorteile** | конкурентні переваги |
+| **Zeitersparnis** | экономия времени |
+| **Kostenreduzierung** | снижение затрат |
+| **Reduzierung manueller Fehler** | снижение количества ручных ошибок |
+| **Steigerung der Prozesseffizienz** | повышение эффективности процесса |
+| **Höhere Datenqualität** | повышение качества данных |
+| **Verbesserte Nachvollziehbarkeit** | улучшение прослеживаемости |
+| **Höhere Transparenz** | повышение прозрачности |
+| **Entlastung der Mitarbeitenden** | снижение нагрузки сотрудников |
+| **Verbesserte Kundenzufriedenheit** | повышение удовлетворённости клиентов |
+| **Verkürzung der Durchlaufzeiten** | сокращение времени выполнения |
+| **Schnellere Informationsverfügbarkeit** | более быстрый доступ к информации |
+| **Bessere Skalierbarkeit** | улучшенная масштабируемость |
+| **Höhere Flexibilität** | большая гибкость |
+| **Bessere standortübergreifende Zusammenarbeit** | улучшение взаимодействия между филиалами |
+| **Höhere Ausfallsicherheit** | повышенная отказоустойчивость |
+| **Verbesserte Planbarkeit** | улучшение планирования |
+| **Reduzierung von Medienbrüchen** | устранение ручной передачи данных между системами |
+| **Einheitliche Datenbasis** | единая база данных |
+| **Verbesserte Servicequalität** | повышение качества обслуживания |
+| **Wettbewerbsvorteile** | конкурентные преимущества |
 
 **Prüfungstipp:** „Zeitersparnis“ und „Verkürzung der Durchlaufzeiten“ sind oft **derselbe Nutzen**. Falls zwei unterschiedliche Vorteile verlangt sind, nenne lieber etwa **Zeitersparnis + bessere Datenqualität**.
 
@@ -178,21 +178,21 @@ Diese Sammlung ist eine **eigene Lernhilfe aus typischen Prüfungs- und Praxissi
 
 | Nachteil | Bedeutung |
 |---|---|
-| **Hohe Anschaffungskosten** | високі початкові витрати |
-| **Hohe laufende Betriebskosten** | високі регулярні витрати |
-| **Zusätzlicher Schulungsbedarf** | необхідність навчання |
-| **Hoher Wartungs- und Pflegeaufwand** | великі витрати на підтримку |
-| **Hoher Implementierungsaufwand** | складне впровадження |
-| **Abhängigkeit vom Anbieter** | залежність від постачальника |
-| **Eingeschränkte Anpassungsmöglichkeiten** | обмежена гнучкість налаштувань |
-| **Komplexe Systemintegration** | складна інтеграція |
-| **Mögliche Datenschutzrisiken** | потенційні ризики для даних |
-| **Anfälligkeit für technische Störungen** | ризик технічних збоїв |
-| **Lange Einarbeitungszeit** | тривале освоєння |
-| **Kosten für notwendige Lizenzen** | витрати на ліцензії |
-| **Fehleranfälligkeit bei Ausnahmen** | помилки у нестандартних випадках |
-| **Zusätzlicher Kontrollaufwand** | додаткова перевірка |
-| **Eingeschränkte Offline-Nutzung** | обмежене використання без інтернету |
+| **Hohe Anschaffungskosten** | высокие первоначальные затраты |
+| **Hohe laufende Betriebskosten** | высокие текущие расходы |
+| **Zusätzlicher Schulungsbedarf** | необходимость обучения |
+| **Hoher Wartungs- und Pflegeaufwand** | большие затраты на обслуживание |
+| **Hoher Implementierungsaufwand** | сложность внедрения |
+| **Abhängigkeit vom Anbieter** | зависимость от поставщика |
+| **Eingeschränkte Anpassungsmöglichkeiten** | ограниченные возможности настройки |
+| **Komplexe Systemintegration** | сложная интеграция |
+| **Mögliche Datenschutzrisiken** | потенциальные риски для данных |
+| **Anfälligkeit für technische Störungen** | риск технических сбоев |
+| **Lange Einarbeitungszeit** | длительное освоение |
+| **Kosten für notwendige Lizenzen** | затраты на лицензии |
+| **Fehleranfälligkeit bei Ausnahmen** | ошибки в нестандартных ситуациях |
+| **Zusätzlicher Kontrollaufwand** | дополнительные проверки |
+| **Eingeschränkte Offline-Nutzung** | ограниченная работа без интернета |
 
 ## F. Auswahlkriterien: die fertigen Wörter für „Nennen Sie Kriterien“
 
