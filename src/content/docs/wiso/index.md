@@ -26,6 +26,12 @@ Die frühere Übersicht mit angeblich **9/9 sicher vorkommenden Themen** war anh
 
 **Merke:** Keine dieser Themenzeilen bedeutet „kommt sicher dran“. Alle prüfungsrelevanten Inhalte werden für die Wiederholung vorbereitet, Schwerpunkte orientieren sich zusätzlich an realen Prüfungssituationen.
 
+
+## Neuer Lernbereich
+
+[Weiterbildung, Umschulung, Europass und digitale Zusammenarbeit](/kdm-trainer/wiso/weiterbildung-digital-zusammenarbeiten/) – mit Beispielen zu Informationssicherheit und virtueller Teamarbeit sowie neuen Fragen für den Wissenscheck.
+
+
 ## Wichtige Berechnungen
 
 In der Prüfung kommen regelmäßig Berechnungsaufgaben:
