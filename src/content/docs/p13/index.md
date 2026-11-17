@@ -29,6 +29,15 @@ description: Prüfungsbereich §13 — alle Themen im Überblick
 
 Zusätzlich zu den bekannten Aufgabenmustern sind mögliche weitere Prüfungsaspekte direkt integriert, z. B. **Deckungsbeitrag, Preisuntergrenze, Prozesskosten, Handelsspanne, Vertragsstörungen, IT-Dienstleistungsbeschaffung, AGB, Vertretungsmacht, Kennzahlen und Soll-Ist-Vergleich**. Sie erscheinen ebenfalls in Wissenscheck und Prüfungssimulation.
 
+
+## Ergänzte Katalogthemen
+
+- [Umsatzsteuer, Vorsteuer, Zahllast, Rechnungsprüfung, Buchungssätze und GWG](/kdm-trainer/p13/umsatzsteuer-buchfuehrung/)
+- [Bilanzkennzahlen, Liquidität, ROI, Cashflow, TCO, Make-or-Buy und Stundensätze](/kdm-trainer/p13/kennzahlen-wirtschaftlichkeit/)
+
+Nutze die neuen Wissenschecks und rechne die Beispiele **ohne Lösung**, bevor du die Erklärung öffnest.
+
+
 ---
 
 ## Typische Aufgabenstruktur (W25/26, W26)
