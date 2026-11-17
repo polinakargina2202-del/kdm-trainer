@@ -35,6 +35,19 @@ description: Prüfungsbereich §12 — alle Themen im Überblick
 
 Die Lernseiten decken nicht nur bereits häufig gesehene Altprüfungs-Muster ab. Zusätzlich sind Aspekte aus Ausbildungsrahmenplan und Rahmenlehrplan direkt in die passenden Themen eingebaut, z. B. **Kundennutzen, digitale Geschäftsmodelle, Prozesskennzahlen, Datenqualität, Schnittstellen, Berechtigungskonzepte und RPO/RTO**. Im Wissenscheck werden diese mit dem Basiswissen gemischt.
 
+
+## Neue vertiefte Lernmodule
+
+Diese zusätzlichen Einheiten schließen Lücken zwischen Grundlagenseiten und den Themenkreisen des KIDM-Prüfungskatalogs:
+
+- [Digitale Geschäftsmodelle, 4C, Business Model Canvas und Skaleneffekte](/kdm-trainer/p12/digitale-geschaeftsmodelle/)
+- [Marktanalyse, Porter, Ansoff, Customer Journey und Kundenwert](/kdm-trainer/p12/markt-kundenanalyse/)
+- [Schnittstellen, REST/API, JSON/XML/CSV, Mapping und ETL](/kdm-trainer/p12/schnittstellen-integration/)
+- [SWOT, FMEA, UML, IPv6/VLAN und Glasfaser](/kdm-trainer/p12/analyse-methoden-netzwerk/)
+
+Alle vier Seiten besitzen einen eigenen **Wissenscheck**. Im [IHK-Antworttraining](/kdm-trainer/antworttraining/) findest du dazu neue offene Aufgaben mit Punkteraster. Erst Begriffe abrufen, danach anhand der Ausgangssituation erläutern.
+
+
 ---
 
 ## Typische Aufgabenstruktur
