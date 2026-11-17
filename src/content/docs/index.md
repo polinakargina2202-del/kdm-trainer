@@ -55,6 +55,22 @@ Besonders häufig wiederkehrende Bereiche sind unter anderem Projekt- und Prozes
 - **[Prüfungsformulierungen](/kdm-trainer/formulierungsbaukasten/):** lernbare Satzmuster für Risiken, Maßnahmen, Vor- und Nachteile sowie Begründungen.
 - **[Katalog-Check](/kdm-trainer/pruefungsabdeckung/):** transparent dokumentierte Stärken, Ergänzungsbedarf und Prioritäten. Eine Erwähnung ist nicht gleich vollständige Abdeckung.
 
+
+## Aktualisierung vom 17. November 2026: zusätzliche Prüfungskatalog-Themen
+
+Der Trainer wurde um **sieben fachliche Lernmodule**, **107 automatische Wissensfragen** und **29 offene Aufgaben mit Bewertungskriterien** erweitert. Inhalte aus KIDM-Katalog und früheren AP2-Prüfungen dienen als Themenvorlage; die neuen Fälle und Fragen sind **eigene Trainingsaufgaben**, keine Original-IHK-Prüfungen.
+
+- [Digitale Geschäftsmodelle, 4C und BMC](/kdm-trainer/p12/digitale-geschaeftsmodelle/)
+- [Markt- und Kundenanalyse](/kdm-trainer/p12/markt-kundenanalyse/)
+- [API und Datenintegration](/kdm-trainer/p12/schnittstellen-integration/)
+- [Analyseverfahren und Netzwerktechnik](/kdm-trainer/p12/analyse-methoden-netzwerk/)
+- [Umsatzsteuer und Buchführung](/kdm-trainer/p13/umsatzsteuer-buchfuehrung/)
+- [Kennzahlen und Wirtschaftlichkeit](/kdm-trainer/p13/kennzahlen-wirtschaftlichkeit/)
+- [Weiterbildung und digitale Zusammenarbeit](/kdm-trainer/wiso/weiterbildung-digital-zusammenarbeiten/)
+
+**Lernweg in drei Durchgängen:** 1. Je 10–15 gemischte Fragen; 2. Fehler gezielt nachlesen und erneut abrufen; 3. Je zwei bis drei offene Fallantworten und Rechen-/SQL-Aufgaben. Die [Themenabdeckung](/kdm-trainer/pruefungsabdeckung/) zeigt trotz Erweiterung verbleibende Grenzen.
+
+
 ## Trainingsmodi
 
 - **Zufalls-Prüfung:** automatisch auswertbare Mischung aus dem gesamten Fragenpool.
