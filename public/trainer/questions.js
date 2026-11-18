@@ -4,7 +4,9 @@ import { KI_QUESTIONS } from './ki-questions.js';
 import { COVERAGE_QUESTIONS_P12 } from './coverage-questions-p12.js';
 import { COVERAGE_QUESTIONS_P13_WISO } from './coverage-questions-p13-wiso.js';
 
-export const QUESTION_BANK = [...BASE_QUESTIONS, ...ADVANCED_QUESTIONS, ...KI_QUESTIONS, ...COVERAGE_QUESTIONS_P12, ...COVERAGE_QUESTIONS_P13_WISO];
+import { EXAM_TERM_QUESTIONS } from './exam-term-questions.js';
+
+export const QUESTION_BANK = [...BASE_QUESTIONS, ...ADVANCED_QUESTIONS, ...KI_QUESTIONS, ...COVERAGE_QUESTIONS_P12, ...COVERAGE_QUESTIONS_P13_WISO, ...EXAM_TERM_QUESTIONS];
 export const TOPIC_LABELS = { ...BASE_TOPIC_LABELS, 'p12/ki-automatisierung': 'KI und Automatisierung',
   'p12/digitale-geschaeftsmodelle': 'Geschäftsmodelle, 4C und BMC',
   'p12/markt-kundenanalyse': 'Marktanalyse, Customer Journey, CLV',
