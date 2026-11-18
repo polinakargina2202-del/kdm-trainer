@@ -526,6 +526,25 @@ Ein Rechtschreibfehler auf der Startseite kann technisch „gering“, aber kurz
 
 ---
 
+## Prüfungsvertiefung: Voraussetzungen vor einem User Acceptance Test (UAT)
+
+**Originalbezug:** In **AP2-2 Winter 2024, Aufgabe 3c** wurde nicht nur die Definition eines UAT, sondern die **Erläuterung von zwei Voraussetzungen vor dem UAT** verlangt.
+
+| Voraussetzung | Fachliche Begründung | Kurze prüfungstaugliche Antwort |
+|---|---|---|
+| **Entwicklungsstand ausreichend abgeschlossen** | Laufende grundlegende Änderungen würden die Aussagekraft der Akzeptanzprüfung beeinträchtigen. | „Die zur Abnahme vorgesehenen Funktionen sollten fertig implementiert sein, damit stabile und aussagekräftige Testergebnisse entstehen.“ |
+| **Systemtest erfolgreich abgeschlossen** | Schwerwiegende technische Defekte sollten vor dem Test mit Endnutzern entdeckt und bearbeitet werden. | „Der Systemtest sollte erfolgreich abgeschlossen sein, damit der UAT auf die fachliche Eignung statt auf grundlegende Programmfehler fokussiert.“ |
+| **Testumgebung realitätsnah vorbereitet** | Berechtigungen, Prozesse und Testdaten müssen die spätere Nutzung ausreichend abbilden. | „Eine praxisnahe UAT-Umgebung ist notwendig, damit die Ergebnisse auf den vorgesehenen Einsatz übertragbar sind.“ |
+| **Testfälle und Abnahmekriterien definiert** | Erst dadurch können Testergebnisse nachvollziehbar als bestanden/nicht bestanden beurteilt werden. | „Vorab festgelegte Abnahmekriterien ermöglichen eine objektive Entscheidung über die Erfüllung der Anforderungen.“ |
+| **Key User und Testdaten verfügbar** | Die späteren Anwender müssen typische Vorgänge mit geeigneten Daten durchführen können. | „Geeignete Testpersonen und realistische Testdaten sind nötig, um fachliche Abläufe unter Praxisbedingungen zu prüfen.“ |
+| **Bekannte kritische Fehler bearbeitet** | Andernfalls können bereits bekannte Hindernisse den gesamten Abnahmetest blockieren. | „Blockierende Fehler sollten vor dem UAT behoben und erneut getestet sein.“ |
+
+**Prüfungsfalle:** UAT, **Systemtest** und **Regressionstest** sind keine Synonyme. Der Systemtest überprüft das Gesamtsystem; der UAT die fachliche Akzeptanz aus Anwendersicht; der Regressionstest kontrolliert, ob Änderungen bestehende Funktionen beschädigt haben.
+
+**Übung ohne Antwortvorgabe:** „Erläutern Sie zwei Voraussetzungen für den UAT eines Online-Buchungssystems.“ → Formuliere pro Voraussetzung **eine Aussage + eine Begründung**.
+
+---
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Beispielformulierung |
