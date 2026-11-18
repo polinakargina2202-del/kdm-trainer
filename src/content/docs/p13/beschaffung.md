@@ -129,6 +129,44 @@ Bei Dienstleistungen statt klassischem Wareneingang prüfen:
 - Dokumentation,
 - offene Mängel/Abweichungen.
 
+## 12. Prüfungsvertiefung: Qualitative Kriterien beim Angebotsvergleich
+
+**Originalbezug:** In **AP2-2 Sommer 2023** wurden zwei **qualitative Kaufentscheidungskriterien** verlangt. In **AP2-1 Sommer 2022** mussten **technische** und **anbieterbezogene** Kriterien für eine Nutzwertanalyse unterschieden werden.
+
+**Quantitativ** bedeutet: in Zahlen wie Euro, Prozent oder Tagen messbar (z. B. Anschaffungspreis, Lieferzeit, jährliche Betriebskosten). **Qualitativ** bedeutet: eine Eigenschaft beziehungsweise Eignung beurteilen (z. B. Supportqualität, Verständlichkeit, Nachhaltigkeit). Qualitative Kriterien lassen sich für eine Nutzwertanalyse trotzdem **mit Punkten bewerten**.
+
+### Acht qualitative Kriterien mit Begründung
+
+| Kriterium | Was konkret geprüft wird | Prüfungsreife Formulierung |
+|---|---|---|
+| **Zuverlässigkeit des Lieferanten** | Liefert er vollständig, sorgfältig und vereinbarungsgemäß? | „Eine hohe Lieferzuverlässigkeit verringert das Risiko von Terminverzögerungen und Produktionsunterbrechungen.“ |
+| **Reklamationsverhalten** | Wie schnell und kundenorientiert werden Mängel bearbeitet? | „Ein professionelles Reklamationsmanagement verkürzt die Zeit bis zur Mängelbehebung und reduziert den internen Bearbeitungsaufwand.“ |
+| **Referenzen und Erfahrung** | Kennt der Anbieter vergleichbare Branchen, Anforderungen und Projekte? | „Erfahrungen aus ähnlichen Projekten reduzieren das Risiko fachlicher und technischer Fehlentscheidungen.“ |
+| **Zertifizierungen / Qualitätsmanagement** | Sind geeignete dokumentierte Verfahren oder unabhängige Nachweise vorhanden? | „Geeignete Zertifizierungen können Hinweise auf standardisierte Qualitäts- und Sicherheitsprozesse geben.“ |
+| **Kompatibilität / Interoperabilität** | Passen Schnittstellen, Datenformate und Produkte zur bestehenden IT? | „Eine kompatible Lösung reduziert zusätzliche Anpassungsarbeiten und erleichtert die Systemintegration.“ |
+| **Supportqualität / Servicezeiten** | Wann und mit welcher Qualität hilft der Anbieter im Störungsfall? | „Erreichbarer, fachkundiger Support kann Ausfallzeiten verringern.“ |
+| **Datenschutz und Informationssicherheit** | Sind notwendige Verträge, Berechtigungen, Nachweise und Schutzmaßnahmen vorhanden? | „Geeignete Sicherheitsmaßnahmen reduzieren das Risiko unbefugter Zugriffe und unterstützen die Erfüllung rechtlicher Pflichten.“ |
+| **Nachhaltigkeit / Transportwege** | Energieeffizienz, Verpackung, Reparierbarkeit und Lieferwege | „Eine reparierbare und energieeffiziente Lösung kann Ressourcen schonen und Elektroschrott reduzieren.“ |
+
+### Technisch oder anbieterbezogen?
+
+| Technisches Auswahlkriterium | Anbieterbezogenes Auswahlkriterium |
+|---|---|
+| Sicherheitsfunktionen der Lösung | Referenzen des Lieferanten |
+| Vorhandene Software-Schnittstellen | Erreichbarkeit des Supports |
+| Kompatibilität und Erweiterbarkeit | Zertifizierungen des Unternehmens |
+| Verfügbarkeit geeigneter Gerätefunktionen | Verlässlichkeit und Erfahrung des Dienstleisters |
+
+**Prüfungsfalle:** „Datenschutz“ ist bei rechtlich verpflichtenden Mindestanforderungen **kein bloßes Punkte-Extra**. Solche Anforderungen zunächst als **Muss-Kriterium** prüfen; eine Lösung, die sie nicht erfüllt, wird nicht durch einen niedrigen Preis oder viele Bewertungspunkte zulässig.
+
+### In zwei Sätzen eine Auswahl begründen
+
+„Ich bewerte **[Kriterium]**, weil **[konkrete Bedeutung im Fall]**. Anbieter A ist diesbezüglich vorzuziehen, sofern **[vergleichbarer Nachweis aus dem Sachverhalt]** vorliegt.“
+
+**Mini-Aufgabe:** „Nennen und erläutern Sie zwei qualitative Kriterien für die Auswahl von Arbeitsplätzen mit Videokonferenztechnik.“ Mögliche Kriterien: **Bedienbarkeit** (geringerer Einarbeitungsaufwand) und **Kompatibilität** (Zusammenarbeit mit bereits eingesetzten Konferenzsystemen).
+
+---
+
 ---
 <div class="kdm-calculators" data-calculators="bezugspreis,skonto"></div>
 <div class="kdm-practice" data-topic="p13/beschaffung"></div>
