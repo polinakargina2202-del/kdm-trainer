@@ -294,6 +294,8 @@ Die konkreten Fachbegriffe oben sind der Kern dieser Seite. Diese fünf Muster h
 - **Für die Auswahl sind [Kriterium 1] und [Kriterium 2] entscheidend.**
 
 
+**Lernempfehlung:** Zuerst 10 Risiken und ihre Maßnahmen, danach 10 Vorteile, 10 Nachteile und 10 Auswahlkriterien. Anschließend jeweils zwei fachlich passende Stichworte ohne Hilfe für einen IT-, Projekt-, Cloud- oder Beschaffungsfall nennen.
+
 ---
 
 ## K. Qualitative und quantitative Kriterien – der wichtige Prüfungsunterschied
@@ -638,7 +640,5 @@ Ein Unternehmen kann die Betreuung einer neuen Lösung selbst übernehmen oder e
 4. **P + Q:** Kurze fachliche Erläuterungen selbst schreiben statt nur Stichwörter merken.
 5. **S:** Die Mini-Fälle ohne Musterlösung lösen.
 
-
-**Lernempfehlung:** Zuerst 10 Risiken und ihre Maßnahmen, danach 10 Vorteile, 10 Nachteile und 10 Auswahlkriterien. Anschließend jeweils zwei fachlich passende Stichworte ohne Hilfe für einen IT-, Projekt-, Cloud- oder Beschaffungsfall nennen.
 
 [KI und RPA](/kdm-trainer/p12/ki-automatisierung/) · [IHK-Antworttraining](/kdm-trainer/antworttraining/) · [Themenabdeckung](/kdm-trainer/pruefungsabdeckung/)
