@@ -386,6 +386,25 @@ Ein scheinbar günstiger Cloud-Dienst kann über mehrere Jahre teurer werden, we
 | Datenschutz | „Nennen Sie 3 Aspekte, die bei extern gehosteten Lösungen geprüft werden müssen.“ |
 | VPN | „Unterscheiden Sie Remote-Access- und Site-to-Site-VPN.“ |
 
+## Prüfungsvertiefung: Internetprovider nicht nur nach Preis vergleichen
+
+**Originalbezug:** **AP2-2 Sommer 2022** fragte nach **zwei Auswahlkriterien für einen Internetprovider außer Preis und Bandbreite**. Dafür werden andere Fachbegriffe gebraucht als für einen reinen Tarifvergleich.
+
+| Kriterium | Prüffrage | Beispielhafte Erläuterung |
+|---|---|---|
+| **Anschlusszuverlässigkeit / Stabilität** | Kommt es häufig zu Unterbrechungen oder hohen Paketverlusten? | „Eine stabile Verbindung ist für Videokonferenzen wichtig, damit Gespräche nicht wegen Verbindungsschwankungen abbrechen.“ |
+| **Supportqualität und Erreichbarkeit** | Gibt es bei Störungen kompetente Hilfe und definierte Kontaktwege? | „Gut erreichbarer Support verringert die Dauer einer Betriebsunterbrechung.“ |
+| **Entstörungs- und Reaktionszeiten (SLA)** | Wie verbindlich sind Reaktionszeit, Wiederherstellungsziel und Eskalation geregelt? | „Vertraglich vereinbarte Entstörungsziele verbessern die Planbarkeit bei Verbindungsstörungen.“ |
+| **Zukunftsfähigkeit / Ausbauoptionen** | Ist ein späteres Upgrade oder ein Glasfaserausbau möglich? | „Eine erweiterbare Anschlusstechnik erleichtert die Anpassung an einen steigenden Datenbedarf.“ |
+| **Standortverfügbarkeit / Realisierbarkeit** | Ist die gewünschte Technologie am konkreten Standort lieferbar? | „Ein technisch attraktiver Tarif ist ungeeignet, wenn der Anschluss am Standort nicht realisiert werden kann.“ |
+| **Redundanzmöglichkeiten** | Lässt sich eine zweite unabhängige Anbindung vorsehen? | „Ein zusätzlicher Anschluss kann die Erreichbarkeit bei Ausfall einer Verbindung erhöhen, sofern keine gemeinsame Ausfallursache besteht.“ |
+
+**Nicht verwechseln:** **Bandbreite** beschreibt eine mögliche Übertragungskapazität. **Latenz, Jitter, Paketverlust und Anschlussstabilität** beschreiben andere Qualitätsaspekte. Eine große nominelle Bandbreite garantiert keine störungsfreie Echtzeitkommunikation.
+
+**IHK-Musterantwort:** „Als Kriterium ist die **Zuverlässigkeit des Anschlusses** wichtig, da Unterbrechungen laufende Videokonferenzen beeinträchtigen. Ein weiteres Kriterium ist die **Supportqualität**, da bei Störungen eine schnelle und fachkundige Entstörung erforderlich ist.“
+
+---
+
 ---
 <div class="kdm-practice" data-topic="p12/cloud-servicemodelle"></div>
 <script type="module" src="/kdm-trainer/trainer/trainer.js"></script>
