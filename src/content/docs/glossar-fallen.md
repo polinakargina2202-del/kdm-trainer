@@ -104,3 +104,31 @@ description: Zentrale Begriffe, typische Verwechslungen und Operatoren für AP2
 
 **„Nennen Sie Ursache, Risiko und Gegenmaßnahme …“**  
 Achte darauf, die drei Ebenen nicht zu vermischen: Ursache = Auslöser; Risiko = mögliches Ereignis; Auswirkung = Folge; Gegenmaßnahme = Reaktion/Vorbeugung.
+
+
+## Prüfungs-Fachbegriffe: nicht nur das Thema, sondern den Namen kennen
+
+Diese Begriffe wurden bei der Auswertung von AP2-Originalaufgaben als **besonders leicht zu übersehende konkrete Benennungen** identifiziert. Lerne jeweils **Fachbegriff + ein Beispiel + einen Satz mit Begründung**.
+
+| Fachbegriff aus Prüfungsfällen | Entscheidend für offene Antworten | Vertiefung |
+|---|---|---|
+| **Aufgabenangemessenheit** | Für die Nutzeraufgabe nur die benötigten Bedienhandlungen verlangen. | [UI-Design](/kdm-trainer/p12/app-entwicklung/) |
+| **Erwartungskonformität** | Gleiches Bedienverhalten und vertraute Symbole verwenden. | [UI-Design](/kdm-trainer/p12/app-entwicklung/) |
+| **Steuerbarkeit** | Nutzer können Aktionen kontrollieren, korrigieren oder abbrechen. | [UI-Design](/kdm-trainer/p12/app-entwicklung/) |
+| **Fehlertoleranz / Robustheit gegen Benutzungsfehler** | Fehler vermeiden beziehungsweise verständlich zur Korrektur anleiten. | [UI-Design](/kdm-trainer/p12/app-entwicklung/) |
+| **UAT – User Acceptance Test** | Fachliche Akzeptanzprüfung mit Endnutzern gegen festgelegte Kriterien. | [Softwaretesting](/kdm-trainer/p12/softwaretesting/) |
+| **ISMS – Informationssicherheitsmanagementsystem** | Sicherheitsziele, Scope, Rollen, Risiken, Maßnahmen und Verbesserung systematisch verwalten. | [IT-Sicherheit](/kdm-trainer/p12/it-sicherheit/) |
+| **ISB – Informationssicherheitsbeauftragter** | Unternehmensleitung beraten und Sicherheitsmaßnahmen koordinieren; nicht mit DSB gleichsetzen. | [IT-Sicherheit](/kdm-trainer/p12/it-sicherheit/) |
+| **Qualitatives Auswahlkriterium** | Eignung/Qualität, z. B. Benutzerfreundlichkeit, Support, Referenzen oder Kompatibilität; mit Wirkung erläutern. | [Beschaffung](/kdm-trainer/p13/beschaffung/) |
+| **Anbieterbezogenes Kriterium** | Eigenschaft des Dienstleisters, z. B. Referenzen oder Supportqualität, nicht Funktion der Software. | [Beschaffung](/kdm-trainer/p13/beschaffung/) |
+| **BYOD – Bring Your Own Device** | Privatgerät wird geschäftlich genutzt; Gerätesicherheit und Trennung privater/geschäftlicher Daten regeln. | [IT-Sicherheit](/kdm-trainer/p12/it-sicherheit/) |
+| **Anschlussstabilität** | Bei Videokonferenzen sind auch Paketverlust, Latenz und Entstörungsqualität wichtig, nicht nur die Bandbreite. | [Cloud & Provider](/kdm-trainer/p12/cloud-servicemodelle/) |
+
+### Drei typische IHK-Fragestellungen
+
+1. **„Beschreiben Sie vier Design-Richtlinien.“** → vier **verschiedene Prinzipien** nennen und jeweils mit Funktion/Beispiel erläutern.
+2. **„Nennen und erläutern Sie zwei qualitative Kriterien.“** → *Kriterium + warum es im gegebenen Fall wichtig ist*, nicht bloß „Qualität“ oder „Preis“.
+3. **„Erläutern Sie zwei Voraussetzungen vor dem UAT.“** → Zustand vor Testbeginn **und** Begründung (z. B. realistische Testumgebung → aussagekräftige Ergebnisse).
+
+> **Prüfungsstrategie:** Bei Operatoren wie **„beschreiben“** oder **„erläutern“** reicht ein Schlagwort oft nicht. Ein kurzer fachlich korrekter Satz pro Teilaspekt ist sicherer.
+
