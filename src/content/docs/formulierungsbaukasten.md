@@ -293,6 +293,352 @@ Die konkreten Fachbegriffe oben sind der Kern dieser Seite. Diese fünf Muster h
 - **Ein Nachteil besteht in [konkretem Nachteil].**
 - **Für die Auswahl sind [Kriterium 1] und [Kriterium 2] entscheidend.**
 
+
+---
+
+## K. Qualitative und quantitative Kriterien – der wichtige Prüfungsunterschied
+
+In Aufgaben zum **Vergleich zweier Varianten**, zu einer **Kaufentscheidung**, einer **Nutzwertanalyse** oder einem **Make-or-Buy-Vergleich** werden häufig ausdrücklich qualitative Kriterien verlangt.
+
+- **Qualitativ:** Eine Eigenschaft oder Eignung, die zunächst *inhaltlich* bewertet wird – beispielsweise Bedienbarkeit, Integrationsfähigkeit, Anpassbarkeit oder Qualität der Betreuung.
+- **Quantitativ:** Eine direkt als Zahl messbare Größe – beispielsweise Kaufpreis in Euro, Lieferdauer in Tagen, Stromverbrauch in kWh oder Amortisationsdauer in Jahren.
+- **Achtung:** Ein qualitatives Kriterium kann für eine Nutzwertanalyse mit einer **Punkteskala bewertet** werden. Dadurch wird die ursprüngliche Eigenschaft nicht automatisch zu einem rein quantitativen Kostenkriterium.
+
+| Fragestellung | Qualitatives Kriterium | Typisch quantitatives Kriterium |
+|---|---|---|
+| Software auswählen | Benutzerfreundlichkeit, Anpassbarkeit | Lizenzkosten in €/Monat |
+| IT-Dienstleister wählen | Supportqualität, Referenzen | Reaktionszeit in Minuten, Preis in € |
+| Zwei Apps vergleichen | Gestaltungsfreiheit, Nutzererlebnis | Entwicklungsaufwand in Stunden |
+| Infrastruktur beschaffen | Wartungsfreundlichkeit, Kompatibilität | Anschaffungspreis, Leistungsaufnahme in Watt |
+| Cloud-Anbieter vergleichen | Datenexportfähigkeit, Integrationsqualität | Verfügbarkeit in %, Speicherkosten je GB |
+| Prozessvarianten vergleichen | Transparenz, Fehleranfälligkeit | Bearbeitungszeit in Minuten, Kosten je Vorgang |
+
+**IHK-Falle:** „Geringe Kosten“ sind **kein qualitatives** Kriterium. „Gutes Preis-Leistungs-Verhältnis“ ist zwar ein Bewertungsgesichtspunkt, vermischt jedoch Preis und Leistung. Wenn ausdrücklich **zwei qualitative Kriterien** verlangt werden, nenne am besten zwei *klar nichtmonetäre* Eigenschaften.
+
+**Wichtig:** Auch „Datenschutz“ ist nicht automatisch ein frei verhandelbares Plus. Gesetzliche Mindestanforderungen sind häufig **Muss- bzw. Ausschlusskriterien**. Vergleichen kann man darüber hinaus beispielsweise Transparenz, Kontrollmöglichkeiten oder zusätzliche Sicherheitsfunktionen.
+
+## L. 24 qualitative Kriterien mit sofort einsetzbarer Erläuterung
+
+**Lernstrategie:** Merke dir nicht nur das Stichwort, sondern die Kombination **Eigenschaft → konkrete Wirkung**. Nur dann bekommst du bei „erläutern“ oder „begründen“ die Begründung in den Satz.
+
+### L1. Technik, Software und Integration
+
+| Kriterium | Prüfungsreifer Antwortbaustein |
+|---|---|
+| **Kompatibilität** | Die Lösung lässt sich mit der vorhandenen Hard- und Software betreiben, sodass zusätzliche Anpassungen vermieden werden können. |
+| **Integrationsfähigkeit** | Vorhandene Schnittstellen ermöglichen den Datenaustausch mit bestehenden Anwendungen und reduzieren manuelle Übertragungen. |
+| **Anpassungsfähigkeit** | Die Funktionen können an unternehmensspezifische Abläufe angepasst werden, ohne die gesamte Lösung austauschen zu müssen. |
+| **Erweiterbarkeit** | Zusätzliche Funktionen oder Module können bei veränderten Anforderungen ergänzt werden. |
+| **Skalierbarkeit** | Die Lösung kann steigende Nutzerzahlen oder Datenmengen bewältigen, ohne grundlegend neu aufgebaut zu werden. |
+| **Zuverlässigkeit** | Ein stabiler Betrieb verringert Störungen und das Risiko von Prozessunterbrechungen. |
+| **Wartungsfreundlichkeit** | Eine verständliche Systemstruktur und gute Dokumentation erleichtern Fehlerbehebung, Updates und Pflege. |
+| **Portabilität / Datenübertragbarkeit** | Daten und gegebenenfalls Anwendungen lassen sich auf andere Systeme übertragen, was einen späteren Wechsel erleichtert. |
+
+### L2. Anwender, Kunden und Prozesse
+
+| Kriterium | Prüfungsreifer Antwortbaustein |
+|---|---|
+| **Benutzerfreundlichkeit (Usability)** | Eine verständliche Bedienoberfläche erleichtert die Nutzung und kann Einarbeitungszeit sowie Bedienungsfehler reduzieren. |
+| **Barrierefreiheit** | Die Lösung ist auch für Menschen mit unterschiedlichen Einschränkungen zugänglich und kann damit einen größeren Nutzerkreis erreichen. |
+| **Nutzerakzeptanz** | Eine Lösung, die den tatsächlichen Arbeitsablauf unterstützt, wird voraussichtlich eher von den Mitarbeitenden angenommen. |
+| **Prozessqualität** | Klare Abläufe und automatische Prüfungen können Fehler vermeiden und die Bearbeitung verlässlicher machen. |
+| **Nachvollziehbarkeit** | Protokollierte und eindeutig zuordenbare Prozessschritte erleichtern die Fehlersuche und interne Kontrollen. |
+| **Flexibilität im Arbeitsablauf** | Die Lösung unterstützt unterschiedliche Nutzungssituationen, wodurch die Arbeitsorganisation leichter angepasst werden kann. |
+| **Servicequalität** | Eine gut erreichbare, stabile Lösung verbessert die Verlässlichkeit der Leistung für die Nutzer. |
+| **Gestaltungsfreiheit / Corporate Design** | Das Unternehmen kann Oberfläche, Funktionen und Markenauftritt an die eigene Zielgruppe anpassen. |
+
+### L3. Anbieter, Betrieb, Sicherheit und Zukunft
+
+| Kriterium | Prüfungsreifer Antwortbaustein |
+|---|---|
+| **Supportqualität** | Fachkundiger und erreichbarer Support erleichtert die Behebung von Störungen und kann Ausfallzeiten verkürzen. |
+| **Erfahrung und Referenzen des Anbieters** | Nachgewiesene vergleichbare Projekte können Hinweise auf die fachliche Eignung des Anbieters geben. |
+| **Herstellerunabhängigkeit** | Offene Standards und Exportmöglichkeiten erleichtern einen Anbieterwechsel und verringern einen möglichen Vendor Lock-in. |
+| **Zukunftsfähigkeit** | Eine aktiv gepflegte, weiterentwickelbare Lösung kann länger auf veränderte technische Anforderungen reagieren. |
+| **Informationssicherheit** | Geeignete Zugriffs-, Verschlüsselungs- und Schutzmechanismen reduzieren Sicherheitsrisiken für Unternehmensdaten. |
+| **Datenschutzkontrolle** | Transparente Datenflüsse, konfigurierbare Aufbewahrung und klar geregelte Verantwortlichkeiten unterstützen die Einhaltung der DSGVO. |
+| **Vertragsflexibilität** | Anpassbare Leistungsumfänge und angemessene Kündigungs- oder Wechselmöglichkeiten erleichtern spätere Änderungen. |
+| **Nachhaltigkeit** | Eine lange Nutzungsdauer, Reparierbarkeit und ressourcenschonender Betrieb können die Umweltbelastung verringern. |
+
+> **Für 4–6 Punkte:** Nicht nur „Benutzerfreundlichkeit“ schreiben, sondern: „**Benutzerfreundlichkeit:** Eine intuitive Oberfläche verkürzt die Einarbeitungszeit und kann Bedienungsfehler reduzieren.“ Das benennt das Kriterium **und** erläutert seine Wirkung.
+
+## M. Zwei Varianten vergleichen – fertige Argumente für beide Seiten
+
+**Prüfungsprinzip:** Bei „zwei qualitative Kriterien, die für Variante A sprechen“ musst du **Vorteile von A gegenüber B** nennen. Nicht einfach allgemeine Vorteile beider Möglichkeiten auflisten.
+
+### M1. Eigenentwicklung vs. Standardsoftware
+
+| Für Eigenentwicklung | Für Standardsoftware |
+|---|---|
+| **Passgenauigkeit:** Individuelle Geschäftsprozesse können gezielt berücksichtigt werden. | **Erprobte Funktionen:** Bereits eingesetzte Standardlösungen können von vorhandenen Praxiserfahrungen profitieren. |
+| **Gestaltungsfreiheit:** Funktionen und Benutzeroberfläche lassen sich nach eigenen Prioritäten gestalten. | **Herstellerpflege:** Regelmäßige Updates und eine etablierte Supportstruktur können den internen Betreuungsaufwand reduzieren. |
+| **Kontrolle über Weiterentwicklung:** Neue Anforderungen können nach eigenen Prioritäten umgesetzt werden, sofern Kapazitäten vorhanden sind. | **Schnellere Einführung:** Vorhandene Funktionen müssen nicht vollständig neu entwickelt werden. |
+
+### M2. Eigene App weiterentwickeln vs. bestehender Plattform beitreten
+
+| Für die eigene App | Für die gemeinsame Plattform |
+|---|---|
+| **Individuelle Kundenansprache:** Gestaltung und Funktionen lassen sich auf die eigene Zielgruppe abstimmen. | **Größere Reichweite:** Eine bereits genutzte Plattform kann den Zugang zu zusätzlichen Kundengruppen erleichtern. |
+| **Unabhängige Produktstrategie:** Das Unternehmen kann eigene Funktionen und Prioritäten festlegen. | **Einheitliches Nutzererlebnis:** Kunden können verschiedene Angebote über eine vertraute Anwendung verwenden. |
+| **Kontrolle über Datenflüsse:** Die Integration und Verantwortlichkeiten können nach dem eigenen Konzept gestaltet werden; Datenschutzpflichten bleiben bestehen. | **Gemeinsame Weiterentwicklung:** Funktionen und technische Verbesserungen können innerhalb der Plattform gemeinsam vorangetrieben werden. |
+
+### M3. Cloud-Service vs. Eigenbetrieb (On-Premises)
+
+| Für Cloud-Service | Für Eigenbetrieb |
+|---|---|
+| **Flexible Skalierung:** Ressourcen können je nach Angebot und Vertrag leichter angepasst werden. | **Direkte Infrastrukturkontrolle:** Das Unternehmen kann Betrieb und technische Änderungen selbst steuern. |
+| **Ausgelagerte Betriebsaufgaben:** Der Anbieter übernimmt vereinbarte Teile des technischen Betriebs. | **Individuelle Integrationsmöglichkeiten:** Spezielle interne Anforderungen können bei ausreichenden Kompetenzen gezielter umgesetzt werden. |
+| **Standortunabhängiger Zugriff:** Berechtigte Nutzer können bei geeigneter Anbindung von verschiedenen Standorten arbeiten. | **Unabhängigkeit von einem bestimmten Cloud-Service:** Einzelne Anbieterabhängigkeiten können verringert werden, wenn der Eigenbetrieb beherrscht wird. |
+
+**Nicht pauschal behaupten:** Cloud sei automatisch sicherer, DSGVO-konformer oder billiger. Eigenbetrieb sei automatisch sicherer oder hochverfügbarer. Entscheidend sind konkrete Architektur, Vertrag und Betriebsorganisation.
+
+### M4. Outsourcing vs. Eigenleistung (Make-or-Buy)
+
+| Für Outsourcing | Für Eigenleistung |
+|---|---|
+| **Spezialwissen:** Ein externer Anbieter kann Erfahrungen und Kompetenzen für spezielle Aufgaben einbringen. | **Direkte Steuerung:** Prioritäten, Arbeitsweise und Anpassungen lassen sich intern unmittelbar abstimmen. |
+| **Ressourcenentlastung:** Eigene Mitarbeitende können sich stärker auf Kernaufgaben konzentrieren. | **Wissenserhalt:** Fachliches und technisches Know-how bleibt im Unternehmen. |
+| **Etablierte Betriebsprozesse:** Professionalisierte Anbieter verfügen möglicherweise über standardisierte Support- und Betriebsverfahren. | **Geringere externe Abhängigkeit:** Änderungen müssen nicht in jedem Fall mit einem Dienstleister abgestimmt werden. |
+
+### M5. Kauf vs. Leasing / Miete von IT-Ausstattung
+
+| Für Kauf | Für Leasing / Miete |
+|---|---|
+| **Eigentum und Verfügung:** Im Rahmen der geltenden Verträge kann das Unternehmen die angeschafften Geräte langfristig selbst nutzen und verwalten. | **Austauschoptionen:** Je nach Vertrag kann ein planbarer Wechsel zu neueren Geräten leichter organisiert werden. |
+| **Nutzungsflexibilität:** Nach dem Erwerb besteht keine durch einen Mietvertrag vorgegebene Nutzungsdauer. | **Betriebsservice:** Wartung oder Gerätetausch können Bestandteil des Vertrags sein und die interne Organisation entlasten. |
+
+**Prüfungsfalle:** „Niedrigere Anschaffungskosten“ und „monatliche Raten“ sind **quantitative bzw. finanzielle** Argumente, keine rein qualitativen Auswahlkriterien. Leasing überträgt nicht automatisch Wartung oder Austausch – das muss vereinbart sein.
+
+### M6. Manueller Prozess vs. digitalisierter Prozess
+
+| Für die digitale Variante | Mögliche Stärke eines manuellen Ablaufs |
+|---|---|
+| **Nachvollziehbarkeit:** Digitale Status- und Protokolldaten machen Bearbeitungsschritte leichter überprüfbar. | **Flexible Sonderfallbearbeitung:** Mitarbeitende können ungewöhnliche Ausnahmen ohne starre Automatisierungsregeln beurteilen. |
+| **Gleichbleibende Prozessqualität:** Standardisierte Eingaben und Validierungen können Fehler vermeiden. | **Direkter persönlicher Kontakt:** Komplexe oder sensible Anliegen können unmittelbar geklärt werden. |
+| **Medienbruchfreiheit:** Eine integrierte Datenverarbeitung vermeidet unnötiges Abschreiben zwischen Systemen. | **Geringere technische Abhängigkeit:** Bestimmte Aufgaben können bei IT-Störungen weiterhin durchgeführt werden. |
+
+### M7. Zentralisierung vs. dezentrale Lösungen
+
+| Für eine zentrale Lösung | Für dezentrale Lösungen |
+|---|---|
+| **Einheitliche Standards:** Daten, Berechtigungen und Prozesse lassen sich konsistenter verwalten. | **Nähe zum Fachbereich:** Entscheidungen und Anpassungen können stärker auf lokale Anforderungen ausgerichtet werden. |
+| **Gemeinsamer Wissensstand:** Eine zentrale Datenbasis kann widersprüchliche Datenstände verringern. | **Organisatorische Flexibilität:** Bereiche können bei geeigneter Architektur selbstständiger arbeiten. |
+
+### M8. Anbieter A vs. Anbieter B – neutral begründen
+
+> „**Variante A** ist hinsichtlich **[Kriterium]** vorteilhaft, weil **[konkrete Eigenschaft]**. Dies ist für **[Unternehmensziel]** relevant, da **[Wirkung]**. **Variante B** bietet dagegen Vorteile bei **[anderem Kriterium]**. Unter Berücksichtigung der **[priorisierten Anforderungen]** empfehle ich **[Variante]**.“
+
+**Regel:** Ein möglicher Vorteil wird nicht automatisch zum tatsächlich nachgewiesenen Vorteil. Wenn die Aufgabe keine Angaben zur Supportqualität, Sicherheit oder Benutzerfreundlichkeit liefert, stelle diese Merkmale als **zu prüfende Kriterien** dar statt sie einem Anbieter zu unterstellen.
+
+## N. Fachliche, technische und anbieterbezogene Auswahlkriterien
+
+Diese Trennung ist besonders bei IT-Beschaffung, Hosting und Nutzwertanalysen hilfreich.
+
+| Kategorie | Konkrete Kriterien, die oft passen | So kannst du sie erläutern |
+|---|---|---|
+| **Fachlich / funktional** | Erfüllung der Muss-Anforderungen; unterstützte Geschäftsprozesse; relevante Funktionen | „Die Lösung muss die benötigten Geschäftsprozesse ohne wesentliche Funktionslücken unterstützen.“ |
+| **Technisch** | Kompatibilität; API/Schnittstellen; Skalierbarkeit; Sicherheitsfunktionen; Datenexport | „Offene Schnittstellen erleichtern die Integration in die vorhandene Systemlandschaft.“ |
+| **Anbieterbezogen** | Referenzen; Zertifizierungen; Erreichbarkeit; Supportqualität; Erfahrung; Vertragsflexibilität | „Nachweisbare Referenzen aus vergleichbaren Projekten können die Eignung des Anbieters belegen.“ |
+| **Organisatorisch** | Schulungsangebot; Einführungsbegleitung; Migrationsunterstützung; Dokumentation | „Eine strukturierte Einführung erleichtert den Übergang zum neuen Arbeitsablauf.“ |
+| **Wirtschaftlich** | Kaufpreis; TCO; laufende Lizenzkosten; Amortisation | „Neben dem Anschaffungspreis sind Kosten für Betrieb, Support und spätere Anpassungen zu berücksichtigen.“ |
+
+**Typische Prüfungsformulierung:** „Nennen Sie je zwei technische und anbieterbezogene Kriterien.“
+
+**Beispielantwort:** Technisch: **Kompatibilität zur bestehenden Infrastruktur**, **Schnittstellenunterstützung**. Anbieterbezogen: **Referenzen aus vergleichbaren Projekten**, **Qualität und Erreichbarkeit des Supports**.
+
+## O. Nutzwertanalyse – qualitative Kriterien methodisch bewerten
+
+Eine Nutzwertanalyse ist sinnvoll, wenn mehrere Alternativen anhand **verschieden wichtiger Kriterien** nachvollziehbar verglichen werden sollen.
+
+1. Zunächst **Muss-/Ausschlusskriterien** prüfen (z. B. zwingende Datenschutz- oder Funktionsanforderungen).
+2. Geeignete Bewertungskriterien festlegen, möglichst **ohne inhaltliche Doppelzählung**.
+3. Kriterien gewichten (Gewichte insgesamt **100 %**).
+4. Varianten anhand derselben Skala bewerten (hier: **1 = schwach, 5 = sehr gut**).
+5. **Gewicht × Bewertung** berechnen und Punkte summieren.
+6. Entscheidung begründen und gegebenenfalls eine separate Kostenbetrachtung ergänzen.
+
+**Beispiel: Zwei Softwarelösungen** – beide erfüllen vorher alle Muss-Kriterien.
+
+| Kriterium | Gewicht | Variante A | A: gew. Punkte | Variante B | B: gew. Punkte |
+|---|---:|---:|---:|---:|---:|
+| Integrationsfähigkeit | 30 % | 4 | 120 | 3 | 90 |
+| Benutzerfreundlichkeit | 25 % | 3 | 75 | 5 | 125 |
+| Anpassungsfähigkeit | 20 % | 4 | 80 | 3 | 60 |
+| Supportqualität | 15 % | 3 | 45 | 5 | 75 |
+| Zukunftsfähigkeit | 10 % | 4 | 40 | 3 | 30 |
+| **Summe** | **100 %** | | **360** | | **380** |
+
+**Ergebnis:** Variante B erreicht **380 von 500 möglichen gewichteten Punkten**, Variante A **360 von 500**. Nach diesen Kriterien ist **B vorzuziehen**. Ob B insgesamt die wirtschaftlich bessere Lösung darstellt, muss bei Bedarf separat geprüft werden.
+
+**Prüfungsfallen:**
+- Ein nicht erfülltes **Muss-Kriterium** darf nicht einfach durch hohe Punkte in anderen Kategorien ausgeglichen werden.
+- Gewichte müssen zusammen 100 % ergeben. Bei einer Skala von 1 bis 5 sind maximal 500 gewichtete Punkte erreichbar, wenn mit Prozentzahlen 30, 25 usw. gerechnet wird.
+- Nicht unbesehen Kriterien wie „Benutzerfreundlichkeit“, „einfache Bedienung“ und „geringer Schulungsaufwand“ einzeln hoch gewichten – sie können stark zusammenhängen.
+- Eine hohe Gesamtpunktzahl beweist keine tatsächliche Eigenschaft, wenn die Einzelbewertungen nicht durch Informationen, Tests oder nachvollziehbare Annahmen begründet sind.
+
+## P. Weitere vielseitige Antwortbausteine für offene Aufgaben
+
+### P1. Zwei Vorteile einer Prozessdigitalisierung erläutern
+
+- **Geringere Fehleranfälligkeit:** Durch digitale Eingabeprüfungen können unvollständige oder fehlerhafte Datensätze frühzeitig erkannt werden.
+- **Höhere Transparenz:** Der Bearbeitungsstatus kann nachvollziehbar dokumentiert werden, sodass Rückfragen und Kontrollen erleichtert werden.
+
+### P2. Zwei Anforderungen an eine neue Schnittstelle erläutern
+
+- **Kompatibles Datenformat:** Beide Systeme müssen die benötigten Daten korrekt austauschen oder umwandeln können, damit keine Informationen verloren gehen.
+- **Fehlerbehandlung und Protokollierung:** Übertragungsfehler müssen erkennbar sein, damit fehlerhafte Vorgänge geprüft und gegebenenfalls erneut verarbeitet werden können.
+
+### P3. Zwei Maßnahmen zur Verbesserung der Datenqualität
+
+- **Plausibilitätsprüfungen einführen:** Eingaben werden auf zulässige Werte und fachliche Widersprüche geprüft, bevor sie verarbeitet werden.
+- **Dublettenprüfung durchführen:** Doppelt gespeicherte Datensätze werden erkannt, damit Auswertungen nicht verfälscht werden.
+
+### P4. Zwei Gründe für einen Pilotbetrieb
+
+- **Frühzeitige Fehlererkennung:** Technische und organisatorische Probleme können im begrenzten Testbetrieb entdeckt werden, bevor die Lösung breit ausgerollt wird.
+- **Nutzerfeedback:** Rückmeldungen realer Anwender zeigen, ob die Lösung den tatsächlichen Arbeitsablauf unterstützt.
+
+### P5. Zwei Kriterien zur Bewertung von Softwaretests
+
+- **Anforderungsabdeckung:** Die festgelegten funktionalen und nichtfunktionalen Anforderungen werden durch geeignete Testfälle überprüft.
+- **Reproduzierbarkeit:** Testvoraussetzungen, Testschritte und erwartete Ergebnisse sind dokumentiert, damit Fehler nachvollzogen werden können.
+
+### P6. Zwei Maßnahmen für erfolgreiches Change Management
+
+- **Frühzeitige Kommunikation:** Betroffene Mitarbeitende erhalten Informationen über Ziele und Änderungen, um Unsicherheiten abzubauen.
+- **Praxisnahe Schulungen:** Die Anwender üben die neuen Abläufe, wodurch Bedienungsfehler verringert und die Akzeptanz gefördert werden können.
+
+### P7. Zwei Kriterien für die Auswahl eines externen Dienstleisters
+
+- **Fachliche Eignung:** Vergleichbare Projektreferenzen zeigen, ob der Anbieter Erfahrungen mit den benötigten Leistungen besitzt.
+- **Unterstützung im Störungsfall:** Geeignete Support- und Eskalationswege erleichtern eine schnelle Problembearbeitung.
+
+### P8. Zwei Vorteile einer zentralen Datenhaltung
+
+- **Konsistenz:** Eine einheitliche Datenbasis kann widersprüchliche Informationsstände zwischen Abteilungen reduzieren.
+- **Einfacherer Informationszugriff:** Berechtigte Mitarbeitende können dieselben aktuellen Informationen verwenden.
+
+### P9. Zwei Aspekte für die Bewertung einer KI-Lösung
+
+- **Nachvollziehbarkeit und Kontrollierbarkeit:** Ergebnisse sollten fachlich überprüfbar sein, damit fehlerhafte Entscheidungen erkannt werden können.
+- **Datenschutz und Vertraulichkeit:** Es muss geklärt sein, welche Daten verarbeitet werden und ob ihre Eingabe in das System zulässig ist.
+
+### P10. Zwei Maßnahmen zur Risikobegrenzung bei der Einführung neuer Software
+
+- **Gestufte Einführung:** Die Lösung wird zunächst in einem begrenzten Bereich getestet, bevor weitere Bereiche umgestellt werden.
+- **Rückfallkonzept:** Für den Fall erheblicher Fehler ist festgelegt, wie die vorherige Arbeitsfähigkeit wiederhergestellt werden kann.
+
+### P11. Zwei qualitative Vorteile einer IT-Investition – unabhängig vom ROI
+
+- **Höhere Servicequalität:** Schnellere und zuverlässigere Abläufe können die Zufriedenheit von Kunden und Mitarbeitenden erhöhen.
+- **Verbesserte Anpassbarkeit:** Die Lösung kann auf veränderte Anforderungen reagieren, ohne dass alle Prozesse neu gestaltet werden müssen.
+
+### P12. Zwei Nachteile einer externen Plattform
+
+- **Abhängigkeit bei Änderungen:** Neue Funktionen sind möglicherweise nur im Rahmen der Anbieter-Roadmap verfügbar.
+- **Eingeschränkte Individualisierung:** Standardisierte Prozesse und Oberflächen lassen sich unter Umständen nur begrenzt anpassen.
+
+## Q. Präzise formulieren – damit eine Erläuterung wirklich Punkte bringt
+
+| Operator / Aufgabe | Wenig aussagekräftig | Bessere Formulierung |
+|---|---|---|
+| **Nennen Sie zwei Kriterien.** | „Gut und günstig“ | „Benutzerfreundlichkeit und Integrationsfähigkeit.“ |
+| **Erläutern Sie ein Kriterium.** | „Hohe Benutzerfreundlichkeit“ | „Eine intuitive Benutzeroberfläche verkürzt die Einarbeitung und kann Fehlbedienungen reduzieren.“ |
+| **Begründen Sie Ihre Empfehlung.** | „Ich würde A nehmen, weil es besser ist.“ | „Ich empfehle A, da die vorhandenen Schnittstellen den Integrationsaufwand verringern und dieses Kriterium im Unternehmen besonders hoch priorisiert wird.“ |
+| **Vergleichen Sie zwei Varianten.** | „A ist flexibler, B ist moderner.“ | „A ermöglicht eigene Funktionsanpassungen. B bietet dafür einen etablierten Supportprozess, ist jedoch bei der individuellen Gestaltung stärker begrenzt.“ |
+| **Beurteilen Sie die Wirtschaftlichkeit.** | „B ist qualitativ besser.“ | „Die höhere Nutzwertpunktzahl spricht für B. Ob die zusätzlichen Kosten gerechtfertigt sind, muss anhand einer separaten Wirtschaftlichkeitsrechnung beurteilt werden.“ |
+| **Nennen Sie eine Maßnahme.** | „Sicherheit verbessern“ | „Eine Mehrfaktor-Authentifizierung für administrative Zugänge einführen.“ |
+
+**Merksatz für eine Begründung:** **Kriterium → Eigenschaft der Variante → Wirkung für den konkreten Fall → Schlussfolgerung.**
+
+## R. Was du nicht verwechseln darfst
+
+| Häufige Verwechslung | Richtige Einordnung |
+|---|---|
+| **Kriterium vs. Ziel** | „Benutzerfreundlichkeit“ ist ein Kriterium; „geringere Einarbeitungszeit“ kann ein dadurch unterstütztes Ziel sein. |
+| **Kriterium vs. Maßnahme** | „Informationssicherheit“ ist ein Bewertungskriterium; „MFA einführen“ ist eine konkrete Maßnahme. |
+| **Fachlich vs. anbieterbezogen** | Eine benötigte Exportfunktion beschreibt die Lösung; Referenzen und Support beziehen sich auf den Anbieter. |
+| **Qualitativ vs. quantitativ** | „Wartungsfreundlichkeit“ ist qualitativ; „jährliche Wartungskosten in Euro“ sind quantitativ. |
+| **Datenschutz vs. IT-Sicherheit** | Datenschutz betrifft die rechtmäßige Verarbeitung personenbezogener Daten; Informationssicherheit schützt unter anderem Vertraulichkeit, Integrität und Verfügbarkeit. |
+| **Usability vs. Barrierefreiheit** | Ein System kann leicht bedienbar sein, ohne für Menschen mit bestimmten Einschränkungen zugänglich zu sein. |
+| **Redundanz vs. Backup** | Redundanz verbessert die Verfügbarkeit bei bestimmten Ausfällen; ein Backup ermöglicht die Wiederherstellung früherer Datenstände. |
+| **Vorteil vs. nachgewiesene Eigenschaft** | „Kann die Skalierbarkeit verbessern“ ist eine mögliche Wirkung; ob die konkrete Variante skaliert, muss durch Fakten oder Tests belegt sein. |
+
+## S. Vier prüfungsnahe Mini-Fälle mit Musterlösungen
+
+**Tipp:** Versuche zunächst, zwei **unterschiedliche qualitative Kriterien** mit je einer Wirkung zu formulieren. Öffne erst danach die Musterlösung.
+
+### Fall 1: Eigene App oder bestehende Branchenplattform?
+
+Ein Unternehmen entscheidet zwischen der Weiterentwicklung seiner eigenen App und dem Anschluss an eine bereits vorhandene Plattform. **Erläutern Sie für jede Variante zwei qualitative Kriterien, die für sie sprechen.**
+
+<details>
+<summary>Mögliche Musterlösung anzeigen</summary>
+
+**Eigene App:**
+1. **Gestaltungsfreiheit:** Die Benutzeroberfläche kann gezielt an die eigene Zielgruppe und die Unternehmensmarke angepasst werden.
+2. **Unabhängige Weiterentwicklung:** Neue Funktionen können entsprechend den eigenen Prioritäten geplant werden.
+
+**Bestehende Plattform:**
+1. **Reichweite:** Eine Plattform mit vorhandener Nutzerbasis kann den Zugang zu zusätzlichen Kundengruppen erleichtern.
+2. **Einheitliches Nutzererlebnis:** Kunden können Angebote mehrerer Unternehmen in einer vertrauten Anwendung nutzen.
+
+**Bewertung:** Der konkrete Fall muss zeigen, ob diese Vorteile tatsächlich vorliegen. Reichweite etwa setzt eine relevante vorhandene Nutzerbasis voraus.
+
+</details>
+
+### Fall 2: Zwei Hostinganbieter vergleichen
+
+Eine Organisation benötigt eine webbasierte Anwendung mit personenbezogenen Daten. **Nennen Sie je zwei technische und anbieterbezogene Kriterien und begründen Sie eines davon.**
+
+<details>
+<summary>Mögliche Musterlösung anzeigen</summary>
+
+**Technisch:** Kompatibilität der Schnittstellen; geeignete Sicherheitsfunktionen.
+
+**Anbieterbezogen:** Erfahrungen aus vergleichbaren Projekten; Qualität des Supports und der Eskalationswege.
+
+**Begründung:** „Geeignete Schnittstellen sind wichtig, da die Anwendung Daten mit bestehenden Systemen austauschen muss. Fehlende Kompatibilität kann zu aufwendigen Anpassungen führen.“
+
+**Hinweis:** Gesetzliche Datenschutzanforderungen müssen unabhängig von der sonstigen Punktebewertung erfüllt sein.
+
+</details>
+
+### Fall 3: Neue Software – Nutzwertanalyse
+
+Zwei Lösungen erfüllen sämtliche Muss-Anforderungen. Lösung A erhält 75 Punkte bei „Benutzerfreundlichkeit“ und 45 bei „Supportqualität“, Lösung B 125 und 75. **Erläutern Sie, was aus diesen Zahlen folgt und was noch nicht beurteilt werden kann.**
+
+<details>
+<summary>Mögliche Musterlösung anzeigen</summary>
+
+„In den beiden genannten Kriterien schneidet B besser ab. Daraus folgt jedoch noch keine Gesamtentscheidung, weil weitere gewichtete Kriterien und die Kosten zu berücksichtigen sind. Eine belastbare Empfehlung setzt eine vollständige und nachvollziehbar bewertete Nutzwertanalyse voraus.“
+
+</details>
+
+### Fall 4: Software intern betreiben oder auslagern?
+
+Ein Unternehmen kann die Betreuung einer neuen Lösung selbst übernehmen oder einen externen IT-Dienstleister beauftragen. **Erläutern Sie je einen nichtmonetären Vorteil und ein Risiko der Auslagerung.**
+
+<details>
+<summary>Mögliche Musterlösung anzeigen</summary>
+
+**Vorteil – Spezialwissen:** Der Dienstleister kann Fachkompetenz und Erfahrungen aus ähnlichen Betriebsumgebungen bereitstellen.
+
+**Risiko – Anbieterabhängigkeit:** Bei Störungen oder Änderungen ist das Unternehmen auf die Leistungsfähigkeit und Erreichbarkeit des externen Partners angewiesen. Eine mögliche Maßnahme sind klar geregelte Serviceleistungen und Eskalationswege.
+
+</details>
+
+---
+
+**Prüfungsorientierte Lernreihenfolge bei wenig Zeit:**
+
+1. **K + L:** Unterschied qualitativ/quantitativ und zehn passende Kriterien mit Wirkung.
+2. **M:** Zu vier typischen Variantenpaaren je zwei Argumente pro Seite frei formulieren.
+3. **N + O:** Anbieterbezogene Kriterien und Nutzwertanalyse sicher unterscheiden.
+4. **P + Q:** Kurze fachliche Erläuterungen selbst schreiben statt nur Stichwörter merken.
+5. **S:** Die Mini-Fälle ohne Musterlösung lösen.
+
+
 **Lernempfehlung:** Zuerst 10 Risiken und ihre Maßnahmen, danach 10 Vorteile, 10 Nachteile und 10 Auswahlkriterien. Anschließend jeweils zwei fachlich passende Stichworte ohne Hilfe für einen IT-, Projekt-, Cloud- oder Beschaffungsfall nennen.
 
 [KI und RPA](/kdm-trainer/p12/ki-automatisierung/) · [IHK-Antworttraining](/kdm-trainer/antworttraining/) · [Themenabdeckung](/kdm-trainer/pruefungsabdeckung/)
