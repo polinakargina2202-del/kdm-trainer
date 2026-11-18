@@ -1,3 +1,4 @@
+import { EXAM_TERM_OPEN_QUESTIONS } from './exam-term-open-questions.js';
 import { COVERAGE_OPEN_QUESTIONS } from './coverage-open-questions.js';
 export const OPEN_QUESTIONS = [
   {id:'op12pm1',section:'p12',topic:'p12/projektmanagement',points:9,operator:'Erläutern',prompt:'Erläutern Sie drei projektbezogene Inhalte einer Machbarkeitsanalyse für die Einführung einer neuen Kunden-App.',rubric:[['Technische Machbarkeit: Infrastruktur, Schnittstellen, Know-how oder Kompatibilität passend zum Fall erläutert',3],['Wirtschaftliche Machbarkeit: Kosten, Nutzen, Budget, Amortisation oder Wirtschaftlichkeit erläutert',3],['Rechtliche/organisatorische/marktliche Machbarkeit passend zum Fall erläutert',3]],model:'Technisch sind z. B. Kompatibilität, Schnittstellen und Know-how zu prüfen. Wirtschaftlich werden einmalige und laufende Kosten dem erwarteten Nutzen gegenübergestellt. Rechtlich/organisatorisch sind etwa Datenschutz, Ressourcen und Zeit zu prüfen.'},
@@ -26,4 +27,4 @@ export const OPEN_QUESTIONS = [
   {id:'op12ki26_2',section:'p12',topic:'p12/ki-automatisierung',points:6,operator:'Vergleichen und begründen',prompt:'Für die Übertragung standardisierter Rechnungsdaten stehen regelbasierte RPA und generative KI zur Auswahl. Vergleichen Sie beide Ansätze und begründen Sie eine geeignete Entscheidung bei stabilen, strukturierten Daten.',rubric:[['RPA als regelbasierte Automatisierung korrekt erklärt',2],['KI-Eigenschaften und mindestens ein Risiko/Prüfbedarf korrekt abgegrenzt',2],['Passende Entscheidung für den konkreten Fall mit nachvollziehbarem Sachargument',2]],model:'RPA arbeitet definierte wiederkehrende Regeln und Bedienhandlungen ab und eignet sich bei stabilen strukturierten Eingabedaten. Generative KI kann unstrukturierte Inhalte interpretieren, liefert aber nicht immer deterministische Ergebnisse und benötigt zusätzliche Qualitätskontrollen. Bei stabilen, standardisierten Rechnungsdaten ist RPA typischerweise die wirtschaftlich und technisch leichter kontrollierbare Lösung.'}
 ];
 
-OPEN_QUESTIONS.push(...COVERAGE_OPEN_QUESTIONS);
+OPEN_QUESTIONS.push(...COVERAGE_OPEN_QUESTIONS, ...EXAM_TERM_OPEN_QUESTIONS);
