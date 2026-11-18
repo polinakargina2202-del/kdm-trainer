@@ -494,6 +494,40 @@ Ein Backup ist nur dann belastbar, wenn **Wiederherstellung regelmäßig geteste
 
 ---
 
+## Prüfungsvertiefung: ISMS-Aufbau und Aufgaben des ISB
+
+**Originalbezug:** **AP2-1 Sommer 2022** verlangte mehrere Schritte beim Aufbau eines **ISMS** sowie konkrete Aufgaben eines **Informationssicherheitsbeauftragten (ISB)**. Die bloße Definition eines ISMS wäre dafür nicht genug gewesen.
+
+### Acht typische Bausteine beim Aufbau eines ISMS
+
+Dies ist eine **mögliche fachliche Reihenfolge**, keine in jeder Organisation gesetzlich vorgeschriebene starre Checkliste:
+
+1. **Managementauftrag und Vorgehensweise festlegen** – Rückhalt, Ziele und Ressourcen sichern.
+2. **Geltungsbereich (Scope) bestimmen** – Systeme, Prozesse, Standorte und Informationen abgrenzen.
+3. **Informationssicherheitsleitlinie erstellen** – gemeinsame Sicherheitsziele und Grundsätze festhalten.
+4. **Sicherheitsorganisation aufbauen** – Rollen, Zuständigkeiten und Eskalationen definieren.
+5. **Schutzbedarf und Risiken analysieren** – kritische Informationen und Bedrohungen bewerten.
+6. **Sicherheitskonzept dokumentieren** – Schutzmaßnahmen und Umsetzungsprioritäten bestimmen.
+7. **Maßnahmen umsetzen und kontrollieren** – beispielsweise Berechtigungen, Backups und Schulungen einführen.
+8. **Wirksamkeit laufend prüfen und verbessern** – Abweichungen auswerten und Maßnahmen nachsteuern.
+
+### Konkrete Aufgaben eines ISB
+
+| Aufgabe | Formulierung für eine offene IHK-Frage |
+|---|---|
+| **Unternehmensleitung beraten** | „Der ISB informiert die Leitung über wesentliche Informationssicherheitsrisiken und notwendigen Handlungsbedarf.“ |
+| **ISMS koordinieren** | „Der ISB unterstützt den Aufbau und die kontinuierliche Pflege des Informationssicherheitsmanagements.“ |
+| **Sicherheitsmaßnahmen begleiten** | „Er initiiert geeignete Maßnahmen und kontrolliert deren Umsetzung beziehungsweise Wirksamkeit.“ |
+| **Sicherheitsvorfälle auswerten** | „Er wirkt bei der Untersuchung sicherheitsrelevanter Vorfälle und der Ableitung von Verbesserungen mit.“ |
+| **Beschäftigte sensibilisieren** | „Er organisiert oder koordiniert Schulungen und Informationsmaßnahmen zur Informationssicherheit.“ |
+| **Sicherheitsprojekte abstimmen** | „Er koordiniert sicherheitsrelevante Themen zwischen Fachabteilungen und IT.“ |
+
+**ISB ≠ DSB:** Der ISB kümmert sich um **alle schutzwürdigen Informationen** (auch Geschäftsgeheimnisse und nicht personenbezogene Daten); der Datenschutzbeauftragte überwacht schwerpunktmäßig die Einhaltung des **Datenschutzrechts bei personenbezogenen Daten**.
+
+> **Prüfungstipp:** Bei „Nennen Sie fünf weitere Schritte“ zählt eine Liste aus fünf **verschiedenen** Bausteinen; bei „Erläutern Sie zwei Schritte“ sollte pro Schritt seine Wirkung im Projekt erläutert werden.
+
+---
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Beispielformulierung |
