@@ -541,6 +541,29 @@ Dies ist eine **mögliche fachliche Reihenfolge**, keine in jeder Organisation g
 | Incident Response | „Nennen Sie wesentliche Schritte nach einem Sicherheitsvorfall.“ |
 | ISMS | „Erläutern Sie den Zweck eines ISMS.“ |
 
+## Prüfungsvertiefung: BYOD und firmeneigene Endgeräte
+
+**Originalbezug:** In **AP2-2 Sommer 2022** wurde nach der Bedeutung von **BYOD** und einem konkreten Einführungsproblem gefragt.
+
+- **BYOD – Bring Your Own Device:** Mitarbeitende setzen **private Endgeräte** für betriebliche Aufgaben ein.
+- **COPE – Corporate Owned, Personally Enabled:** Das Gerät gehört dem Unternehmen; eine geregelte Privatnutzung ist möglich.
+- **CYOD – Choose Your Own Device:** Mitarbeitende wählen meist aus einer vom Unternehmen zugelassenen Geräteliste.
+- **COBO – Corporate Owned, Business Only:** Das Gerät gehört dem Unternehmen und ist nur für dienstliche Nutzung vorgesehen.
+
+| BYOD-Risiko | Warum ist das problematisch? | Geeignete Gegenmaßnahme |
+|---|---|---|
+| **Unzureichende Gerätesicherheit** | Private Geräte erhalten möglicherweise nicht regelmäßig Sicherheitsupdates. | Mindeststandards, Updatepflicht und geeignete Zugangsprüfungen definieren. |
+| **Trennung privat/geschäftlich** | Unternehmensdaten könnten in privaten Apps oder Backups landen. | Verwaltete Arbeitsprofile, Containerisierung und klare Regeln für Unternehmensdaten einsetzen. |
+| **Fehlende Kompatibilität** | Betriebliche Anwendungen laufen nicht auf allen Geräten zuverlässig. | Unterstützte Betriebssysteme und Mindestanforderungen vorab definieren. |
+| **Verlust eines Geräts** | Vertrauliche Informationen können offengelegt werden. | Verschlüsselung, MFA und eine geeignete Möglichkeit zum Sperren des geschäftlichen Zugangs nutzen. |
+| **Unklare Zuständigkeiten** | Support, Wartung und datenschutzgerechte Trennung sind schwieriger. | Eine verbindliche BYOD-Regelung mit Supportumfang, Verantwortlichkeiten und Datenschutzanforderungen vereinbaren. |
+
+**IHK-Musterantwort (3 Punkte, kompakt):** „Bei BYOD verwenden Mitarbeitende ihre privaten Geräte für berufliche Aufgaben und greifen damit auf Unternehmensanwendungen zu.“
+
+**IHK-Musterantwort zum Risiko:** „Private Geräte können unzureichend geschützt oder mit betrieblichen Anwendungen inkompatibel sein. Dadurch entstehen Sicherheitsrisiken beziehungsweise zusätzlicher Supportaufwand.“
+
+---
+
 ---
 <div class="kdm-practice" data-topic="p12/it-sicherheit"></div>
 <script type="module" src="/kdm-trainer/trainer/trainer.js"></script>
