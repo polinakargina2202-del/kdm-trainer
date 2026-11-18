@@ -366,6 +366,70 @@ Neben dem Erlösmodell kann die **Lizenzierung** entscheidend sein:
 
 ---
 
+## 11. Prüfungsvertiefung: Design-Richtlinien der Softwareergonomie
+
+**Warum lernen?** In **AP2-2 Winter 2024, Aufgabe 3a (8 Punkte)** sollten vier Design-Richtlinien für eine neue App **beschrieben** werden. Die Frage verlangte **Fachbegriffe plus Erklärung**, nicht nur ansprechende Farben oder ein modernes Layout.
+
+### Sieben klassische Dialogprinzipien – leicht prüfbar
+
+Die frühere Normfassung **DIN EN ISO 9241-110:2006** unterschied sieben Dialogprinzipien. In der genannten IHK-Musterlösung tauchen insbesondere die ersten fünf folgenden Begriffe auf; die zwei weiteren sind zur Vorbereitung ebenfalls wichtig.
+
+| Fachbegriff | Was ist gemeint? | Konkretes Beispiel bei einer Buchungs-App |
+|---|---|---|
+| **Aufgabenangemessenheit** | Bedienung unterstützt die eigentliche Aufgabe ohne überflüssige Schritte. | Eine Buchung benötigt nur die für die Reservierung erforderlichen Eingaben. |
+| **Erwartungskonformität** | Aufbau und Verhalten entsprechen nachvollziehbaren Nutzererwartungen und bleiben konsistent. | „Zurück“ führt zum vorherigen Schritt; gleiche Schaltflächen funktionieren gleich. |
+| **Steuerbarkeit** | Nutzer können den Ablauf beeinflussen, unterbrechen oder korrigieren. | Vor dem verbindlichen Absenden kann eine Buchung geändert oder abgebrochen werden. |
+| **Individualisierbarkeit** | Einstellungen lassen sich an persönliche Bedürfnisse anpassen. | Schriftgröße oder bevorzugte Sprache kann gewählt werden. |
+| **Fehlertoleranz** | Fehler werden abgefangen; Korrektur ist mit geringem Aufwand möglich. | Bei einem ungültigen Datum erscheint eine verständliche Meldung und die Eingabe bleibt erhalten. |
+| **Selbstbeschreibungsfähigkeit** | Die Oberfläche macht verständlich, welche Aktionen möglich sind und was gerade passiert. | Eingabefelder sind eindeutig beschriftet; nach dem Speichern erscheint eine Rückmeldung. |
+| **Lernförderlichkeit** | Das System erleichtert das Erlernen seiner Bedienung. | Ein erster Buchungsvorgang wird durch verständliche Hinweise begleitet. |
+
+**Wichtige Normen-Falle:** Die **DIN EN ISO 9241-110:2020** hat die Prinzipien überarbeitet. Heute heißen die sieben Interaktionsprinzipien **Aufgabenangemessenheit, Selbstbeschreibungsfähigkeit, Erwartungskonformität, Erlernbarkeit, Steuerbarkeit, Robustheit gegen Benutzungsfehler und Benutzerbindung**. *Individualisierbarkeit* ist in der neueren Fassung kein separates Prinzip mehr, sondern im Wesentlichen in *Steuerbarkeit* aufgegangen; *Fehlertoleranz* wird unter *Robustheit gegen Benutzungsfehler* betrachtet. Die IHK-Lösung Winter 2024 verwendete trotzdem die vertrauten älteren Begriffe: **Für diese Originalaufgabe die Lösungssprache kennen; für aktuelle Fachfragen auch die neue Bezeichnung verstehen.**
+
+Fachliche Quellen zur Normänderung: [DIN Media, Ausgabe 2020](https://www.dinmedia.de/de/norm/din-en-iso-9241-110/320862700) und [KomNet: Softwareergonomie](https://www.komnet.nrw.de/_sitetools/dialog/1238).
+
+### Musterantwort für „Beschreiben Sie vier Design-Richtlinien“
+
+1. **Aufgabenangemessenheit:** Die Buchungs-App sollte die gewünschte Reservierung ohne unnötige Eingaben ermöglichen.
+2. **Erwartungskonformität:** Schaltflächen und Abläufe sollten sich so verhalten, wie Nutzer es aus vergleichbaren Apps kennen.
+3. **Steuerbarkeit:** Vor einer verbindlichen Buchung sollte der Nutzer Eingaben überprüfen, ändern oder abbrechen können.
+4. **Fehlertoleranz:** Bei ungültigen Angaben sollte die App den Fehler verständlich anzeigen und eine einfache Korrektur ermöglichen.
+
+> **Lernkontrolle:** Kannst du ohne Tabelle zu *vier* anderen Beispielen jeweils **Prinzip + konkrete Funktion + Nutzen für den Anwender** nennen? Genau diese Transferleistung ist bei „beschreiben“ gefragt.
+
+### Mini-Fall: Welche Richtlinie wurde verletzt?
+
+- Eine Stornierung lässt sich ohne Bestätigung nicht mehr aufhalten → **Steuerbarkeit / Robustheit gegen Benutzungsfehler** prüfen.
+- Derselbe Button speichert auf Seite A und löscht auf Seite B → **Erwartungskonformität** verletzt.
+- Die App zeigt nur „Fehler 0x42“ statt einer Erklärung → **Selbstbeschreibungsfähigkeit** beeinträchtigt.
+- Für eine einfache Reservierung müssen fachfremde Daten eingetippt werden → **Aufgabenangemessenheit**, zusätzlich ggf. **Datenminimierung** prüfen.
+
+## 12. Prüfungsvertiefung: Passende Bedienelemente auswählen
+
+**AP2-2 Winter 2024, Aufgabe 2d:** Hier musste nicht nur „gutes UI“ beschrieben, sondern für konkrete Datenfelder ein passendes **Steuerelement** begründet werden.
+
+| Eingabe/Ausgabe | Geeignetes Bedienelement | Begründung |
+|---|---|---|
+| Buchungsdatum | **Datepicker / Datumsauswahl** | Verhindert viele Formatfehler und erleichtert die Auswahl. |
+| Uhrzeit | **Timepicker / Zeitauswahl** | Unterstützt zulässige Uhrzeiten und eindeutige Eingaben. |
+| Auswahl aus vielen festen Werten | **Dropdown / Auswahlliste** | Reduziert freie Schreibweisen und Übertragungsfehler. |
+| Genau eine aus wenigen Möglichkeiten | **Radiobuttons** | Optionen sind direkt sichtbar; eine eindeutige Auswahl ist möglich. |
+| Mehrere voneinander unabhängige Optionen | **Checkboxen** | Mehrfachauswahl ist möglich; anders als bei Radiobuttons. |
+| Zahl mit Grenzen, z. B. Personenanzahl | **Numerisches Feld mit Prüfung** | Wertebereich kann geprüft werden; eindeutiger als beliebiger Freitext. |
+| Längerer Kommentar | **Mehrzeiliges Textfeld** | Erlaubt einen unstrukturierten Text, wenn er wirklich erforderlich ist. |
+| Reine Information ohne Bearbeitung | **Beschriftung / Nur-Lese-Anzeige** | Verhindert unbeabsichtigte Änderungen. |
+
+**Zwei Prüfungen getrennt durchführen:**
+
+1. **UI-Frage:** *Wie* wird ein erforderlicher Wert möglichst fehlerarm eingegeben?
+2. **DSGVO-Frage:** *Darf und muss* der Wert für diesen Zweck überhaupt erhoben werden?
+
+Ein gut gestaltetes Eingabefeld macht eine unnötige Datenerhebung **nicht** zulässig. Beispielsweise wäre die Frage nach der Religionszugehörigkeit für eine gewöhnliche Fahrzeugreservierung normalerweise nicht erforderlich und berührt zudem besonders geschützte Daten.
+
+**IHK-Antwortmuster:** „Für die Eingabe des Buchungsdatums eignet sich eine Datumsauswahl, da dadurch unzulässige Datumsformate vermieden und die Eingabe für den Nutzer vereinfacht werden kann.“
+
+---
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Beispielformulierung |
