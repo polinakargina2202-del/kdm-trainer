@@ -3,7 +3,7 @@ title: Vertragsrecht & Abnahme
 description: Vertragsarten, Rahmenvertrag, Abnahme, SLA, AGB und Vertretungsmacht
 sidebar:
   badge:
-    text: 7/7 Prüfungen
+    text: 9/10 Prüfungen
     variant: danger
 ---
 
@@ -101,5 +101,55 @@ Elektronische Signatur bedeutet nicht automatisch, dass jede gesetzliche Schrift
 Geeignete Nachweise: Abnahmeprotokoll, Leistungs-/Stundennachweis, Testprotokoll, Übergabe-/Installationsprotokoll, SLA-Report, offene Mängel/Nacharbeiten.
 
 ---
+## 11. Vertragsschluss, Besitz und Eigentum auseinanderhalten
+
+Drei Zeitpunkte können in Beschaffungsaufgaben auseinanderfallen:
+
+1. **Vertragsschluss:** Angebot und Annahme stimmen überein.
+2. **Besitzübergang:** Der Käufer erhält die tatsächliche Sachherrschaft, z. B. bei Übergabe.
+3. **Eigentumsübergang:** Die Sache wird rechtlich dem Käufer zugeordnet; bei Eigentumsvorbehalt kann dies erst nach vollständiger Zahlung eintreten.
+
+> **Prüfungsfalle:** Rechnung, Lieferung und Zahlung sind nicht automatisch der Zeitpunkt des Vertragsschlusses.
+
+## 12. Fernabsatz und Verbraucherrechte
+
+Ein **Fernabsatzvertrag** wird unter den gesetzlichen Voraussetzungen zwischen Unternehmer und Verbraucher ausschließlich über Fernkommunikationsmittel geschlossen, z. B. über Internet oder Telefon.
+
+Typische Prüfungsaspekte:
+- Informationspflichten,
+- Widerrufsrecht des Verbrauchers mit gesetzlichen Ausnahmen,
+- klare Preis- und Leistungsinformationen,
+- Bestellprozess und Vertragsbestätigung.
+
+Bei B2B-Geschäften gelten viele verbraucherschützende Regelungen nicht in gleicher Weise. Deshalb immer auf die Beteiligten im Fall achten.
+
+## 13. Elektronische Signaturen
+
+Nicht jede elektronische Unterschrift hat dasselbe rechtliche Niveau.
+
+- **Einfache elektronische Signatur (EES):** einfache elektronische Zuordnung, z. B. eingescannter Namenszug oder Name unter einer E-Mail.
+- **Fortgeschrittene elektronische Signatur (FES):** stärker an den Signierenden gebunden und Veränderungen nach Signatur erkennbar.
+- **Qualifizierte elektronische Signatur (QES):** erfüllt besonders hohe eIDAS-Anforderungen und kann gesetzlich der handschriftlichen Unterschrift gleichgestellt sein, soweit die jeweilige Formvorschrift dies zulässt.
+
+Mögliche Vorteile digitaler Signaturen:
+- ortsunabhängige Unterzeichnung,
+- schnellere Prozesse,
+- bessere Nachweisbarkeit,
+- je nach Verfahren Integritäts- und Identitätsprüfung.
+
+> **Wichtig:** Zuerst prüfen, **welche Form** ein konkretes Rechtsgeschäft benötigt. „Digital unterschrieben“ bedeutet nicht automatisch „jede Formvorschrift erfüllt“.
+
+## 14. i. V., i. A. und ppa.
+
+Diese Kürzel helfen, die Zeichnungssituation einzuordnen:
+
+| Kürzel | Bedeutung | typische Aussage |
+|---|---|---|
+| **i. V.** | in Vertretung | Unterzeichner handelt mit Vertretungsmacht |
+| **i. A.** | im Auftrag | Handeln im übertragenen Aufgabenrahmen; konkrete Vollmacht prüfen |
+| **ppa.** | per procura | Unterzeichnung durch Prokuristen |
+
+Ob ein konkreter Vertrag wirksam abgeschlossen wurde, hängt nicht allein vom Kürzel ab, sondern davon, **welche Vertretungsmacht tatsächlich besteht**.
+
 <div class="kdm-practice" data-topic="p13/vertragsrecht"></div>
 <script type="module" src="/kdm-trainer/trainer/trainer.js"></script>
