@@ -44,6 +44,7 @@ Diese zusätzlichen Einheiten schließen Lücken zwischen Grundlagenseiten und d
 - [Marktanalyse, Porter, Ansoff, Customer Journey und Kundenwert](/kdm-trainer/p12/markt-kundenanalyse/)
 - [Schnittstellen, REST/API, JSON/XML/CSV, Mapping und ETL](/kdm-trainer/p12/schnittstellen-integration/)
 - [SWOT, FMEA, UML, IPv6/VLAN und Glasfaser](/kdm-trainer/p12/analyse-methoden-netzwerk/)
+- [IoT, RFID und Sensorik](/kdm-trainer/p12/iot-rfid-sensorik/)
 
 Alle vier Seiten besitzen einen eigenen **Wissenscheck**. Im [IHK-Antworttraining](/kdm-trainer/antworttraining/) findest du dazu neue offene Aufgaben mit Punkteraster. Erst Begriffe abrufen, danach anhand der Ausgangssituation erläutern.
 
