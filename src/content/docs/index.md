@@ -71,6 +71,27 @@ Der Trainer wurde um **sieben fachliche Lernmodule**, **107 automatische Wissens
 **Lernweg in drei Durchgängen:** 1. Je 10–15 gemischte Fragen; 2. Fehler gezielt nachlesen und erneut abrufen; 3. Je zwei bis drei offene Fallantworten und Rechen-/SQL-Aufgaben. Die [Themenabdeckung](/kdm-trainer/pruefungsabdeckung/) zeigt trotz Erweiterung verbleibende Grenzen.
 
 
+## Aktualisierung vom 20. November 2026: drei weitere Prüfungszeiträume analysiert
+
+Zusätzlich wurden die zuvor fehlenden Prüfungszeiträume **Winter 2022/23, Winter 2023/24 und Sommer 2024** systematisch mit dem aktuellen Trainer abgeglichen. Bereits vorhandene Themen wurden nicht doppelt angelegt; ergänzt wurden nur erkennbare Lücken und tiefer geprüfte Varianten.
+
+Neu bzw. deutlich vertieft wurden unter anderem:
+
+- [IoT, RFID & Sensorik](/kdm-trainer/p12/iot-rfid-sensorik/)
+- UML-Use-Case-Beziehungen **include / extend / Generalisierung**
+- **Anforderungskatalog, Kick-off, Erfolgsindikatoren und Change Management**
+- **Hosting vs. Housing**, ITIL und sichere Passwortregeln
+- Rechenweg zur **Backup-Übertragungsdauer**
+- [CRM, Kundensegmentierung & ABC-Analyse](/kdm-trainer/p13/crm-kundenanalyse/)
+- [Urheberrecht, DRM & Kopierschutz](/kdm-trainer/p13/urheberrecht-drm/)
+- **Fernabsatz, elektronische Signaturen, i. V. / i. A. / ppa.**
+- **Paarvergleich** vor der Nutzwertanalyse
+- **Personalkosten → Minuten-/Stundenkosten → Prozesskosten**
+- formale Rechnungsprüfung und Aufbewahrungslogik
+- mehrjähriger **Kauf-vs.-Leasing-Vergleich**
+
+Dazu kamen **33 neue automatisch auswertbare Fragen** und **8 neue offene IHK-Antworttrainingsaufgaben**. Die Aufgaben sind eigenständig formuliert und übernehmen keine Original-IHK-Aufgabentexte.
+
 ## Trainingsmodi
 
 - **Zufalls-Prüfung:** automatisch auswertbare Mischung aus dem gesamten Fragenpool.
