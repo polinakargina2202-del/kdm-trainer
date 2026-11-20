@@ -208,6 +208,25 @@ const CALCULATORS = {
     const calc=()=>{const type=t.querySelector('select').value,N=Number(n.querySelector('input').value),S=Number(s.querySelector('input').value); let use=0, formula=''; if(type==='RAID 0'){use=N*S;formula='n × Plattengröße';} if(type==='RAID 1'){use=S;formula='1 × Plattengröße (Spiegelung)';} if(type==='RAID 5'){use=(N-1)*S;formula='(n − 1) × Plattengröße';} if(type==='RAID 10'){use=N*S/2;formula='n × Plattengröße × 50 %';} out.innerHTML=`<ol><li>Rohkapazität: ${fmt(N)} × ${fmt(S)} TB = <strong>${fmt(N*S)} TB</strong></li><li>Formel ${type}: <strong>${formula}</strong></li><li>Nutzbar: <strong>${fmt(use)} TB</strong></li></ol><div class="kdm-result">${fmt(use)} TB nutzbar</div>`;}; updateOnInputs(b,calc);
     variantUI(b.querySelector('.kdm-variant-task'),()=>{const type=['RAID 5','RAID 10'][Math.floor(Math.random()*2)],N=type==='RAID 5'?[3,4,5,6][Math.floor(Math.random()*4)]:[4,6,8][Math.floor(Math.random()*3)],S=[2,4,8][Math.floor(Math.random()*3)],use=type==='RAID 5'?(N-1)*S:N*S/2,mode=Math.floor(Math.random()*3); if(mode===0)return{prompt:`${type} mit ${N} × ${S} TB: Wie viel Kapazität ist nutzbar?`,answer:use,unit:'TB'}; if(mode===1)return{prompt:`${type} mit ${N} Platten soll ${use} TB nutzbar liefern. Wie groß muss jede Platte sein?`,answer:S,unit:'TB'}; const target=use; return{prompt:`${type} mit ${S}-TB-Platten soll ${target} TB nutzbar liefern. Wie viele Platten werden benötigt?`,answer:N,unit:'Platten',tolerance:.1};}); return b;
   },
+  backupduration() {
+    const b=calcShell('Backup-Übertragungsdauer','Verfolge Datenmenge, Datenrate und Dauer. Das Beispiel verwendet dezimale Einheiten: 1 GB = 8.000 Mbit.');
+    const data=nInput('Datenmenge',100,1,.01,null,'GB');
+    const rate=nInput('Datenrate',200,1,.01,null,'Mbit/s');
+    b.querySelector('.kdm-calc-inputs').append(data,rate);
+    const out=b.querySelector('.kdm-steps');
+    updateOnInputs(b,()=>{
+      const D=+data.querySelector('input').value,R=+rate.querySelector('input').value;
+      const mbit=D*8000, sec=mbit/R, min=sec/60;
+      out.innerHTML=`<ol><li>Datenmenge: ${fmt(D)} GB × 8.000 = <strong>${fmt(mbit)} Mbit</strong></li><li>Zeit: ${fmt(mbit)} Mbit / ${fmt(R)} Mbit/s = <strong>${fmt(sec)} s</strong></li><li>In Minuten: ${fmt(sec)} / 60 = <strong>${fmt(min)} min</strong></li></ol><div class="kdm-result">${fmt(sec)} Sekunden · ${fmt(min)} Minuten</div><p class="kdm-inline-hint">Wenn die Prüfungsaufgabe andere Umrechnungsfaktoren vorgibt (z. B. GiB/MiB), verwende genau diese Vorgabe.</p>`;
+    });
+    variantUI(b.querySelector('.kdm-variant-task'),()=>{
+      const D=[25,50,100,250][Math.floor(Math.random()*4)], R=[100,200,500,1000][Math.floor(Math.random()*4)], S=D*8000/R, mode=Math.floor(Math.random()*3);
+      if(mode===0)return{prompt:`${D} GB bei ${R} Mbit/s: Wie viele Sekunden dauert die Übertragung?`,answer:S,unit:'s',explanation:'GB × 8.000 / Mbit/s'};
+      if(mode===1)return{prompt:`${D} GB sollen in ${fmt(S)} Sekunden übertragen werden. Welche Datenrate ist nötig?`,answer:R,unit:'Mbit/s',explanation:'Datenmenge in Mbit / Zeit'};
+      return{prompt:`Bei ${R} Mbit/s dauert die Sicherung ${fmt(S)} Sekunden. Wie groß ist die Datenmenge?`,answer:D,unit:'GB',explanation:'Datenrate × Zeit / 8.000'};
+    });
+    return b;
+  },
   bezugspreis() {
     const b=calcShell('Bezugspreis','Verfolge die komplette Kette vom Listeneinkaufspreis bis zum Bezugspreis.');
     const lep=nInput('Listeneinkaufspreis',1000,10,0,null,'€'), rab=nInput('Rabatt',10,.5,0,99,'%'), sko=nInput('Skonto',2,.1,0,99,'%'), bez=nInput('Bezugskosten',40,1,0,null,'€'); b.querySelector('.kdm-calc-inputs').append(lep,rab,sko,bez); const out=b.querySelector('.kdm-steps');
