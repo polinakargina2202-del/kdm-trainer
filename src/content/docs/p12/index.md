@@ -11,25 +11,25 @@ description: Prüfungsbereich §12 — alle Themen im Überblick
 - **Hilfsmittel:** Taschenrechner (nicht programmierbar)
 - **Szenario:** Immer ein fiktives IT-Unternehmen als Rahmen
 
-## Themen nach Häufigkeit
+## Themen nach Häufigkeit – 10 analysierte Prüfungszeiträume
 
-| Thema | Häufigkeit | Zuletzt |
-|---|---|---|
-| Projektmanagement | 7/7 | W26 |
-| Datenbanken & SQL | 7/7 | W26 |
-| Datenschutz & DSGVO | 5/7 | W26 |
-| Cloud & Servicemodelle | 5/7 | W26 |
-| RAID & Datensicherung | 5/7 | W26 |
-| Softwaretesting & Debugging | 5/7 | W26 |
-| BPMN / EPK / ITSM | 4/7 | S25 |
-| IT-Sicherheit & Netzwerk | 4/7 | S25 |
-| App-Entwicklung / UI-UX / RPA | 3/7 | S25 |
-| Digitale Geschäftsmodelle / Kundennutzen | **offizieller Prüfungsinhalt** | unabhängig von Altprüfungs-Häufigkeit |
-| Digitaler Reifegrad | 1/7 | S25 |
+Die Statistik wurde nach Einbezug von **Winter 2022/23, Winter 2023/24 und Sommer 2024** auf zehn Prüfungszeiträume erweitert. Gezählt wird, ob ein Themenkomplex in einem Prüfungszeitraum vorkam; ein Zeitraum kann mehrere Aufgaben zum selben Komplex enthalten.
 
-**Neue Vertiefung:** [Künstliche Intelligenz, RPA und sicherer Einsatz](/kdm-trainer/p12/ki-automatisierung/) – mit eigenem Wissenscheck. Siehe auch die [Themenabdeckung mit Lücken](/kdm-trainer/pruefungsabdeckung/).
+| Themenkomplex | Auftreten in 10 Prüfungszeiträumen |
+|---|---:|
+| **Datenbankmodell / Normalisierung** | **10/10** |
+| **SQL** | **9/10** |
+| **Projektmanagement / Anforderungen** | **8/10** |
+| **BPMN / EPK / Prozessmodellierung** | **7/10** |
+| **Backup** | **4/10** |
+| **RAID** | **3/10** |
+| **UML** | **2/10** |
 
-> Die historischen Häufigkeitsangaben sind Lernorientierung, **keine Garantie** und bedürfen bei abweichender Themenzählung einer erneuten Prüfung.
+Weitere Bereiche wie **DSGVO, Cloud, IT-Sicherheit, Softwaretesting und App-/UI-Themen** treten ebenfalls wiederholt auf. Die exakten historischen Häufigkeiten sind jedoch weniger wichtig als die offizielle Themenbreite des Prüfungskatalogs.
+
+**Neu aus den nachanalysierten Zeiträumen:** [IoT, RFID & Sensorik](/kdm-trainer/p12/iot-rfid-sensorik/), vertiefte UML-Use-Cases, Hosting/Housing, ITIL, Backup-Dauer, sichere Passwörter, Kick-off/Anforderungskatalog und Change Management.
+
+> Häufigkeit ist nur eine Lernpriorisierung. Ein seltener Themenkomplex kann in der nächsten Prüfung trotzdem viele Punkte ausmachen.
 
 ## Erweiterte Abdeckung
 
