@@ -145,7 +145,7 @@ Dauert ein Vorgang 8 Minuten und tritt 2.000-mal im Monat auf:
 
 > **Prüfungstipp:** Nutze nur die Beitragssätze, Arbeitszeiten und Zuschläge, die in der Aufgabe angegeben werden. Sozialversicherungswerte ändern sich und sollen nicht ungeprüft aus alten Prüfungen übernommen werden.
 
-## 9. Kurze Prüfungsfälle
+## 10. Kurze Prüfungsfälle
 
 **A:** Liquidität 2. Grades: Bank 10.000 €, Forderungen 20.000 €, Vorräte 40.000 €, kurzfristige Verbindlichkeiten 50.000 €. Berechnen.
 
