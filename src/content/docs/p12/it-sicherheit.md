@@ -528,6 +528,23 @@ Dies ist eine **mögliche fachliche Reihenfolge**, keine in jeder Organisation g
 
 ---
 
+## 13. Sichere Passwörter – was wirklich wichtig ist
+
+Passwörter bleiben in vielen Systemen ein Authentifizierungsfaktor. Entscheidend sind vor allem **Länge, Einzigartigkeit und sichere Verwaltung**.
+
+Sinnvolle Regeln:
+- ausreichend lange Passwörter/Passphrasen verwenden,
+- für verschiedene Dienste **unterschiedliche** Passwörter nutzen,
+- Standard- und Initialpasswörter sofort ändern,
+- Passwortmanager verwenden,
+- Passwörter nicht per ungeschützter Nachricht teilen,
+- bei Verdacht auf Kompromittierung sofort ändern,
+- wo möglich MFA/2FA ergänzen.
+
+Ein kompliziertes, aber überall wiederverwendetes Passwort ist riskant: Wird es bei einem Dienst gestohlen, können Angreifer es bei weiteren Konten ausprobieren.
+
+> **Prüfungstipp:** Wenn nach zwei Regeln gefragt wird, nenne zwei **verschiedene Sicherheitsprinzipien**, z. B. „lang und einzigartig“ sowie „Passwortmanager/MFA“, statt nur mehrere Varianten von Sonderzeichen-Regeln.
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Beispielformulierung |

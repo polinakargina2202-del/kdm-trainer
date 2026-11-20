@@ -3,7 +3,7 @@ title: Beschaffung & Wareneingang
 description: Lieferavis, Wareneingang, Mängel, Gewährleistung, Angebotsvergleich, Skonto
 sidebar:
   badge:
-    text: 5/7 Prüfungen
+    text: 7/10 Prüfungen
     variant: caution
 ---
 

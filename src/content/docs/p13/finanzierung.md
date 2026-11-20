@@ -3,7 +3,7 @@ title: Finanzierung & Tilgung
 description: Außen-/Innenfinanzierung, Tilgungspläne, Leasing, Liquiditätsplanung
 sidebar:
   badge:
-    text: 6/7 Prüfungen
+    text: 7/10 Prüfungen
     variant: danger
 ---
 
@@ -96,6 +96,38 @@ Nicht nur Nominalzins vergleichen:
 ## 8. Bonität und Sicherheiten
 
 Mögliche Kriterien: Cashflow/Einkommen, Verschuldung, Eigenkapitalquote, bisheriges Zahlungsverhalten, Sicherheiten, Geschäftsmodell/Zukunftsaussichten. Höheres Risiko kann zu höheren Zinsen, zusätzlichen Sicherheiten oder Ablehnung führen.
+
+## 9. Kauf oder Leasing über denselben Zeitraum vergleichen
+
+Ein fairer Vergleich betrachtet **denselben Nutzungszeitraum** und alle entscheidungsrelevanten Zahlungen.
+
+### Kauf
+
+Je nach Aufgabe können relevant sein:
+- Anschaffungspreis nach Rabatt,
+- Anschaffungsnebenkosten,
+- Finanzierungskosten,
+- laufende Wartung,
+- Energie/Betrieb,
+- erwarteter Restwert/Verkaufserlös.
+
+### Leasing
+
+Je nach Vertrag:
+- Sonderzahlung,
+- Leasingraten,
+- Wartungs-/Servicebestandteile,
+- Mehrkosten für Nutzung,
+- Rückgabe-/Restwertregelungen.
+
+**Prüfungslogik:** Nicht nur „Kaufpreis gegen Monatsrate“ vergleichen. Erst alle Kosten auf den **gleichen Zeitraum** bringen.
+
+### Einfaches Beispiel
+
+Kauf: 12.000 € plus 2.000 € Wartung über drei Jahre = 14.000 €.  
+Leasing: 36 × 390 € = 14.040 €.
+
+Dann ist im Beispiel der Kauf rechnerisch um 40 € günstiger – **wenn** keine weiteren Unterschiede wie Finanzierung, Restwert oder enthaltene Services bestehen.
 
 ---
 <div class="kdm-calculators" data-calculators="loan"></div>

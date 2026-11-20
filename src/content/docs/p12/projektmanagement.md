@@ -3,11 +3,11 @@ title: Projektmanagement
 description: Machbarkeitsanalyse, Lastenheft, PSP, Risikoanalyse, Wasserfall vs. Scrum
 sidebar:
   badge:
-    text: 7/7 Prüfungen
+    text: 8/10 Prüfungen
     variant: danger
 ---
 
-> **Prüfungsrelevanz:** In JEDER der 7 analysierten Sessions. Kernthema AP2-1.
+> **Prüfungsrelevanz:** In 8 von 10 analysierten Prüfungszeiträumen tauchten Projektmanagement bzw. Anforderungs-/Projektplanung auf. Kernthema AP2-1.
 
 Auf dieser Seite geht es nicht nur darum, Begriffe auswendig zu lernen. Du sollst verstehen, **wie ein Projekt aufgebaut ist, wie es geplant wird und warum bestimmte Werkzeuge eingesetzt werden**. Viele Prüfungsaufgaben sehen auf den ersten Blick unterschiedlich aus, prüfen aber immer wieder dieselben Grundideen.
 
@@ -378,6 +378,80 @@ Typischer Ablauf:
 So wird **Scope Creep** vermieden – also eine unkontrollierte Ausweitung des Projektumfangs.
 
 ---
+
+## 13. Anforderungskatalog – Anforderungen sammeln, bevor sie ins Lastenheft gehen
+
+Ein **Anforderungskatalog** ist eine strukturierte Sammlung der Anforderungen an eine geplante Lösung. Er kann funktionale, technische, organisatorische, rechtliche und wirtschaftliche Anforderungen enthalten.
+
+Der Begriff ist breiter als Lasten- und Pflichtenheft:
+
+| Dokument | Kernfrage | typische Perspektive |
+|---|---|---|
+| **Anforderungskatalog** | Welche Anforderungen müssen betrachtet und strukturiert werden? | Projekt-/Analysephase |
+| **Lastenheft** | WAS fordert der Auftraggeber? | Auftraggeber |
+| **Pflichtenheft** | WIE setzt der Auftragnehmer diese Anforderungen um? | Auftragnehmer |
+
+Ein Anforderungskatalog kann zum Beispiel enthalten:
+- Muss-/Soll-/Kann-Anforderungen,
+- Leistungs- und Verfügbarkeitsanforderungen,
+- Sicherheits- und Datenschutzanforderungen,
+- Schnittstellen,
+- Skalierbarkeit,
+- Dokumentations- und Serviceanforderungen.
+
+> **Prüfungsfalle:** Anforderungskatalog, Lastenheft und Pflichtenheft nicht einfach als drei Synonyme behandeln.
+
+## 14. Kick-off-Meeting – gemeinsamer Projektstart
+
+Das Kick-off-Meeting findet typischerweise zu Beginn der Zusammenarbeit statt. Sein Ziel ist nicht, das Projekt schon fachlich abzunehmen, sondern ein gemeinsames Verständnis zu schaffen.
+
+Typische Inhalte:
+- Projektziel und Ausgangslage,
+- Rollen und Verantwortlichkeiten,
+- grober Zeitplan und Meilensteine,
+- Kommunikations- und Eskalationswege,
+- offene Fragen,
+- Risiken und Erwartungen,
+- nächste Schritte.
+
+**Beispiel:** Bei der Einführung eines Kundenportals werden Projektleitung, IT, Fachbereich und externer Anbieter gemeinsam über Ziele, Zuständigkeiten und Kommunikationswege informiert.
+
+## 15. Projekt-Erfolg messbar machen
+
+Ein Projektziel sollte möglichst mit **messbaren Erfolgsindikatoren** verbunden werden. Nur dann kann später geprüft werden, ob die gewünschte Verbesserung tatsächlich erreicht wurde.
+
+Mögliche Indikatoren:
+- Systemverfügbarkeit,
+- Durchlaufzeit eines Prozesses,
+- Fehlerquote,
+- Nutzer-/Kundenzufriedenheit,
+- Zahl manueller Bearbeitungsschritte,
+- Kosten je Vorgang,
+- Termintreue,
+- Nutzungsquote einer neuen Lösung.
+
+> **Prüfungslogik:** Der Indikator muss zum Ziel passen. „Das Portal sieht modern aus“ ist kaum messbar; „95 % der Standardanfragen werden ohne Medienbruch verarbeitet“ ist deutlich prüfbarer.
+
+## 16. Change Management – Menschen durch Veränderungen begleiten
+
+Technische Einführung allein reicht oft nicht. Mitarbeitende müssen die Veränderung verstehen, akzeptieren und im Alltag anwenden.
+
+Ein mögliches Phasenmodell arbeitet mit:
+1. **Initiierung:** Veränderungsbedarf erkennen und begründen.
+2. **Konzeption:** Zielbild, Maßnahmen und Beteiligung planen.
+3. **Mobilisierung:** Betroffene informieren, einbinden und qualifizieren.
+4. **Umsetzung:** neue Prozesse/Systeme einführen und begleiten.
+5. **Verstetigung:** neue Arbeitsweise stabilisieren, messen und in Standards verankern.
+
+Typische Maßnahmen:
+- frühzeitig kommunizieren,
+- Stakeholder beteiligen,
+- Schulungen anbieten,
+- Feedback aufnehmen,
+- Multiplikatoren einsetzen,
+- Erfolge sichtbar machen.
+
+**Merke:** Projektmanagement organisiert das Vorhaben; Change Management konzentriert sich besonders auf die erfolgreiche organisatorische und menschliche Veränderung.
 
 ## Prüfungsaufgaben-Muster
 

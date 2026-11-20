@@ -3,7 +3,7 @@ title: Prozesse, BPMN, EPK & ITSM
 description: Geschäftsprozessanalyse, Ist/Soll, Digitalisierungsgrad, Prozesskennzahlen, BPMN/EPK und IT-Service-Management
 sidebar:
   badge:
-    text: 4/7 Prüfungen
+    text: 7/10 Prüfungen
     variant: note
 ---
 
@@ -321,6 +321,24 @@ Nichtverfügbarkeit = 0,01 % = 0,0001
 → ca. **52,6 Minuten** zulässige Ausfallzeit pro Jahr.
 
 ---
+
+## 18. ITIL – IT-Services strukturiert managen
+
+**ITIL** ist ein Framework mit bewährten Praktiken für das **IT Service Management (ITSM)**. Es soll nicht einfach „mehr Bürokratie“ erzeugen, sondern IT-Services planbarer, geschäftsorientierter und kontinuierlich verbesserbar machen.
+
+Typische Grundideen:
+- IT als **Service für den Geschäftsbedarf** betrachten,
+- Rollen und Abläufe klar definieren,
+- Servicequalität messbar machen,
+- Änderungen kontrolliert durchführen,
+- Störungen strukturiert bearbeiten,
+- aus Messwerten und Erfahrungen lernen.
+
+Der Lebenszyklusgedanke bedeutet: Ein Service wird nicht nur technisch bereitgestellt, sondern über Planung, Bereitstellung, Betrieb, Wartung und Verbesserung betrachtet.
+
+**Beispiel:** Ein Service Desk bearbeitet Incidents nicht nach Bauchgefühl. Priorität, Eskalation, Zuständigkeit und Reaktionszeiten sind definiert; wiederkehrende Ursachen werden im Problem Management untersucht.
+
+> **Prüfungsfalle:** ITIL ist kein einzelnes Tool und keine konkrete Software. Es ist ein Framework bzw. eine Sammlung von Best Practices für IT-Service-Management.
 
 ## Kurz zusammengefasst
 

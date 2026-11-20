@@ -48,6 +48,7 @@ export default defineConfig({
             { label: 'Softwaretesting & Debugging', slug: 'p12/softwaretesting' },
             { label: 'Datenschutz & DSGVO', slug: 'p12/dsgvo' },
             { label: 'App-Entwicklung & UI/UX', slug: 'p12/app-entwicklung' },
+            { label: 'IoT, RFID & Sensorik', slug: 'p12/iot-rfid-sensorik' },
             { label: 'KI, RPA & sicherer Einsatz', slug: 'p12/ki-automatisierung' },
           ],
         },
@@ -63,6 +64,8 @@ export default defineConfig({
             { label: 'Rechnungswesen & Bilanz', slug: 'p13/rechnungswesen' },
             { label: 'Umsatzsteuer & Buchführung', slug: 'p13/umsatzsteuer-buchfuehrung' },
             { label: 'Kennzahlen & Make-or-Buy', slug: 'p13/kennzahlen-wirtschaftlichkeit' },
+            { label: 'CRM & Kundenanalyse', slug: 'p13/crm-kundenanalyse' },
+            { label: 'Urheberrecht & DRM', slug: 'p13/urheberrecht-drm' },
           ],
         },
         {

@@ -95,7 +95,36 @@ GoBD betreffen die ordnungsmäßige Führung und Aufbewahrung von Büchern, Aufz
 
 Eine nachvollziehbare **Verfahrensdokumentation** erläutert, wie Belege entstehen, verarbeitet, geprüft und aufbewahrt werden. Zugriffsrechte, Protokollierung und geeignete Aufbewahrung gehören zum Kontrollkonzept.
 
-## 9. Prüfungssituationen
+## 9. Formale Rechnungsprüfung als Checkliste
+
+Bei einer **formalen** Rechnungsprüfung geht es um die erforderlichen Rechnungsangaben, nicht darum, ob die Ware tatsächlich richtig geliefert wurde.
+
+Je nach Rechnung und Rechtslage gehören typischerweise dazu:
+- Name und Anschrift von Rechnungsaussteller und Leistungsempfänger,
+- Rechnungsdatum,
+- eindeutige Rechnungsnummer,
+- Menge/Art der Lieferung oder Umfang der Leistung,
+- Leistungszeitpunkt/-zeitraum,
+- Entgelt,
+- Steuerangaben bzw. Hinweis auf einen besonderen steuerlichen Sachverhalt,
+- weitere gesetzlich erforderliche Angaben.
+
+**Sachliche Prüfung** ist etwas anderes: Stimmen Lieferung, Menge, Qualität und Bestellung?
+
+> **Prüfungsstrategie:** Erst erkennen, ob nach **formal**, **rechnerisch** oder **sachlich** gefragt wird.
+
+## 10. Aufbewahrungspflichten – Dokumentart zuerst bestimmen
+
+Nicht jedes Dokument wird gleich lange aufbewahrt. Deshalb gehst du in einer Aufgabe so vor:
+
+1. Dokumentart erkennen – z. B. Rechnung, Handels-/Geschäftsbrief, internes Werbematerial.
+2. Prüfen, ob überhaupt eine gesetzliche Aufbewahrungspflicht besteht.
+3. Die für den **Prüfungszeitpunkt bzw. die Aufgabe** geltende Frist anwenden.
+4. Bei digitalen Unterlagen zusätzlich ordnungsmäßige, nachvollziehbare und unveränderbare Aufbewahrung beachten.
+
+> **Wichtig:** Aufbewahrungsfristen können sich gesetzlich ändern. Deshalb speichert der Trainer hier bewusst keine alte Prüfungstabelle als zeitlose Regel. Wenn die IHK eine Frist vorgibt oder der Prüfungsstand eindeutig ist, gilt diese Vorgabe.
+
+## 11. Prüfungssituationen
 
 **A:** Ein Unternehmen stellt 2.380 € brutto in Rechnung (19 %). Berechnen Sie Netto und USt.
 
@@ -121,7 +150,7 @@ Sachliche Rechnungsprüfung; anschließend gegebenenfalls rechnerische Auswirkun
 
 </details>
 
-## 10. Selbstkontrolle
+## 12. Selbstkontrolle
 
 1. Umsatzsteuer und Vorsteuer voneinander abgrenzen.
 2. USt-Zahllast aus Ausgangs- und Eingangsrechnungen berechnen.

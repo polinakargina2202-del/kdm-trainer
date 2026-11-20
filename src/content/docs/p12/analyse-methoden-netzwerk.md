@@ -144,6 +144,30 @@ Separates Gäste-VLAN bzw. Gäste-Netz und Firewall-/Routing-Regeln, die den Zug
 
 </details>
 
+## 11. Use-Case-Diagramme genauer lesen: include, extend und Generalisierung
+
+Die Grundelemente eines Use-Case-Diagramms sind **Akteur**, **Anwendungsfall** und **Systemgrenze**. In Prüfungen können zusätzlich Beziehungen verlangt werden.
+
+### «include»
+
+Ein Basis-Anwendungsfall bindet einen anderen Anwendungsfall **verpflichtend** ein. Das eignet sich für wiederverwendbares Verhalten.
+
+**Beispiel:** „Buch ausleihen“ **include** „Nutzer authentifizieren“ – die Authentifizierung ist notwendiger Bestandteil.
+
+### «extend»
+
+Ein Anwendungsfall erweitert einen Basis-Anwendungsfall **optional oder unter einer Bedingung**.
+
+**Beispiel:** „Mahngebühr berechnen“ **extend** „Buch zurückgeben“, aber nur wenn die Leihfrist überschritten wurde.
+
+### Generalisierung
+
+Ein allgemeiner Akteur oder Anwendungsfall kann durch spezialisierte Varianten konkretisiert werden.
+
+**Beispiel:** Der allgemeine Akteur „Mitarbeiter“ wird in „Bibliothekar“ und „Administrator“ spezialisiert.
+
+> **Merksatz:** **include = muss mitlaufen**, **extend = kann bedingt ergänzen**.
+
 <div class="kdm-practice" data-topic="p12/analyse-methoden-netzwerk"></div>
 <script type="module" src="/kdm-trainer/trainer/trainer.js"></script>
 

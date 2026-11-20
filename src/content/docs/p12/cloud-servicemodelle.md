@@ -375,6 +375,34 @@ Ein scheinbar günstiger Cloud-Dienst kann über mehrere Jahre teurer werden, we
 
 ---
 
+## 10. Hosting und Housing unterscheiden
+
+Die Begriffe klingen ähnlich, beschreiben aber unterschiedliche Verantwortungsverteilungen.
+
+### Hosting
+
+Beim **Hosting** stellt der Dienstleister typischerweise die Server-/IT-Ressourcen bereit und betreibt sie für den Kunden. Je nach Vertrag übernimmt der Anbieter auch Betriebssystem, Wartung, Backup oder weitere Services.
+
+### Housing / Colocation
+
+Beim **Housing** bringt der Kunde typischerweise **eigene Hardware** in das Rechenzentrum eines Dienstleisters. Der Rechenzentrumsanbieter stellt vor allem Rahmenbedingungen wie:
+- Rack-/Stellfläche,
+- Stromversorgung,
+- Klimatisierung,
+- physische Sicherheit,
+- Netzanbindung.
+
+Der Kunde bleibt für seine eigene Hardware und – je nach Vertrag – deren Administration verantwortlich.
+
+| | Hosting | Housing |
+|---|---|---|
+| Hardware | typischerweise Anbieter | typischerweise Kunde |
+| Rechenzentrum | Anbieter | Anbieter |
+| Betrieb | je nach Serviceumfang stärker Anbieter | stärker Kunde |
+| Vorteil | weniger eigener Hardwarebetrieb | eigene Hardware bei professioneller RZ-Infrastruktur |
+
+> **Prüfungstipp:** Frage dich: **Wem gehört der Server?** Eigene Hardware im fremden Rechenzentrum deutet auf Housing.
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Beispielformulierung |

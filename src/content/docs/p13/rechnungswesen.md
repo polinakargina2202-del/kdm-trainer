@@ -3,7 +3,7 @@ title: Rechnungswesen & Bilanz
 description: Rechnungsbestandteile, Bilanzveränderungen, Skonto, Abschreibung und Kennzahlen
 sidebar:
   badge:
-    text: 4/7 Prüfungen
+    text: Bilanz/Kennzahlen 5/10
     variant: caution
 ---
 

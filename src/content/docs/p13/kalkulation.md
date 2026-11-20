@@ -3,7 +3,7 @@ title: Kalkulation & Kostenrechnung
 description: Break-even, Nutzwertanalyse, KLR, BAB, Deckungsbeitrag, Prozesskosten und Preiskalkulation
 sidebar:
   badge:
-    text: 4/7 Prüfungen
+    text: Wirtschaftlichkeit 7/10
     variant: caution
 ---
 
@@ -49,7 +49,24 @@ monatlicher Gesamt-DB = 12 × 79 € = 948 €
 
 ---
 
-## 2. Nutzwertanalyse
+## 2. Paarvergleich und Nutzwertanalyse
+
+### Paarvergleich – Gewichtungen systematisch ableiten
+
+Wenn mehrere Kriterien bewertet werden sollen, kann ihre Wichtigkeit zuvor **paarweise** verglichen werden.
+
+Jedes Kriterium wird mit jedem anderen Kriterium genau einmal verglichen. Ein einfaches Bewertungsschema kann lauten:
+- wichtiger = 1 Punkt,
+- gleich wichtig = 0,5 Punkte,
+- weniger wichtig = 0 Punkte.
+
+Danach werden die Punkte je Kriterium summiert und daraus eine Rangfolge bzw. Gewichtung abgeleitet.
+
+**Beispiel:** Für Housing vs. Hosting werden Implementierungskosten, Skalierbarkeit und laufende Kosten verglichen. Wenn die laufenden Kosten in mehreren Paaren als wichtiger bewertet werden, erhalten sie später ein höheres Gewicht in der Nutzwertanalyse.
+
+> **Prüfungsfalle:** Ein Paarvergleich bewertet zunächst die **Wichtigkeit der Kriterien**. Erst die Nutzwertanalyse bewertet anschließend die **Alternativen anhand dieser Kriterien**.
+
+### Nutzwertanalyse
 
 Bewertet Alternativen anhand **qualitativer Kriterien** durch gewichtete Punktvergabe.
 

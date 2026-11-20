@@ -3,7 +3,7 @@ title: Datenbanken, Datenanalyse & SQL
 description: Relationale Datenbanken, Datenqualität, Datenaufbereitung, Analyse, Visualisierung und prüfungsrelevante SQL-Syntax
 sidebar:
   badge:
-    text: 7/7 Prüfungen
+    text: DB 10/10 · SQL 9/10
     variant: danger
 ---
 
