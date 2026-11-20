@@ -109,6 +109,42 @@ Beispiel: 96.000 € kalkulierte Kosten / 1.200 verrechenbare Stunden = **80 €
 
 **Prozesskostenrechnung:** Gemeinkosten anhand von Tätigkeiten und Kostentreibern zuordnen. Beispiel: Anzahl Supporttickets als Treiber des Supportaufwands.
 
+## 9. Personalkosten → Stundenkosten → Prozesskosten
+
+Bei digitalisierten Prozessen kann eine Aufgabe die Kosten einer manuellen Tätigkeit aus der Arbeitszeit ableiten.
+
+### Schritt 1: Arbeitgeber-Personalkosten
+
+Zum Bruttogehalt kommen die in der Aufgabe genannten Arbeitgeberanteile und gegebenenfalls weitere personalbezogene Kosten.
+
+Vereinfachtes Beispiel:
+- Bruttogehalt: 3.000 €,
+- Arbeitgeberanteile laut Aufgabe: 600 €.
+
+```text
+monatliche Arbeitgeberkosten = 3.600 €
+```
+
+### Schritt 2: Kosten je Arbeitsminute
+
+Wenn die Aufgabe z. B. 160 produktive Arbeitsstunden pro Monat vorgibt:
+
+```text
+160 h × 60 = 9.600 Minuten
+3.600 € / 9.600 min = 0,375 € je Minute
+```
+
+### Schritt 3: Prozesskosten
+
+Dauert ein Vorgang 8 Minuten und tritt 2.000-mal im Monat auf:
+
+```text
+8 × 2.000 = 16.000 Minuten
+16.000 × 0,375 € = 6.000 € Personalkosten
+```
+
+> **Prüfungstipp:** Nutze nur die Beitragssätze, Arbeitszeiten und Zuschläge, die in der Aufgabe angegeben werden. Sozialversicherungswerte ändern sich und sollen nicht ungeprüft aus alten Prüfungen übernommen werden.
+
 ## 9. Kurze Prüfungsfälle
 
 **A:** Liquidität 2. Grades: Bank 10.000 €, Forderungen 20.000 €, Vorräte 40.000 €, kurzfristige Verbindlichkeiten 50.000 €. Berechnen.
