@@ -1,173 +1,582 @@
 ---
 title: Beschaffung & Wareneingang
-description: Lieferavis, Wareneingang, Mängel, Gewährleistung, Angebotsvergleich, Skonto
+description: Beschaffungsprozess, Lieferavis, Wareneingang, Mängel, Angebotsvergleich, Skonto und IT-Bedarf
 sidebar:
   badge:
     text: 7/10 Prüfungen
     variant: caution
 ---
 
-## 1. Beschaffungsprozess
+> **Prüfungsrelevanz:** Beschaffung wird selten nur als „Bestellung“ geprüft. Typische Aufgaben verbinden **Prozessablauf, Warenprüfung, Mängel, Angebotsvergleich, Bezugspreis und qualitative Auswahlkriterien** miteinander.
+
+# Beschaffung verstehen: vom Bedarf bis zur Zahlung
+
+Ein guter Beschaffungsprozess beantwortet mehrere Fragen:
+
+1. Was wird überhaupt benötigt?
+2. Welcher Anbieter passt fachlich und wirtschaftlich?
+3. Was wurde bestellt?
+4. Was wurde tatsächlich geliefert?
+5. Gibt es Abweichungen oder Mängel?
+6. Ist die Rechnung korrekt?
+7. Wann und wie wird bezahlt?
+
+Die Prozesskette hilft dir, Prüfungsfälle richtig einzuordnen:
 
 ```text
-Bedarfsermittlung → Lieferantenauswahl → Angebotseinholung →
-Angebotsvergleich → Bestellung → Lieferavis → Wareneingang →
-Rechnungsprüfung → Zahlung
+Bedarfsermittlung
+→ Lieferantenauswahl
+→ Angebotseinholung
+→ Angebotsvergleich
+→ Bestellung
+→ Lieferavis
+→ Wareneingang
+→ Rechnungsprüfung
+→ Zahlung
 ```
 
-## 2. Lieferavis
+---
 
-**Lieferavis:** Vorabankündigung einer Warenlieferung. Es hilft, Personal, Lagerplatz und Prüfmittel vorzubereiten. Typische Angaben: Liefertermin, Lieferant/Spediteur, Artikel/Menge, Bestell-/Lieferscheinnummer und Packstücke.
+## 1. Bedarfsermittlung – bevor überhaupt bestellt wird
 
-## 3. Warenannahmeprotokoll und Wareneingang
+Am Anfang muss geklärt werden, **was** benötigt wird.
 
-Typische Inhalte:
-- Datum/Uhrzeit,
-- Anlieferer,
-- Lieferschein-/Bestellnummer,
-- Art und Menge,
-- Zustand/Beschädigungen,
-- Unterschrift.
+Bei einer IT-Beschaffung reicht „wir brauchen neue PCs“ nicht.
 
-Prüfen: **Identität, Menge, Qualität/Zustand** und Übereinstimmung mit Bestellung/Lieferschein.
+Sinnvolle Anforderungen können sein:
+- Anzahl der Geräte,
+- benötigte Leistung,
+- Betriebssystem,
+- Schnittstellen,
+- Sicherheitsanforderungen,
+- Kompatibilität mit vorhandenen Systemen,
+- Support,
+- Liefertermin,
+- Budget.
 
-## 4. Mängelarten
+### Beispiel
 
-| Mängelart | Beschreibung | Typisches Vorgehen im Handelskauf |
-|---|---|---|
-| **offensichtlicher Mangel** | bei ordnungsgemäßer Untersuchung erkennbar | dokumentieren und unverzüglich rügen |
-| **verdeckter/versteckter Mangel** | wird erst später erkennbar | nach Entdeckung unverzüglich anzeigen |
+Ein Unternehmen benötigt 20 neue Notebooks für Videokonferenzen.
 
-Im **beiderseitigen Handelskauf** ist § 377 HGB wichtig: Ware nach Ablieferung unverzüglich untersuchen und erkennbare Mängel unverzüglich rügen; verdeckte Mängel nach Entdeckung unverzüglich anzeigen.
+Eine brauchbare Bedarfsermittlung könnte festlegen:
+- mindestens 16 GB RAM,
+- integrierte Kamera,
+- kompatibel mit vorhandener Dockingstation,
+- TPM / geeignete Sicherheitsfunktionen,
+- Lieferung innerhalb von vier Wochen.
 
-## 5. Gewährleistung/Mängelrechte und Garantie
+> **Prüfungstipp:** Anforderungen sollten möglichst **konkret und prüfbar** sein.
 
-| | gesetzliche Mängelrechte | Garantie |
-|---|---|---|
-| Grundlage | Gesetz, z. B. Kaufrecht | freiwilliges zusätzliches Versprechen |
-| Voraussetzung | Sachmangel nach den gesetzlichen Voraussetzungen | Garantiebedingungen |
-| typische Rechte | zunächst Nacherfüllung; unter Voraussetzungen Rücktritt, Minderung, Schadenersatz | nach Garantiebedingungen |
-| Frist | gesetzliche Fristen, bei Kauf beweglicher Sachen grundsätzlich zwei Jahre; Sonderregeln/vertragliche Spielräume beachten | nach Garantieversprechen |
+---
 
-Beim Verbrauchsgüterkauf gilt für einen innerhalb eines Jahres seit Gefahrübergang auftretenden mangelhaften Zustand grundsätzlich die Vermutung des § 477 BGB, soweit die gesetzlichen Voraussetzungen erfüllt sind.
+## 2. Lieferanten auswählen – nicht nur auf den Preis schauen
 
-> **Merksatz:** Gesetzliche Mängelrechte sind nicht dasselbe wie eine freiwillige Garantie.
+Ein niedriger Preis bedeutet nicht automatisch, dass ein Anbieter wirtschaftlich die beste Lösung liefert.
 
-## 6. Angebotsvergleich / Bezugspreis
+Mögliche Kriterien:
+- Lieferzuverlässigkeit,
+- Qualität,
+- Referenzen,
+- Zertifizierungen,
+- Support,
+- Reklamationsverhalten,
+- Datenschutz und IT-Sicherheit,
+- Integrationsfähigkeit,
+- Nachhaltigkeit,
+- Gesamtkosten über die Nutzungsdauer.
+
+### Quantitativ oder qualitativ?
+
+**Quantitative Kriterien** lassen sich direkt in Zahlen ausdrücken:
+- Preis,
+- Lieferzeit,
+- Zahlungsziel,
+- jährliche Betriebskosten.
+
+**Qualitative Kriterien** beschreiben Eigenschaften:
+- Supportqualität,
+- Bedienbarkeit,
+- Zuverlässigkeit,
+- Kompatibilität.
+
+Qualitative Kriterien können später in einer Nutzwertanalyse trotzdem mit Punkten bewertet werden.
+
+---
+
+## 3. Technische und anbieterbezogene Kriterien unterscheiden
+
+Das wird in IT-Beschaffungsaufgaben gern getrennt.
+
+### Technische Kriterien
+
+Sie beziehen sich auf die Lösung selbst:
+- Schnittstellen,
+- Kompatibilität,
+- Performance,
+- Sicherheitsfunktionen,
+- Erweiterbarkeit,
+- unterstützte Datenformate.
+
+### Anbieterbezogene Kriterien
+
+Sie beschreiben den Lieferanten:
+- Referenzen,
+- Erfahrung,
+- Supportqualität,
+- Erreichbarkeit,
+- Zertifizierungen,
+- wirtschaftliche Stabilität.
+
+### Beispiel
+
+„Die Lösung unterstützt REST-API.“
+
+→ technisches Kriterium.
+
+„Der Anbieter besitzt Erfahrung aus vergleichbaren Projekten.“
+
+→ anbieterbezogenes Kriterium.
+
+> **Prüfungsfalle:** Nicht jede Sicherheitsanforderung ist nur ein „Pluspunkt“. Gesetzliche oder zwingende Mindestanforderungen müssen zunächst als **Muss-Kriterium** erfüllt sein.
+
+---
+
+## 4. Angebotsvergleich – quantitativ und qualitativ kombinieren
+
+Ein vollständiger Angebotsvergleich kann zwei Ebenen enthalten:
+
+### Quantitativer Vergleich
+
+Zum Beispiel:
+- Bezugspreis,
+- laufende Kosten,
+- Zahlungsbedingungen.
+
+### Qualitativer Vergleich
+
+Zum Beispiel:
+- Support,
+- Kompatibilität,
+- Zuverlässigkeit.
+
+**Prüfungslogik:**  
+Ein Anbieter kann beim Preis gewinnen, aber bei einem zwingenden technischen Kriterium ausscheiden.
+
+---
+
+## 5. Bezugspreis – die Rechenkette verstehen
+
+Der Bezugspreis zeigt, was die Ware das Unternehmen nach Preisnachlässen und Bezugskosten tatsächlich kostet.
 
 ```text
 Listeneinkaufspreis
 − Rabatt
 = Zieleinkaufspreis
+
 − Skonto
 = Bareinkaufspreis
+
 + Bezugskosten
 = Bezugspreis
 ```
 
-Qualitative Kriterien: Lieferzuverlässigkeit, Qualität/Zertifizierungen, Zahlungsbedingungen, Reklamationsverhalten, Support, Nachhaltigkeit, Integrationsfähigkeit.
+### Beispiel
 
-## 7. Skonto vs. Rabatt
+Listeneinkaufspreis: 10.000 €  
+Rabatt: 10 %  
+Skonto: 2 %  
+Bezugskosten: 300 €
 
-**Rabatt:** Preisnachlass unabhängig vom späteren Zahlungszeitpunkt.  
-**Skonto:** Nachlass bei Zahlung innerhalb einer bestimmten Frist.
+**1. Rabatt**
+
+```text
+10.000 × 10 % = 1.000 €
+10.000 − 1.000 = 9.000 €
+```
+
+**2. Skonto**
+
+```text
+9.000 × 2 % = 180 €
+9.000 − 180 = 8.820 €
+```
+
+**3. Bezugskosten**
+
+```text
+8.820 + 300 = 9.120 €
+```
+
+→ Bezugspreis = **9.120 €**
+
+### Warum ist die Reihenfolge wichtig?
+
+Skonto wird hier auf den Zieleinkaufspreis berechnet, nicht direkt auf den ursprünglichen Listenpreis.
+
+> **Prüfungsfalle:** Rabatt und Skonto nicht einfach addieren und gemeinsam vom Listenpreis abziehen.
+
+---
+
+## 6. Rabatt und Skonto unterscheiden
+
+### Rabatt
+
+Ein Preisnachlass, der typischerweise bereits bei der Preisbildung berücksichtigt wird.
+
+Beispiele:
+- Mengenrabatt,
+- Kundenrabatt.
+
+### Skonto
+
+Ein Nachlass für Zahlung innerhalb einer bestimmten Frist.
+
+Beispiel:
+- 2 % Skonto bei Zahlung innerhalb von 10 Tagen,
+- sonst 30 Tage Zahlungsziel.
+
+> **Merksatz:** Rabatt hängt typischerweise von der Preisvereinbarung ab. Skonto hängt typischerweise vom **Zahlungszeitpunkt** ab.
+
+---
+
+## 7. Skonto-Vorteilhaftigkeit
+
+Wenn ein Unternehmen Skonto nicht nutzt, verzichtet es auf einen Preisnachlass.
 
 Vereinfachter Jahresvergleich:
 
 ```text
-Skontoverzichtskosten ≈ Skonto% / (100 − Skonto%) × 360 / (Zahlungsziel − Skontofrist)
+Skontoverzichtskosten
+≈ Skonto% / (100 − Skonto%)
+  × 360 / (Zahlungsziel − Skontofrist)
 ```
 
-Beispiel 2 % Skonto, 10 Tage Skontofrist, 30 Tage Ziel:
-`(2/98) × (360/20) ≈ 36,7 % p.a.`
+Beispiel:
 
-Bei 8 % Kosten einer kurzfristigen Finanzierung wäre die Skontonutzung **in diesem Beispiel** wirtschaftlich vorteilhaft.
+2 % Skonto  
+10 Tage Skontofrist  
+30 Tage Zahlungsziel
 
-> **Wichtig:** Skonto lohnt sich nicht „immer“. Kosten des Skontoverzichts, alternative Finanzierung und Liquidität vergleichen.
+```text
+2 / 98 × 360 / 20
+≈ 36,7 % p.a.
+```
 
-## 8. Besitz und Eigentum
+Wenn kurzfristige Finanzierung beispielsweise nur 8 % kostet, wäre die Skontonutzung in diesem Beispiel wirtschaftlich vorteilhaft.
+
+> **Wichtig:** Skonto nicht pauschal als „immer sinnvoll“ bezeichnen. Liquidität und alternative Finanzierung mitprüfen.
+
+---
+
+## 8. Lieferavis – Vorbereitung auf eine Lieferung
+
+Ein **Lieferavis** ist eine Vorabankündigung der Lieferung.
+
+Typische Angaben:
+- Liefertermin,
+- Lieferant oder Spediteur,
+- Artikel und Menge,
+- Bestell-/Lieferscheinnummer,
+- Anzahl der Packstücke.
+
+### Nutzen
+
+Das Unternehmen kann:
+- Personal bereitstellen,
+- Lagerplatz reservieren,
+- Prüfmittel vorbereiten,
+- Anlieferung organisatorisch planen.
+
+> **Prüfungsfalle:** Lieferavis ist **nicht** dasselbe wie Lieferschein oder Rechnung.
+
+---
+
+## 9. Wareneingang – was tatsächlich geliefert wurde
+
+Beim Wareneingang wird geprüft, ob Lieferung und Bestellung zusammenpassen.
+
+Typische Prüfpunkte:
+- Identität,
+- Menge,
+- Zustand,
+- sichtbare Beschädigungen,
+- Übereinstimmung mit Bestellung und Lieferschein.
+
+### Warenannahmeprotokoll
+
+Mögliche Inhalte:
+- Datum und Uhrzeit,
+- Anlieferer,
+- Bestell-/Lieferscheinnummer,
+- Art und Menge,
+- Beschädigungen,
+- Bemerkungen,
+- Unterschrift.
+
+### Beispiel
+
+Bestellt:
+- 10 Monitore.
+
+Geliefert:
+- 9 Monitore,
+- davon einer sichtbar beschädigt.
+
+Dann müssen sowohl die **Mengenabweichung** als auch die **Beschädigung** dokumentiert werden.
+
+---
+
+## 10. Offensichtliche und verdeckte Mängel
+
+### Offensichtlicher Mangel
+
+Bei ordnungsgemäßer Untersuchung erkennbar.
+
+Beispiele:
+- Gehäuse beschädigt,
+- falsche Menge,
+- falsches Modell.
+
+### Verdeckter Mangel
+
+Wird erst später erkennbar.
+
+Beispiel:
+- ein Netzteil fällt erst nach einigen Tagen aus.
+
+Im beiderseitigen Handelskauf ist § 377 HGB wichtig:
+- Ware nach Ablieferung unverzüglich untersuchen,
+- erkennbare Mängel unverzüglich rügen,
+- verdeckte Mängel nach Entdeckung unverzüglich anzeigen.
+
+> **Prüfungsstrategie:** Erst fragen: **Wann war der Mangel erkennbar?** Danach das passende Vorgehen einordnen.
+
+---
+
+## 11. Gesetzliche Mängelrechte und Garantie unterscheiden
+
+Diese beiden Begriffe sind nicht dasselbe.
+
+| | gesetzliche Mängelrechte | Garantie |
+|---|---|---|
+| Grundlage | Gesetz | freiwilliges zusätzliches Versprechen |
+| Auslöser | Sachmangel nach gesetzlichen Voraussetzungen | Garantiebedingungen |
+| typische Folge | zunächst Nacherfüllung; weitere Rechte unter Voraussetzungen | nach Garantieversprechen |
+| Dauer | gesetzliche Fristen | nach Garantiebedingungen |
+
+Bei Kauf beweglicher Sachen gelten gesetzliche Fristen; Sonderregeln und vertragliche Spielräume sind je nach Fall zu beachten.
+
+Beim Verbrauchsgüterkauf gilt für einen innerhalb eines Jahres seit Gefahrübergang auftretenden mangelhaften Zustand grundsätzlich die Vermutung des § 477 BGB, soweit die gesetzlichen Voraussetzungen erfüllt sind.
+
+> **Merksatz:** Garantie ist **zusätzlich freiwillig**. Gesetzliche Mängelrechte bestehen unabhängig davon, wenn ihre Voraussetzungen erfüllt sind.
+
+---
+
+## 12. Nacherfüllung – meistens der erste Schritt
+
+Bei einem Sachmangel steht grundsätzlich zunächst die **Nacherfüllung** im Vordergrund.
+
+Je nach Fall kann dies bedeuten:
+- Reparatur / Nachbesserung,
+- Ersatzlieferung.
+
+Unter den gesetzlichen Voraussetzungen können später weitere Rechte relevant werden:
+- Minderung,
+- Rücktritt,
+- Schadenersatz.
+
+> **Prüfungsfalle:** Nicht sofort mit „Rücktritt“ antworten, wenn noch Nacherfüllung möglich und vorrangig ist.
+
+---
+
+## 13. Lieferverzug – zuerst Voraussetzungen prüfen
+
+Bei Lieferverzug solltest du gedanklich in dieser Reihenfolge vorgehen:
+
+1. Ist die Leistung fällig?
+2. Wurde überhaupt nicht oder nicht rechtzeitig geliefert?
+3. Ist eine Mahnung erforderlich oder ausnahmsweise entbehrlich?
+4. Welche Folge passt zur Situation?
+
+Je nach Voraussetzungen können in Betracht kommen:
+- weiterhin Erfüllung verlangen,
+- Verzögerungsschaden,
+- nach Fristsetzung gegebenenfalls Rücktritt,
+- gegebenenfalls Schadenersatz statt Leistung.
+
+> **Prüfungstipp:** Nicht nur Rechtsfolge nennen. Kurz erklären, **warum sie zum Fall passt**.
+
+---
+
+## 14. Besitz und Eigentum im Beschaffungsfall
 
 - **Besitz:** tatsächliche Sachherrschaft.
-- **Eigentum:** rechtliche Herrschaft.
+- **Eigentum:** rechtliche Zuordnung.
 
-Beim gemieteten Notebook ist der Mieter Besitzer; der Vermieter bleibt grundsätzlich Eigentümer.
+Beispiel:
 
-## 9. IT-Bedarf und Integrationsfähigkeit
+Ein Unternehmen mietet ein Notebook.
 
-Vor einer IT-Beschaffung prüfen:
-- Kompatibilität zu vorhandener Hard-/Software,
-- Schnittstellen/APIs und Datenformate,
+- Unternehmen = Besitzer,
+- Vermieter = grundsätzlich Eigentümer.
+
+Bei Kauf mit Eigentumsvorbehalt kann die Ware bereits beim Käufer sein, obwohl das Eigentum noch nicht vollständig übergegangen ist.
+
+---
+
+## 15. IT-Bedarf und Integrationsfähigkeit
+
+Bei IT-Beschaffung solltest du neben dem Preis besonders prüfen:
+
+- Kompatibilität zu vorhandener Hard- und Software,
+- Schnittstellen und APIs,
+- Datenformate,
 - Skalierbarkeit,
-- Datenschutz/IT-Sicherheit,
-- Lizenz-/Supportmodell,
-- Wartbarkeit/Updates,
-- Lieferfähigkeit und Anbieterabhängigkeit,
-- TCO und Nachhaltigkeit.
+- Datenschutz,
+- IT-Sicherheit,
+- Lizenzmodell,
+- Support,
+- Wartbarkeit,
+- Updatefähigkeit,
+- Lieferfähigkeit,
+- Anbieterabhängigkeit,
+- TCO,
+- Nachhaltigkeit.
 
-**Interoperabilität:** Systeme können sinnvoll zusammenarbeiten und Daten/Funktionen austauschen.
+### Interoperabilität
 
-## 10. Vertragsstörungen im Beschaffungsprozess
+Interoperabilität bedeutet, dass Systeme sinnvoll zusammenarbeiten und Daten oder Funktionen austauschen können.
 
-### Lieferverzug
-1. Ist Leistung fällig?
-2. Ist Mahnung erforderlich oder ausnahmsweise entbehrlich?
-3. Welche Rechtsfolgen passen zum Fall?
+**Beispiel:**  
+Eine neue CRM-Lösung kann Kundendaten automatisiert mit dem ERP austauschen.
 
-Je nach Voraussetzungen kommen Erfüllung, Verzögerungsschaden und nach Fristsetzung ggf. Rücktritt/Schadenersatz statt Leistung in Betracht.
+---
 
-### Sachmangel
-Grundsätzlich steht die **Nacherfüllung** im Vordergrund. Unter gesetzlichen Voraussetzungen folgen ggf. Minderung, Rücktritt und Schadenersatz.
+## 16. TCO – nicht nur den Kaufpreis betrachten
 
-## 11. IT-Dienstleistungen kontrollieren
+**Total Cost of Ownership** betrachtet die Gesamtkosten über den relevanten Nutzungszeitraum.
 
-Bei Dienstleistungen statt klassischem Wareneingang prüfen:
+Mögliche Bestandteile:
+- Anschaffung,
+- Einrichtung,
+- Migration,
+- Schulung,
+- Lizenzen,
+- Wartung,
+- Support,
+- Energie,
+- Betrieb,
+- Exit-/Wechselkosten.
+
+### Beispiel
+
+Anbieter A:
+- Kaufpreis 8.000 €,
+- Betrieb 4.000 €.
+
+Anbieter B:
+- Kaufpreis 9.500 €,
+- Betrieb 1.500 €.
+
+Nur der Kaufpreis spricht für A.
+
+TCO:
+- A = 12.000 €
+- B = 11.000 €
+
+→ B wäre in diesem vereinfachten Beispiel über den Zeitraum günstiger.
+
+---
+
+## 17. IT-Dienstleistungen kontrollieren
+
+Bei Dienstleistungen gibt es keinen klassischen Wareneingang wie bei Hardware.
+
+Dann werden andere Nachweise wichtig:
 - Leistungsumfang,
-- Termine/Meilensteine,
+- Termine und Meilensteine,
 - SLA-Kennzahlen,
 - Stunden-/Leistungsnachweise,
-- Test-/Abnahmeergebnisse,
+- Test- und Abnahmeergebnisse,
 - Dokumentation,
-- offene Mängel/Abweichungen.
+- offene Abweichungen.
 
-## 12. Prüfungsvertiefung: Qualitative Kriterien beim Angebotsvergleich
+### Beispiel
 
-**Originalbezug:** In **AP2-2 Sommer 2023** wurden zwei **qualitative Kaufentscheidungskriterien** verlangt. In **AP2-1 Sommer 2022** mussten **technische** und **anbieterbezogene** Kriterien für eine Nutzwertanalyse unterschieden werden.
+Ein externer Dienstleister soll eine Schnittstelle entwickeln.
 
-**Quantitativ** bedeutet: in Zahlen wie Euro, Prozent oder Tagen messbar (z. B. Anschaffungspreis, Lieferzeit, jährliche Betriebskosten). **Qualitativ** bedeutet: eine Eigenschaft beziehungsweise Eignung beurteilen (z. B. Supportqualität, Verständlichkeit, Nachhaltigkeit). Qualitative Kriterien lassen sich für eine Nutzwertanalyse trotzdem **mit Punkten bewerten**.
+Dann wird nicht geprüft, ob „10 Stück geliefert wurden“, sondern zum Beispiel:
+- funktioniert die Schnittstelle,
+- wurden Tests bestanden,
+- ist Dokumentation vorhanden,
+- wurden Termine eingehalten?
 
-### Acht qualitative Kriterien mit Begründung
+---
 
-| Kriterium | Was konkret geprüft wird | Prüfungsreife Formulierung |
-|---|---|---|
-| **Zuverlässigkeit des Lieferanten** | Liefert er vollständig, sorgfältig und vereinbarungsgemäß? | „Eine hohe Lieferzuverlässigkeit verringert das Risiko von Terminverzögerungen und Produktionsunterbrechungen.“ |
-| **Reklamationsverhalten** | Wie schnell und kundenorientiert werden Mängel bearbeitet? | „Ein professionelles Reklamationsmanagement verkürzt die Zeit bis zur Mängelbehebung und reduziert den internen Bearbeitungsaufwand.“ |
-| **Referenzen und Erfahrung** | Kennt der Anbieter vergleichbare Branchen, Anforderungen und Projekte? | „Erfahrungen aus ähnlichen Projekten reduzieren das Risiko fachlicher und technischer Fehlentscheidungen.“ |
-| **Zertifizierungen / Qualitätsmanagement** | Sind geeignete dokumentierte Verfahren oder unabhängige Nachweise vorhanden? | „Geeignete Zertifizierungen können Hinweise auf standardisierte Qualitäts- und Sicherheitsprozesse geben.“ |
-| **Kompatibilität / Interoperabilität** | Passen Schnittstellen, Datenformate und Produkte zur bestehenden IT? | „Eine kompatible Lösung reduziert zusätzliche Anpassungsarbeiten und erleichtert die Systemintegration.“ |
-| **Supportqualität / Servicezeiten** | Wann und mit welcher Qualität hilft der Anbieter im Störungsfall? | „Erreichbarer, fachkundiger Support kann Ausfallzeiten verringern.“ |
-| **Datenschutz und Informationssicherheit** | Sind notwendige Verträge, Berechtigungen, Nachweise und Schutzmaßnahmen vorhanden? | „Geeignete Sicherheitsmaßnahmen reduzieren das Risiko unbefugter Zugriffe und unterstützen die Erfüllung rechtlicher Pflichten.“ |
-| **Nachhaltigkeit / Transportwege** | Energieeffizienz, Verpackung, Reparierbarkeit und Lieferwege | „Eine reparierbare und energieeffiziente Lösung kann Ressourcen schonen und Elektroschrott reduzieren.“ |
+## 18. Qualitative Kriterien prüfungsreif formulieren
 
-### Technisch oder anbieterbezogen?
+Eine gute Antwort besteht aus **Kriterium + Bedeutung im Fall**.
 
-| Technisches Auswahlkriterium | Anbieterbezogenes Auswahlkriterium |
+### Schwach
+
+„Support.“
+
+### Besser
+
+„Die Supportqualität sollte bewertet werden, weil bei Störungen eine schnelle und fachkundige Unterstützung Ausfallzeiten reduzieren kann.“
+
+### Acht häufig brauchbare Kriterien
+
+| Kriterium | Warum kann es wichtig sein? |
 |---|---|
-| Sicherheitsfunktionen der Lösung | Referenzen des Lieferanten |
-| Vorhandene Software-Schnittstellen | Erreichbarkeit des Supports |
-| Kompatibilität und Erweiterbarkeit | Zertifizierungen des Unternehmens |
-| Verfügbarkeit geeigneter Gerätefunktionen | Verlässlichkeit und Erfahrung des Dienstleisters |
-
-**Prüfungsfalle:** „Datenschutz“ ist bei rechtlich verpflichtenden Mindestanforderungen **kein bloßes Punkte-Extra**. Solche Anforderungen zunächst als **Muss-Kriterium** prüfen; eine Lösung, die sie nicht erfüllt, wird nicht durch einen niedrigen Preis oder viele Bewertungspunkte zulässig.
-
-### In zwei Sätzen eine Auswahl begründen
-
-„Ich bewerte **[Kriterium]**, weil **[konkrete Bedeutung im Fall]**. Anbieter A ist diesbezüglich vorzuziehen, sofern **[vergleichbarer Nachweis aus dem Sachverhalt]** vorliegt.“
-
-**Mini-Aufgabe:** „Nennen und erläutern Sie zwei qualitative Kriterien für die Auswahl von Arbeitsplätzen mit Videokonferenztechnik.“ Mögliche Kriterien: **Bedienbarkeit** (geringerer Einarbeitungsaufwand) und **Kompatibilität** (Zusammenarbeit mit bereits eingesetzten Konferenzsystemen).
+| Lieferzuverlässigkeit | reduziert Terminrisiken |
+| Reklamationsverhalten | beschleunigt Mängelbehebung |
+| Referenzen | zeigen Erfahrung mit ähnlichen Projekten |
+| Zertifizierungen | können standardisierte Prozesse belegen |
+| Kompatibilität | reduziert Anpassungsaufwand |
+| Supportqualität | kann Ausfallzeiten verkürzen |
+| Datenschutz/Sicherheit | reduziert Risiken und unterstützt Pflichten |
+| Nachhaltigkeit | kann Ressourcen- und Betriebseffekte verbessern |
 
 ---
 
+## 19. Prüfungsstrategie für Beschaffungsfälle
+
+Wenn du eine längere Beschaffungssituation bekommst:
+
+1. **Prozessphase bestimmen.**
+2. Prüfen, ob es um Ware, Dienstleistung oder beides geht.
+3. Quantitative und qualitative Kriterien trennen.
+4. Muss-Kriterien zuerst prüfen.
+5. Bei Preisen die vollständige Rechenkette verwenden.
+6. Bei Lieferung Menge/Zustand/Identität prüfen.
+7. Mangelart bestimmen.
+8. passende Reaktion begründen.
+
+### Typische Fehler
+
+- Lieferavis mit Lieferschein verwechseln.
+- nur den Listenpreis vergleichen.
+- Rabatt und Skonto zusammenrechnen.
+- bei Mängeln sofort Rücktritt nennen.
+- technische und anbieterbezogene Kriterien vermischen.
+- Muss-Kriterium durch hohe Nutzwertpunkte „kompensieren“.
+- bei IT-Dienstleistung einen klassischen Wareneingang erwarten.
+
 ---
+
+## Kurz zusammengefasst
+
+- Beschaffung beginnt mit dem **Bedarf**, nicht mit der Bestellung.
+- Angebotsvergleich = quantitativ **und** qualitativ.
+- Bezugspreis: Liste − Rabatt − Skonto + Bezugskosten.
+- Lieferavis = Vorankündigung.
+- Wareneingang = Lieferung tatsächlich prüfen.
+- offensichtliche und verdeckte Mängel unterscheiden.
+- gesetzliche Mängelrechte ≠ Garantie.
+- bei Sachmangel grundsätzlich Nacherfüllung zuerst einordnen.
+- IT-Beschaffung nach Integration, Sicherheit, Support und TCO bewerten.
+
 <div class="kdm-calculators" data-calculators="bezugspreis,skonto"></div>
 <div class="kdm-practice" data-topic="p13/beschaffung"></div>
 <script type="module" src="/kdm-trainer/trainer/trainer.js"></script>
