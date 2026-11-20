@@ -300,7 +300,74 @@ Wenn eine Alternative ein zwingendes Muss-Kriterium nicht erfüllt, darf sie nic
 
 ---
 
-## 12. Bezugspreis / Einstandspreis – Rechenkette in richtiger Reihenfolge
+## 12. Lizenzmodelle wirtschaftlich einordnen
+
+Lizenzmodelle beeinflussen nicht nur den Preis, sondern auch Liquidität, Planbarkeit, Kundenbindung und laufende Erlöse.
+
+| Modell | Grundidee | möglicher Vorteil für Kunden | möglicher Vorteil für Anbieter |
+|---|---|---|---|
+| **Abo / SaaS** | monatliche oder jährliche Zahlung | niedrige Anfangsauszahlung, Updates oft enthalten | planbare wiederkehrende Erlöse |
+| **Einmallizenz / perpetual** | einmalige Zahlung für dauerhaftes Nutzungsrecht gemäß Vertrag | keine laufende Lizenzgebühr für die erworbene Version | hoher Einmalerlös |
+| **Volumen-/Staffellizenz** | Preis abhängig von Menge | günstigere Stückkosten bei größerem Bedarf | stärkere Kundenbindung |
+| **Freemium** | Basis kostenlos, Zusatzfunktionen kostenpflichtig | niedrige Einstiegshürde | Reichweite und Conversion-Potenzial |
+
+### Wie wird daraus eine Prüfungsantwort?
+
+Nicht nur schreiben:
+„Abo ist günstiger.“
+
+Sondern die Wirkung erklären:
+
+„Ein Abo reduziert die einmalige Anfangsauszahlung und kann deshalb die kurzfristige Liquidität schonen. Dafür entstehen laufende Zahlungsverpflichtungen.“
+
+> **Prüfungsfalle:** Ein Lizenzmodell nicht nur nach dem Preis beurteilen. Auch Laufzeit, Updates, Support, Flexibilität und Nutzungsumfang können relevant sein.
+
+---
+
+## 13. Anforderungen an Software und Hardware als Entscheidungskriterien
+
+In Beschaffungs- und Auswahlaufgaben musst du häufig Anforderungen formulieren oder bewerten.
+
+### Technische Anforderungen
+
+Beispiele:
+- Betriebssystem und Mindestversion,
+- RAM / Speicher / Prozessorleistung,
+- Schnittstellen,
+- Datenformate,
+- Skalierbarkeit,
+- Kompatibilität mit vorhandenen Systemen.
+
+### Sicherheitsanforderungen
+
+Beispiele:
+- Verschlüsselung,
+- Rollen- und Berechtigungskonzept,
+- Update-/Patchfähigkeit,
+- Protokollierung,
+- sichere Authentifizierung.
+
+### Organisatorische Anforderungen
+
+Beispiele:
+- Supportzeiten,
+- Dokumentation,
+- Schulungsbedarf,
+- Administrationsaufwand.
+
+### So formuliert man eine gute Anforderung
+
+**Unpräzise:**  
+„Das System muss sicher sein.“
+
+**Besser:**  
+„Das System muss rollenbasierte Zugriffsrechte unterstützen, damit Benutzer nur auf die für ihre Aufgabe benötigten Funktionen zugreifen können.“
+
+> **Prüfungstipp:** Eine Anforderung ist stärker, wenn sie **konkret, prüfbar und zum Szenario passend** formuliert ist.
+
+---
+
+## 14. Bezugspreis / Einstandspreis – Rechenkette in richtiger Reihenfolge
 
 ```text
 Listeneinkaufspreis
@@ -325,7 +392,7 @@ Typische Fehler:
 
 ---
 
-## 13. Vorwärts-, Rückwärts-/Differenz- und Nachkalkulation
+## 15. Vorwärts-, Rückwärts-/Differenz- und Nachkalkulation
 
 ### Vorwärtskalkulation
 
@@ -346,7 +413,7 @@ Ziel:
 
 ---
 
-## 14. Handelsspanne und Kalkulationszuschlag – ähnlicher Zähler, anderer Nenner
+## 16. Handelsspanne und Kalkulationszuschlag – ähnlicher Zähler, anderer Nenner
 
 ```text
 Handelsspanne
@@ -385,7 +452,7 @@ Kalkulationszuschlag:
 
 ---
 
-## 15. Prozesskostenrechnung – Kosten eines Vorgangs
+## 17. Prozesskostenrechnung – Kosten eines Vorgangs
 
 ```text
 Prozesskostensatz = Prozesskosten / Prozessmenge
@@ -425,7 +492,7 @@ Bei 2.000 Vorgängen:
 
 ---
 
-## 16. Marktvolumen, Marktpotenzial und Marktanteil
+## 18. Marktvolumen, Marktpotenzial und Marktanteil
 
 | Begriff | Bedeutung |
 |---|---|
@@ -449,7 +516,7 @@ Marktvolumen: 2.000.000 €
 
 ---
 
-## 17. Aufwand/Ertrag und Kosten/Leistung unterscheiden
+## 19. Aufwand/Ertrag und Kosten/Leistung unterscheiden
 
 Finanzbuchhaltung betrachtet:
 - **Aufwand**
@@ -467,7 +534,7 @@ Beispiel:
 
 ---
 
-## 18. Grenzkosten und digitale Produkte
+## 20. Grenzkosten und digitale Produkte
 
 **Grenzkosten** sind die zusätzlichen Kosten einer weiteren Einheit.
 
@@ -485,7 +552,7 @@ Das erklärt, warum digitale Geschäftsmodelle oft hohe Anfangskosten und niedri
 
 ---
 
-## 19. Preisdifferenzierung
+## 21. Preisdifferenzierung
 
 Mögliche Formen:
 - Basic/Pro-Pakete,
@@ -502,7 +569,7 @@ und am Kundennutzen orientiert sein.
 
 ---
 
-## 20. Prüfungsstrategie für Rechenaufgaben
+## 22. Prüfungsstrategie für Rechenaufgaben
 
 Vor dem Rechnen:
 
