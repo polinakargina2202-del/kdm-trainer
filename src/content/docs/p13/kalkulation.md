@@ -3,7 +3,7 @@ title: Kalkulation & Kostenrechnung
 description: Break-even, Nutzwertanalyse, KLR, BAB, Deckungsbeitrag, Prozesskosten und Preiskalkulation
 sidebar:
   badge:
-    text: 4/7 Prüfungen
+    text: Wirtschaftlichkeit 7/10
     variant: caution
 ---
 
