@@ -3,7 +3,7 @@ title: RAID & Datensicherung
 description: RAID-Levels, Backup-Strategien, NAS vs. Cloud
 sidebar:
   badge:
-    text: 5/7 Prüfungen
+    text: Backup 4/10 · RAID 3/10
     variant: caution
 ---
 
@@ -524,6 +524,51 @@ Zusätzlicher Schutz gegen Ransomware:
 
 ---
 
+## 16. Backup-Dauer aus Datenmenge und Datenrate berechnen
+
+Bei Sicherungen kann die **Übertragungsdauer** gefragt sein. Die Grundformel ist einfach:
+
+```text
+Zeit = Datenmenge / Datenrate
+```
+
+Die eigentliche Schwierigkeit liegt fast immer in den **Einheiten**.
+
+Vereinfachtes Dezimal-Beispiel:
+
+```text
+100 GB = 100 × 8.000 Mbit = 800.000 Mbit
+Datenrate = 200 Mbit/s
+
+Zeit = 800.000 / 200
+     = 4.000 Sekunden
+     ≈ 66,67 Minuten
+```
+
+Wenn die Aufgabe andere Umrechnungen vorgibt (z. B. 1 GiB = 1024 MiB), verwendest du **genau diese Vorgabe**.
+
+### Differenziell und inkrementell als Rechenaufgabe
+
+Angenommen:
+- Sonntag Vollbackup,
+- werktäglich entstehen 4 GB neue Daten.
+
+**Differenziell:**
+- Montag 4 GB,
+- Dienstag 8 GB,
+- Mittwoch 12 GB,
+- … weil immer alle Änderungen seit dem Vollbackup gesichert werden.
+
+**Inkrementell:**
+- Montag 4 GB,
+- Dienstag 4 GB,
+- Mittwoch 4 GB,
+- … wenn täglich nur die Änderungen seit der letzten Sicherung hinzukommen.
+
+Damit kann die Prüfung nicht nur nach der Definition, sondern nach **gesamter wöchentlicher Datenmenge und Sicherungszeit** fragen.
+
+> **Prüfungsstrategie:** Erst Datenmenge pro Tag bestimmen, dann Sicherungsstrategie anwenden, danach Einheiten umrechnen und ganz am Ende die Zeit berechnen.
+
 ## Prüfungsaufgaben-Muster
 
 | Aufgabentyp | Beispielformulierung |
@@ -536,6 +581,6 @@ Zusätzlicher Schutz gegen Ransomware:
 | RPO/RTO | „Erläutern Sie RPO und RTO anhand eines Beispiels.“ |
 
 ---
-<div class="kdm-calculators" data-calculators="raid"></div>
+<div class="kdm-calculators" data-calculators="raid,backupduration"></div>
 <div class="kdm-practice" data-topic="p12/raid-backup"></div>
 <script type="module" src="/kdm-trainer/trainer/trainer.js"></script>
