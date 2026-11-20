@@ -36,6 +36,8 @@ Zusätzlich zu den bekannten Aufgabenmustern sind mögliche weitere Prüfungsasp
 
 - [Umsatzsteuer, Vorsteuer, Zahllast, Rechnungsprüfung, Buchungssätze und GWG](/kdm-trainer/p13/umsatzsteuer-buchfuehrung/)
 - [Bilanzkennzahlen, Liquidität, ROI, Cashflow, TCO, Make-or-Buy und Stundensätze](/kdm-trainer/p13/kennzahlen-wirtschaftlichkeit/)
+- [CRM, Kundensegmentierung und ABC-Analyse](/kdm-trainer/p13/crm-kundenanalyse/)
+- [Urheberrecht, DRM und digitale Nutzungsrechte](/kdm-trainer/p13/urheberrecht-drm/)
 
 Nutze die neuen Wissenschecks und rechne die Beispiele **ohne Lösung**, bevor du die Erklärung öffnest.
 
