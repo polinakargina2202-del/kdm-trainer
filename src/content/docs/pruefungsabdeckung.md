@@ -5,7 +5,7 @@ description: Abgleich mit Prüfungskatalog KIDM, Rahmenlehrplan und vorhandenen 
 
 # Prüfungskatalog-Check: Was deckt dieser Trainer ab?
 
-**Stand: 17. November 2026.** Diese Übersicht vergleicht die **vorhandenen Lernseiten und Trainingsfragen dieses GitHub-Projekts** mit dem **Prüfungskatalog KIDM (2. Auflage 2024)**, dem Rahmenlehrplan und den verfügbaren Prüfungen für sieben unterschiedliche AP2-Termine (Winter 2021/22, Sommer 2022, Sommer 2023, Winter 2024/25, Sommer 2025, Winter 2025/26, Sommer 2026).
+**Stand: 20. November 2026.** Diese Übersicht vergleicht die **vorhandenen Lernseiten und Trainingsfragen dieses GitHub-Projekts** mit dem **Prüfungskatalog KIDM (2. Auflage 2024)**, dem Rahmenlehrplan und den verfügbaren Prüfungen für **zehn** unterschiedliche AP2-Prüfungszeiträume (Winter 2021/22, Sommer 2022, Winter 2022/23, Sommer 2023, Winter 2023/24, Sommer 2024, Winter 2024/25, Sommer 2025, Winter 2025/26, Sommer 2026).
 
 Die drei schriftlichen Prüfungsbereiche sind miteinander verbunden. Der Prüfungskatalog ordnet technische, wirtschaftliche und methodische Kenntnisse teilweise übergreifend zu. **Keine Liste garantiert das Vorkommen oder Nichtvorkommen einer konkreten Aufgabe.** Die hier angegebene **Abdeckung bedeutet, dass Material auf der Website existiert** – nicht, dass es bereits gelernt oder auf Prüfungsniveau beherrscht wurde.
 
@@ -27,6 +27,18 @@ Seit dem ursprünglichen Audit sind **sieben neue Lernseiten**, **107 neue autom
 **Quellentrennung:** Der Prüfungskatalog 2024 gibt den möglichen Themenumfang und die Operatoren vor. Frühere Originalprüfungen zeigen konkrete Aufgabenformen, begrenzen jedoch nicht den möglichen Stoff. Alle neuen Beispiele, Multiple-Choice- und offenen Übungen sind eigenständig formuliert.
 
 
+## Erweiterung vom 20. November 2026
+
+Die drei zuvor fehlenden Zeiträume **Winter 2022/23, Winter 2023/24 und Sommer 2024** wurden vollständig nach Themen und Aufgabentypen nachanalysiert. Daraus entstanden drei neue Lernmodule und mehrere Vertiefungen:
+
+- [IoT, RFID & Sensorik](/kdm-trainer/p12/iot-rfid-sensorik/)
+- [CRM, Kundensegmentierung & ABC](/kdm-trainer/p13/crm-kundenanalyse/)
+- [Urheberrecht & DRM](/kdm-trainer/p13/urheberrecht-drm/)
+- Use-Case-Relationen, Anforderungskatalog/Kick-off/Change Management, Hosting/Housing, ITIL, Passwortregeln, Backup-Zeitberechnung
+- Fernabsatz und elektronische Signaturen, Paarvergleich, Personalkosten-Prozessrechnung, formale Rechnungsprüfung/Aufbewahrung und Kauf-vs.-Leasing-Vergleich
+
+Zusätzlich wurden **33 automatische Wissensfragen** und **8 offene Antworttrainingsaufgaben** ergänzt. Die Altprüfungen dienen als Themen- und Operatorenbeleg; alle neuen Trainingsfragen sind eigenständig formuliert.
+
 ## Wie die Angaben zu lesen sind
 
 - **Grundlagen vorhanden:** Eine Lernseite und in der Regel Wissensfragen sind vorhanden. Offene Prüfungsaufgaben und komplizierte Varianten müssen möglicherweise noch trainiert werden.
@@ -38,7 +50,7 @@ Seit dem ursprünglichen Audit sind **sieben neue Lernseiten**, **107 neue autom
 
 | Themenfeld aus Katalog / Prüfungen | Stand im Trainer | Nächster Wiederholungsschritt |
 |---|---|---|
-| Projektorganisation, Machbarkeit, Lasten-/Pflichtenheft, Scrum, Risiken, Stakeholder | Grundlagen vorhanden | [Projektmanagement](/kdm-trainer/p12/projektmanagement/), offene Situationen |
+| Projektorganisation, Machbarkeit, Anforderungskatalog, Lasten-/Pflichtenheft, Kick-off, Scrum, Risiken, Stakeholder, Change Management | **Grundlagen + neue Vertiefung vorhanden** | [Projektmanagement](/kdm-trainer/p12/projektmanagement/), offene Situationen |
 | SQL, relationales Modell, JOIN, CRUD, Rechte, Datenmigration, ETL | Grundlagen vorhanden | [SQL](/kdm-trainer/p12/datenbanken-sql/), selbst SQL schreiben und Migration begründen |
 | ER-Modell, Kardinalitäten, 1NF–3NF, zeitabhängige Zuordnung | Teilweise / vertiefen | komplexe n:m-Beziehungen, Fremdschlüssel, zusammengesetzte Schlüssel |
 | Datenqualität, Statistik, NoSQL, Big Data und Datentypen | Grundlagen vorhanden, Vertiefung weiter sinnvoll | [Datenbanken](/kdm-trainer/p12/datenbanken-sql/) + neue 3V-Übungen; größere Datenarchitekturen fallbezogen üben |
@@ -53,6 +65,7 @@ Seit dem ursprünglichen Audit sind **sieben neue Lernseiten**, **107 neue autom
 | Cloud, IaaS/PaaS/SaaS, Kosten, SLA, Exit | Grundlagen vorhanden | [Cloud](/kdm-trainer/p12/cloud-servicemodelle/) |
 | IPv6, VLAN, Netzsegmentierung, Netzbetrieb | **Grundlagen + neue Fragen vorhanden; Vertiefung bleibt sinnvoll** | [Analyse, Netzwerk, FTTC/FTTB/FTTH](/kdm-trainer/p12/analyse-methoden-netzwerk/), praxisbezogene Konfiguration zusätzlich üben |
 | Softwaretests, Dry Run, Debugging, TDD | Grundlagen vorhanden | [Softwaretesting](/kdm-trainer/p12/softwaretesting/), eigenständige Testfälle |
+| IoT, Sensorik, Aktorik und RFID | **Neues Modul + Fragen vorhanden** | [IoT, RFID & Sensorik](/kdm-trainer/p12/iot-rfid-sensorik/), Ablauf und Einsatzfälle selbst erklären |
 
 ## §13: Kaufmännische Unterstützungsprozesse (AP2-2)
 
@@ -67,6 +80,8 @@ Seit dem ursprünglichen Audit sind **sieben neue Lernseiten**, **107 neue autom
 | Liquiditätsgrade, Anlagendeckung, Verschuldung, ROI, Cashflow | **Neues Modul + Rechenfälle vorhanden** | [Kennzahlen & Wirtschaftlichkeit](/kdm-trainer/p13/kennzahlen-wirtschaftlichkeit/), Formeln ohne Hilfe üben |
 | Make-or-Buy, Prozesskosten, Stunden-/Tagessätze, Nachkalkulation | **Grundlagen + Beispiele vorhanden** | [Kennzahlen & Wirtschaftlichkeit](/kdm-trainer/p13/kennzahlen-wirtschaftlichkeit/) und [Kalkulation](/kdm-trainer/p13/kalkulation/) |
 | Lager/Bestellmengen, ABC-Lieferanten, Vertretungsmacht, Vertragsstörungen | Teilweise / vertiefen | Katalogbeispiele und Fälle vertiefen |
+| CRM, Kundensegmentierung, Kundenrentabilität und ABC-Analyse | **Neues Modul + Fragen vorhanden** | [CRM & Kundenanalyse](/kdm-trainer/p13/crm-kundenanalyse/), ABC-Schritte und Maßnahmen |
+| Urheberrecht, Nutzungsrechte, DRM und Kopierschutz | **Neues Modul + Fragen vorhanden** | [Urheberrecht & DRM](/kdm-trainer/p13/urheberrecht-drm/), Schutzmaßnahmen begründen |
 | KI-Risiken bei der Beschaffung bzw. Informationsrecherche | Neue Vertiefung | [KI & Automatisierung](/kdm-trainer/p12/ki-automatisierung/); Querschnittsthema |
 
 ## §14: Wirtschafts- und Sozialkunde (WiSo)
@@ -86,7 +101,7 @@ Seit dem ursprünglichen Audit sind **sieben neue Lernseiten**, **107 neue autom
 
 ## Wichtige Korrektur zur Häufigkeit
 
-Eine Angabe wie „7/7 Prüfungen“ oder „sicher dabei“ aus älteren Trainerseiten ist **keine verlässliche Vorhersage**. Manche Kategorien bündeln mehrere Unterthemen; außerdem muss klar sein, welche Originalklausuren tatsächlich vollständig geprüft wurden. Die sieben vorhandenen AP2-Termine sind **nicht** sieben zusätzliche WiSo-Prüfungen. Im hier verfügbaren Material sind insbesondere die WiSo-Originalaufgaben Winter 2025/26 und Sommer 2026 direkt überprüfbar.
+Eine Angabe wie „7/7 Prüfungen“ oder „sicher dabei“ aus älteren Trainerseiten ist **keine verlässliche Vorhersage**. Manche Kategorien bündeln mehrere Unterthemen; außerdem muss klar sein, welche Originalklausuren tatsächlich vollständig geprüft wurden. Die zehn analysierten AP2-Zeiträume sind **nicht** zehn zusätzliche WiSo-Prüfungen. Im hier verfügbaren Material sind insbesondere die WiSo-Originalaufgaben Winter 2025/26 und Sommer 2026 direkt überprüfbar.
 
 **Lernpriorität:** (1) noch dünn abgedeckte katalogrelevante Themen, (2) selbstständige offene AP2-Aufgaben, (3) gezielte Wiederholung nach Fehlern; nicht allein nach alten Häufigkeitszahlen lernen.
 
@@ -98,4 +113,4 @@ Eine Angabe wie „7/7 Prüfungen“ oder „sicher dabei“ aus älteren Traine
 - [Wiederholung & Schwächen](/kdm-trainer/wiederholung/)
 - [Formelsammlung](/kdm-trainer/formelsammlung/)
 
-**Quellengrundlage:** Prüfungskatalog KIDM, 2. Auflage 2024, insbesondere S. 17–35; Rahmenlehrplan für Kaufleute für Digitalisierungsmanagement, insbesondere die fachbezogenen Lernfelder 9–12; im Lernprojekt vorhandene Prüfungen AP2-1 und AP2-2 von Winter 2021/22 bis Sommer 2026 (sieben unterschiedliche Termine). Die **Aktualisierung 2025** ist eine Ergänzung zum Prüfungstrainer **AP Teil 1** und nicht selbst ein vollständiger AP2-Katalog.
+**Quellengrundlage:** Prüfungskatalog KIDM, 2. Auflage 2024, insbesondere S. 17–35; Rahmenlehrplan für Kaufleute für Digitalisierungsmanagement, insbesondere die fachbezogenen Lernfelder 9–12; im Lernprojekt vorhandene Prüfungen AP2-1 und AP2-2 von Winter 2021/22 bis Sommer 2026 (**zehn unterschiedliche Prüfungszeiträume**). Die **Aktualisierung 2025** ist eine Ergänzung zum Prüfungstrainer **AP Teil 1** und nicht selbst ein vollständiger AP2-Katalog.
