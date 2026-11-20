@@ -7,249 +7,535 @@ sidebar:
     variant: caution
 ---
 
-## 1. Break-even-Analyse
+> **Prüfungsrelevanz:** In Kalkulationsaufgaben liegt der Hauptfehler selten am Taschenrechner. Meist wird die **falsche Größe eingesetzt** oder eine Zahl an der falschen Stelle der Rechenkette verwendet. Deshalb zuerst die Struktur der Aufgabe verstehen, dann rechnen.
 
-Der **Break-even-Punkt** ist der Punkt, an dem Erlöse und Gesamtkosten gleich hoch sind. Bis dahin entsteht ein Verlust, danach ein Gewinn.
+# Kalkulation und Kostenrechnung – die Logik hinter den Formeln
 
-Wenn je Einheit laufende variable Kosten entstehen, wird zuerst der **Deckungsbeitrag je Einheit** berechnet:
+Die kaufmännischen Rechenaufgaben wirken sehr unterschiedlich. Viele lassen sich aber auf vier Fragen reduzieren:
 
-```text
-Deckungsbeitrag je Einheit = Verkaufspreis − variable Kosten je Einheit
-Break-even-Menge = Fixkosten / Deckungsbeitrag je Einheit
-```
-
-Da man in der Praxis keine angebrochene Lizenz oder Stückzahl verkaufen kann, wird bei einer Mindestmenge auf die **nächste ganze Einheit aufgerundet**.
-
-### Beispiel nach dem Muster Winter 2025/26
-
-Gegeben:
-- einmalige Entwicklungskosten: 50.000 €
-- Verkaufspreis: 99 € je Lizenz und Monat
-- laufende Betreuungskosten: 20 € je Lizenz und Monat
-- eine Lizenz gilt für 5 Nutzer
-
-```text
-Deckungsbeitrag je Lizenzmonat = 99 € − 20 € = 79 €
-Break-even = 50.000 € / 79 € = 632,91
-```
-
-→ Nach **633 verkauften Lizenzmonaten** sind die Fixkosten gedeckt; ab der nächsten zusätzlichen Einheit entsteht insgesamt Gewinn.
-
-Wenn ein Großkunde 60 Nutzer lizenzieren möchte:
-
-```text
-benötigte Lizenzen = 60 / 5 = 12
-monatlicher Gesamt-DB = 12 × 79 € = 948 €
-50.000 € / 948 € = 52,74 Monate
-```
-
-→ Unter diesen Annahmen wird die Gewinnzone **im 53. Monat** erreicht.
-
-> **IHK-Falle:** Nicht einfach `Fixkosten / Verkaufspreis` rechnen, wenn zusätzlich variable Kosten je Einheit genannt sind. Dann ist der **Deckungsbeitrag** der richtige Nenner.
+1. Welche Kosten sind **fix** und welche **variabel**?
+2. Welche Kosten können direkt zugerechnet werden?
+3. Welche Bezugsgröße gehört in die Formel?
+4. Welche Größe wird eigentlich gesucht?
 
 ---
 
-## 2. Paarvergleich und Nutzwertanalyse
+## 1. Fixe und variable Kosten
 
-### Paarvergleich – Gewichtungen systematisch ableiten
+### Fixe Kosten
 
-Wenn mehrere Kriterien bewertet werden sollen, kann ihre Wichtigkeit zuvor **paarweise** verglichen werden.
-
-Jedes Kriterium wird mit jedem anderen Kriterium genau einmal verglichen. Ein einfaches Bewertungsschema kann lauten:
-- wichtiger = 1 Punkt,
-- gleich wichtig = 0,5 Punkte,
-- weniger wichtig = 0 Punkte.
-
-Danach werden die Punkte je Kriterium summiert und daraus eine Rangfolge bzw. Gewichtung abgeleitet.
-
-**Beispiel:** Für Housing vs. Hosting werden Implementierungskosten, Skalierbarkeit und laufende Kosten verglichen. Wenn die laufenden Kosten in mehreren Paaren als wichtiger bewertet werden, erhalten sie später ein höheres Gewicht in der Nutzwertanalyse.
-
-> **Prüfungsfalle:** Ein Paarvergleich bewertet zunächst die **Wichtigkeit der Kriterien**. Erst die Nutzwertanalyse bewertet anschließend die **Alternativen anhand dieser Kriterien**.
-
-### Nutzwertanalyse
-
-Bewertet Alternativen anhand **qualitativer Kriterien** durch gewichtete Punktvergabe.
-
-**Vorgehen:**
-1. Kriterien festlegen (z.B. Preis, Support, Skalierbarkeit, Sicherheit)
-2. Gewichtung vergeben (in %, Summe = 100%)
-3. Alternativen pro Kriterium bewerten (Punkte, z.B. 1–5 oder 1–10)
-4. Gewichtete Punkte berechnen: Note × Gewicht
-5. Summe je Alternative → **höchster Wert gewinnt**
-
-**Beispiel:**
-
-| Kriterium | Gewicht | Anbieter A | Punkte A | Anbieter B | Punkte B |
-|---|---|---|---|---|---|
-| Preis | 30% | 4 | 1,2 | 5 | 1,5 |
-| Support | 25% | 5 | 1,25 | 3 | 0,75 |
-| Skalierbarkeit | 20% | 4 | 0,8 | 4 | 0,8 |
-| Datenschutz | 15% | 5 | 0,75 | 3 | 0,45 |
-| Usability | 10% | 3 | 0,3 | 4 | 0,4 |
-| **Gesamt** | **100%** | | **4,3** | | **3,9** |
-
-→ **Anbieter A** gewinnt.
-
----
-
-## 3. Lizenzmodelle
-
-| Modell | Beschreibung | Vorteile Kunde | Vorteile Anbieter |
-|---|---|---|---|
-| **Abo-Lizenz (SaaS)** | Monatliche/jährliche Gebühr | Niedrige Anfangskosten; Updates häufig im Abo enthalten | Planbarer Umsatz, laufende Kundenbindung |
-| **Einmallizenz (perpetual)** | Einmalzahlung, dauerhaftes Nutzungsrecht gemäß Lizenzbedingungen | Keine laufende Lizenzgebühr für die erworbene Version | Hoher Einmalerlös |
-| **Volumen-/Staffellizenz** | Preis sinkt mit Menge | Günstig bei großen Mengen | Kundenbindung durch Menge |
-| **Freemium** | Basis kostenlos, Premium kostenpflichtig | Einstieg ohne Kosten | Große Nutzerbasis, Conversion-Potenzial |
-
----
-
-## 4. Anforderungen an Software/Hardware
-
-In der Prüfung: Passende Anforderungen zum Szenario nennen.
-
-**Betriebssystemanforderungen:** Kompatibilität, Mindestversion, Updates verfügbar  
-**Hardwareanforderungen:** Prozessorleistung, RAM, Speicherplatz, Grafikkarte  
-**Sicherheitsanforderungen:** Verschlüsselung, Firewall, Zugriffsschutz, regelmäßige Updates
-
----
-
-## 5. Kosten- und Leistungsrechnung (KLR)
-
-| Kostenart | Definition | Beispiele |
-|---|---|---|
-| **Einzelkosten** | Direkt einem Kostenträger zurechenbar | Rohmaterial, direkt zuordenbare Hardware |
-| **Gemeinkosten** | Nicht direkt zurechenbar, werden über Schlüssel verteilt | Miete, Verwaltung |
-| **Fixe Kosten** | im betrachteten Beschäftigungsbereich mengenunabhängig | Miete, feste Grundgebühren |
-| **Variable Kosten** | verändern sich mit Beschäftigung/Menge | Material, nutzungsabhängige Gebühren |
-
-### Betriebsabrechnungsbogen (BAB)
-
-**Zweck:** Gemeinkosten auf Kostenstellen verteilen, um Gemeinkostenzuschlagssätze zu ermitteln.
-
-```text
-GKZ = Gemeinkosten der Kostenstelle / Bezugsgröße × 100 %
-```
+Fixe Kosten bleiben innerhalb des betrachteten Bereichs zunächst unabhängig von der Menge.
 
 Beispiele:
-- Materialgemeinkosten: `MaGK / Materialeinzelkosten × 100 %`
-- Fertigungsgemeinkosten: `FtGK / Fertigungslöhne × 100 %`
-- Verwaltungs-/Vertriebsgemeinkosten: häufig auf Herstellkosten bezogen, wenn die Aufgabe dies vorgibt.
+- Miete,
+- feste Grundgebühr,
+- einmalige Entwicklungskosten.
 
-**Vereinfachtes Kalkulationsschema:**
+### Variable Kosten
+
+Variable Kosten verändern sich mit der Menge oder Nutzung.
+
+Beispiele:
+- nutzungsabhängige Cloudkosten,
+- Material pro Gerät,
+- Transaktionsgebühr pro Vorgang.
+
+### Warum ist die Unterscheidung wichtig?
+
+Weil der Break-even nicht einfach vom Verkaufspreis abhängt. Jede zusätzliche Einheit verursacht gegebenenfalls variable Kosten.
+
+---
+
+## 2. Deckungsbeitrag – was bleibt von einer Einheit übrig?
+
+```text
+Deckungsbeitrag je Einheit
+= Verkaufspreis − variable Kosten je Einheit
+```
+
+Der Deckungsbeitrag zeigt, welcher Betrag je verkaufter Einheit zur Deckung der Fixkosten beiträgt.
+
+### Beispiel
+
+Verkaufspreis: 30 €  
+Variable Kosten: 18 €
+
+```text
+DB je Stück = 30 − 18 = 12 €
+```
+
+Jede Einheit trägt also 12 € zur Deckung der Fixkosten bei.
+
+> **Merksatz:** Umsatz ist nicht automatisch Gewinn. Erst variable Kosten abziehen.
+
+---
+
+## 3. Break-even – wann sind alle Fixkosten gedeckt?
+
+```text
+Break-even-Menge
+= Fixkosten / Deckungsbeitrag je Einheit
+```
+
+### Beispiel
+
+Fixkosten: 24.000 €  
+DB je Stück: 12 €
+
+```text
+24.000 / 12 = 2.000 Stück
+```
+
+Bei 2.000 Stück sind die Fixkosten genau gedeckt.
+
+### Wenn ein Dezimalwert entsteht
+
+Beispiel:
+
+```text
+50.000 / 79 = 632,91
+```
+
+Wenn die Frage lautet, ab welcher **ganzen Stückzahl** die Kosten gedeckt sind:
+
+→ auf **633 Stück** aufrunden.
+
+### Typische IHK-Falle
+
+```text
+Fixkosten / Verkaufspreis
+```
+
+ist falsch, wenn variable Kosten je Einheit existieren.
+
+Dann muss zuerst der Deckungsbeitrag berechnet werden.
+
+---
+
+## 4. Betriebsergebnis – was bleibt nach den Fixkosten?
+
+```text
+Gesamt-DB = Absatzmenge × DB je Stück
+Betriebsergebnis = Gesamt-DB − Fixkosten
+```
+
+### Beispiel
+
+Preis: 30 €  
+variable Kosten: 18 €  
+Absatz: 8.000 Stück  
+Fixkosten: 60.000 €
+
+```text
+DB je Stück = 12 €
+Gesamt-DB = 8.000 × 12 = 96.000 €
+Betriebsergebnis = 96.000 − 60.000 = 36.000 €
+```
+
+---
+
+## 5. Kurzfristige und langfristige Preisuntergrenze
+
+### Kurzfristige Preisuntergrenze
+
+Unter vereinfachten Bedingungen entspricht sie den relevanten **variablen Stückkosten**.
+
+Warum?
+
+Fixkosten entstehen kurzfristig ohnehin. Ein zusätzlicher Auftrag kann deshalb kurzfristig sinnvoll sein, wenn er wenigstens seine zusätzlichen variablen Kosten deckt.
+
+### Langfristige Preisuntergrenze
+
+Langfristig müssen auch die Fixkosten gedeckt werden.
+
+> **Prüfungsfalle:** Eine kurzfristige Entscheidung nicht automatisch als dauerhaft sinnvolle Preisstrategie behandeln.
+
+---
+
+## 6. Einzelkosten und Gemeinkosten
+
+### Einzelkosten
+
+Können direkt einem Kostenträger zugeordnet werden.
+
+Beispiele:
+- Hardware, die nur für ein bestimmtes Kundenprojekt gekauft wird,
+- direkt zurechenbares Material.
+
+### Gemeinkosten
+
+Können nicht sinnvoll direkt einem einzelnen Kostenträger zugerechnet werden.
+
+Beispiele:
+- Büromiete,
+- Verwaltung,
+- zentrale IT-Infrastruktur.
+
+Sie müssen über geeignete Schlüssel oder Zuschlagssätze verteilt werden.
+
+---
+
+## 7. Kostenart, Kostenstelle und Kostenträger
+
+Diese drei Begriffe beantworten drei unterschiedliche Fragen:
+
+| Begriff | Frage | Beispiel |
+|---|---|---|
+| **Kostenart** | Welche Kosten? | Miete, Personalkosten |
+| **Kostenstelle** | Wo entstehen sie? | IT, Verwaltung |
+| **Kostenträger** | Wofür entstehen sie? | Kundenprojekt A |
+
+### Beispiel
+
+Ein Entwickler arbeitet an Kundenprojekt X.
+
+- Personalkosten = **Kostenart**
+- Entwicklungsabteilung = **Kostenstelle**
+- Projekt X = **Kostenträger**
+
+> **Prüfungstipp:** „Was – wo – wofür“ ist der einfachste Merksatz.
+
+---
+
+## 8. BAB – Gemeinkosten verteilen
+
+Der **Betriebsabrechnungsbogen (BAB)** verteilt Gemeinkosten auf Kostenstellen.
+
+Danach können Gemeinkostenzuschlagssätze berechnet werden.
+
+```text
+GKZ = Gemeinkosten / Bezugsgröße × 100 %
+```
+
+### Beispiel
+
+Gemeinkosten: 56.000 €  
+Bezugsgröße: 224.000 €
+
+```text
+56.000 / 224.000 × 100 = 25 %
+```
+
+### Warum ist die Bezugsgröße so wichtig?
+
+Weil ein Zuschlagssatz ohne passende Bezugsgröße keine sinnvolle Aussage hat.
+
+Typische Bezugsgrößen hängen von der Aufgabe ab, zum Beispiel:
+- Materialgemeinkosten auf Materialeinzelkosten,
+- Fertigungsgemeinkosten auf Fertigungslöhne,
+- Verwaltungs-/Vertriebsgemeinkosten auf Herstellkosten, wenn die Aufgabe dies vorgibt.
+
+> **Prüfungsfalle:** Nicht einfach jede Gemeinkostenart durch die Gesamtkosten teilen.
+
+---
+
+## 9. Vereinfachtes Kalkulationsschema
+
 ```text
 Materialeinzelkosten
 + Materialgemeinkosten
 = Materialkosten
+
 + Fertigungseinzelkosten
 + Fertigungsgemeinkosten
 = Herstellkosten
+
 + Verwaltungs- und Vertriebsgemeinkosten
 = Selbstkosten
+
 + Gewinn
-= Angebotspreis (netto, vereinfachtes Schema)
+= Angebotspreis netto
 ```
 
----
-
-## 6. Marktanalyse
-
-| Begriff | Definition | Formel |
-|---|---|---|
-| **Marktvolumen** | tatsächlich realisierte Nachfrage / Umsatz im Markt | Summe der realisierten Werte |
-| **Marktpotenzial** | maximal mögliche Nachfrage unter angenommenen Bedingungen | theoretisches Maximum |
-| **Marktanteil** | Anteil des eigenen Unternehmens am Markt | eigener Umsatz/Absatz ÷ Marktvolumen × 100 % |
+Das Schema kann in Aufgaben erweitert oder verkürzt sein. Deshalb immer die gegebenen Positionen verwenden.
 
 ---
 
-## 7. Aufwand/Ertrag vs. Kosten/Leistung
+## 10. Paarvergleich – welche Kriterien sind wichtiger?
 
-| Finanzbuchhaltung | KLR | Erklärung |
-|---|---|---|
-| **Aufwand** | **Kosten** | Aufwand = gesamter Werteverzehr; Kosten = betriebszweckbezogener Werteverzehr |
-| **Ertrag** | **Leistung** | Ertrag = gesamter Wertezuwachs; Leistung = betriebszweckbezogener Wertezuwachs |
+Ein Paarvergleich hilft, Kriterien nach ihrer Bedeutung zu gewichten.
 
-Beispiele:
-- Spende: Aufwand, typischerweise aber keine Kosten des Betriebszwecks.
-- kalkulatorischer Unternehmerlohn: Kosten, aber kein Aufwand der Finanzbuchhaltung.
+Jedes Kriterium wird mit jedem anderen verglichen.
 
-## 8. Kostenart, Kostenstelle und Kostenträger
+Ein mögliches Schema:
+- wichtiger = 1 Punkt,
+- gleich wichtig = 0,5 Punkte,
+- weniger wichtig = 0 Punkte.
 
-- **Kostenart:** Welche Kosten sind entstanden?
-- **Kostenstelle:** Wo sind sie entstanden?
-- **Kostenträger:** Wofür sind sie entstanden?
+Danach werden die Punkte addiert und in eine Gewichtung überführt.
 
-## 9. Vorwärts-, Differenz- und Nachkalkulation
+### Warum vor einer Nutzwertanalyse?
+
+Die Nutzwertanalyse benötigt Gewichtungen. Der Paarvergleich kann helfen, diese nachvollziehbar zu bestimmen.
+
+> **Prüfungsfalle:** Paarvergleich bewertet **Kriterien gegeneinander**. Nutzwertanalyse bewertet später **Alternativen anhand dieser Kriterien**.
+
+---
+
+## 11. Nutzwertanalyse – qualitative Kriterien in eine Entscheidung bringen
+
+Ablauf:
+
+1. Kriterien festlegen.
+2. Gewichtungen festlegen.
+3. jede Alternative bewerten.
+4. Bewertung × Gewichtung rechnen.
+5. gewichtete Werte summieren.
+6. Ergebnis sachlich interpretieren.
+
+### Beispiel
+
+| Kriterium | Gewicht | Anbieter A | A gewichtet | Anbieter B | B gewichtet |
+|---|---:|---:|---:|---:|---:|
+| Datenschutz | 40 % | 5 | 2,0 | 3 | 1,2 |
+| Support | 30 % | 4 | 1,2 | 5 | 1,5 |
+| Skalierbarkeit | 30 % | 4 | 1,2 | 5 | 1,5 |
+| **Gesamt** | **100 %** | | **4,4** | | **4,2** |
+
+→ Anbieter A erreicht den höheren Nutzwert.
+
+### Aber: Muss-Kriterien zuerst
+
+Wenn eine Alternative ein zwingendes Muss-Kriterium nicht erfüllt, darf sie nicht allein durch hohe Punkte in anderen Bereichen „gerettet“ werden.
+
+---
+
+## 12. Bezugspreis / Einstandspreis – Rechenkette in richtiger Reihenfolge
 
 ```text
 Listeneinkaufspreis
 − Liefererrabatt
 = Zieleinkaufspreis
+
 − Liefererskonto
 = Bareinkaufspreis
+
 + Bezugskosten
 = Bezugspreis / Einstandspreis
 ```
 
-**Vorwärtskalkulation:** vom Einkauf in Richtung Verkaufspreis.  
-**Rückwärts-/Differenzkalkulation:** ein Markt-/Verkaufspreis ist vorgegeben; daraus wird der wirtschaftliche Spielraum ermittelt.  
-**Nachkalkulation:** Planwerte werden mit tatsächlichen Werten verglichen und Abweichungen analysiert.
+### Warum Reihenfolge wichtig ist
 
-## 10. Handelsspanne und Kalkulationszuschlag
+Rabatt und Skonto beziehen sich nicht immer auf dieselbe Ausgangsgröße.
+
+Typische Fehler:
+- Skonto direkt vom Listeneinkaufspreis berechnen,
+- Bezugskosten vor Rabatt abziehen,
+- Prozentwert und Eurobetrag verwechseln.
+
+---
+
+## 13. Vorwärts-, Rückwärts-/Differenz- und Nachkalkulation
+
+### Vorwärtskalkulation
+
+Du startest bei bekannten Einkaufskosten und rechnest in Richtung Verkaufspreis.
+
+### Rückwärts-/Differenzkalkulation
+
+Ein Markt- oder Verkaufspreis ist vorgegeben. Du rechnest rückwärts und prüfst, welcher Einkaufspreis bzw. Spielraum möglich ist.
+
+### Nachkalkulation
+
+Planwerte werden nachträglich mit den tatsächlichen Werten verglichen.
+
+Ziel:
+- Abweichung erkennen,
+- Ursache finden,
+- zukünftige Kalkulation verbessern.
+
+---
+
+## 14. Handelsspanne und Kalkulationszuschlag – ähnlicher Zähler, anderer Nenner
 
 ```text
-Handelsspanne = (Nettoverkaufspreis − Einstandspreis) / Nettoverkaufspreis × 100 %
-Kalkulationszuschlag = (Nettoverkaufspreis − Einstandspreis) / Einstandspreis × 100 %
+Handelsspanne
+= (Nettoverkaufspreis − Einstandspreis)
+  / Nettoverkaufspreis × 100 %
+
+Kalkulationszuschlag
+= (Nettoverkaufspreis − Einstandspreis)
+  / Einstandspreis × 100 %
 ```
 
-Beispiel: Einstand 80 €, Verkauf 100 € → Handelsspanne 20 %, Kalkulationszuschlag 25 %.
+### Beispiel
 
-## 11. Prozesskostenrechnung
+Einstandspreis: 80 €  
+Verkaufspreis: 100 €
+
+Gewinnspanne in Euro:
+
+```text
+100 − 80 = 20 €
+```
+
+Handelsspanne:
+
+```text
+20 / 100 × 100 = 20 %
+```
+
+Kalkulationszuschlag:
+
+```text
+20 / 80 × 100 = 25 %
+```
+
+> **Prüfungsfalle:** Der Zähler ist gleich, der **Nenner ist unterschiedlich**.
+
+---
+
+## 15. Prozesskostenrechnung – Kosten eines Vorgangs
 
 ```text
 Prozesskostensatz = Prozesskosten / Prozessmenge
 ```
 
-Beispiel: 24.000 € für 800 Ticketbearbeitungen → **30 € je Ticket**.
+### Beispiel
 
-## 12. Deckungsbeitrag, Betriebsergebnis und Preisuntergrenze
+24.000 € Kosten für 800 Ticketbearbeitungen:
 
 ```text
-Deckungsbeitrag je Stück = Verkaufspreis − variable Kosten je Stück
-Gesamt-DB = Erlöse − variable Gesamtkosten
-Betriebsergebnis = Gesamt-DB − Fixkosten
+24.000 / 800 = 30 € je Ticket
 ```
 
-- **kurzfristige Preisuntergrenze:** unter vereinfachten Bedingungen die relevanten variablen Stückkosten.
-- **langfristige Preisuntergrenze:** muss auch die fixen Kosten decken.
+### Aus Personalkosten ableiten
 
-Beispiel: Preis 30 €, variable Kosten 18 €, Fixkosten 60.000 €, Absatz 8.000 → Gesamt-DB 96.000 €, Betriebsergebnis **36.000 €**.
+Arbeitgeberkosten pro Monat: 3.600 €  
+Produktive Zeit: 160 Stunden
 
-## 13. Grenzkosten und Preisdifferenzierung
+```text
+160 × 60 = 9.600 Minuten
+3.600 / 9.600 = 0,375 € je Minute
+```
 
-**Grenzkosten** sind die zusätzlichen Kosten einer weiteren Einheit. Bei digitalen Produkten können sie niedrig sein, obwohl die Entwicklung hohe Fixkosten verursacht.
+Ein Vorgang dauert 8 Minuten:
 
-Mögliche **Preisdifferenzierung**:
+```text
+8 × 0,375 = 3,00 € Personalkosten je Vorgang
+```
+
+Bei 2.000 Vorgängen:
+
+```text
+2.000 × 3,00 = 6.000 €
+```
+
+> **Prüfungsstrategie:** Erst Kosten pro Zeiteinheit, dann Zeit pro Vorgang, dann Prozessmenge.
+
+---
+
+## 16. Marktvolumen, Marktpotenzial und Marktanteil
+
+| Begriff | Bedeutung |
+|---|---|
+| **Marktvolumen** | tatsächlich realisierte Nachfrage / Umsatz im Markt |
+| **Marktpotenzial** | theoretisch maximal mögliche Nachfrage |
+| **Marktanteil** | eigener Anteil am realisierten Markt |
+
+```text
+Marktanteil
+= eigener Umsatz oder Absatz / Marktvolumen × 100 %
+```
+
+### Beispiel
+
+Eigener Umsatz: 250.000 €  
+Marktvolumen: 2.000.000 €
+
+```text
+250.000 / 2.000.000 × 100 = 12,5 %
+```
+
+---
+
+## 17. Aufwand/Ertrag und Kosten/Leistung unterscheiden
+
+Finanzbuchhaltung betrachtet:
+- **Aufwand**
+- **Ertrag**
+
+KLR betrachtet:
+- **Kosten**
+- **Leistung**
+
+Nicht jeder Aufwand ist automatisch eine Kostenposition des Betriebszwecks.
+
+Beispiel:
+- Spende = Aufwand, typischerweise keine betriebszweckbezogenen Kosten.
+- kalkulatorischer Unternehmerlohn = Kosten, aber kein entsprechender Aufwand der Finanzbuchhaltung.
+
+---
+
+## 18. Grenzkosten und digitale Produkte
+
+**Grenzkosten** sind die zusätzlichen Kosten einer weiteren Einheit.
+
+Bei digitalen Produkten können die Grenzkosten niedrig sein:
+- Software ist bereits entwickelt,
+- zusätzliche Downloads verursachen nur geringe Mehrkosten.
+
+Trotzdem können hohe Fixkosten bestehen:
+- Entwicklung,
+- Plattform,
+- Sicherheit,
+- Marketing.
+
+Das erklärt, warum digitale Geschäftsmodelle oft hohe Anfangskosten und niedrige Kosten je zusätzlichem Nutzer kombinieren.
+
+---
+
+## 19. Preisdifferenzierung
+
+Mögliche Formen:
 - Basic/Pro-Pakete,
 - Mengenstaffeln,
-- zeit-/nutzungsabhängige Preise,
+- zeitabhängige Preise,
+- nutzungsabhängige Preise,
 - unterschiedliche Kundengruppen.
 
-Die Differenzierung muss wirtschaftlich nachvollziehbar und rechtlich zulässig sein und sollte den Kundennutzen berücksichtigen.
+Eine Preisdifferenzierung sollte:
+- wirtschaftlich sinnvoll,
+- nachvollziehbar,
+- rechtlich zulässig
+und am Kundennutzen orientiert sein.
 
 ---
 
-## Prüfungsaufgaben-Muster
+## 20. Prüfungsstrategie für Rechenaufgaben
 
-| Aufgabentyp | Beispielformulierung |
-|---|---|
-| Break-even | „Ab welcher Absatzmenge werden die Fixkosten gedeckt?“ |
-| Nutzwertanalyse | „Ergänzen Sie die Nutzwertanalyse und ermitteln Sie den besten Anbieter.“ |
-| Lizenzmodell | „Nennen Sie zwei Vorteile eines Abo-Lizenzmodells.“ |
-| KLR | „Ordnen Sie Kostenart, Kostenstelle und Kostenträger zu.“ |
-| BAB | „Vervollständigen Sie den BAB / berechnen Sie einen Zuschlagssatz.“ |
-| DB | „Berechnen Sie Deckungsbeitrag und Betriebsergebnis.“ |
+Vor dem Rechnen:
+
+1. **Gesuchte Größe markieren.**
+2. Einheiten prüfen.
+3. Fix/variabel bzw. Einzel-/Gemeinkosten einordnen.
+4. passende Formel auswählen.
+5. Werte mit Einheit einsetzen.
+6. Ergebnis auf Plausibilität prüfen.
+7. wenn verlangt: **wirtschaftlich interpretieren**, nicht nur Zahl hinschreiben.
+
+### Typische Fehler
+
+- falscher Nenner,
+- Prozent und Prozentpunkte verwechseln,
+- Rabatt und Skonto in falscher Reihenfolge,
+- beim Break-even den Verkaufspreis statt DB verwenden,
+- Gewichtungen der Nutzwertanalyse ergeben nicht 100 %,
+- Ergebnis rechnen, aber keine Entscheidung begründen.
 
 ---
-<div class="kdm-calculators" data-calculators="breakeven,gkz,nwa,marketshare"></div>
+
+## Kurz zusammengefasst
+
+- DB je Stück = Preis − variable Stückkosten.
+- Break-even = Fixkosten / DB je Stück.
+- Kostenart = **was**, Kostenstelle = **wo**, Kostenträger = **wofür**.
+- BAB verteilt Gemeinkosten.
+- NWA = Gewicht × Bewertung.
+- Bezugspreis folgt einer festen Rechenkette.
+- Handelsspanne und Kalkulationszuschlag unterscheiden sich im Nenner.
+- Prozesskosten lassen sich aus Zeit- und Personalkosten ableiten.
+
+<div class="kdm-calculators" data-calculators="breakeven,gkz,nwa,marketshare,processcost"></div>
 <div class="kdm-practice" data-topic="p13/kalkulation"></div>
 <script type="module" src="/kdm-trainer/trainer/trainer.js"></script>
