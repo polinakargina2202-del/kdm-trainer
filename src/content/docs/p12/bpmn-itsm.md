@@ -3,7 +3,7 @@ title: Prozesse, BPMN, EPK & ITSM
 description: Geschäftsprozessanalyse, Ist/Soll, Digitalisierungsgrad, Prozesskennzahlen, BPMN/EPK und IT-Service-Management
 sidebar:
   badge:
-    text: 4/7 Prüfungen
+    text: 7/10 Prüfungen
     variant: note
 ---
 
