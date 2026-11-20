@@ -247,6 +247,30 @@ const CALCULATORS = {
     updateOnInputs(b,()=>{const arr=rows(),sumI=arr.reduce((a,x)=>a+x.interest,0),sumP=arr.reduce((a,x)=>a+x.payment,0); out.innerHTML=`<div class="kdm-table-wrap"><table><thead><tr><th>Jahr</th><th>Schuld Beginn</th><th>Zinsen</th><th>Tilgung</th><th>Rate</th><th>Schuld Ende</th></tr></thead><tbody>${arr.map(x=>`<tr><td>${x.y}</td><td>${money(x.start)}</td><td>${money(x.interest)}</td><td>${money(x.repay)}</td><td><strong>${money(x.payment)}</strong></td><td>${money(x.debt)}</td></tr>`).join('')}</tbody></table></div><div class="kdm-result">Gesamtzinsen ${money(sumI)} · Gesamtzahlungen ${money(sumP)}</div>`;});
     variantUI(b.querySelector('.kdm-variant-task'),()=>{const P=[10000,12000,20000][Math.floor(Math.random()*3)],r=[4,5,6][Math.floor(Math.random()*3)],n=[4,5][Math.floor(Math.random()*2)],rep=P/n,year=[1,2,3][Math.floor(Math.random()*3)],start=P-rep*(year-1),interest=start*r/100,mode=Math.floor(Math.random()*3); if(mode===0)return{prompt:`Ratendarlehen ${money(P)}, ${r}% p.a., ${n} Jahre: Wie hoch ist die jährliche Tilgung?`,answer:rep,unit:'€'}; if(mode===1)return{prompt:`Ratendarlehen ${money(P)}, ${r}% p.a., ${n} Jahre: Wie hoch sind die Zinsen im Jahr ${year}?`,answer:interest,unit:'€'}; return{prompt:`Bei einem Ratendarlehen beträgt die jährliche Tilgung ${money(rep)} über ${n} Jahre. Wie hoch war das Darlehen?`,answer:P,unit:'€'};}); return b;
   },
+  leasecompare() {
+    const b=calcShell('Kauf vs. Leasing','Vergleiche beide Varianten über denselben Zeitraum. Restwert wird beim Kauf von den Gesamtkosten abgezogen.');
+    const purchase=nInput('Kaufpreis',12000,100,0,null,'€');
+    const maint=nInput('Wartung Kauf gesamt',2000,100,0,null,'€');
+    const residual=nInput('Restwert nach Laufzeit',2500,100,0,null,'€');
+    const months=nInput('Leasingdauer',36,1,1,120,'Monate');
+    const monthly=nInput('Leasingrate',390,10,0,null,'€/Monat');
+    const special=nInput('Leasing-Sonderzahlung',0,100,0,null,'€');
+    b.querySelector('.kdm-calc-inputs').append(purchase,maint,residual,months,monthly,special);
+    const out=b.querySelector('.kdm-steps');
+    updateOnInputs(b,()=>{
+      const P=+purchase.querySelector('input').value,M=+maint.querySelector('input').value,R=+residual.querySelector('input').value,N=+months.querySelector('input').value,L=+monthly.querySelector('input').value,S=+special.querySelector('input').value;
+      const buy=P+M-R, lease=N*L+S, diff=Math.abs(buy-lease);
+      out.innerHTML=`<ol><li>Kauf: ${money(P)} + ${money(M)} − ${money(R)} = <strong>${money(buy)}</strong></li><li>Leasing: ${fmt(N)} × ${money(L)} + ${money(S)} = <strong>${money(lease)}</strong></li><li>Differenz: <strong>${money(diff)}</strong></li></ol><div class="kdm-result">${buy<lease?'Kauf ist rechnerisch günstiger':lease<buy?'Leasing ist rechnerisch günstiger':'Beide Varianten sind rechnerisch gleich teuer'} · qualitative Kriterien zusätzlich prüfen</div>`;
+    });
+    variantUI(b.querySelector('.kdm-variant-task'),()=>{
+      const P=[10000,12000,15000][Math.floor(Math.random()*3)], M=[1200,1800,2400][Math.floor(Math.random()*3)], R=[1500,2500,3000][Math.floor(Math.random()*3)], N=[24,36,48][Math.floor(Math.random()*3)], L=[320,390,450][Math.floor(Math.random()*3)], S=[0,500,1000][Math.floor(Math.random()*3)];
+      const buy=P+M-R, lease=N*L+S, mode=Math.floor(Math.random()*3);
+      if(mode===0)return{prompt:`Kaufpreis ${money(P)}, Wartung ${money(M)}, Restwert ${money(R)}. Wie hoch sind die Kauf-Gesamtkosten?`,answer:buy,unit:'€',explanation:'Kaufpreis + Wartung − Restwert'};
+      if(mode===1)return{prompt:`${N} Monate Leasing à ${money(L)} plus ${money(S)} Sonderzahlung. Wie hoch sind die Leasing-Gesamtkosten?`,answer:lease,unit:'€',explanation:'Monate × Rate + Sonderzahlung'};
+      return{prompt:`Kauf-Gesamtkosten ${money(buy)}. Leasing über ${N} Monate plus ${money(S)} Sonderzahlung soll gleich teuer sein. Wie hoch darf die Monatsrate sein?`,answer:(buy-S)/N,unit:'€/Monat',explanation:'(Kaufkosten − Sonderzahlung) / Monate'};
+    });
+    return b;
+  },
   breakeven() {
     const b=calcShell('Break-even','Die Formel wird nach verschiedenen Größen umgestellt.');
     const f=nInput('Fixkosten',50000,1000,0,null,'€'), p=nInput('Verkaufspreis je Einheit',10,.5,.01,null,'€'), v=nInput('Variable Kosten je Einheit',0,.5,0,null,'€'); b.querySelector('.kdm-calc-inputs').append(f,p,v); const out=b.querySelector('.kdm-steps');
@@ -260,6 +284,27 @@ const CALCULATORS = {
   nwa() {
     const b=calcShell('Nutzwertanalyse','Verändere Gewichtungen und Bewertungen. Die gewichteten Werte und die Rangfolge reagieren sofort.');
     const criteria=['Preis','Support','Skalierbarkeit','Datenschutz']; const defaults=[[30,4,5],[25,5,3],[25,4,4],[20,5,3]]; const grid=document.createElement('div');grid.className='kdm-nwa-grid';grid.innerHTML='<div>Kriterium</div><div>Gewicht %</div><div>Anbieter A</div><div>Anbieter B</div>'; criteria.forEach((c,i)=>{grid.innerHTML+=`<div>${c}</div><input type="number" value="${defaults[i][0]}" min="0" max="100"><input type="number" value="${defaults[i][1]}" min="1" max="10"><input type="number" value="${defaults[i][2]}" min="1" max="10">`;}); b.querySelector('.kdm-calc-inputs').append(grid); const out=b.querySelector('.kdm-steps'); updateOnInputs(b,()=>{const inputs=[...grid.querySelectorAll('input')];let sumW=0,a=0,c=0,rows='';criteria.forEach((name,i)=>{const w=+inputs[i*3].value,va=+inputs[i*3+1].value,vb=+inputs[i*3+2].value;sumW+=w;a+=w/100*va;c+=w/100*vb;rows+=`<tr><td>${name}</td><td>${fmt(w)}%</td><td>${fmt(w/100*va,2)}</td><td>${fmt(w/100*vb,2)}</td></tr>`;});out.innerHTML=`<div class="kdm-table-wrap"><table><thead><tr><th>Kriterium</th><th>Gewicht</th><th>A gewichtet</th><th>B gewichtet</th></tr></thead><tbody>${rows}</tbody></table></div><div class="kdm-result ${sumW!==100?'warn':''}">Gewichtsumme ${fmt(sumW)}% · A ${fmt(a,2)} · B ${fmt(c,2)} → ${a>c?'A':c>a?'B':'Gleichstand'}</div>`;}); b.querySelector('.kdm-variant').remove(); return b;
+  },
+  processcost() {
+    const b=calcShell('Prozesskosten aus Arbeitszeit','Von monatlichen Arbeitgeberkosten über Minutenkosten bis zu den Gesamtkosten eines Prozesses.');
+    const salary=nInput('Arbeitgeberkosten pro Monat',3600,100,0,null,'€');
+    const hours=nInput('Produktive Stunden',160,1,.1,null,'h');
+    const minutes=nInput('Dauer je Vorgang',8,.5,0,null,'min');
+    const count=nInput('Vorgänge pro Monat',2000,10,0,null,'');
+    b.querySelector('.kdm-calc-inputs').append(salary,hours,minutes,count);
+    const out=b.querySelector('.kdm-steps');
+    updateOnInputs(b,()=>{
+      const S=+salary.querySelector('input').value,H=+hours.querySelector('input').value,M=+minutes.querySelector('input').value,C=+count.querySelector('input').value;
+      const productiveMinutes=H*60, costPerMinute=S/productiveMinutes, costPerCase=M*costPerMinute, total=C*costPerCase;
+      out.innerHTML=`<ol><li>Produktive Zeit: ${fmt(H)} h × 60 = <strong>${fmt(productiveMinutes)} min</strong></li><li>Kosten je Minute: ${money(S)} / ${fmt(productiveMinutes)} = <strong>${money(costPerMinute)}</strong></li><li>Kosten je Vorgang: ${fmt(M)} × ${money(costPerMinute)} = <strong>${money(costPerCase)}</strong></li><li>Monatliche Prozesskosten: ${fmt(C)} × ${money(costPerCase)} = <strong>${money(total)}</strong></li></ol><div class="kdm-result">${money(total)} pro Monat</div>`;
+    });
+    variantUI(b.querySelector('.kdm-variant-task'),()=>{
+      const S=[3200,3600,4200][Math.floor(Math.random()*3)], H=[140,160,168][Math.floor(Math.random()*3)], M=[5,8,12][Math.floor(Math.random()*3)], C=[1000,1500,2000][Math.floor(Math.random()*3)], cpm=S/(H*60), total=M*C*cpm, mode=Math.floor(Math.random()*3);
+      if(mode===0)return{prompt:`AG-Kosten ${money(S)}, ${H} produktive Stunden. Kosten je Arbeitsminute?`,answer:cpm,unit:'€',digits:4,explanation:'AG-Kosten / (Stunden × 60)'};
+      if(mode===1)return{prompt:`Kosten je Minute ${fmt(cpm,4)} €, Vorgang dauert ${M} min. Kosten je Vorgang?`,answer:M*cpm,unit:'€',explanation:'Minuten × Kosten je Minute'};
+      return{prompt:`${C} Vorgänge à ${M} min bei ${fmt(cpm,4)} € je Minute. Monatliche Prozesskosten?`,answer:total,unit:'€',explanation:'Vorgänge × Minuten × Minutenkosten'};
+    });
+    return b;
   },
   depreciation() {
     const b=calcShell('Lineare Abschreibung','Anschaffungskosten und Nutzungsdauer bestimmen Jahresbetrag und Abschreibungssatz.'); const a=nInput('Anschaffungskosten',12000,500,0,null,'€'),y=nInput('Nutzungsdauer',4,1,1,50,'Jahre');b.querySelector('.kdm-calc-inputs').append(a,y);const out=b.querySelector('.kdm-steps');updateOnInputs(b,()=>{const A=+a.querySelector('input').value,Y=+y.querySelector('input').value,d=A/Y,r=100/Y;out.innerHTML=`<ol><li>Jährliche Abschreibung: ${money(A)} / ${fmt(Y)} = <strong>${money(d)}</strong></li><li>Abschreibungssatz: 100 % / ${fmt(Y)} = <strong>${pct(r)}</strong></li></ol><div class="kdm-result">${money(d)} pro Jahr · ${pct(r)}</div>`;});variantUI(b.querySelector('.kdm-variant-task'),()=>{const A=[12000,18000,30000][Math.floor(Math.random()*3)],Y=[3,4,5,6][Math.floor(Math.random()*4)],D=A/Y,m=Math.floor(Math.random()*3);return m===0?{prompt:`Anschaffungskosten ${money(A)}, Nutzungsdauer ${Y} Jahre. Jährliche Abschreibung?`,answer:D,unit:'€'}:m===1?{prompt:`Jährliche Abschreibung ${money(D)}, Nutzungsdauer ${Y} Jahre. Anschaffungskosten?`,answer:A,unit:'€'}:{prompt:`Anschaffungskosten ${money(A)}, jährliche Abschreibung ${money(D)}. Nutzungsdauer?`,answer:Y,unit:'Jahre',tolerance:.1};});return b;
